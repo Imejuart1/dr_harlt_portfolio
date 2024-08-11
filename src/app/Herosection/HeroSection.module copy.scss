@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
   color: white;
   padding: 0;
   background-size: cover;
@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   transition: background-image 0.5s ease-in-out;
 
-  &.splitLayout {
+  &.heroSectionSplit {
     justify-content: space-between;
   }
 
@@ -20,7 +20,6 @@
     text-align: left;
     max-width: 600px;
     transition: opacity 0.5s ease-in-out;
-    width: 50%; /* Take 50% width for text in split layout */
 
     h1, h2, p {
       transition: opacity 0.5s ease-in-out;
@@ -62,16 +61,15 @@
     }
   }
 
-  .rightImage {
-    width: 50%; /* Take 50% width for image in split layout */
-    height: 100%;
+  .image {
+    flex: 1;
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
-    position: absolute;
-    right: 0;
-    top: 0;
+    height: 100%;
     z-index: 1;
-    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    transition: background-image 0.5s ease-in-out;
   }
-}
+} background: linear-gradient(90deg, rgba(3, 112, 255, 0.8) 0%, rgba(0, 144, 253, 0.6) 50%, rgba(0, 173, 253, 0.2) 70%), 
+url('../../../public/img/ROGER NEW (1).jpg');
