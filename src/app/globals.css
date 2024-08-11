@@ -1,11 +1,21 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --font-size-smallest: 0.75rem;  /* 12px */
+  --font-size-small: 0.875rem;    /* 14px */
+  --font-size-normal: 1rem;       /* 16px */
+  --font-size-big: 1.125rem;      /* 18px */
+  --font-size-biggest: 1.25rem;   /* 20px */
+
+  --font-family-base: 'Roboto', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +27,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-normal); /* Normal (16px) */
+  line-height: 1.5;
 }
 
 @layer utilities {

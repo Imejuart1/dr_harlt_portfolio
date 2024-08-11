@@ -1,31 +1,46 @@
+"use client";
+
 // src/components/Navbar.tsx
-import React from 'react';
+
+import React, { useRef } from 'react';
+import { usePathname } from 'next/navigation';
 import styles from './styles/Navbar.module.scss';
 
 const Navbar: React.FC = () => {
+  const pathname = usePathname();
+  const navExtrasRef = useRef<HTMLDivElement>(null);
+
+  const isActive = (path: string) => pathname === path;
+
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <img src="/logo.png" alt="Mediz Logo" />
-        <div>
-          <h1>Mediz</h1>
-          <span>Medical Center</span>
+      <div className={styles.left}>
+        <div className={styles.logo}>
+          <img src="img/Dr.Hartls.png" alt="Mediz Logo" />
+          <div className={styles.logoText}>
+            <h1>Dr. Roger Härtl MD</h1>
+            <span>Och Spine at NewYork-Presbyterian</span>
+          </div>
+        </div>
+        <div className={styles.trustItems}>
+          <div>
+            <img src="img/WeilCornel.png" alt="WeilCornell" />
+          </div>
+          <div>
+            <img src="img/newyorkp.png" alt="NewYorkP" />
+          </div>
         </div>
       </div>
-      <ul className={styles.navLinks}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Our Doctor</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-      <div className={styles.navExtras}>
-        <span>Trusted By 120,000+ People</span>
-        <span>Best Hospital U.K. News</span>
-        <span>Number #1 Clinic in London</span>
-        <button>Contact Now</button>
+      <div ref={navExtrasRef} className={`${styles.navExtras} ${styles.originalNavExtras}`}>
+        <ul className={styles.navLinks}>
+          <li className={isActive('/') ? styles.activeLink : ''}><a href="/">Home</a></li>
+          <li className={isActive('/about') ? styles.activeLink : ''}><a href="/about">Bio</a></li>
+          <li className={isActive('/reviews') ? styles.activeLink : ''}><a href="/reviews">Reviews</a></li>
+          <li className={isActive('/honors-awards') ? styles.activeLink : ''}><a href="/honors-awards">Honors and Awards</a></li>
+          <li className={isActive('/materials') ? styles.activeLink : ''}><a href="/news">News</a></li>
+          <li className={isActive('/news') ? styles.activeLink : ''}><a href="/contact">Contact</a></li>
+        </ul>
+        <button className={styles.contactButton}>Contact Me</button>
       </div>
     </nav>
   );

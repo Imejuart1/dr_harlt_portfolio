@@ -14,11 +14,11 @@ const TopBar: React.FC = () => {
         <span><FontAwesomeIcon icon={faEnvelope} /> test@gmail.com</span>
       </div>
       <div className={styles.socialMedia}>
-        <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-        <a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-        <a href="#"><FontAwesomeIcon icon={faPinterestP} /></a>
-        <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-        <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+       <div><a href="#"><FontAwesomeIcon icon={faFacebookF} /></a></div> 
+       <div> <a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a></div>
+        <div><a href="#"><FontAwesomeIcon icon={faPinterestP} /></a></div>
+        <div><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></div>
+        <div><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></div>
       </div>
     </div>
   );

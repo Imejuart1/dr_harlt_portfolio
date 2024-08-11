@@ -1,0 +1,65 @@
+.heroSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  padding: 0%;
+  background: linear-gradient(90deg, rgba(3, 112, 255, 1) 50%, rgba(3, 112, 255, 0.8) 50%, rgba(3, 112, 255, 0.6) 70%, rgba(53, 130, 231, 0.695) 100%);
+  /* The gradient starts fully blue and fades to transparent towards the right end */
+
+  .content {
+    flex: 1;
+    max-width: 600px;
+    z-index: 2;
+    text-align: left;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #dddddd;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      color: #cccccc;
+    }
+
+    .contactButton {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 15px 40px;
+      cursor: pointer;
+      border-radius: 50px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .image {
+    flex: 1;
+    background: linear-gradient(90deg, rgba(3, 112, 255, 0.8) 0%, rgba(0, 144, 253, 0.6) 50%, rgba(0, 173, 253, 0.2) 70%), 
+                url('../../../public/img/ROGER NEW (1).jpg'); /* Background image */
+    background-size: cover; /* Cover the entire div */
+    background-position: right; /* Center the image more towards the right */
+    background-repeat: no-repeat;
+    height: 100%; /* Full height of the hero section */
+    z-index: 1;
+    position: relative;
+  }
+}

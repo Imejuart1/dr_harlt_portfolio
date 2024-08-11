@@ -1,0 +1,31 @@
+// styles/StickyNavExtras.module.scss
+@import '../../src/styles/colors.scss';
+@import './Navbar.module.scss';
+.stickyNavExtras {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .visible {
+    display: block;
+    opacity: 1;
+  }
+  
+  .navLinks {
+    display: flex;
+    justify-content: space-around;
+    /* Add other styles as necessary */
+  }
+  
+  .contactButton {
+    /* Add button styles */
+  }
+  
+  
