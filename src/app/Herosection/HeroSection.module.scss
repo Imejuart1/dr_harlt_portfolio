@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 90vh;
   color: white;
   padding: 0;
@@ -11,8 +11,32 @@
   background-repeat: no-repeat;
   transition: background-image 0.5s ease-in-out;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(3, 112, 255, 0.9), rgba(3, 112, 255, 0.7) 30%, rgba(3, 112, 255, 0.3) 70%, rgba(3, 112, 255, 0.1));
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &.rightText {
+    justify-content: flex-end;
+  }
+
+  &.rightText::before {
+    background: linear-gradient(to left, rgba(3, 112, 255, 0.9), rgba(3, 112, 255, 0.7) 30%, rgba(3, 112, 255, 0.3) 70%, rgba(3, 112, 255, 0.1));
+  }
+
   &.splitLayout {
     justify-content: space-between;
+  }
+  &.splitLayout::before {
+    justify-content: space-between;
+    background: linear-gradient(to right, rgba(3, 112, 255, 0.9), rgba(3, 112, 255, 0.7) 30%, rgba(3, 112, 255, 0.6) 70%, rgba(21, 63, 119, 0.6));
   }
 
   .content {
@@ -20,34 +44,44 @@
     text-align: left;
     max-width: 600px;
     transition: opacity 0.5s ease-in-out;
-    width: 50%; /* Take 50% width for text in split layout */
+    width: 50%;
+    margin-left: 5%;
 
     h1, h2, p {
       transition: opacity 0.5s ease-in-out;
     }
 
-    h1 {
+    h1, h3 {
       font-size: 4rem;
+      line-height: 4rem;
       margin-bottom: 1rem;
       color: white;
       font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
       font-size: 1.8rem;
-      margin-bottom: 2rem;
-      color: #dddddd;
-      font-weight: 400;
+      margin-bottom: 0.5rem;
+      color: #dddfe8;
+      font-weight: 500;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     p {
       font-size: 1.2rem;
       margin-bottom: 2.5rem;
-      color: #cccccc;
+      color: #dddfe8;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .contactButton {
-      background-color: #007bff;
+      background-color: #0056b3;
       color: #fff;
       border: none;
       padding: 15px 40px;
@@ -55,15 +89,16 @@
       border-radius: 50px;
       font-size: 1rem;
       transition: background-color 0.3s ease;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 
       &:hover {
-        background-color: #0056b3;
+        background-color: #0041a3;
       }
     }
   }
 
   .rightImage {
-    width: 50%; /* Take 50% width for image in split layout */
+    width: 50%;
     height: 100%;
     background-size: cover;
     background-position: center right;
@@ -71,7 +106,33 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     transition: opacity 0.5s ease-in-out;
+  }
+
+  /* Navigation Arrows */
+  .navArrowLeft, .navArrowRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+  }
+
+  .navArrowLeft {
+    left: 20px;
+  }
+
+  .navArrowRight {
+    right: 20px;
+  }
+
+  &:hover .navArrowLeft,
+  &:hover .navArrowRight {
+    opacity: 1; /* Show on hover */
   }
 }

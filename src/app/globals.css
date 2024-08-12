@@ -29,7 +29,7 @@
 body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-normal); /* Normal (16px) */
-  line-height: 1.5;
+ 
 }
 
 @layer utilities {
