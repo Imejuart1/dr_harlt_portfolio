@@ -1,14 +1,15 @@
 // src/components/StickyNavExtras.tsx
 "use client";
+
 import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link'; // Import Next.js Link component
 import styles from './styles/StickyNavExtras.module.scss';
 
 const StickyNavExtras: React.FC = () => {
   const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(false);
   const isActive = (path: string) => pathname === path;
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,16 +29,28 @@ const StickyNavExtras: React.FC = () => {
 
   return (
     <div className={`${styles.stickyNavExtras} ${styles.navbar} ${isVisible ? styles.visible : ''}`}>
-       <div className={`${styles.navExtras}`}>
-       <ul className={styles.navLinks}>
-          <li className={isActive('/') ? styles.activeLink : ''}><a href="/">Home</a></li>
-          <li className={isActive('/about') ? styles.activeLink : ''}><a href="/about">Bio</a></li>
-          <li className={isActive('/reviews') ? styles.activeLink : ''}><a href="/reviews">Reviews</a></li>
-          <li className={isActive('/honors-awards') ? styles.activeLink : ''}><a href="/honors-awards">Honors and Awards</a></li>
-          <li className={isActive('/material') ? styles.activeLink : ''}><a href="/news">Materials</a></li>
-          <li className={isActive('/news') ? styles.activeLink : ''}><a href="/contact">News</a></li>
+      <div className={`${styles.navExtras}`}>
+        <ul className={styles.navLinks}>
+          <li className={isActive('/') ? styles.activeLink : ''}>
+            <Link href="/">Home</Link>
+          </li>
+          <li className={isActive('/Bio') ? styles.activeLink : ''}>
+            <Link href="/Bio">Bio</Link>
+          </li>
+          <li className={isActive('/reviews') ? styles.activeLink : ''}>
+            <Link href="/reviews">Reviews</Link>
+          </li>
+          <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
+            <Link href="/honors-awards">Honors and Awards</Link>
+          </li>
+          <li className={isActive('/material') ? styles.activeLink : ''}>
+            <Link href="/news">Materials</Link>
+          </li>
+          <li className={isActive('/news') ? styles.activeLink : ''}>
+            <Link href="/contact">News</Link>
+          </li>
         </ul>
-      <button className={styles.contactButton}>Contact Me</button>
+        <button className={styles.contactButton}>Contact Me</button>
       </div>
     </div>
   );

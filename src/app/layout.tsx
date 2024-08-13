@@ -2,6 +2,8 @@
 import './globals.css'; // Your global styles
 import '../lib/fontawesome'; // Import Font Awesome configuration
 import { ReactNode } from 'react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 export const metadata = {
   title: 'Mediz Medical Center',
@@ -15,7 +17,12 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>{children}</body>
+     
+      <body>  
+        <Header/>
+      {children}
+      <Footer/>
+      </body>
     </html>
   );
 }
