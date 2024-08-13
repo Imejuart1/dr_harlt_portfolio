@@ -9,12 +9,18 @@ const Bio: React.FC = () => {
         <div className={styles.content}>
           <h1>About Dr. Roger Härtl</h1>
           <p>Dedicated to providing minimally invasive care for spinal and neck disorders.</p>
+          <ul className={styles.heroNavLinks}>
+            <li><a href="#personal-statement">Personal Statement</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#research">Research</a></li>
+          </ul>
         </div>
       </div>
 
       <div className={styles.content}>
         {/* Section 1: Image on left */}
-        <div className={styles.section}>
+        <div id="personal-statement"  className={styles.section}>
           <div className={styles.imageSection}>
             <img src="img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
           </div>
@@ -30,10 +36,10 @@ const Bio: React.FC = () => {
         </div>
 
         {/* Section 2: Image on right */}
-        <div className={styles.section}>
-          <div className={styles.imageSection}>
-            <img src="/path/to/your/image2.jpg" alt="Biography Image" className={styles.profileImage} />
-          </div>
+        <div id="biography" className={styles.section}>
+          {/*<div className={styles.imageSection}>
+          <img src="img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+          </div>*/}
           <div className={styles.textSection}>
             <h2>Biography</h2>
             <p>
@@ -66,10 +72,10 @@ const Bio: React.FC = () => {
         </div>
 
         {/* Section 3: Image on left */}
-        <div className={styles.section}>
-          <div className={styles.imageSection}>
-            <img src="/path/to/your/image3.jpg" alt="Training Image" className={styles.profileImage} />
-          </div>
+        <div id="training" className={styles.section}>
+         {/*<div className={styles.imageSection}>
+          <img src="img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+          </div>*/}
           <div className={styles.textSection}>
             <h2>Training</h2>
             <p>
@@ -85,10 +91,10 @@ const Bio: React.FC = () => {
         </div>
 
         {/* Section 4: Image on right */}
-        <div className={styles.section}>
-          <div className={styles.imageSection}>
-            <img src="/path/to/your/image4.jpg" alt="Research Image" className={styles.profileImage} />
-          </div>
+        <div id="research" className={styles.section}>
+          {/*<div className={styles.imageSection}>
+          <img src="img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+          </div>*/}
           <div className={styles.textSection}>
             <h2>Research</h2>
             <p>
@@ -99,22 +105,6 @@ const Bio: React.FC = () => {
               and worked with the Brain Trauma Foundation in New York on the development of treatment guidelines for the medical and surgical management of head injury 
               that are now used worldwide.
             </p>
-          </div>
-        </div>
-
-        {/* Icons for different sections */}
-        <div className={styles.iconSection}>
-          <div className={styles.iconItem}>
-            <img src="/icons/research-icon.svg" alt="Research Icon" />
-            <h2>Research</h2>
-          </div>
-          <div className={styles.iconItem}>
-            <img src="/icons/training-icon.svg" alt="Training Icon" />
-            <h2>Training</h2>
-          </div>
-          <div className={styles.iconItem}>
-            <img src="/icons/media-icon.svg" alt="Media Icon" />
-            <h2>Media</h2>
           </div>
         </div>
       </div>

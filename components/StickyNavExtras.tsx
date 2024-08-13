@@ -43,11 +43,14 @@ const StickyNavExtras: React.FC = () => {
           <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
             <Link href="/honors-awards">Honors and Awards</Link>
           </li>
-          <li className={isActive('/material') ? styles.activeLink : ''}>
-            <Link href="/news">Materials</Link>
+          <li className={isActive('/Materials') ? styles.activeLink : ''}>
+            <Link href="/Materials">Materials</Link>
           </li>
-          <li className={isActive('/news') ? styles.activeLink : ''}>
-            <Link href="/contact">News</Link>
+          <li className={isActive('/Contact') ? styles.activeLink : ''}>
+            <Link href="/Contact">Contact</Link>
+          </li>
+          <li className={isActive('/News') ? styles.activeLink : ''}>
+            <Link href="/News">News</Link>
           </li>
         </ul>
         <button className={styles.contactButton}>Contact Me</button>

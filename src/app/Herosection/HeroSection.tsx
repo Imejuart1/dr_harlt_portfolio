@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
   const startSlideShow = () => {
     slideInterval.current = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 7000); // Change every 7 seconds
+    }, 5000); // Change every 7 seconds
   };
 
   const stopSlideShow = () => {
