@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './MaterialComponent.module.scss';
 
 const MaterialComponent: React.FC = () => {
@@ -15,22 +16,22 @@ const MaterialComponent: React.FC = () => {
         <div className={styles.materialGroup}>
           <h2>Pre-Operative Information</h2>
           <ul>
-            <li><a href="#">Surgical Guide for Minimally Invasive Tubular Surgery</a></li>
-            <li><a href="#">Surgical Guide for Minimally Invasive TLIF</a></li>
-            <li><a href="#">Surgical Guide for ELIF, XLIF, LLIF, DLIF</a></li>
-            <li><a href="#">Surgical Guide for Laminoplasty</a></li>
-            <li><a href="#">Cervical Disc Arthroplasty</a></li>
+            <li><Link href="/Materials/surgical-guide-minimally-invasive-tubular-surgery">Surgical Guide for Minimally Invasive Tubular Surgery</Link></li>
+            <li><Link href="/materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
+            <li><Link href="/materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
+            <li><Link href="/materials/surgical-guide-laminoplasty">Surgical Guide for Laminoplasty</Link></li>
+            <li><Link href="/materials/surgical-guide-cervical-disc-arthroplasty">Cervical Disc Arthroplasty</Link></li>
           </ul>
         </div>
         
         <div className={styles.materialGroup}>
           <h2>Post-Operative Information</h2>
           <ul>
-            <li><a href="#">Post-Op Instructions</a></li>
-            <li><a href="#">Post-Op Posture</a></li>
-            <li><a href="#">Hans-Kraus Post-Op Exercises</a></li>
-            <li><a href="#">Post-Op Activity Timeline</a></li>
-            <li><a href="#">Dr. Ricky Singh's Exercises &gt 6 Weeks After Surgery</a></li>
+            <li><Link href="/materials/post-op-instructions">Post-Op Instructions</Link></li>
+            <li><Link href="/materials/post-op-posture">Post-Op Posture</Link></li>
+            <li><Link href="/materials/hans-kraus-post-op-exercises">Hans-Kraus Post-Op Exercises</Link></li>
+            <li><Link href="/materials/post-op-activity-timeline">Post-Op Activity Timeline</Link></li>
+            <li><Link href="/materials/dr-ricky-singh-exercises">Dr. Ricky Singh's Exercises &gt; 6 Weeks After Surgery</Link></li>
           </ul>
         </div>
       </div>
