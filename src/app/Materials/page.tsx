@@ -5,7 +5,7 @@ import styles from './MaterialComponent.module.scss';
 const MaterialComponent: React.FC = () => {
   return (
     <section className={styles.materialSection}>
-      <div className={styles.heroSection} style={{ backgroundImage: `url('img/material-bg.jpg')` }}>
+      <div className={styles.heroSection} style={{ backgroundImage: `url('img/research.jpeg')` }}>
         <div className={styles.content}>
           <h1>Materials & Resources</h1>
           <p>Explore our comprehensive resources for pre-operative and post-operative care.</p>
