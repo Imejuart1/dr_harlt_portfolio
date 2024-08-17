@@ -1,7 +1,7 @@
-// src/app/layout.tsx
 import './globals.css'; // Your global styles
 import '../lib/fontawesome'; // Import Font Awesome configuration
 import { ReactNode } from 'react';
+import Head from 'next/head'; // Import Head from next/head
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -17,11 +17,16 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-     
-      <body>  
-        <Header/>
-      {children}
-      <Footer/>
+      <Head>
+        {/* Preload images */}
+        <link rel="preload" href="/img/Aboutme2.jpg" as="image" />
+        <link rel="preload" href="/img/review5.jpeg" as="image" />
+        <link rel="preload" href="/img/research.jpeg" as="image" />
+      </Head>
+      <body>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

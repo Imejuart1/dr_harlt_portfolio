@@ -43,6 +43,12 @@ const HeroSection: React.FC = () => {
   };
 
   useEffect(() => {
+
+    slides.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.image;
+    });
+  
     startSlideShow();
 
     return () => stopSlideShow(); // Cleanup on unmount

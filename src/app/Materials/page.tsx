@@ -31,7 +31,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/materials/post-op-posture">Post-Op Posture</Link></li>
             <li><Link href="/materials/hans-kraus-post-op-exercises">Hans-Kraus Post-Op Exercises</Link></li>
             <li><Link href="/materials/post-op-activity-timeline">Post-Op Activity Timeline</Link></li>
-            <li><Link href="/materials/dr-ricky-singh-exercises">Dr. Ricky Singh's Exercises &gt; 6 Weeks After Surgery</Link></li>
+            <li><Link href="/materials/dr-ricky-singh-exercises">Dr. Ricky Singh&apos;s Exercises &gt; 6 Weeks After Surgery</Link></li>
           </ul>
         </div>
       </div>

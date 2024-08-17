@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
             <p><strong>Fax:</strong> (646) 962-0640</p>
           </div>
           <div className={styles.officeContacts}>
-            <h2>Dr. Härtl's Office</h2>
+            <h2>Dr. Härtl&apos;s Office</h2>
             <p><strong>Appointment Scheduling:</strong> (Destiny Boliscar, Heidy Burmudez) - (212) 746-2152</p>
             <p><strong>Office Nurse Practitioner:</strong> (Ed Butler) - (212) 746-2152</p>
             <p><strong>Surgical Coordinator:</strong> (Nuribeel Gonzalez) - (212) 746-2152</p>
