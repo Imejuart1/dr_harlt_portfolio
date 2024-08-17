@@ -6,8 +6,8 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 export const metadata = {
-  title: 'Mediz Medical Center',
-  description: 'Medical center website',
+  title: 'Dr. Roger Härtl',
+  description: 'Dr. Roger Härtl website',
 };
 
 interface RootLayoutProps {
