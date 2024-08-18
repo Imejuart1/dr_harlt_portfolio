@@ -72,7 +72,7 @@
 }
 
 
-.showSocialMenu2, .showSocialMenu1, .hambug{
+.showSocial, .hambug{
   display: flex;
   justify-content: space-between;
   width:100%;
@@ -103,31 +103,41 @@
    .showSocialMenu1{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width:100%;
     gap:0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+   margin-left:6%;
     span{
       color: #007bff; 
-      font-size: medium;
+      font-size:large;
      // border-bottom: 1px solid white;
       width:100%;
     }
    }
 
    .showSocialMenu2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #dfe4e9;
     padding: 1rem;
     margin-top: 1rem;
+    border-radius: 8px;
+    width:100%;
     a{
       color: #007bff;     
     }
    }
    .showSocialMenu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding-left: -1.5rem;
     padding-right: -1.5rem;
-    box-shadow: #007bff;
+    width:100%;
+    //box-shadow: #007bff;
    }
   /*.showSocialMenu {
   display: flex;

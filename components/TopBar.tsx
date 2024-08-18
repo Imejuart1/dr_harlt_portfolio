@@ -49,9 +49,9 @@ const TopBar: React.FC = () => {
       </div>
       </div>
 
-      <div className={` ${isSocialMenuOpen ? styles.showSocialMenu : styles.showSocialMenu1}`}>
+      <div className={` ${isSocialMenuOpen ? styles.showSocialMenu : styles.showSocial}`}>
       <div className={`  ${isSocialMenuOpen ? styles.showSocialMenu1 : styles.contactInfo}`}>
-        <span><FontAwesomeIcon icon={faClock} /> Mon - Sun 0900 - 2100</span>
+        <div><span><FontAwesomeIcon icon={faClock} /> Mon - Sun 0900 - 2100</span></div>
         <span><FontAwesomeIcon icon={faPhone} /> +1-2345-3455-33</span>
         <span><FontAwesomeIcon icon={faEnvelope} /> test@gmail.com</span>
       </div>
