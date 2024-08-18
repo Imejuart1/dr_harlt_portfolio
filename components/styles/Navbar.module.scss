@@ -109,6 +109,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    @media (max-width: 860px) {
+      gap: 1.2rem;
+    }
   
     li {
       a {
