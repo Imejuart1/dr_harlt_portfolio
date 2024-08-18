@@ -2,7 +2,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faPhone, faEnvelope, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faPhone, faEnvelope, faBars, faTimes, faShareAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn, faPinterestP, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import styles from './styles/TopBar.module.scss';
 
@@ -45,8 +45,8 @@ const TopBar: React.FC = () => {
         <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
       </div>
       <div className={styles.hamburger} onClick={toggleSocialMenu}>
-        <FontAwesomeIcon icon={isSocialMenuOpen ? faTimes : faBars} />
-      </div>
+            <FontAwesomeIcon icon={isSocialMenuOpen ? faTimes : faShareAlt} /> {/* Using the new icon */}
+          </div>
       </div>
 
       <div className={` ${isSocialMenuOpen ? styles.showSocialMenu : styles.showSocial}`}>
