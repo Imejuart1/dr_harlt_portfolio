@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'; // Import Next.js Link component
 import styles from './styles/Navbar.module.scss';
@@ -7,13 +7,8 @@ import styles from './styles/Navbar.module.scss';
 const Navbar: React.FC = () => {
   const pathname = usePathname();
   const navExtrasRef = useRef<HTMLDivElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
+
   const isActive = (path: string) => pathname === path;
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu's visibility
-  };
-
 
   return (
     <nav className={styles.navbar}>
@@ -33,7 +28,7 @@ const Navbar: React.FC = () => {
             <img src="img/newyorkp.png" alt="NewYorkP" />
           </div>
         </div>
-        </div>
+      </div>
       <div ref={navExtrasRef} className={`${styles.navExtras} ${styles.originalNavExtras}`}>
         <ul className={styles.navLinks}>
           <li className={isActive('/') ? styles.activeLink : ''}>
