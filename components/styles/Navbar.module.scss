@@ -224,28 +224,29 @@
   background-color: #fff; /* Make sure the background is solid when sticky */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for a raised effect */
 }
-
 @media (max-width: 768px) {
   .trustItems {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between; /* Adjust alignment to fit images */
-
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
     div {
-      //width: auto;
-     // position: absolute;
+      position: absolute;
+      width: 100%; /* Ensures images take the full width */
       animation: moveLeft 6s infinite ease-in-out;
       
       &:nth-of-type(2) {
-        position: absolute;
         animation-delay: 3s; /* Delay the second image by 3 seconds */
       }
       
       img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        width:10rem;
+        //width: 100%;
+        //height: auto;
+       // object-fit: cover;
       }
     }
   }
@@ -256,22 +257,23 @@
       opacity: 0;
     }
     10% {
+      transform: translateX(0); /* Arrive at the center */
       opacity: 1;
     }
     40% {
-      transform: translateX(0); /* Fully visible at the center */
+      transform: translateX(0); /* Stay in the center */
       opacity: 1;
     }
     60% {
-      transform: translateX(0); /* Hold position for a moment */
+      transform: translateX(-100%); /* Start moving off-screen to the left */
       opacity: 1;
     }
     90% {
+      transform: translateX(-100%); /* Continue moving off-screen */
       opacity: 0;
-      transform: translateX(-100%); /* Move off-screen to the left */
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-100%); /* Completely off-screen */
       opacity: 0;
     }
   }
