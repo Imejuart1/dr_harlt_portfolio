@@ -11,7 +11,10 @@
   border-bottom: 1px solid $border-blue; /* Light blue border */
   box-shadow: 0 -4px 6px -2px rgba(0, 51, 102, 0.1);
   @media (max-width: 1200px) {
-    padding: 1.5rem; 
+    padding: 1rem 4rem;
+  }
+  @media (max-width: 900px) {
+    padding: 1rem 1.5rem;
   }
   .left {
     display: flex;

@@ -8,7 +8,10 @@
   background-color: #f8f9fa;
   padding: 1rem 7.125rem; 
   @media (max-width: 1200px) {
-    padding: 1.5rem; 
+    padding: 1rem 4rem;
+  }
+  @media (max-width: 900px) {
+    padding: 1rem 1.5rem;
   }
 
   .hamburger {
