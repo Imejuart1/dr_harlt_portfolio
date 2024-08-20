@@ -13,7 +13,7 @@
 
   .hamburger {
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: $dark-blue;
     cursor: pointer;
   }
@@ -36,6 +36,12 @@
         width: 1rem !important;
         margin-right: 0.5rem; // 8px
         color: #007bff; // Set the color to blue
+        &:hover{
+          color: #0056b3;
+        }
+      }
+      &:hover{
+        color: #0056b3;
       }
       @media (max-width: 860px) {
         margin-right: 1rem;
@@ -88,17 +94,15 @@
 
 @media (max-width: 768px) {
   .topBar {
-  .contactInfo {
-    display: none;
+  .contactInfo, .socialMedia {
+   // display: none;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+   
   }
   .hamburger {
-    display: block;
- 
-    
-  }
-
-  .socialMedia {
-   display: none;
+    display: block; 
   }
   .showSocialMenu1 {
     display: flex;
@@ -109,12 +113,19 @@
     gap: 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    height: auto; /* Automatically adjust height to fit content */
+    opacity: 1;
+    transition: height 3s ease, opacity 0.8s ease;
 
     span {
       color: #007bff;
       font-size: large;
       width: 100%;
-      text-align: center;  /* Ensure the text is centered */
+      text-align: center;  
+
+              &:hover{
+          color: #0056b3;
+        }
     }
   }
 
@@ -127,8 +138,18 @@
     margin-top: 1rem;
     border-radius: 8px;
     width:100%;
+    height: auto; /* Automatically adjust height to fit content */
+    opacity: 1;
+    transition: height 3s ease, opacity 0.8s ease;
     a{
       color: #007bff;     
+      font-size: large;
+        &:hover{
+          background-color: #0056b3;
+          border-radius: 50%;
+          padding: 0.5srem;
+          color:white
+        }
     }
    }
    .showSocialMenu{
@@ -139,37 +160,7 @@
     padding-left: -1.5rem;
     padding-right: -1.5rem;
     width:100%;
-    //box-shadow: #007bff;
    }
-  /*.showSocialMenu {
-  display: flex;
-  padding:0.5rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  height:100vh;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(19, 57, 207, 0.9); 
-  z-index: 10; 
-
-  div {
-    margin-bottom: 1.5rem; 
-    text-align: center; 
-  }
-
-  a {
-    color: #fff;
-    font-size: 1.2rem; 
-    transition: color 0.3s ease;
-  }
-
-  &:hover {
-    color: #007bff;
-  }
-}*/
+ 
   }
 }

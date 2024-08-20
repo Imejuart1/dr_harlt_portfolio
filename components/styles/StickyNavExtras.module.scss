@@ -17,7 +17,7 @@
   .visible {
     display: block;
     opacity: 1;
-    @media (max-width: 1200px) {
+    @media (max-width: 768px) {
       display: none;
     //  padding: 1.5rem; 
     }
@@ -26,11 +26,117 @@
   .navLinks {
     display: flex;
     justify-content: space-around;
-    /* Add other styles as necessary */
+     }
+
+     .backgroundLayer {
+      position: fixed;
+      top: 0;
+      left: -100%; /* Start off-screen to the left */
+      width: 90%;
+      height: 100%;
+      background-color: rgba(10, 81, 223, 0.5); /* Blue background layer */
+      z-index: 1000;
+      transition: left 0.5s ease-in-out; 
+      @media (min-width: 769px) {
+        display: none;
+      }
+    }
+
+  
+    
+    .stickyNavExtras_menu {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: -100%; 
+      width: 85%; 
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9); 
+      z-index: 9000;
+      transition: left 0.5s ease-in-out;
+      color: #fff; 
+      padding: 1rem; 
+  
+    
+  @media (min-width: 769px) {
+    display: none;
   }
+
   
-  .contactButton {
-    /* Add button styles */
+.navExtras{
+  display: flex;
+  flex-direction: column; // Align links vertically like in the image
+  align-items: center;
+  width:100%;
+}
+.hamburger {
+  //display: none;
+  font-size: 3rem;
+  align-self: flex-end;
+  margin-right: 20%;
+  margin-top: -0.5rem;
+ margin-bottom: 2rem;
+  //color: $dark-blue;
+  cursor: pointer;
+}
+.navLinks {
+  display: flex;
+  flex-direction: column; // Align links vertically like in the image
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  gap: 1.5rem; // Space between each link
+}
+
+.navLinks li {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); // Divider between links
+}
+
+.navLinks li:last-child {
+  border-bottom: none; // Remove border for the last link
+}
+
+.navLinks a {
+  color: #fff; // White link color
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase; // Match the uppercase style from the image
+  display: block;
+  width: 100%;
+}
+
+
+.contactButton {
+  background-color: #0056b3;
+  color: #fff;
+  border:1px solid #0056b3;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+   margin-top: 1.5rem;
+  &:hover {
+    background-color: $light-blue; 
+    border:1px solid #0056b3;
+    color:#0056b3;
   }
-  
-  
+}
+}
+
+.fisible {
+    left: 0; 
+    transition: left 0.5s ease-in-out;
+  }
+
+  .hidden {
+    left: -100%; 
+    //transition: left 0.5s ease-in-out;
+  }

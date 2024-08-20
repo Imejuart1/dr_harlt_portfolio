@@ -1,6 +1,8 @@
 "use client";
 import React from 'react';
 import styles from './styles/Footer.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedinIn, faPinterestP, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer: React.FC = () => {
   return (
@@ -22,11 +24,11 @@ const Footer: React.FC = () => {
         </div>
         <div className={styles.rightSection}>
           <div className={styles.socialMedia}>
-            <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="img/linkedin.png" alt="LinkedIn" /></a>
-            <a href="#"><img src="img/pinterest.png" alt="Pinterest" /></a>
-            <a href="#"><img src="img/twitter.png" alt="Twitter" /></a>
-            <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+            <div><a href="#"><FontAwesomeIcon icon={faFacebookF} /></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faPinterestP} /></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></div>
           </div>
           <div className={styles.copyright}>
             <p>&copy; {new Date().getFullYear()} Dr. Roger Härtl MD. All rights reserved.</p>

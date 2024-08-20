@@ -26,10 +26,16 @@
   }
 }
 
-body {
+html, body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-normal); /* Normal (16px) */
- 
+ overflow-x: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed; /* Prevents scrolling on mobile by fixing the position */
+  width: 100%; /* Ensure full width to avoid layout shifts */
 }
 
 @layer utilities {

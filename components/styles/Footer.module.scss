@@ -6,11 +6,15 @@
   border-top: 1px solid $border-blue;
   box-shadow: 0 -4px 6px -2px rgba(0, 51, 102, 0.1);
   font-family: $font-family-base;
+  @media (max-width: 1200px) {
+    padding: 1.5rem; 
+  }
 
   .footerContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     .leftSection {
       .logo {
@@ -62,13 +66,12 @@
         gap: 1.5rem;
 
         a {
-          img {
-            height: 24px;
-            transition: opacity 0.3s ease;
+          color: $primary-blue;
+          font-size: 1.5rem;
+          transition: opacity 0.3s ease;
 
-            &:hover {
-              opacity: 0.7;
-            }
+          &:hover {
+            opacity: 0.7;
           }
         }
       }
@@ -77,6 +80,23 @@
         margin-top: 1rem;
         font-size: $font-size-small;
         color: $dark-blue;
+      }
+    }
+  }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem;
+
+    .footerContent {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .rightSection {
+        align-items: flex-start;
+        margin-top: 1.5rem;
       }
     }
   }
