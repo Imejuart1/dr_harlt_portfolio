@@ -250,9 +250,15 @@
       width: 100%; 
       animation: moveLeft 6s infinite ease-in-out;
       margin-left: 25%;
+      @media (min-width: 500px) {
+        margin-left:40%;
+       }
       &:nth-of-type(2) {
         animation-delay: 3s;
         margin-left: 10% ;
+        @media (min-width: 500px) {
+          margin-left:25%;
+         }
         img{
           width:19rem;
         }

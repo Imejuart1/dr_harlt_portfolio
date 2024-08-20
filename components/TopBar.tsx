@@ -6,12 +6,15 @@ import { faClock, faPhone, faEnvelope, faBars, faTimes, faShareAlt } from '@fort
 import { faFacebookF, faLinkedinIn, faPinterestP, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import StickyNavExtras from './StickyNavExtras'; // Import StickyNavExtras
 import styles from './styles/TopBar.module.scss';
-
-const TopBar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+interface TopBarProps {
+  isMenuOpen: boolean;
+  toggleMenu: () => void;
+}
+const TopBar: React.FC<TopBarProps> = ({isMenuOpen , toggleMenu}) => {
+  
   const [isSocialMenuOpen, setIsSocialMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   const toggleSocialMenu = () => setIsSocialMenuOpen(!isSocialMenuOpen);
 
   useEffect(() => {
@@ -34,8 +37,6 @@ const TopBar: React.FC = () => {
     const handleResize = () => {
       if (window.innerWidth >= 769 && isSocialMenuOpen) {
         setIsSocialMenuOpen(false);
-      }else if (window.innerWidth >= 769 && isMenuOpen) {
-        setIsMenuOpen(false);
       }
     };
 
@@ -45,7 +46,7 @@ const TopBar: React.FC = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [isSocialMenuOpen, isMenuOpen]);
+  }, [isSocialMenuOpen]);
 
   return (
     <div>
@@ -60,20 +61,19 @@ const TopBar: React.FC = () => {
         </div>
         <div className={` ${isSocialMenuOpen ? styles.showSocialMenu : styles.showSocial}`}>
           <div className={`  ${isSocialMenuOpen ? styles.showSocialMenu1 : styles.contactInfo}`}>
-            <div><span><FontAwesomeIcon icon={faClock} /> Mon - Sun 0900 - 2100</span></div>
-            <span><FontAwesomeIcon icon={faPhone} /> +1-2345-3455-33</span>
-            <span><FontAwesomeIcon icon={faEnvelope} /> test@gmail.com</span>
+            <div><FontAwesomeIcon icon={faClock} fixedWidth /> <span>Mon - Sun 0900 - 2100</span></div>
+            <div><FontAwesomeIcon icon={faPhone} fixedWidth /><span> +1-2345-3455-33</span></div>
+            <div> <FontAwesomeIcon icon={faEnvelope}  fixedWidth/><span> test@gmail.com</span></div>
           </div>
           <div className={`  ${isSocialMenuOpen ? styles.showSocialMenu2 : styles.socialMedia}`}>
-            <div><a href="#"><FontAwesomeIcon icon={faFacebookF} /></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faPinterestP} /></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faFacebookF} fixedWidth/></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faLinkedinIn} fixedWidth/></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faPinterestP} fixedWidth/></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faTwitter} fixedWidth/></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faInstagram} fixedWidth/></a></div>
           </div>
         </div>
       </div>
-      <StickyNavExtras isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} /> {/* Pass the isMenuOpen state */}
     </div>
   );
 };

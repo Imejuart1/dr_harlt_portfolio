@@ -20,6 +20,12 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         margin-bottom: 2rem;
+        @media (max-width: 1200px) {
+            padding: 1rem 4rem;
+          }
+          @media (max-width: 900px) {
+            padding: 1rem 1.5rem;
+          }
     }
 
     .section {
@@ -31,6 +37,9 @@
         &:nth-child(even) {
             flex-direction: row-reverse; /* Image on right for even sections */
         }
+        @media (max-width: 900px) {
+            flex-direction: column-reverse;
+          }
 
         .imageSection {
            background-color: rgba(3, 112, 255, 0.9);
@@ -44,13 +53,21 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 padding-left: 2rem;
             }
+            @media (max-width: 900px) {
+                margin-right: 0;
+                align-self: center;
+                margin-bottom:3rem;
+              }
         }
 
         .textSection {
             flex: 2;
            // padding-left: 2rem;
-            padding-right: 2rem;
+            //padding-right: 2rem;
             text-align: left;
+            @media (max-width: 900px) {
+                text-align: center;
+              }
 
             h2 {
                 font-size: $font-size-big;
@@ -65,13 +82,18 @@
                 &::after {
                     content: '';
                     position: absolute;
-                    left: 0;
+                    left: 0%; 
+                    
                     bottom: 0;
                     width: 50px;
                     height: 3px;
                     background-color: $hover-blue;
                     border-radius: 3px;
+                    @media (max-width: 900px) {
+                       left:50%;
+                       transform: translateX(-50%); 
                 }
+            }
             }
 
             p {
@@ -79,6 +101,7 @@
                 line-height: 1.6;
                 margin-bottom: 1.5rem;
                 color: $dark-blue;
+                text-align: justify;
             }
         }
     }
@@ -113,10 +136,10 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    height: 60vh;
+    justify-content: center;
+    height: 28rem;
     width: 100%;
-    margin: 0rem -7.125rem;
+   // margin: 0rem -7.125rem;
     color: white;
     padding: 2rem;
     background-size: cover;
@@ -139,39 +162,62 @@
         border-radius: 8px;
     }
 
-    .content {
-        
-        background: rgba(3, 112, 255, 0.9);
+    .content_section {
+        position: absolute;
+        background: rgba(3, 112, 255, 1);
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         z-index: 2;
         text-align: center;
-        width: 60%;
-        margin-top: 35%;
+        width: 50%;
+        margin-top: 30rem;
+        @media (max-width: 1024px) {
+            width:90%;
+     }
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: white;
             font-weight: 700;
+            @media (max-width: 900px) {
+                font-size: 2rem;
+         }
+            @media (max-width: 600px) {
+                font-size: 1.5rem;
+         }
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #dddfe8;
+            @media (max-width: 900px) {
+                font-size: 1.2rem;
+         }
         }
 
         .heroNavLinks {
           display: flex;
+          flex-wrap: wrap;
           gap: 2rem;
           list-style: none;
           margin-top: 1.5rem;
+          align-items: center;
+            justify-content: center;
+         
 
           li {
             a {
               text-decoration: none;
               color: white; /* Light color for links */
-              font-size: 16px;
+              font-size: 1.2rem;
               transition: color 0.3s ease, transform 0.3s ease;
-
+              @media (max-width: 600px) {
+                font-size: 16px;
+              }
               &:hover {
                 color: rgb(170, 180, 193); /* Blue on hover */
               }

@@ -6,7 +6,7 @@ const Bio: React.FC = () => {
     <section className={styles.bioSection}>
 
       <div className={styles.heroSection} style={{ backgroundImage: `url('img/Aboutme2.jpg')` }}>
-        <div className={styles.content}>
+        <div className={styles.content_section}>
           <h1>About Dr. Roger Härtl</h1>
           <p>Dedicated to providing minimally invasive care for spinal and neck disorders.</p>
           <ul className={styles.heroNavLinks}>
