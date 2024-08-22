@@ -42,8 +42,8 @@ const Navbar: React.FC = () => {
           <li className={isActive('/Bio') ? styles.activeLink : ''}>
             <Link href="/Bio">Bio</Link>
           </li>
-          <li className={isActive('/reviews') ? styles.activeLink : ''}>
-            <Link href="/reviews">Reviews</Link>
+          <li className={isActive('/Reviews') ? styles.activeLink : ''}>
+            <Link href="/Reviews">Reviews</Link>
           </li>
           <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
             <Link href="/honors-awards">Honors and Awards</Link>

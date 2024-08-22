@@ -1,0 +1,125 @@
+@import '../../styles/colors.scss';
+
+.reviewSection {
+    .heroSection {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 28rem;
+      width: 100%;
+      color: white;
+      padding: 2rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: $primary-blue;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+  
+      .content_section {
+        z-index: 2;
+        text-align: center;
+        width: 50%;
+        background: rgba(3, 112, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        
+        h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          color: white;
+          font-weight: 700;
+        }
+        
+        p {
+          font-size: 1.5rem;
+          color: #dddfe8;
+        }
+      }
+    }
+  
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      margin: 2rem 0;
+      overflow: hidden;
+  
+      .slide {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        transition: transform 0.5s ease-in-out;
+  
+        .reviewText {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          background: rgba(0, 0, 0, 0.7);
+          padding: 1rem;
+          border-radius: 8px;
+          color: white;
+          
+          p {
+            margin-bottom: 0.5rem;
+          }
+          
+          a {
+            color: $primary-blue;
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      .prevButton,
+      .nextButton {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 2rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        z-index: 2;
+      }
+  
+      .prevButton {
+        left: 10px;
+      }
+  
+      .nextButton {
+        right: 10px;
+      }
+    }
+  
+    .reviewLinks {
+      margin: 2rem 0;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+          margin-bottom: 1rem;
+          
+          a {
+            color: $dark-blue;
+            text-decoration: underline;
+            &:hover {
+              color: $primary-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  
