@@ -98,12 +98,14 @@
 }
 
 .materialGroup {
+  background: linear-gradient(135deg, $primary-blue, #5B3EAA);
   padding: 2rem 7.125rem;
   margin-bottom: 3rem;
 }
 
 .mediaContainer {
   display: grid;
+  
   grid-template-columns: 1fr;
   gap: 20px;
 

@@ -82,7 +82,8 @@
 }
 
 .videoContainer {
-  padding: 20px;
+  padding: 10px;
+ // padding-top:20px !important;
 
   .videoTitle {
     font-size: $font-size-big;
