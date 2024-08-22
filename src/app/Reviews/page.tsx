@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import HealthgradesReview from './components/HealthgradesReview';
 import VitalsReview from './components/VitalsReview';
+import Gratitude from './components/Gratitude';
+import Testimonials from './components/Testimonials'; // Import the Testimonials component
 import styles from './Review.module.scss';
 
 const images = [
@@ -11,25 +13,31 @@ const images = [
 ];
 
 const ReviewPage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"reviews" | "gratitude">("reviews");
+  const [activeTab, setActiveTab] = useState<"testimonials" | "reviews" | "gratitude">("testimonials");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect( () => {
-   const interval = setInterval(() =>{
-    setCurrentImageIndex((prevIndex)=> (prevIndex + 1) % images.length)
-   }, 5000);
-   return () => clearInterval(interval);
-  })
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className={styles.reviewSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
-      <div className={styles.content}>
-          <h1>Reviews & Gratitude</h1>
-          <p>Read what <strong>Dr.Harlts</strong> patients have to say about their experiences.</p>
+        <div className={styles.content}>
+          <h1>Testimonials, Reviews & Gratitude</h1>
+          <p>Read what <strong>Dr. Hartl's</strong> patients have to say about their experiences.</p>
         </div>
       </div>
       <div className={styles.tabNavigation}>
+        <button
+          className={`${styles.tabButton} ${activeTab === "testimonials" ? styles.active : ""}`}
+          onClick={() => setActiveTab("testimonials")}
+        >
+          Testimonials
+        </button>
         <button
           className={`${styles.tabButton} ${activeTab === "reviews" ? styles.active : ""}`}
           onClick={() => setActiveTab("reviews")}
@@ -43,9 +51,14 @@ const ReviewPage: React.FC = () => {
           Gratitude
         </button>
         <div
-          className={`${styles.tabUnderline} ${activeTab === "reviews" ? styles.left : styles.right}`}
+          className={`${styles.tabUnderline} ${activeTab === "testimonials" ? styles.left : activeTab === "reviews" ? styles.center : styles.right}`}
         />
       </div>
+      {activeTab === "testimonials" && (
+        <div className={styles.testimonialsSection}>
+          <Testimonials />
+        </div>
+      )}
       {activeTab === "reviews" && (
         <div className={styles.reviewSection_content}>
           <div id="healthgrades" className={styles.healthgSection}>
@@ -58,7 +71,7 @@ const ReviewPage: React.FC = () => {
       )}
       {activeTab === "gratitude" && (
         <div>
-          {/* Gratitude content goes here */}
+          <Gratitude />
         </div>
       )}
     </section>
