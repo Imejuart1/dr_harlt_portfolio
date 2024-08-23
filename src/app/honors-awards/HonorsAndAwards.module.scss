@@ -1,0 +1,226 @@
+// app/honors-and-awards/HonorsAndAwards.module.scss
+
+@import '../../styles/colors.scss';
+
+.honorsSection {
+  font-family: 'Mulish', sans-serif;
+  
+  .heroSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 25rem;
+    width: 100%;
+    color: white;
+    padding: 2rem;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-color: $primary-blue;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    transition: background-image 1s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(3, 112, 255, 0.9), rgba(3, 112, 255, 0.7) 30%, rgba(3, 112, 255, 0.3) 70%, rgba(3, 112, 255, 0.1));
+      z-index: 1;
+      pointer-events: none;
+      border-radius: 8px;
+    }
+
+    .content {
+      z-index: 2;
+      text-align: left;
+      width: 60%;
+      margin-top: 16rem;
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: white;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #dddfe8;
+      }
+    }
+  }
+
+  .tabNavigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .tabButton {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: $primary-blue;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    position: relative;
+    text-align: center;
+
+    &:hover {
+      color: $hover-blue;
+    }
+
+    &.active {
+      color: $hover-blue;
+    }
+  }
+
+  .tabUnderline {
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    background-color: $primary-blue;
+    transition: transform 0.3s ease;
+
+    &.left {
+      transform: translateX(0);
+      width: 50%;
+    }
+
+    &.right {
+      transform: translateX(100%);
+      width: 50%;
+    }
+  }
+
+  .contentWrapper {
+    padding: 1rem 7.125rem;
+
+    @media (max-width: 1200px) {
+      padding: 1rem 4rem;
+    }
+
+    @media (max-width: 900px) {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+    .sectionImage {
+      order: 2;
+    }
+
+    .textContent {
+      order: 1;
+    }
+  
+
+    .sectionImage {
+      width: 100%;
+      height: 30rem;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      object-fit: cover;  // Ensures the image covers the container without stretching
+    }
+
+    .textContent {
+      //width: 50%;
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: $primary-blue;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: black;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: $primary-blue;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+        font-size: 1.4rem;
+
+        &:hover {
+          color: $hover-blue;
+        }
+      }
+    }
+  }
+}
+.sectionReverse {
+  display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+
+   
+      .sectionImage {
+        order: 2;
+      }
+
+      .textContent {
+        order: 1;
+      }
+    
+
+    .sectionImage {
+      width: 100%;
+      height: 30rem;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      object-fit: cover;  // Ensures the image covers the container without stretching
+    }
+
+    .textContent {
+      //width: 50%;
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: $primary-blue;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: black;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: $primary-blue;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+        font-size: 1.4rem;
+
+        &:hover {
+          color: $hover-blue;
+        }
+      }
+    }
+  }

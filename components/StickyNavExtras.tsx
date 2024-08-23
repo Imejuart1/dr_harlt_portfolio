@@ -91,7 +91,7 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
               <Link href="/Reviews" onClick={handleCloseMenu}>Reviews</Link>
             </li>
             <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
-              <Link href="/honors-awards" onClick={handleCloseMenu}>Honors and Awards</Link>
+              <Link href="/honors-awards" onClick={handleCloseMenu}>Honors  and News</Link>
             </li>
             <li className={isActive('/Materials') ? styles.activeLink : ''}>
               <Link href="/Materials" onClick={handleCloseMenu}>Materials</Link>
@@ -120,7 +120,7 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
             <Link href="/Reviews">Reviews</Link>
           </li>
           <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
-            <Link href="/honors-awards">Honors and Awards</Link>
+            <Link href="/honors-awards">Honors  and News</Link>
           </li>
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
             <Link href="/Materials">Materials</Link>

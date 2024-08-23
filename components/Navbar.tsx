@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             <Link href="/Reviews">Reviews</Link>
           </li>
           <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
-            <Link href="/honors-awards">Honors and Awards</Link>
+            <Link href="/honors-awards">Honors  and News</Link>
           </li>
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
             <Link href="/Materials">Materials</Link>
