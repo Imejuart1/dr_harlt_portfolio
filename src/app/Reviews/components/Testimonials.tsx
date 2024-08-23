@@ -15,7 +15,7 @@ const Testimonials: React.FC = () => {
   return (
     <div className={styles.testimonialsContainer}>
       <h2>Patient Testimonials</h2>
-      <p>Watch personal stories and experiences shared by Dr. Hartl's patients.</p>
+      <p>Watch personal stories and experiences shared by Dr. Hartls&apos; patients.</p>
       <div className={styles.videoGrid}>
         {videoUrls.map((url, index) => (
           <div className={styles.videoWrapper} key={index}>

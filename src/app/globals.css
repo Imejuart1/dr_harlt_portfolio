@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +11,7 @@
   --font-size-big: 1.125rem;
   --font-size-biggest: 1.25rem;
 
-  --font-family-base: 'Roboto', sans-serif;
+  --font-family-base: 'Mulish', sans-serif;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;

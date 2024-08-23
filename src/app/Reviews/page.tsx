@@ -28,7 +28,7 @@ const ReviewPage: React.FC = () => {
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
           <h1>Testimonials, Reviews & Gratitude</h1>
-          <p>Read what <strong>Dr. Hartl's</strong> patients have to say about their experiences.</p>
+          <p>Read what <strong>Dr. Hartl&apos;s</strong> patients have to say about their experiences.</p>
         </div>
       </div>
       <div className={styles.tabNavigation}>

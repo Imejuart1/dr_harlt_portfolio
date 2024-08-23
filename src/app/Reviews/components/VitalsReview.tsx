@@ -101,7 +101,7 @@ const VitalsReview: React.FC = () => {
                />
              </div>
                {subTab === "overview" && (<div className={styles.feedbackOverview}>
-                <h2>Dr. Hartl's Reviews</h2>
+                <h2>Dr. Hartl&apos;s Reviews</h2>
                 <div className={styles.ratingSummary}>
                   <div className={styles.ratingOverall}>
                     <h3 className={styles.rateh3}>4.8</h3>
@@ -157,7 +157,7 @@ const VitalsReview: React.FC = () => {
                 <p className={styles.p}>96% positive</p>
                 <ul className={styles.ul}>
                   <li className={styles.li}>
-                    <span className={styles.feedbackText}>Trusted the provider's decisions</span>
+                    <span className={styles.feedbackText}>Trusted the provider&apos;s decisions</span>
                     <div className={styles.feedbackBar}>
                       <div className={styles.progress}>
                         <div
@@ -193,7 +193,7 @@ const VitalsReview: React.FC = () => {
                     </div>
                   </li>
                   <li className={styles.li}>
-                    <span className={styles.feedbackText}>Appointment wasn't rushed</span>
+                    <span className={styles.feedbackText}>Appointment wasn&apos;t rushed</span>
                     <div className={styles.feedbackBar}>
                       <div className={styles.progress}>
                         <div

@@ -74,14 +74,14 @@ const MaterialPage: React.FC = () => {
     <div className={styles.mainmaterial}>
       <div
         className={styles.heroSection}
-        style={{ backgroundImage: `url('img/Aboutme2.jpg')` }}
+        style={{ backgroundImage: `url('img/surgical (2).jpeg')` }}
       >
         <div className={styles.content}>
           <h1>{material.title}</h1>
           <p>{material.content}</p>
         </div>
       </div>
-
+s
       <div className={styles.tabNavigation}>
         <button
           className={`${styles.tabButton} ${activeTab === "guides" ? "active" : ""}`}

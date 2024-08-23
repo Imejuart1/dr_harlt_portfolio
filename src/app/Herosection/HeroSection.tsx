@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import styles from './HeroSection.module.scss';
 
 const HeroSection: React.FC = () => {
@@ -9,21 +10,24 @@ const HeroSection: React.FC = () => {
       title: 'Dr. Roger Härtl MD',
       subtitle: 'Neurosurgeon at Och Spine, NewYork-Presbyterian',
       text: 'Unifying disciplines to provide minimally invasive care for neck disorders.',
-      buttonText: 'Get to Know Me'
+      buttonText: 'Get to Know Me',
+      link: '/Bio'
     },
     {
       image: 'img/review5.jpeg',
       title: 'Expert in Spine Surgery',
       subtitle: 'Specializing in minimally invasive spinal surgery',
       text: 'World-renowned neurosurgeon advancing spine care globally; New York Giants neurosurgeon.',
-      buttonText: 'See Reviews'
+      buttonText: 'See Reviews',
+      link: '/Reviews'
     },
     {
       image: 'img/research.jpeg',
       title: 'Research and Training',
       subtitle: 'Innovative Spine Care',
       text: 'Leading innovative, less invasive spinal treatments and pioneering disc regeneration.',
-      buttonText: 'Explore'
+      buttonText: 'Explore',
+      link: '/Materials'
     }
   ];
 
@@ -43,12 +47,11 @@ const HeroSection: React.FC = () => {
   };
 
   useEffect(() => {
-
     slides.forEach((slide) => {
       const img = new Image();
       img.src = slide.image;
     });
-  
+
     startSlideShow();
 
     return () => stopSlideShow(); // Cleanup on unmount
@@ -66,26 +69,21 @@ const HeroSection: React.FC = () => {
     startSlideShow(); // Restart the interval
   };
 
-  const { image, title, subtitle, text, buttonText } = slides[currentSlide];
+  const { image, title, subtitle, text, buttonText, link } = slides[currentSlide];
 
   return (
     <section
-      className={`${styles.heroSection} ${currentSlide === 1 ? styles.rightText : ''} ${currentSlide === 1 ? styles.rightText : ''}` }
-      
-      style={{ backgroundImage:  `url(${image})`}}
+      className={`${styles.heroSection} ${currentSlide === 1 ? styles.rightText : ''}`}
+      style={{ backgroundImage: `url(${image})` }}
     >
-     {/*} {currentSlide === 2 && (
-        <div
-          className={styles.rightImage}
-          style={{ backgroundImage: `url(${image})` }}
-        ></div>
-      )}*/}
       <div className={styles.content}>
         {currentSlide === 0 && <h3>I am</h3>}
         <h1>{title}</h1>
         <h2>{subtitle}</h2>
         <p>{text}</p>
-        <button className={styles.contactButton}>{buttonText}</button>
+        <Link href={link} passHref>
+          <button className={styles.contactButton}>{buttonText}</button>
+        </Link>
       </div>
 
       {/* Navigation Arrows */}

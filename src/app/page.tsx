@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <main>
       <HeroSection />
-        <h1>Welcome to Mediz Medical Center</h1>
+        <h1>Still working</h1>
       </main>
     </div>
   );
