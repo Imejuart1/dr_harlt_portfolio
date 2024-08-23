@@ -122,13 +122,14 @@
     align-items: center;
     margin-bottom: 5rem;
     gap: 2rem;
-    .sectionImage {
-      order: 2;
-    }
-
     .textContent {
+      order: -1;
+    }
+    .sectionImage {
       order: 1;
     }
+
+    
   
 
     .sectionImage {
