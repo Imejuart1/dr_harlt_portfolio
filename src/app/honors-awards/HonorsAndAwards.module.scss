@@ -55,53 +55,61 @@
     }
   }
 
-  .tabNavigation {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    position: relative;
-    border-bottom: 2px solid #ddd;
+ 
+.tabNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabButton {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    color: #0056b3;
   }
 
-  .tabButton {
-    flex: 1;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: $primary-blue;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-    position: relative;
-    text-align: center;
+  &.active {
+    color: #0056b3;
+  }
+}
 
-    &:hover {
-      color: $hover-blue;
-    }
+.tabUnderline {
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  background-color: #007bff;
+  transition: transform 0.3s ease;
 
-    &.active {
-      color: $hover-blue;
-    }
+  &.left {
+    transform: translateX(0);
+    width: 33.33%; // 1/3 of the width
   }
 
-  .tabUnderline {
-    position: absolute;
-    bottom: -2px;
-    height: 2px;
-    background-color: $primary-blue;
-    transition: transform 0.3s ease;
-
-    &.left {
-      transform: translateX(0);
-      width: 50%;
-    }
-
-    &.right {
-      transform: translateX(100%);
-      width: 50%;
-    }
+  &.center {
+    transform: translateX(100%);
+    width: 33.33%; // 1/3 of the width
   }
+
+  &.right {
+    transform: translateX(200%);
+    width: 33.33%; // 1/3 of the width
+  }
+}
+
 
   .contentWrapper {
     padding: 1rem 7.125rem;
@@ -138,6 +146,7 @@
       border-radius: 8px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
       object-fit: cover;  // Ensures the image covers the container without stretching
+      transition: background-image 1s ease-in-out;
     }
 
     .textContent {
@@ -193,6 +202,7 @@
       height: 30rem;
       border-radius: 8px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      transition: opacity 1s ease-in-out;
       object-fit: cover;  // Ensures the image covers the container without stretching
     }
 
@@ -225,3 +235,92 @@
       }
     }
   }
+
+  .thumbnailWrapper {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    max-width: 640px; /* Match the size of the iframe */
+    margin: auto;
+
+    .indSection, .indSection2 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 25rem;
+      width: 100%;
+      color: white;
+      padding: 2rem;
+      background-size: cover;
+      background-position: 50% 25%;
+      background-repeat: no-repeat;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+     // background-color: $primary-blue;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      transition: background-image 1s ease-in-out;
+    }
+     .indSection2{
+      height:30rem !important;
+     }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      transition: opacity 1s ease-in-out; 
+    }
+  
+    .playButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //background: url('../../../public/img/play-button.svg') no-repeat center center;
+      background-size: contain;
+      width: 100px;
+      height: 100px;
+      img{
+        color: red;
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+  .videoWrapper {
+    position: relative;
+  }
+  
+  .thumbnailWrapper {
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .videoIframe {
+    display: none;
+    width: 100%;
+    height: 480px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .videoIframe.visible {
+    display: block;
+    opacity: 1;
+  }
+  
+  .playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+  
+    img {
+      filter: brightness(0) invert(1); /* Make the play button white */
+    }
+  }
+  
