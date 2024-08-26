@@ -54,6 +54,7 @@ const ReviewPage: React.FC = () => {
           className={`${styles.tabUnderline} ${activeTab === "testimonials" ? styles.left : activeTab === "reviews" ? styles.center : styles.right}`}
         />
       </div>
+      <div className={styles.reviewscroll}>   
       {activeTab === "testimonials" && (
         <div className={styles.testimonialsSection}>
           <Testimonials />
@@ -74,6 +75,7 @@ const ReviewPage: React.FC = () => {
           <Gratitude />
         </div>
       )}
+        </div>
     </section>
   );
 };
