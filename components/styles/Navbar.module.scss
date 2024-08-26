@@ -198,25 +198,26 @@
 
 .trustItems{
   display: flex;
-  flex-direction:row-reverse;
+  flex-direction: row;
   align-items: center;
- // margin-right:-3rem;
+  margin-right:-3rem;
   @media (max-width: 650px) {
     margin-right:0rem;
    }
   div{
-   // width:10rem;
- 
+   //width:10rem;
     img{
       width:10rem;
       @media (max-width: 768px) {
-        width:10rem;
+       width:10rem;
        }
     }
     &:nth-of-type(2){
       img{
+        //display: none;
+       // padding-left:3rem;
         margin-top: 2rem;
-        width:19rem;
+       width:19rem;
         @media (max-width: 768px) {
           margin-top:0rem;
           width:19rem;
