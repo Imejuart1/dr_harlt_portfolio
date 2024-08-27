@@ -8,6 +8,7 @@
     color: $dark-blue;
     font-family: $font-family-base;
     font-size: $font-size-normal;
+    overflow-x: hidden !important;
 
     .content {
         display: flex;

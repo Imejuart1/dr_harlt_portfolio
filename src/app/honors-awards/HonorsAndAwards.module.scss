@@ -4,7 +4,7 @@
 
 .honorsSection {
   font-family: 'Mulish', sans-serif;
-  
+  overflow-x: hidden !important;
  
   .heroSection {
     position: relative;
@@ -181,15 +181,18 @@
     align-items: center;
     margin-bottom: 5rem;
     gap: 2rem;
+    @media (max-width:900px) {
+      grid-template-columns: 100%;
+      iframe{
+        width:100% !important;
+      }
+     }
     .textContent {
       order: -1;
     }
     .sectionImage {
       order: 1;
     }
-
-    
-  
 
     .sectionImage {
       width: 100%;
@@ -199,21 +202,24 @@
       object-fit: cover;  // Ensures the image covers the container without stretching
       transition: background-image 1s ease-in-out;
     }
-
     .textContent {
-      //width: 50%;
-
       h2 {
         font-size: 1.8rem;
         margin-bottom: 1rem;
         color: $primary-blue;
         font-weight: 700;
+        @media (max-width:900px) {
+         font-size: 1.5rem;
+        }
       }
 
       p {
         font-size: 1.2rem;
         color: black;
         margin-bottom: 1rem;
+        @media (max-width:900px) {
+          font-size: 1rem;
+         }
       }
 
       a {
@@ -238,7 +244,14 @@
     margin-bottom: 5rem;
     gap: 2rem;
 
-   
+    @media (max-width:900px) {
+      display: flex;
+      flex-direction: column-reverse;
+      width:100%;
+      a{
+        width:100%;
+      }
+     }
       .sectionImage {
         order: 2;
       }
@@ -265,12 +278,18 @@
         margin-bottom: 1rem;
         color: $primary-blue;
         font-weight: 700;
+        @media (max-width:900px) {
+          font-size: 1.5rem;
+         }
       }
 
       p {
         font-size: 1.2rem;
         color: black;
         margin-bottom: 1rem;
+        @media (max-width:900px) {
+          font-size: 1rem;
+         }
       }
 
       a {
@@ -291,7 +310,7 @@
     position: relative;
     cursor: pointer;
     width: 100%;
-    max-width: 640px; /* Match the size of the iframe */
+   // max-width: 640px; /* Match the size of the iframe */
     margin: auto;
 
     .indSection, .indSection2 {
@@ -340,12 +359,14 @@
   }
   .videoWrapper {
     position: relative;
+    width:100%;
   }
   
   .thumbnailWrapper {
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
     position: relative;
+    width:100%;
   }
   
   .videoIframe {
