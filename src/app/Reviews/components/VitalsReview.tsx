@@ -55,11 +55,7 @@ const VitalsReview: React.FC = () => {
 
   return (
     <div className={styles.reviewContainer}>
-      <div className={styles.reviewHeader}>
-        <img src='img/vitals.svg' alt="Vitals Icon" className={styles.reviewIcon2} />
-        <h2 className={styles.h2}>Vitals Reviews</h2>
-        <a href="https://www.vitals.com/doctors/Dr_Roger_Hartl.html" target="_blank" rel="noopener noreferrer" className={styles.moreLinkvitals}>See Source</a>
-      </div>
+      <h2 className={styles.h2}>Vitals Reviews</h2>
       <p className={styles.choiceProvider}>Dr. Härtl is a Vitals Choice provider in Neurosurgery.</p>
       <div className={styles.slideshowContainer}>
         <div

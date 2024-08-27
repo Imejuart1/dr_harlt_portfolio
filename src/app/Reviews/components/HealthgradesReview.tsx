@@ -55,11 +55,7 @@ const HealthgradesReview: React.FC = () => {
 
   return (
     <div className={styles.reviewContainer}>
-      <div className={styles.reviewHeader}>
-        <img src='img/healthgrades-icon.svg' alt="Healthgrades Icon" className={styles.reviewIcon} />
         <h2 className={styles.h2}>Healthgrades Reviews</h2>
-        <a href="https://www.healthgrades.com/physician/dr-roger-hartl-yy2qb?referrerSource=autosuggest" target="_blank" rel="noopener noreferrer" className={styles.moreLink}>See Source</a>
-      </div>
       <p className={styles.choiceProvider}>Dr. Härtl is a Healthgrades Choice provider in Neurosurgery.</p>
       <div className={styles.slideshowContainer}>
         <div
@@ -217,7 +213,7 @@ const HealthgradesReview: React.FC = () => {
                     </div>
                   </li>
                 </ul>
-                <h4 className={styles.office}>Office + Staff Feedback</h4>
+                <h4 className={styles.h4}>Office + Staff Feedback</h4>
                 <p className={styles.p}>94% positive</p>
                 <ul className={styles.ul}>
                   <li className={styles.li}>

@@ -63,9 +63,23 @@ const ReviewPage: React.FC = () => {
       {activeTab === "reviews" && (
         <div className={styles.reviewSection_content}>
           <div id="healthgrades" className={styles.healthgSection}>
+          <div className={styles.healrespo}>
+        <img src='img/healthgrades-icon.svg' alt="Healthgrades Icon" className={styles.reviewIcon} />
+        <div>
+        <a href="https://www.healthgrades.com/physician/dr-roger-hartl-yy2qb?referrerSource=autosuggest" target="_blank" rel="noopener noreferrer" className={styles.moreLink}>See Source</a>
+        </div>
+        </div>
             <HealthgradesReview />
           </div>
           <div id="vitals" className={styles.vitalsSection}>
+          <div className={styles.reviewHeader}>
+          <div className={styles.healrespo}>
+        <img src='img/vitals.svg' alt="Vitals Icon" className={styles.reviewIcon2} />
+        <div>
+        <a href="https://www.vitals.com/doctors/Dr_Roger_Hartl.html" target="_blank" rel="noopener noreferrer" className={styles.moreLinkvitals}>See Source</a>
+        </div>
+     </div>
+      </div>
             <VitalsReview />
           </div>
         </div>
