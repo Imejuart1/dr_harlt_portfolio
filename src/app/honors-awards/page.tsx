@@ -104,7 +104,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             <div className={styles.textContent}>
               <h2>Hans Kraus Award</h2>
               <p>Dr. Roger Härtl has received the Hans Kraus Award for his groundbreaking work in spine surgery and patient care.<br></br>
-                "We are proud to present the award to Roger Härtl MD, the Hansen-MacDonald Professor of Neurological Surgery and Director of Neurosurgery Spine at the Weill Cornell Medicine Brain and Spine Center in New York."</p>
+              &quot;We are proud to present the award to Roger Härtl MD, the Hansen-MacDonald Professor of Neurological Surgery and Director of Neurosurgery Spine at the Weill Cornell Medicine Brain and Spine Center in New York.&quot;</p>
               <a href="https://frame.foundation/hans-kraus-award" target="_blank" rel="noopener noreferrer">Read more</a><br></br>
               <a>See pdf</a>
             </div>
@@ -122,7 +122,7 @@ const HonorsAndAwardsPage: React.FC = () => {
               </div>
             </a>
             <div className={styles.textContent}>
-              <h2>America's Best Spine Surgeons 2024</h2>
+              <h2>America&apos;s Best Spine Surgeons 2024</h2>
               <p>Dr. Härtl has been recognized as one of the best spine surgeons in the United States by Newsweek magazine.
                  Newsweek partnered with Statista to evaluate physician performance data, certifications, 
                  and professional reputation for American spine surgeons in 2024, resulting in the list 
@@ -144,7 +144,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             </a>
             <div className={styles.textContent}>
               <h2>New York-Presbyterian Augmented Reality Advances Feature</h2>
-              <p>Dr. Härtl's innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
+              <p>Dr. Härtl&apos;s innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
                 For nearly 20 years, Roger Härtl, MD, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicine’s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
                 navigation in spinal surgery to guide instrumentation placement and tumor resection in minimally invasive spine surgery.</p>
               <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">Read more</a>
@@ -153,7 +153,7 @@ const HonorsAndAwardsPage: React.FC = () => {
 
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
-              <h2>Dr. Orna Guralink's Spine Tumor Story</h2>
+              <h2>Dr. Orna Guralink&apos;s Spine Tumor Story</h2>
               <p>Dr. Roger Härtl utilized cutting-edge augmented reality technology
                 to precisely remove a spinal tumor, enabling a faster recovery for Orna
                 Guralnik. Her insistence on further investigation led to a life-changing
@@ -175,7 +175,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             <div className={styles.textContent}>
               <h2>Medical Marvel - New York Magazine Feature</h2>
               <p>Dr. Roger Härtl performed a life-saving surgery on firefighter Eugene Stolowski, reconnecting his nearly severed skull to his spine after a devastating fall during the Black Sunday fire. Despite a mere 5% survival chance,
-                Dr. Härtl's expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
+                Dr. Härtl&apos;s expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
               <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
@@ -183,8 +183,8 @@ const HonorsAndAwardsPage: React.FC = () => {
             <div className={styles.textContent}>
               <h2>Kenny Schachter Piece</h2>
               <p>Kenny Schachter Emerges From Surgery With Dirt on Damien Hirst, Ed Sheeran, and a Lot More
-              In part one of his 'Busted-Disc Diaries,' he recounts blowing out his back moving his art.
-               He's recovering, and just as indefatigable as ever. Thank his art-loving doctors!<br></br>
+              In part one of his &apos;Busted-Disc Diaries,&apos; he recounts blowing out his back moving his art.
+               He&apos;s recovering, and just as indefatigable as ever. Thank his art-loving doctors!<br></br>
                After a brief examination by Dr. Roger Härtl—who is nothing short of a magician, a brilliant virtuoso, and the director of spinal surgery at Och Spine at NewYork-Presbyterian/Weill 
                Cornell Medical Center—it was flagrantly clear that I needed surgery, which...</p>
               <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
@@ -233,7 +233,7 @@ const HonorsAndAwardsPage: React.FC = () => {
               <img src="img/beckerpodcast.png" alt="News 3" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
-              <h2>Becker's Healthcare: Spine and Orthopedic Podcast</h2>
+              <h2>Becker&apos;s Healthcare: Spine and Orthopedic Podcast</h2>
               <p>Dr. Roger Hartl, Professor of Neurological Surgery and Director of Spinal Surgery at Weill Cornell Medicine
                 as well as Neurosurgical Director, Och Spine at NewYork-Presbyterian, provides a glimpse into his journey,
                 offers insights into his expertise in neurological surgery, developments in his field, and trends
@@ -245,7 +245,7 @@ const HonorsAndAwardsPage: React.FC = () => {
 
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
-              <h2>Becker's Spine Review: AR in MIS-TLIF Feature</h2>
+              <h2>Becker&apos;s Spine Review: AR in MIS-TLIF Feature</h2>
               <p>Researchers with New York City-based Weill Cornell Medicine were able to complete 10 minimally
                 invasive transforaminal lumbar interbody fusions using augmented reality with no complications ...</p>
               <a href="https://www.beckersspine.com/spine/55630-the-potential-of-ar-in-minimally-invasive-tlif-procedures.html?utm_medium=email&utm_content=newsletter" target="_blank" rel="noopener noreferrer">Read more</a>
@@ -260,7 +260,7 @@ const HonorsAndAwardsPage: React.FC = () => {
               <img src="img/becker2.png" alt="News 5" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
-              <h2>Becker's Hospital Review: Podcast Features</h2>
+              <h2>Becker&apos;s Hospital Review: Podcast Features</h2>
               <p>Roger Härtl, Director of Neurosurgery Spine at Weill Cornell Medicine, joins the podcast to discuss his background, his focus on patient access to quality care & minimally invasive spine surgery, and what healthcare leaders need to be successful.</p>
               <a href="https://www.beckershospitalreview.com/podcasts/podcasts-beckers-hospital-review/roger-h-rtl-director-of-neurosurgery-spine-at-weill-cornell-medicine-94433094.html" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
@@ -281,7 +281,7 @@ const HonorsAndAwardsPage: React.FC = () => {
           <div className={styles.section}>
             <div className={styles.textContent}>
               <h2>Healthcare Digital Interview in German</h2>
-              <p>Healthcare Digital #10: Robots in the OR, AI in diagnostics, a gateway to TI, In future, access to the TI will be via a gateway. eHex Managing Director Frédéric Naujokat knows why and how. Spinal surgery with the surgical robot, on the other hand, is the domain of Prof. Dr. Roger Härtl. He demonstrated this live at this year's Brainlab Spine Symposium in Munich
+              <p>Healthcare Digital #10: Robots in the OR, AI in diagnostics, a gateway to TI, In future, access to the TI will be via a gateway. eHex Managing Director Frédéric Naujokat knows why and how. Spinal surgery with the surgical robot, on the other hand, is the domain of Prof. Dr. Roger Härtl. He demonstrated this live at this year&apos;s Brainlab Spine Symposium in Munich
                 s. Our colleague Johannes Kapfer was there and spoke to him...</p>
               <a href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
