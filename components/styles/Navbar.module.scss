@@ -245,28 +245,31 @@
     justify-content: space-between; /* Adjust alignment to fit images */
     margin-top: 3rem;
     margin-bottom: 2rem;
+    overflow: hidden; /* Prevent scrolling due to animation */
     
     div {
       position: absolute;
-      width: 100%; 
+      //width: 100%; 
       animation: moveLeft 6s infinite ease-in-out;
       margin-left: 25%;
       @media (min-width: 500px) {
-        margin-left:40%;
-       }
+        margin-left: 40%;
+      }
+      
       &:nth-of-type(2) {
         animation-delay: 3s;
-        margin-left: 10% ;
+        margin-left: 10%;
         @media (min-width: 500px) {
-          margin-left:25%;
-         }
-        img{
-          width:19rem;
+          margin-left: 25%;
+        }
+        
+        img {
+          width: 19rem;
         }
       }
       
       img {
-        width:10rem;
+        width: 10rem;
       }
     }
   }

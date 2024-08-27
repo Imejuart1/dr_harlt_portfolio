@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.left}>
+  <div className={styles.left}>
         <div className={styles.logo}>
           <img src="img/Dr.Hartls.png" alt="Mediz Logo" />
           <div className={styles.logoText}>

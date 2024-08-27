@@ -53,7 +53,7 @@ const MaterialComponent: React.FC = () => {
 
         {/* YouTube & Patient Education Materials Section */}
         <div className={styles.materialGroup}>
-          <h2>Dr. Härtl's YouTube Channel & Other Patient Education Materials</h2>
+          <h2>Dr. Härtl&apos;s YouTube Channel & Other Patient Education Materials</h2>
           <ul>
             <li><Link href="/materials/testimonials">Testimonials</Link></li>
             <li><Link href="/materials/surgical-videos">Surgical Videos</Link></li>
