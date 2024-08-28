@@ -53,21 +53,6 @@ const MaterialComponent: React.FC = () => {
           </ul>
         </div>
 
-        {/* YouTube & Patient Education Materials Section */}
-        <div className={styles.materialGroup}>
-          <h2>Dr. Härtl&apos;s YouTube Channel & Other Patient Education Materials</h2>
-          <ul>
-            
-            <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
-            <li><Link href="/Materials/spine-time">Spine Time</Link></li>
-            <li><Link href="/Materials/patient-education-smiss-videos">Patient Education SMISS Videos</Link></li>
-            <li><Link href="/Materials/about-och-spine-hospital">About Och Spine Hospital</Link></li>
-            <li><Link href="/Materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
-            <li><Link href="/Materials/other">Other</Link></li>
-            <li><Link href="/Materials/testimonials">Testimonials</Link></li>
-          </ul>
-        </div>
-
         {/* Healthy Spine Section */}
         <div className={styles.materialGroup}>
           <h2>Healthy Spine</h2>
@@ -79,6 +64,21 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="https://wa-qi.com/" target='__blank'>Supplements for Nerve Regeneration</Link></li>
             <li><Link href="/Materials/tai-chi">Tai Chi</Link></li>
             <li><Link href="/Materials/book-recommendations-dr-hartl">Book Recommendations by Dr. Härtl</Link></li>
+          </ul>
+        </div>
+
+         {/* YouTube & Patient Education Materials Section */}
+         <div className={styles.materialGroup}>
+          <h2>Dr. Härtl&apos;s YouTube Channel & Other Patient Education Materials</h2>
+          <ul>
+            
+            <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
+            <li><Link href="/Materials/spine-time">Spine Time</Link></li>
+            <li><Link href="/Materials/patient-education-smiss-videos">Patient Education SMISS Videos</Link></li>
+            <li><Link href="/Materials/about-och-spine-hospital">About Och Spine Hospital</Link></li>
+            <li><Link href="/Materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
+            <li><Link href="/Materials/other">Other</Link></li>
+            <li><Link href="/Materials/testimonials">Testimonials</Link></li>
           </ul>
         </div>
       </div>

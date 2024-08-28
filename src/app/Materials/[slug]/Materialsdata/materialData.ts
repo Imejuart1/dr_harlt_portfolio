@@ -359,7 +359,7 @@ export const materialData = {
       "surgical-videos" :{
         title:"Surgical videos",
         content:
-       " Explore surgical videos by the great surgeon Dr.Härtl",
+       "Explore surgical videos by the great surgeon Dr.Härtl",
         media: [
           {
             type: "video",
@@ -369,8 +369,80 @@ export const materialData = {
           },
           {
             type: "video",
-            src: "https://youtu.be/nQOpQtxvtDI",
-            title: "Cervical ULBD MIS Tubular Surgery ",
+            src: "https://youtu.be/UTc3eNLauUw",
+            title: "Posterior Cervical Foraminotomy (MIS PCF)",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/9iXj1jAg5Vg",
+            title: "Single Stage Lateral Lumbar Spine Interbody Fusion (MIS-SSLIF)",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/eirQBtNagiI",
+            title: "MIS Lumbar AR Tumor Resection (Augmented Reality)",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/_7WVuwZ1Odc",
+            title: "Transforaminal Interbody Fusion of the Lumbar Spine (MIS TLIF)",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/O7m0paEhn60",
+            title: "MIS Microdiscectomy for Lumbar Giant Spinal Disc Herniation",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/SXAP0TNRbFM",
+            title: "MIS Over the Top ULBD for Contralateral Foraminal Disc Herniation",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/B3xjrJ8kMpc",
+            title: "MIS Lumbar Laminectomy and Contralateral Foraminotomy",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/NJ5nNi3-JvI",
+            title: "Thoracic Spinal Cord Herniation Resection and Dural Repair",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/9rJbNYdkAaE",
+            title: "MIS Dural Repair Technique",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/AfsXdKMvRrc",
+            title: "MIS L4-5 Over-the-Top ULBD for Lumbar Spinal Stenosis ",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/t3RTCaorCWE",
+            title: "Tubular MIS injection of BMAC after Discectomy into Intradiscal Space",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://drive.google.com/file/d/1sxl_OnXrHu9VjbzH2souNCmjGSuTxuSe/preview",
+            title: "Cervical Intradural Schwannoma",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/Eo1GtDXxJYg",
+            title: "Optimizing Alignment for Occipitocervical Instability",
             previewImage: "/img/surgy1.png",
           },
         ],
