@@ -4,8 +4,9 @@ import { useParams } from "next/navigation";
 import React from "react";
 import MediaCardComponent from "../MediaCardComponent";
 import styles from "./Slug.module.scss";
+import { materialData } from  "./Materialsdata/materialData";
 
-const materialData = {
+/*const materialData = {
   "surgical-guide-minimally-invasive-tubular-surgery": {
     title: "Minimally Invasive Tubular Surgery Resources",
     content:
@@ -18,7 +19,7 @@ const materialData = {
       },
       {
         type: "pdf",
-        src: "pdfs/surgery1.pdf",
+        src: "https://drive.google.com/file/u/0/d/1O4sU1-072nwh5Sb9NNRhYKHPE5jS_D1_/preview",
         title: "Surgical Guide for Minimally Invasive Tubular Surgery",
         previewImage: "/img/surgy1.png", // Add the preview image path
       },
@@ -50,7 +51,7 @@ const materialData = {
     ],
   },
   // Add more materials here
-};
+};*/
 
 const MaterialPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"guides" | "videos">("guides");

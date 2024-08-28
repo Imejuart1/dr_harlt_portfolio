@@ -15,6 +15,7 @@ const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, title, previe
       <div className={styles.mediaCard}>
         {type === 'pdf' && (
           <div className={styles.pdfContainer}>
+              
             <div className={styles.pdfHeader}>
               <FaFilePdf className={styles.pdfIcon} />
               <h2>{title}</h2>
@@ -24,17 +25,19 @@ const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, title, previe
                 </a>
               </div>
             </div>
-
-            {previewImage && (
+            <iframe src={src} title={title} className={styles.pdfPreviewImage}  allowFullScreen></iframe>
+           {/*{previewImage && (
               <img src={previewImage} alt={`Preview of ${title}`} className={styles.pdfPreviewImage} />
-            )}
+            )}*/}
           </div>
         )}
         {type === 'video' && (
+          <a href={src} target="_blank">
           <div className={styles.videoContainer}>
             <h2 className={styles.videoTitle}>{title}</h2>
             <iframe src={src} title={title} className={styles.videoViewer} allowFullScreen></iframe>
           </div>
+          </a>
         )}
       </div>
     </div>

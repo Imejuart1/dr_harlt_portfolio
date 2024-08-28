@@ -17,21 +17,22 @@ const MaterialComponent: React.FC = () => {
           <h2>Pre-Operative Information</h2>
           <ul>
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tubular-surgery">Surgical Guide for Minimally Invasive Tubular Surgery</Link></li>
-            <li><Link href="/materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
-            <li><Link href="/materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
-            <li><Link href="/materials/surgical-guide-laminoplasty">Surgical Guide for Laminoplasty</Link></li>
-            <li><Link href="/materials/surgical-guide-cervical-disc-arthroplasty">Cervical Disc Arthroplasty</Link></li>
+            <li><Link href="/Materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
+            <li><Link href="/Materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
+            <li><Link href="/Materials/surgical-guide-laminoplasty">Surgical Guide for Laminoplasty</Link></li>
+            <li><Link href="https://www.nuvasive.com/procedures/ctdr/" target='__blank'>Cervical Disc Arthroplasty</Link></li>
+            <li><Link href="https://drive.google.com/file/d/1JxGHNL9sgi19ncuJDXJkeAtblMfRLsCi/view" target='__blank'>Occipitocervical Fusion</Link></li>
           </ul>
         </div>
         
         <div className={styles.materialGroup}>
           <h2>Post-Operative Information</h2>
           <ul>
-            <li><Link href="/materials/post-op-instructions">Post-Op Instructions</Link></li>
-            <li><Link href="/materials/post-op-posture">Post-Op Posture</Link></li>
-            <li><Link href="/materials/hans-kraus-post-op-exercises">Hans-Kraus Post-Op Exercises</Link></li>
-            <li><Link href="/materials/post-op-activity-timeline">Post-Op Activity Timeline</Link></li>
-            <li><Link href="/materials/dr-ricky-singh-exercises">Dr. Ricky Singh&apos;s Exercises &gt; 6 Weeks After Surgery</Link></li>
+            <li><Link href="/Materials/post-op-instructions">Post-Op Instructions</Link></li>
+            <li><Link href="/Materials/post-op-posture">Post-Op Posture</Link></li>
+            <li><Link href="/Materials/hans-kraus-post-op-exercises">Hans-Kraus Post-Op Exercises</Link></li>
+            <li><Link href="/Materials/post-op-activity-timeline">Post-Op Activity Timeline</Link></li>
+            <li><Link href="https://www.rickysinghmd.com/exercises/" target='__blank'>Dr. Ricky Singh&apos;s Exercises &gt; 6 Weeks After Surgery</Link></li>
           </ul>
         </div>
 
@@ -39,15 +40,16 @@ const MaterialComponent: React.FC = () => {
         <div className={styles.materialGroup}>
           <h2>Referrals</h2>
           <ul>
-            <li><Link href="/materials/physical-therapy-chiropractors">Physical Therapy and Chiropractors</Link></li>
-            <li><Link href="/materials/braces-lumbar-support">Braces for Lumbar Support</Link></li>
-            <li><Link href="/materials/pillows-neck-pain">Pillows for Neck Pain</Link></li>
-            <li><Link href="/materials/spine-center-referrals">Spine Center Referrals</Link></li>
-            <li><Link href="/materials/neurology-referrals">Neurology Referrals</Link></li>
-            <li><Link href="/materials/norman-marcus-pain-referral">Norman Marcus Pain Referral</Link></li>
-            <li><Link href="/materials/weill-cornell-imaging-locations">Weill Cornell Imaging Locations</Link></li>
-            <li><Link href="/materials/psychology-referrals">Psychology Referrals</Link></li>
-            <li><Link href="/materials/hss-ortho-referrals">HSS Ortho Referrals</Link></li>
+            <li><Link href="/Materials/physical-therapy-chiropractors">Physical Therapy and Chiropractors</Link></li>
+            <li><Link href="/Materials/braces-lumbar-support">Braces for Lumbar Support</Link></li>
+            <li><Link href="https://www.amazon.com/UTTU-Sandwich-Adjustable-Orthopedic-CertiPUR-US/dp/B079FK5QKD?th=1"
+            target='__blank'>Pillows for Neck Pain</Link></li>
+            <li><Link href="/Materials/spine-center-referrals">Spine Center Referrals</Link></li>
+            <li><Link href="/Materials/neurology-referrals">Neurology Referrals</Link></li>
+            <li><Link href="/Materials/norman-marcus-pain-referral">Norman Marcus Pain Referral</Link></li>
+            <li><Link href="/Materials/weill-cornell-imaging-locations">Weill Cornell Imaging Locations</Link></li>
+            <li><Link href="/Materials/psychology-referrals">Psychology Referrals</Link></li>
+            <li><Link href="/Materials/hss-ortho-referrals">HSS Ortho Referrals</Link></li>
           </ul>
         </div>
 
@@ -55,13 +57,14 @@ const MaterialComponent: React.FC = () => {
         <div className={styles.materialGroup}>
           <h2>Dr. Härtl&apos;s YouTube Channel & Other Patient Education Materials</h2>
           <ul>
-            <li><Link href="/materials/testimonials">Testimonials</Link></li>
-            <li><Link href="/materials/surgical-videos">Surgical Videos</Link></li>
-            <li><Link href="/materials/spine-time">Spine Time</Link></li>
-            <li><Link href="/materials/patient-education-smiss-videos">Patient Education SMISS Videos</Link></li>
-            <li><Link href="/materials/about-och-spine-hospital">About Och Spine Hospital</Link></li>
-            <li><Link href="/materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
-            <li><Link href="/materials/other">Other</Link></li>
+            
+            <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
+            <li><Link href="/Materials/spine-time">Spine Time</Link></li>
+            <li><Link href="/Materials/patient-education-smiss-videos">Patient Education SMISS Videos</Link></li>
+            <li><Link href="/Materials/about-och-spine-hospital">About Och Spine Hospital</Link></li>
+            <li><Link href="/Materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
+            <li><Link href="/Materials/other">Other</Link></li>
+            <li><Link href="/Materials/testimonials">Testimonials</Link></li>
           </ul>
         </div>
 
@@ -69,13 +72,13 @@ const MaterialComponent: React.FC = () => {
         <div className={styles.materialGroup}>
           <h2>Healthy Spine</h2>
           <ul>
-            <li><Link href="/materials/sports-activities-beneficial-harmful-back">Sports Activities Beneficial or Harmful to Your Back</Link></li>
-            <li><Link href="/materials/vitamins-supplements">Vitamins and Supplements</Link></li>
-            <li><Link href="/materials/10-rules-healthy-back">10 Rules for a Healthy Back</Link></li>
-            <li><Link href="/materials/tips-tricks-protecting-spine">Tips and Tricks for Protecting Your Spine</Link></li>
-            <li><Link href="/materials/supplements-nerve-regeneration">Supplements for Nerve Regeneration</Link></li>
-            <li><Link href="/materials/tai-chi">Tai Chi</Link></li>
-            <li><Link href="/materials/book-recommendations-dr-hartl">Book Recommendations by Dr. Härtl</Link></li>
+            <li><Link href="/Materials/sports-activities-beneficial-harmful-back">Sports Activities Beneficial or Harmful to Your Back</Link></li>
+            <li><Link href="/Materials/vitamins-supplements">Vitamins and Supplements</Link></li>
+            <li><Link href="/Materials/10-rules-healthy-back">10 Rules for a Healthy Back</Link></li>
+            <li><Link href="/Materials/tips-tricks-protecting-spine">Tips and Tricks for Protecting Your Spine</Link></li>
+            <li><Link href="https://wa-qi.com/" target='__blank'>Supplements for Nerve Regeneration</Link></li>
+            <li><Link href="/Materials/tai-chi">Tai Chi</Link></li>
+            <li><Link href="/Materials/book-recommendations-dr-hartl">Book Recommendations by Dr. Härtl</Link></li>
           </ul>
         </div>
       </div>
