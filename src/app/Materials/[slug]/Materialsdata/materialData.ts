@@ -447,5 +447,103 @@ export const materialData = {
           },
         ],
       },
+      "spine-time" :{
+        title:"Spine Time",
+        content:
+       "Explore spine videos, Enjoy!",
+        media: [
+          {
+            type: "video",
+            src: "https://youtu.be/yNNoIUujMig",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/JhU23l9Ka3E",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/blKa7RxhWQs",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/YvkazUqMkWA",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/w8-XuzV6g2c",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/Lr_b_0r6x8Y",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/vheGAiNyQWI",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+        ],
+      },
+      "finding-balance-neurosurgery" :{
+        title:"Exploration, Neurosurgery, and Finding Balance in Life",
+        content:
+       "In this remarkable talk, Dr. Hartl talks about exploration, photography, mountaineering, and, of course, neurosurgery.",
+        media: [
+          {
+            type: "video",
+            src: "https://youtu.be/L968wcWuAxw?si=_Z6lRDn3m_bfIOHR",
+            title: "Exploration, Neurosurgery, and Finding Balance in Life",
+            previewImage: "/img/surgy1.png",
+          },
+        ],
+      },
+      "testimonials" :{
+        title:"Testimonials",
+        content:
+       "In this remarkable talk, Dr. Hartl talks about exploration, photography, mountaineering, and, of course, neurosurgery.",
+        media: [
+          {
+            type: "video",
+            src: "https://youtu.be/F7Gl05S6SZk",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/ns5M41ePn14",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/ByqSJ8XleYc",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/LbQFK64lVYE",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/AQ3zAqrGYQw",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+        ],
+      },
 };
-  
