@@ -8,222 +8,234 @@
     color: $dark-blue;
     font-family: $font-family-base;
     font-size: $font-size-normal;
-
+  
     .heroSection {
+      display: flex;
+      align-items: stretch; /* Stretch to fill the height */
+      justify-content: flex-start;
+      height: 60vh;
+      width: 100%;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: $primary-blue;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      padding: 0;
+      
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+  
+      .contactContent {
+        z-index: 2;
+        width: 40%;
+        padding: 4rem;
         display: flex;
-        align-items: stretch; /* Stretch to fill the height */
-        justify-content: flex-start;
-        height: 60vh;
-        width: 100%;
-        color: white;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: $primary-blue;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-        padding: 0;
-        @media (max-width: 768px) {
-          // flex-direction: column-reverse;
-           //justify-content: end;
-          }
-   
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(3, 112, 255, 0.9);
+        border-radius: 8px 0 0 8px;
+        padding-left: 7.25rem;
         
-
-        .contactContent {
-            z-index: 2;
-            width: 40%;
-            padding: 4rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: rgba(3, 112, 255, 0.9);
-            border-radius: 8px 0 0 8px; 
-            padding-left: 7.25rem;
-            @media (max-width: 1200px) {
-                padding: 0rem 4rem;
-              }
-            @media (max-width: 900px) {
-                padding-left: 1.5rem;
-              }
-              @media (max-width: 768px) {
-                 positon:absolute;
-
-                }
-            h1 {
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-                color: white;
-                font-weight: 700;
-                line-height: 2rem;
-                @media (max-width: 900px) {
-                    font-size: 2rem;
-                    line-height:2.5rem;
-                  }
-                  @media (max-width: 768px) {
-                    //width:65%;
-                    margin-bottom: 1rem;
-                    font-size:1.5rem;
-                    line-height:2rem;
-                  }
-                  @media (max-width: 600px) {
-                    //width:65%;
-                    margin-bottom: 0.6rem;
-                    font-size:1.2rem;
-                    line-height:2rem;
-                  }
-            }
-
-            p {
-                font-size: 1.2rem;
-                color: #dddfe8;
-                @media (max-width: 768px) {
-                    //width:65%;
-                    margin-bottom: 0.6rem;
-                    font-size:1rem;
-                    line-height:1.5rem;
-                  }
-            }
-        }
-
-        .mapContainer {
-            z-index: 1;
-            width: 60%;
-            position: relative;
-
-            iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 0 8px 8px 0; /* Keep the right border-radius */
-                border: none;
-            }
-        }
-    }
-
-    .content {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin: 2.5rem auto;
-        padding: 2rem 7.125rem;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
         @media (max-width: 1200px) {
-            padding: 0rem 4rem;
-          }
+          padding: 0rem 4rem;
+        }
         @media (max-width: 900px) {
-            padding-left: 1.5rem;
-            flex-direction: column-reverse;
-            gap:2rem;
+          padding-left: 1.5rem;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+          padding: 2rem 1.5rem;
+          border-radius: 0 0 8px 8px;
+          background: rgba(3, 112, 255, 0.8);
+        }
+        
+        h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          color: white;
+          font-weight: 700;
+          line-height: 2rem;
+          
+          @media (max-width: 900px) {
+            font-size: 2rem;
+            line-height: 2.5rem;
           }
-
-        .infoSection {
-            flex: 1;
-            padding-right: 2rem;
-
-            h2 {
-                font-size: $font-size-big;
-                color: $primary-blue;
-                margin-bottom: 1rem;
-                font-weight: $font-weight-bold;
-                position: relative;
-                padding-bottom: 0.5rem;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 50px;
-                    height: 3px;
-                    background-color: $hover-blue;
-                    border-radius: 3px;
-                }
-            }
-
-            p {
-                font-size: $font-size-normal;
-                line-height: 1.6;
-                margin-bottom: 1.5rem;
-                color: $dark-blue;
-            }
+          @media (max-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+          @media (max-width: 600px) {
+            font-size: 1.2rem;
+            line-height: 2rem;
+          }
         }
-
-        .formSection {
-            flex: 1;
-
-            h2 {
-                font-size: $font-size-big;
-                color: $primary-blue;
-                margin-bottom: 1rem;
-                font-weight: $font-weight-bold;
-                position: relative;
-                padding-bottom: 0.5rem;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 50px;
-                    height: 3px;
-                    background-color: $hover-blue;
-                    border-radius: 3px;
-                }
-            }
-
-            .formGroup {
-                margin-bottom: 1.5rem;
-
-                label {
-                    display: block;
-                    margin-bottom: 0.5rem;
-                    font-weight: $font-weight-medium;
-                    color: $dark-blue;
-                }
-
-                input, textarea {
-                    width: 100%;
-                    padding: 0.75rem;
-                    border-radius: 4px;
-                    border: 1px solid $border-blue;
-                    font-size: $font-size-normal;
-                    color: $dark-blue;
-                    background-color: #f9f9f9;
-
-                    &:focus {
-                        outline: none;
-                        border-color: $primary-blue;
-                    }
-                }
-
-                textarea {
-                    resize: vertical;
-                }
-            }
-
-            .submitButton {
-                background-color: $primary-blue;
-                color: white;
-                padding: 0.75rem 1.5rem;
-                border: none;
-                border-radius: 4px;
-                font-size: $font-size-normal;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-
-                &:hover {
-                    background-color: $hover-blue;
-                }
-            }
+  
+        p {
+          font-size: 1.2rem;
+          color: #dddfe8;
+          
+          @media (max-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
         }
+      }
+  
+      .mapContainer {
+        z-index: 1;
+        width: 60%;
+        position: relative;
+        
+        @media (max-width: 768px) {
+          width: 100%;
+          height: 300px; /* Adjust height for mobile */
+        }
+  
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 0 8px 8px 0; /* Keep the right border-radius */
+          border: none;
+  
+          @media (max-width: 768px) {
+            border-radius: 8px 8px 0 0;
+          }
+        }
+      }
     }
-}
+  
+    .content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 2.5rem auto;
+      padding: 2rem 7.125rem;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+  
+      @media (max-width: 1200px) {
+        padding: 0rem 4rem;
+      }
+      @media (max-width: 900px) {
+        padding-left: 1.5rem;
+        flex-direction: column-reverse;
+        gap: 2rem;
+      }
+  
+      .infoSection {
+        flex: 1;
+        padding-right: 2rem;
+  
+        h2 {
+          font-size: $font-size-big;
+          color: $primary-blue;
+          margin-bottom: 1rem;
+          font-weight: $font-weight-bold;
+          position: relative;
+          padding-bottom: 0.5rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+  
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: $hover-blue;
+            border-radius: 3px;
+          }
+        }
+  
+        p {
+          font-size: $font-size-normal;
+          line-height: 1.6;
+          margin-bottom: 1.5rem;
+          color: $dark-blue;
+        }
+      }
+  
+      .formSection {
+        flex: 1;
+  
+        h2 {
+          font-size: $font-size-big;
+          color: $primary-blue;
+          margin-bottom: 1rem;
+          font-weight: $font-weight-bold;
+          position: relative;
+          padding-bottom: 0.5rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+  
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: $hover-blue;
+            border-radius: 3px;
+          }
+        }
+  
+        .formGroup {
+          margin-bottom: 1.5rem;
+  
+          label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: $font-weight-medium;
+            color: $dark-blue;
+          }
+  
+          input,
+          textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 4px;
+            border: 1px solid $border-blue;
+            font-size: $font-size-normal;
+            color: $dark-blue;
+            background-color: #f9f9f9;
+  
+            &:focus {
+              outline: none;
+              border-color: $primary-blue;
+            }
+          }
+  
+          textarea {
+            resize: vertical;
+          }
+        }
+  
+        .submitButton {
+          background-color: $primary-blue;
+          color: white;
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 4px;
+          font-size: $font-size-normal;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: $hover-blue;
+          }
+        }
+      }
+    }
+  }
+  
