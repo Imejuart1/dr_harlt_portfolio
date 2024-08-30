@@ -546,4 +546,41 @@ export const materialData = {
           },
         ],
       },
+      "other" :{
+        title:"Exhibitiion tour",
+        content:
+       "Explore Exhibition tours with Dr. Hartl.",
+        media: [
+          {
+            type: "video",
+            src: "https://youtu.be/F7Gl05S6SZk",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/ns5M41ePn14",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/ByqSJ8XleYc",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/LbQFK64lVYE",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://youtu.be/AQ3zAqrGYQw",
+            title: "",
+            previewImage: "/img/surgy1.png",
+          },
+        ],
+      },
 };

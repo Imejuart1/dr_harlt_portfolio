@@ -1,4 +1,8 @@
 @import '../../../styles/colors.scss';
+
+.mainmaterial{
+ 
+}
 .heroSection {
   position: relative;
   display: flex;
@@ -130,6 +134,15 @@
   background: linear-gradient(135deg, $primary-blue, #5B3EAA);
   padding: 2rem 7.125rem;
   margin-bottom: 3rem;
+  @media (max-width: 1200px) {
+    padding: 0rem 4rem;
+  }
+
+  @media (max-width: 900px) {
+    display: flex;
+    padding: 0rem 1.5rem;
+    flex-direction: column;
+  }
 }
 
 .mediaContainer {

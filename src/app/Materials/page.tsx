@@ -77,7 +77,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="https://smiss.org/patient-education-videos/">Patient Education SMISS Videos</Link></li>
             <li><Link href="https://www.nyp.org/ochspine/services">About Och Spine Hospital</Link></li>
             <li><Link href="/Materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
-            <li><Link href="/Materials/other">Other</Link></li>
+            <li><Link href="/Materials/other">Exhibitiion tour</Link></li>
             <li><Link href="/Materials/testimonials">Testimonials</Link></li>
           </ul>
         </div>

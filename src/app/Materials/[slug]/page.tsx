@@ -110,7 +110,7 @@ s
                 type={item.type}
                 src={item.src}
                 title={item.title}
-                previewImage={item.previewImage}
+               
               />
             ))}
 
