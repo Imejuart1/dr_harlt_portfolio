@@ -7,17 +7,20 @@ const projectSections = [
     {
         title: "Research",
         imageUrl: "img/stemcells2.jpeg", // Replace with your actual image paths
+       text:"Discover our cutting-edge research that is shaping the future of spinal care and regeneration",
         link: "Project/research",
     },
     {
         title: "Tanzania",
-        imageUrl: "path-to-tanzania-image.jpg", // Replace with your actual image paths
-        link: "/projects/tanzania",
+        imageUrl: "img/tanzania.png", // Replace with your actual image paths
+        text:"From New York to Tanzania: How Dr. Roger Hartl has spent 15 years creating a global impact,He sought out ways to return to Africa through Doctors Without Borders",
+        link: "Project/tanzania-project",
     },
     {
-        title: "Imaging",
-        imageUrl: "path-to-imaging-image.jpg", // Replace with your actual image paths
-        link: "/projects/imaging",
+        title: "Physician Education ",
+        imageUrl: "img/nycmiss.webp", // Replace with your actual image paths
+        text:'Our summer master class in tubular decompression now open for registration',
+        link: "https://nyc-miss.org/",
     },
     // Add more sections as needed
 ];
@@ -39,7 +42,8 @@ const ProjectComponent = () => {
                     <div key={index} className={styles.projectItem}>
                         <img src={section.imageUrl} alt={section.title} />
                         <h3>{section.title}</h3>
-                        <Link href={section.link}>Learn More</Link>
+                        <p>{section.text}</p>
+                        <Link href={section.link} target='_blank'>Learn More</Link>
                     </div>
                 ))}
             </div>

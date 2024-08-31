@@ -2,6 +2,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './HonorsAndAwards.module.scss';
+import Link from 'next/link';
 
 const images = [
   'img/Brazil.png',
@@ -11,6 +12,7 @@ const images = [
 
 const brazilimages = [
   'img/Brazil.png',
+  'img/Brazil2.png',
   'img/Brazil2.png',
 ];
 
@@ -227,6 +229,32 @@ const HonorsAndAwardsPage: React.FC = () => {
               )}
             </div>
           </div>
+
+          <div className={styles.section}>
+          <div className={styles.textContent}>
+                    <h2>MOI Tanzania TV 2023 Feature</h2>
+                    <p>International training on the brain, spine, and nervous system held in Tanzania </p>
+                    <Link 
+                    href="https://www.youtube.com/watch?v=ceQxOqsr2uE"
+                    target='__blank'>Watch Video</Link>
+                </div>
+                <div className={styles.videoWrapper}>
+                <iframe src="https://www.youtube.com/embed/ceQxOqsr2uE?si=BV1-7JrOtsmTXvBc"  allowFullScreen className={styles.sectionImage}/>
+                </div>
+            </div>
+
+            <div className={styles.sectionReverse}>
+            <div className={styles.textContent}>
+                    <h2>MOI Tanzania TV 2024 Feature</h2>
+                    <p>International training on the brain, spine, and nervous system held in Tanzania </p>
+                    <Link 
+                    href="https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/view"
+                    target='__blank'>Watch Video</Link>
+                </div>
+                <div className={styles.imageContainer2}>
+                <iframe src="https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/preview" allowFullScreen className={styles.sectionImage}/>
+                </div>
+            </div>
 
           <div className={styles.section}>
             <a href="https://podcasts.apple.com/us/podcast/beckers-healthcare-spine-and-orthopedic-podcast/id1512530263" target="_blank" rel="noopener noreferrer">

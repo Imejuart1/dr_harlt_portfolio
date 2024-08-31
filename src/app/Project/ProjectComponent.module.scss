@@ -97,6 +97,10 @@
             overflow: hidden;
             transition: transform 0.3s ease;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; // Ensures content is spaced out
+            height: 100%; // Makes the item take up full height
 
             &:hover {
                 transform: translateY(-10px);
@@ -104,35 +108,41 @@
 
             img {
                 width: 100%;
-                height: auto;
+                height: 20rem;
                 object-fit: cover;
             }
 
             h3 {
                 font-size: $font-size-big;
                 color: $primary-blue;
-                margin: 1rem 0;
+                margin: 1rem 0 0rem 0;
                 font-weight: $font-weight-bold;
                 padding-bottom: 0.5rem;
                 @media (max-width: 900px) {
                     font-size: 2rem;
-                    line-height:2.5rem;
-                  }
-                  @media (max-width: 768px) {
-                    //width:65%;
-                    margin-bottom: 1rem;
-                    font-size:2rem;
-                    line-height:2rem;
-                  }
-                  @media (max-width: 600px) {
-                    //width:65%;
-                    margin-bottom: 0.6rem;
-                    font-size:1.5rem;
-                    line-height:2rem;
-                  }
+                    line-height: 2.5rem;
+                }
+                @media (max-width: 768px) {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+                @media (max-width: 600px) {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+
+            p {
+                margin-bottom: 0.5rem;
+                padding: 0.5rem;
+                font-size: 1rem;
+                @media (max-width: 600px) {
+                    font-size: 1rem;
+                }
             }
 
             a {
+                margin-top: auto; // Pushes the anchor to the bottom
                 display: block;
                 padding: 1rem;
                 background-color: $primary-blue;
