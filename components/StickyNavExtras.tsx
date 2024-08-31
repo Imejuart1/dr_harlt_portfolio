@@ -96,12 +96,12 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
             <li className={isActive('/Materials') ? styles.activeLink : ''}>
               <Link href="/Materials" onClick={handleCloseMenu}>Materials</Link>
             </li>
-            <li className={isActive('/Contact') ? styles.activeLink : ''}>
-              <Link href="/Contact" onClick={handleCloseMenu}>Contact</Link>
-            </li>
-            <li className={isActive('/News') ? styles.activeLink : ''}>
-              <Link href="/News" onClick={handleCloseMenu}>News</Link>
-            </li>
+            <li className={isActive('/Project') ? styles.activeLink : ''}>
+            <Link href="/Project">Projects</Link>
+          </li>
+          <li className={isActive('/Contact') ? styles.activeLink : ''}>
+            <Link href="/Contact">Contact</Link>
+          </li>
           </ul>
         <button className={styles.contactButton}>Contact Me</button>
       </div>
@@ -125,12 +125,13 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
             <Link href="/Materials">Materials</Link>
           </li>
+          <li className={isActive('/Project') ? styles.activeLink : ''}>
+            <Link href="/Project">Projects</Link>
+          </li>
           <li className={isActive('/Contact') ? styles.activeLink : ''}>
             <Link href="/Contact">Contact</Link>
           </li>
-          <li className={isActive('/News') ? styles.activeLink : ''}>
-            <Link href="/News">News</Link>
-          </li>
+          
         </ul>
         <button className={styles.contactButton}>Contact Me</button>
       </div>

@@ -51,11 +51,11 @@ const Navbar: React.FC = () => {
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
             <Link href="/Materials">Materials</Link>
           </li>
+          <li className={isActive('/Project') ? styles.activeLink : ''}>
+            <Link href="/Project">Projects</Link>
+          </li>
           <li className={isActive('/Contact') ? styles.activeLink : ''}>
             <Link href="/Contact">Contact</Link>
-          </li>
-          <li className={isActive('/News') ? styles.activeLink : ''}>
-            <Link href="/News">News</Link>
           </li>
         </ul>
         <button className={styles.contactButton}>Contact Me</button>
