@@ -35,7 +35,7 @@ const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, title, previe
           <a href={src} target="_blank">
           <div className={styles.videoContainer}>
             <h2 className={styles.videoTitle}>{title}</h2>
-            <iframe src={src} title={title} className={styles.videoViewer} allowFullScreen></iframe>
+            <iframe src={src} title={title} className={styles.videoViewer} referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
           </a>
         )}

@@ -1,14 +1,14 @@
-@import '../../styles/colors.scss';
+@import '../../../styles/colors.scss';
 
-.projectSection {
+.researchSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
     color: $dark-blue;
     font-family: $font-family-base;
     font-size: $font-size-normal;
-    overflow-x: hidden !important;
+    width: 100%;
+    //padding: 2rem 0;
 
     .heroSection {
         position: relative;
@@ -27,7 +27,7 @@
         margin-bottom: 2rem;
         transition: background-image 1s ease-in-out;
         @media (max-width: 768px) {
-          padding-left: 1.5rem;
+            padding-left: 1.5rem;
         }
       
         &::before {
@@ -47,7 +47,7 @@
             z-index: 2;
             text-align: left;
             margin-top: 16rem;
-       
+
             h1 {
                 font-size: 2.5rem;
                 margin-bottom: 1rem;
@@ -55,65 +55,99 @@
                 font-weight: 700;
                 width: 100%;
                 @media (max-width: 768px) {
-                  font-size: 2rem;
+                    font-size: 2rem;
                 }
                 @media (max-width: 600px) {
-                  font-size: 1.5rem;
+                    font-size: 1.5rem;
                 }
             }
-      
+
             p {
                 font-size: 1.2rem;
                 color: #dddfe8;
                 @media (max-width: 600px) {
-                  font-size: 1rem;
+                    font-size: 1rem;
                 }
             }
         }
     }
 
-    .projectGrid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+    .contentSection {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
+        padding: 0 7.125rem;  
         margin: 2rem 0;
-        padding: 0 7.125rem;      
 
+        
         @media (max-width: 1200px) {
-            grid-template-columns: repeat(2, 1fr);
+            //grid-template-columns: repeat(2, 1fr);
             padding: 0 4rem;
         }
       
         @media (max-width: 900px) {
-            grid-template-columns: repeat(1, 1fr);
+          //  grid-template-columns: repeat(1, 1fr);
             padding: 0 1.5rem;
         }
 
-        .projectItem {
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-            text-align: center;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            //padding: 1rem;
+        }
 
-            &:hover {
-                transform: translateY(-10px);
+        .imageContainer2 {
+            flex: 1;
+            background-color: #dddfe8;
+            box-shadow: 0 2px 2px $primary-blue;
+            width: 100%;
+            height: 20rem;
+        
+            @media (max-width: 768px) {
+                padding: 0;
+                margin-top:2rem;
+                height:0rem;
+                background-color: #dddfe8;
+                margin-bottom: 1.5rem;
+                box-shadow: 0 !important;
             }
-
-            img {
+        
+            img, iframe {
                 width: 100%;
-                height: auto;
-                object-fit: cover;
+                height: 100%; // Adjust height to fill the container
+                object-fit: contain; // Keep entire content visible without cropping
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                @media (max-width: 900px) {
+                    padding: 0;
+                   
+                    height:20rem;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 !important;
+                }
+            }
+        
+            iframe {
+                @media (max-width: 768px) {
+                    height: 240px !important; // Ensure this matches the aspect ratio or use a more responsive unit
+                }
+            }
+        }
+        
+
+        .textContainer {
+            flex: 1;
+            padding-left: 2rem;
+            @media (max-width: 768px) {
+                padding-left: 0;
             }
 
-            h3 {
-                font-size: $font-size-big;
+            h2 {
+                font-size: 2rem;
                 color: $primary-blue;
-                margin: 1rem 0;
-                font-weight: $font-weight-bold;
-                padding-bottom: 0.5rem;
+                margin-bottom: 1rem;
+                font-weight: 700;
                 @media (max-width: 900px) {
                     font-size: 2rem;
                     line-height:2.5rem;
@@ -132,9 +166,20 @@
                   }
             }
 
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+                color: $dark-blue;
+                @media (max-width: 600px) {
+                    font-size: 1rem;
+                    line-height:1.5rem;
+                  }
+            }
+
             a {
-                display: block;
-                padding: 1rem;
+                display: inline-block;
+                padding: 0.75rem 1.5rem;
                 background-color: $primary-blue;
                 color: white;
                 text-decoration: none;

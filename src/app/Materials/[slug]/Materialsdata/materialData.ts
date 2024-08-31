@@ -50,7 +50,7 @@ export const materialData = {
         media: [
           {
             type: "video",
-            src: "https://youtu.be/_7WVuwZ1Odc",
+            src: "https://www.youtube.com/embed/_7WVuwZ1Odc",
             title: "Transforaminal Interbody Fusion of the Lumbar Spine (MIS TLIF)",
           },
           {
@@ -73,7 +73,7 @@ export const materialData = {
           },
           {
             type: "video",
-            src: "https://youtu.be/9iXj1jAg5Vg",
+            src: "https://www.youtube.com/embed/9iXj1jAg5Vg",
             title: "Surgical Guide for Minimally invasive spinal fusion.",
             previewImage: "/img/surgy1.png",
           },
@@ -109,7 +109,7 @@ export const materialData = {
           },
           {
             type: "video",
-            src: "https://youtu.be/pgodXc8sqjg",
+            src: "https://www.youtube.com/embed/pgodXc8sqjg",
             title: "Activity after Spine Surgery",
             previewImage: "/img/surgy1.png",
           },
@@ -363,73 +363,73 @@ export const materialData = {
         media: [
           {
             type: "video",
-            src: "https://youtu.be/nQOpQtxvtDI",
+            src: "https://www.youtube.com/embed/nQOpQtxvtDI",
             title: "Cervical ULBD MIS Tubular Surgery ",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/UTc3eNLauUw",
+            src: "https://www.youtube.com/embed/UTc3eNLauUw",
             title: "Posterior Cervical Foraminotomy (MIS PCF)",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/9iXj1jAg5Vg",
+            src: "https://www.youtube.com/embed/9iXj1jAg5Vg",
             title: "Single Stage Lateral Lumbar Spine Interbody Fusion (MIS-SSLIF)",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/eirQBtNagiI",
+            src: "https://www.youtube.com/embed/eirQBtNagiI",
             title: "MIS Lumbar AR Tumor Resection (Augmented Reality)",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/_7WVuwZ1Odc",
+            src: "https://www.youtube.com/embed/_7WVuwZ1Odc",
             title: "Transforaminal Interbody Fusion of the Lumbar Spine (MIS TLIF)",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/O7m0paEhn60",
+            src: "https://www.youtube.com/embed/O7m0paEhn60",
             title: "MIS Microdiscectomy for Lumbar Giant Spinal Disc Herniation",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/SXAP0TNRbFM",
+            src: "https://www.youtube.com/embed/SXAP0TNRbFM",
             title: "MIS Over the Top ULBD for Contralateral Foraminal Disc Herniation",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/B3xjrJ8kMpc",
+            src: "https://www.youtube.com/embed/B3xjrJ8kMpc",
             title: "MIS Lumbar Laminectomy and Contralateral Foraminotomy",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/NJ5nNi3-JvI",
+            src: "https://www.youtube.com/embed/NJ5nNi3-JvI",
             title: "Thoracic Spinal Cord Herniation Resection and Dural Repair",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/9rJbNYdkAaE",
+            src: "https://www.youtube.com/embed/9rJbNYdkAaE",
             title: "MIS Dural Repair Technique",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/AfsXdKMvRrc",
+            src: "https://www.youtube.com/embed/AfsXdKMvRrc",
             title: "MIS L4-5 Over-the-Top ULBD for Lumbar Spinal Stenosis ",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/t3RTCaorCWE",
+            src: "https://www.youtube.com/embed/t3RTCaorCWE",
             title: "Tubular MIS injection of BMAC after Discectomy into Intradiscal Space",
             previewImage: "/img/surgy1.png",
           },
@@ -441,7 +441,7 @@ export const materialData = {
           },
           {
             type: "video",
-            src: "https://youtu.be/Eo1GtDXxJYg",
+            src: "https://www.youtube.com/embed/Eo1GtDXxJYg",
             title: "Optimizing Alignment for Occipitocervical Instability",
             previewImage: "/img/surgy1.png",
           },
@@ -454,43 +454,43 @@ export const materialData = {
         media: [
           {
             type: "video",
-            src: "https://youtu.be/yNNoIUujMig",
+            src: "https://www.youtube.com/embed/yNNoIUujMig",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/JhU23l9Ka3E",
+            src: "https://www.youtube.com/embed/JhU23l9Ka3E",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/blKa7RxhWQs",
+            src: "https://www.youtube.com/embed/blKa7RxhWQs",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/YvkazUqMkWA",
+            src: "https://www.youtube.com/embed/YvkazUqMkWA",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/w8-XuzV6g2c",
+            src: "https://www.youtube.com/embed/w8-XuzV6g2c",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/Lr_b_0r6x8Y",
+            src: "https://www.youtube.com/embed/Lr_b_0r6x8Y",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/vheGAiNyQWI",
+            src: "https://www.youtube.com/embed/vheGAiNyQWI",
             title: "",
             previewImage: "/img/surgy1.png",
           },
@@ -503,7 +503,7 @@ export const materialData = {
         media: [
           {
             type: "video",
-            src: "https://youtu.be/L968wcWuAxw?si=_Z6lRDn3m_bfIOHR",
+            src: "https://www.youtube.com/embed/L968wcWuAxw?si=_Z6lRDn3m_bfIOHR",
             title: "Exploration, Neurosurgery, and Finding Balance in Life",
             previewImage: "/img/surgy1.png",
           },
@@ -516,31 +516,31 @@ export const materialData = {
         media: [
           {
             type: "video",
-            src: "https://youtu.be/F7Gl05S6SZk",
+            src: "https://www.youtube.com/embed/F7Gl05S6SZk",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/ns5M41ePn14",
+            src: "https://www.youtube.com/embed/ns5M41ePn14",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/ByqSJ8XleYc",
+            src: "https://www.youtube.com/embed/ByqSJ8XleYc",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/LbQFK64lVYE",
+            src: "https://www.youtube.com/embed/LbQFK64lVYE",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/AQ3zAqrGYQw",
+            src: "https://www.youtube.com/embed/AQ3zAqrGYQw",
             title: "",
             previewImage: "/img/surgy1.png",
           },
@@ -553,34 +553,66 @@ export const materialData = {
         media: [
           {
             type: "video",
-            src: "https://youtu.be/F7Gl05S6SZk",
+            src: "https://www.youtube.com/embed/F7Gl05S6SZk",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/ns5M41ePn14",
+            src: "https://www.youtube.com/embed/ns5M41ePn14",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/ByqSJ8XleYc",
+            src: "https://www.youtube.com/embed/ByqSJ8XleYc",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/LbQFK64lVYE",
+            src: "https://www.youtube.com/embed/LbQFK64lVYE",
             title: "",
             previewImage: "/img/surgy1.png",
           },
           {
             type: "video",
-            src: "https://youtu.be/AQ3zAqrGYQw",
+            src: "https://www.youtube.com/embed/AQ3zAqrGYQw",
             title: "",
             previewImage: "/img/surgy1.png",
           },
         ],
+      },
+      "stem-cell-guide" :{
+        title:"Guide for Stem Cell Procedure",
+        content:
+       "Explore guides and video for Stem Cell Procedure.",
+        media: [
+          {
+            type: "pdf",
+            src: "https://drive.google.com/file/d/1pyVglJ4DlbElneAWGzF7tVi8zGolwf9T/preview",
+            title: "Stem Cell Information Sheet-branded",
+            previewImage: "/img/surgy1.png",
+          },
+          {
+            type: "video",
+            src: "https://www.youtube.com/embed/t3RTCaorCWE",
+            title: "Tubular MIS injection of BMAC after discectomy into intradiscal space",
+            previewImage: "/img/surgy1.png",
+          },
+        ]
+      },
+      "disc-degeneration" :{
+        title:"Disc Degeneration Repair and Reproduction",
+        content:
+       "Explore guide for Disc Degeneration Repair and Reproduction.",
+        media: [
+          {
+            type: "pdf",
+            src: "https://drive.google.com/file/d/1HO9RSUZ1JPctXPcIb9o7Mk2r-s_QnSfJ/preview",
+            title: "Building a Better Spine",
+            previewImage: "/img/surgy1.png",
+          }
+        ]
       },
 };

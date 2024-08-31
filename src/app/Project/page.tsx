@@ -6,8 +6,8 @@ import styles from './ProjectComponent.module.scss';
 const projectSections = [
     {
         title: "Research",
-        imageUrl: "img/ROGERSPINER.png", // Replace with your actual image paths
-        link: "img/ROGERSPINER.png",
+        imageUrl: "img/stemcells2.jpeg", // Replace with your actual image paths
+        link: "Project/research",
     },
     {
         title: "Tanzania",
