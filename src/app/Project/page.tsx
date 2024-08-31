@@ -6,8 +6,8 @@ import styles from './ProjectComponent.module.scss';
 const projectSections = [
     {
         title: "Research",
-        imageUrl: "path-to-research-image.jpg", // Replace with your actual image paths
-        link: "/projects/research",
+        imageUrl: "img/ROGERSPINER.png", // Replace with your actual image paths
+        link: "img/ROGERSPINER.png",
     },
     {
         title: "Tanzania",
@@ -26,7 +26,7 @@ const ProjectComponent = () => {
     return (
         <section className={styles.projectSection}>
             {/* Hero Section */}
-            <div className={styles.heroSection} style={{ backgroundImage: `url('img/your-hero-image.jpg')` }}>
+            <div className={styles.heroSection} style={{ backgroundImage: `url('/img/ROGERSPINER.png')` }}>
                 <div className={styles.content}>
                     <h1>Explore Our Projects</h1>
                     <p>Delve into our groundbreaking research, international collaborations, and advanced imaging projects.</p>
