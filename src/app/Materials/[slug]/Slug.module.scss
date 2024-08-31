@@ -111,6 +111,11 @@
     color: #0056b3;
   }
 }
+.tabButton.disabled {
+  opacity: 0.5;
+  //display:none;
+  cursor: not-allowed;
+}
 
 .tabUnderline {
   position: absolute;

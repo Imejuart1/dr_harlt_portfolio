@@ -82,7 +82,7 @@ export const materialData = {
       "surgical-guide-laminoplasty" :{
         title: "Surgical guide laminoplasty",
         content:
-          "Explore detailed guides and instructional videos for laminoplasty.",
+          "Explore detailed guides for laminoplasty.",
         media: [
           {
             type: "pdf",
@@ -114,7 +114,26 @@ export const materialData = {
             previewImage: "/img/surgy1.png",
           },
         ],
-      }, "hans-kraus-post-op-exercises" :{
+      },
+      "post-op-instructions" :{
+        title: "Post OP Instructions",
+        content:
+          "Explore detailed guides for Post OP Instructions.",
+        media: [
+          {
+            type: "",
+            src: "",
+            title: "",
+          },
+          {
+            type: "pdf",
+            src: "https://drive.google.com/file/u/0/d/16_KThXlHcy6uvBuBdTkahsyyO7TYvtV6/preview",
+            title: "Dr. Hartl Post-Op Instructions(Numbers Included)",
+            previewImage: "/img/surgy1.png",
+          },
+        ],
+      },
+      "hans-kraus-post-op-exercises" :{
         title: "Hans-Kraus Post-Op Exercises ",
         content:
           "Explore instructional video for Hans-Kraus Post-Op Exercises.",
@@ -196,7 +215,7 @@ export const materialData = {
       "spine-center-referrals" :{
         title: "Spine Center Referrals",
         content:
-          "Explore Referral for Sine center referrals.",
+          "Explore Referral for Spine center referrals.",
         media: [
           {
             type: "pdf",
@@ -229,7 +248,7 @@ export const materialData = {
           },
         ],
       },
-      "weill-cornell-imaging-location" :{
+      "weill-cornell-imaging-locations" :{
         title:"Weill Cornell Imaging Locations.",
         content:
           "Explore Weill Cornell Imaging Locations",
@@ -313,7 +332,7 @@ export const materialData = {
           },
         ],
       },
-      "supplements-nerve-regeneration" :{
+      "supplements-for-nerve-regeneration" :{
         title:"Supplements recommended for nerve regeneration and neuropathy.",
         content:
           "Explore supplements recommended for nerve regeneration and neuropathy.",
@@ -512,7 +531,7 @@ export const materialData = {
       "testimonials" :{
         title:"Testimonials",
         content:
-       "In this remarkable talk, Dr. Hartl talks about exploration, photography, mountaineering, and, of course, neurosurgery.",
+       "In this section, Dr. Hartl's marvel speaks for itself",
         media: [
           {
             type: "video",
@@ -611,6 +630,19 @@ export const materialData = {
             type: "pdf",
             src: "https://drive.google.com/file/d/1HO9RSUZ1JPctXPcIb9o7Mk2r-s_QnSfJ/preview",
             title: "Building a Better Spine",
+            previewImage: "/img/surgy1.png",
+          }
+        ]
+      },
+      "ambra-Instructions" :{
+        title:"Upload Imaging",
+        content:
+       "Explore guide for Ambra SPINE Instructions.",
+        media: [
+          {
+            type: "pdf",
+            src: "https://drive.google.com/file/d/1C1fHRyf-2limIKvx0sxQryyfnRIw3wpN/preview",
+            title: "Ambra SPINE Instructions",
             previewImage: "/img/surgy1.png",
           }
         ]

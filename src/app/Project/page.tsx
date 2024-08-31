@@ -43,7 +43,7 @@ const ProjectComponent = () => {
                         <img src={section.imageUrl} alt={section.title} />
                         <h3>{section.title}</h3>
                         <p>{section.text}</p>
-                        <Link href={section.link} target='_blank'>Learn More</Link>
+                        <Link href={section.link}>Learn More</Link>
                     </div>
                 ))}
             </div>

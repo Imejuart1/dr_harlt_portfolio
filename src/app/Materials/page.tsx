@@ -8,7 +8,7 @@ const MaterialComponent: React.FC = () => {
       <div className={styles.heroSection} style={{ backgroundImage: `url('img/research.jpeg')` }}>
         <div className={styles.content}>
           <h1>Materials & Resources</h1>
-          <p>Explore our comprehensive resources for pre-operative and post-operative care.</p>
+          <p>Explore our comprehensive resources for pre-operative, post-operative care, referrals,heatlhy spine and Imaging</p>
         </div>
       </div>
       
@@ -61,8 +61,8 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/vitamins-supplements">Vitamins and Supplements</Link></li>
             <li><Link href="/Materials/10-rules-healthy-back">10 Rules for a Healthy Back</Link></li>
             <li><Link href="/Materials/tips-tricks-protecting-spine">Tips and Tricks for Protecting Your Spine</Link></li>
-            <li><Link href="https://wa-qi.com/" target='__blank'>Supplements for Nerve Regeneration</Link></li>
-            <li><Link href="/Materials/tai-chi">Tai Chi</Link></li>
+            <li><Link href="/Materials/supplements-for-nerve-regeneration" target='__blank'>Supplements for Nerve Regeneration</Link></li>
+            <li><Link href="https://wa-qi.com/">Tai Chi</Link></li>
             <li><Link href="/Materials/book-recommendations-dr-hartl">Book Recommendations by Dr. Härtl</Link></li>
           </ul>
         </div>
@@ -74,11 +74,19 @@ const MaterialComponent: React.FC = () => {
             
             <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
             <li><Link href="/Materials/spine-time">Spine Time</Link></li>
-            <li><Link href="https://smiss.org/patient-education-videos/">Patient Education SMISS Videos</Link></li>
-            <li><Link href="https://www.nyp.org/ochspine/services">About Och Spine Hospital</Link></li>
+            <li><Link href="https://smiss.org/patient-education-videos/" target='_blank'>Patient Education SMISS Videos</Link></li>
+            <li><Link href="https://www.nyp.org/ochspine/services" target='_blank'>About Och Spine Hospital</Link></li>
             <li><Link href="/Materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
             <li><Link href="/Materials/other">Exhibitiion tour</Link></li>
             <li><Link href="/Materials/testimonials">Testimonials</Link></li>
+          </ul>
+        </div>
+
+        <div className={styles.materialGroup}>
+          <h2>Upload Imaging</h2>
+          <ul>
+            
+            <li><Link href="/Materials/ambra-Instructions">Ambra Instructions</Link></li>
           </ul>
         </div>
       </div>
