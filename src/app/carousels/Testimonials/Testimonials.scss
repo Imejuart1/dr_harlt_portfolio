@@ -1,0 +1,74 @@
+// src/app/reviews/components/Testimonials.module.scss
+@import '../../../styles/colors.scss';
+
+.testimonialsContainer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: $light-blue;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  
+  
+  .header {
+    font-size: 36px;
+    color: $dark-blue;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .icon {
+      margin-right: 10px;
+      color: $primary-blue;
+      font-size: 30px;
+    }
+  }
+  
+  .description {
+    font-size: 18px;
+    color: $dark-blue;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mainVideoContainer {
+    margin-bottom: 20px;
+    position: relative;
+  
+    .mainVideo {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .thumbnailContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnailWrapper {
+    width: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    &.active {
+      border: 3px solid $primary-blue;
+    }
+  
+    .thumbnailVideo {
+      border-radius: 5px;
+    }
+  }
+}

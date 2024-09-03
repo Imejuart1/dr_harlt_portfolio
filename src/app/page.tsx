@@ -1,13 +1,17 @@
 // src/app/page.tsx
 import Header from "../../components/Header";
+import HonorsAndAwardsPage from "./carousels/Honors/HonorsAndAwardsPage";
+import ProjectSummaryCarousel from "./carousels/Project/ProjectSummaryCarousel";
 import HeroSection from "./Herosection/HeroSection";
+
 
 export default function Home() {
   return (
     <div>
       <main>
       <HeroSection />
-        <h1>Still working</h1>
+      <ProjectSummaryCarousel />
+       <HonorsAndAwardsPage />
       </main>
     </div>
   );

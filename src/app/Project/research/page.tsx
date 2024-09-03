@@ -45,7 +45,7 @@ const ResearchComponent = () => {
                 
                 </div>
                 <div className={styles.textContainer}>
-                    <h2>Dr. Härtl's Lecture About BMAC for Disc Regeneration</h2>
+                    <h2>Dr. Härtl&apos;s Lecture About BMAC for Disc Regeneration</h2>
                     <p>In this lecture, Dr. Härtl discusses the latest advancements in BMAC (Bone Marrow Aspirate Concentrate) for disc regeneration and its implications for future treatments.</p>
                     <Link href="https://vimeo.com/792032374/d361c1d124">Watch Lecture</Link>
                 </div>

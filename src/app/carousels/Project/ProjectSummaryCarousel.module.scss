@@ -1,0 +1,108 @@
+@import '../../../styles/colors.scss';
+
+// src/components/ProjectSummaryCarousel.module.scss
+// src/components/ProjectSummaryCarousel.module.scss
+
+.projectSection {
+    padding: 40px 7.25rem;
+    background-color: $light-blue;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+   
+    @media (max-width: 1200px) {
+        padding: 40px 4rem;
+      }
+      @media (max-width: 900px) {
+        padding:40px 1.5rem;
+      }
+      @media (max-width: 768px) {
+        padding: 2rem 1.5rem;
+      }
+      
+
+
+.sectionTitle {
+    font-size: 36px;
+    color: $dark-blue;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sectionIntro {
+    font-size: 18px;
+    color: $dark-blue;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: $light-blue;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 35%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $dark-blue;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.overlay {
+    background-color: rgba(0, 86, 179, 0.7); // Using $dark-blue with transparency
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    max-width: 80%;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $primary-blue;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+a {
+    font-size: 16px;
+    color: $primary-blue;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid $primary-blue;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $hover-blue;
+        color: #fff;
+    }
+}
+}

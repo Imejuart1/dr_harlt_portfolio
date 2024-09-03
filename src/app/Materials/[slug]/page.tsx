@@ -10,18 +10,10 @@ const MaterialPage: React.FC = () => {
   const params = useParams();
   const slug = params.slug as string;
 
-  if (!slug) {
-    return <div>Invalid material</div>;
-  }
+  const material = slug ? materialData[slug as keyof typeof materialData] : null;
 
-  const material = materialData[slug as keyof typeof materialData];
-
-  if (!material) {
-    return <div>Material not found</div>;
-  }
-
-  const pdfs = material.media.filter((item) => item.type === "pdf");
-  const videos = material.media.filter((item) => item.type === "video");
+  const pdfs = material?.media.filter((item) => item.type === "pdf") || [];
+  const videos = material?.media.filter((item) => item.type === "video") || [];
 
   const guidesAvailable = pdfs.length > 0;
   const videosAvailable = videos.length > 0;
@@ -30,6 +22,10 @@ const MaterialPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"guides" | "videos">(
     guidesAvailable ? "guides" : "videos"
   );
+
+  if (!slug || !material) {
+    return <div>{!slug ? "Invalid material" : "Material not found"}</div>;
+  }
 
   return (
     <div className={styles.mainmaterial}>
@@ -45,21 +41,27 @@ const MaterialPage: React.FC = () => {
 
       <div className={styles.tabNavigation}>
         <button
-          className={`${styles.tabButton} ${activeTab === "guides" ? "active" : ""} ${!guidesAvailable ? styles.disabled : ""}`}
+          className={`${styles.tabButton} ${
+            activeTab === "guides" ? "active" : ""
+          } ${!guidesAvailable ? styles.disabled : ""}`}
           onClick={() => guidesAvailable && setActiveTab("guides")}
           disabled={!guidesAvailable}
         >
           Guides
         </button>
         <button
-          className={`${styles.tabButton} ${activeTab === "videos" ? "active" : ""} ${!videosAvailable ? styles.disabled : ""}`}
+          className={`${styles.tabButton} ${
+            activeTab === "videos" ? "active" : ""
+          } ${!videosAvailable ? styles.disabled : ""}`}
           onClick={() => videosAvailable && setActiveTab("videos")}
           disabled={!videosAvailable}
         >
           Videos
         </button>
         <div
-          className={`${styles.tabUnderline} ${activeTab === "guides" ? styles.left : styles.right}`}
+          className={`${styles.tabUnderline} ${
+            activeTab === "guides" ? styles.left : styles.right
+          }`}
         />
       </div>
 

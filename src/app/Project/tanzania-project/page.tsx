@@ -58,7 +58,7 @@ const tanzania = () => {
             </div>
             <div className={styles.contentSection}>
             <div className={styles.textContainer } style={{marginRight:'0.3rem', paddingLeft:'0'}}>
-                    <h2>Becker's Hospital Review: First 3D Navigated Spinal Surgery in sub-Saharan Africa Feature</h2>
+                    <h2>Becker&apos;s Hospital Review: First 3D Navigated Spinal Surgery in sub-Saharan Africa Feature</h2>
                     <p>Roger Härtl, MD, director of neurosurgery spine for New York City-based Weill Cornell Medicine and co-director for New York Presbyterian OCH Spine, 
                         has performed the first spine case using 3D navigation in sub-Saharan Africa... </p>
                     <Link href="https://www.beckersspine.com/spine/56558-dr-roger-haertl-performs-1st-3d-navigation-spinal-surgery-in-sub-saharan-africa.html" target='__blank'>Learn More</Link>
@@ -74,7 +74,7 @@ const tanzania = () => {
                 <img src="/img/tanzaniaroger.jpg" alt="Disc Degeneration Repair" /> 
                 </div>
                 <div className={styles.textContainer}>
-                    <h2>Becker's Hospital Review: From New York to Tanzania</h2>
+                    <h2>Becker&apos;s Hospital Review: From New York to Tanzania</h2>
                     <p>From New York to Tanzania: How Dr. Roger Hartl has spent 15 years creating a global impact,He sought out ways to return to Africa through Doctors Without Borders and the Bill Gates Foundation but was told they had no need for spine and neurosurgeons; 
                         only infectious disease specialists. </p>
                     <Link 
