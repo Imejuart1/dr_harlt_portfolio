@@ -2,13 +2,24 @@
 @import '../../../styles/colors.scss';
 
 .testimonialsContainer {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: $light-blue;
-    border-radius: 8px;
-    margin-bottom: 40px;
-  
-  
+  padding: 40px 7.25rem;
+  text-align: center;
+  background-color: $light-blue;
+  border-radius: 8px;
+  margin-bottom: 40px;
+
+  @media (max-width: 1200px) {
+    padding: 40px 4rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 40px 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+  }
+
   .header {
     font-size: 36px;
     color: $dark-blue;
@@ -17,14 +28,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     .icon {
       margin-right: 10px;
       color: $primary-blue;
       font-size: 30px;
     }
   }
-  
+
   .description {
     font-size: 18px;
     color: $dark-blue;
@@ -33,40 +44,44 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .mainVideoContainer {
     margin-bottom: 20px;
     position: relative;
-  
+
     .mainVideo {
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
   }
-  
+
   .thumbnailContainer {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px; /* Increased gap between thumbnails */
     flex-wrap: wrap;
   }
-  
+
   .thumbnailWrapper {
-    width: 150px;
+    width: 170px; /* Increased size for better visibility */
     cursor: pointer;
     border-radius: 5px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent; /* Start with a transparent border */
+
     &:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1); /* Larger scale on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+      border-color: $hover-blue; /* Change border color on hover */
     }
-  
+
     &.active {
       border: 3px solid $primary-blue;
+      transform: scale(1.1); /* Keep the thumbnail slightly larger when active */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Keep the enhanced shadow when active */
     }
-  
+
     .thumbnailVideo {
       border-radius: 5px;
     }

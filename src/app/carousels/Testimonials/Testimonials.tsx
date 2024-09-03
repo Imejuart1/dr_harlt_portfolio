@@ -1,4 +1,4 @@
-// src/app/reviews/components/Testimonials.tsx
+"use client";
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
@@ -11,6 +11,15 @@ const videoUrls = [
   'https://www.youtube.com/embed/F7Gl05S6SZk',
   'https://www.youtube.com/embed/LbQFK64lVYE',
   'https://www.youtube.com/embed/AQ3zAqrGYQw',
+];
+
+const videoThumbnails = [
+  'https://img.youtube.com/vi/kKOoUIsZVFg/0.jpg',
+  'https://img.youtube.com/vi/ns5M41ePn14/0.jpg',
+  'https://img.youtube.com/vi/ByqSJ8XleYc/0.jpg',
+  'https://img.youtube.com/vi/F7Gl05S6SZk/0.jpg',
+  'https://img.youtube.com/vi/LbQFK64lVYE/0.jpg',
+  'https://img.youtube.com/vi/AQ3zAqrGYQw/0.jpg',
 ];
 
 const Testimonials: React.FC = () => {
@@ -39,22 +48,17 @@ const Testimonials: React.FC = () => {
       </div>
 
       <div className={styles.thumbnailContainer}>
-        {videoUrls.map((url, index) => (
+        {videoThumbnails.map((thumbnail, index) => (
           <div
             key={index}
-            className={`${styles.thumbnailWrapper} ${url === selectedVideo ? styles.active : ''}`}
-            onClick={() => setSelectedVideo(url)}
+            className={`${styles.thumbnailWrapper} ${videoUrls[index] === selectedVideo ? styles.active : ''}`}
+            onClick={() => setSelectedVideo(videoUrls[index])}
           >
-            <iframe
-              width="100%"
-              height="100px"
-              src={url}
-              title={`YouTube video player thumbnail ${index + 1}`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className={styles.thumbnailVideo}
-            ></iframe>
+            <img
+              src={thumbnail}
+              alt={`Thumbnail for video ${index + 1}`}
+              className={styles.thumbnailImage}
+            />
           </div>
         ))}
       </div>

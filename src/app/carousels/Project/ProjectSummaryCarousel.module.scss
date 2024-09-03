@@ -1,8 +1,4 @@
 @import '../../../styles/colors.scss';
-
-// src/components/ProjectSummaryCarousel.module.scss
-// src/components/ProjectSummaryCarousel.module.scss
-
 .projectSection {
     padding: 40px 7.25rem;
     background-color: $light-blue;
@@ -36,6 +32,9 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    .icon{
+        font-size: 32px;
+    }
 }
 
 .carousel {
@@ -46,6 +45,9 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: $light-blue;
+    .icon{
+        font-size: 28px;
+    }
 }
 
 .slide {
