@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faHandsHelping, faBrain, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faBrain, faChevronLeft, faChevronRight, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+import {faHandshake}  from '@fortawesome/free-regular-svg-icons';
 import styles from './Gratitude.module.scss';
 
 const carouselItems = [
@@ -63,6 +64,9 @@ const GratitudeImageCarousel: React.FC = () => {
 
   return (
     <div className={styles.gratitudeContainer}>
+         <h2 className={styles.header}>
+        <FontAwesomeIcon icon={faHandshake} className={styles.icon} /> Show Support
+      </h2>
       <div 
         className={`${styles.gratitudeItem} ${transitioning ? styles.sliding : ''}`} 
         style={{ backgroundImage: `url(${carouselItems[currentIndex].imageUrl})` }}
