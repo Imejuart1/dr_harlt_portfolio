@@ -11,19 +11,19 @@ const carouselItems = [
     title: "Honors & Awards",
     icon: faTrophy,
     images: ['img/bestspineppp.png', 'img/Brazil2.png', 'img/awardroger1.jpeg'],
-    link: "https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year",
+    link: "/honors-awards#honors",
   },
   {
     title: "News",
     icon: faNewspaper,
     images: ['img/hartNews1.jpg', 'img/medicalmarvel.png', 'img/Brazil.png' ],
-    link: "https://www.nyp.org/augmented-reality",
+    link: "/honors-awards#news",
   },
   {
     title: "Podcasts",
     icon: faPodcast,
     images: ['img/beckerpodcast.png', 'img/advancepodcast6.png', 'img/healthpodcast.jpeg'],
-    link: "https://podcasts.apple.com/us/podcast/beckers-healthcare-spine-and-orthopedic-podcast/id1512530263",
+    link: "/honors-awards#podcasts"
   }
 ];
 
@@ -53,9 +53,9 @@ const HonorsAndAwardsPage: React.FC = () => {
               <h3>{item.title}</h3>
             </div>
             <div className={styles.carouselImage} style={{ backgroundImage: `url(${item.images[currentIndexes[i]]})` }}></div>
-            <a href={item.link} target="_blank" rel="noopener noreferrer" className={styles.carouselLink}>
+            <Link href={item.link} className={styles.carouselLink}>
               Learn More
-            </a>
+            </Link>
           </div>
         ))}
       </div>

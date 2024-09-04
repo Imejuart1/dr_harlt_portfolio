@@ -9,7 +9,7 @@ const Gratitude: React.FC = () => {
         <h2>Gratitude from Dr. Roger Härtl</h2>
         <p>Taking excellent care of you is the biggest privilege I can think of. If your experience with us and the team at NYP Och Spine was positive, please consider leaving a review for us on Google at the following links:</p>
         
-        <div className={styles.linkRow}>
+        <div className={styles.linkRow} id='1'>
           <a href="https://www.healthgrades.com/physician/dr-roger-hartl-yy2qb" target="_blank" rel="noopener noreferrer">
             <div className={styles.iconWrapper}>
               <img src="img/healthgrades-icon.svg" alt="Healthgrades Icon" className={styles.reviewIcon} />
@@ -30,7 +30,7 @@ const Gratitude: React.FC = () => {
           </div>
         </div>
 
-        <div className={styles.bigImageRow}>
+        <div className={styles.bigImageRow} id='2'>
           <div id="humanitarian-work" className={styles.imageContainer}>
             <div className={styles.imageBox}>
               <h3 className={styles.imageTitle}>Spine Research Projects</h3>
@@ -44,7 +44,7 @@ const Gratitude: React.FC = () => {
           </div>
         </div>
 
-        <div className={styles.grandImage} >
+        <div className={styles.grandImage} id='3'>
           <h3 className={styles.imageTitle} id="spine-research">Spine Research Projects</h3>
           <p> We also work on improving spine care by developing new and innovative ways of making spine surgery less invasive through biological disc repair and regeneration. 
             Please consider making a donation to support our spine research projects. <strong>Click me to donate.</strong></p>

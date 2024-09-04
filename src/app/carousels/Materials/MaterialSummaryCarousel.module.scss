@@ -1,0 +1,89 @@
+// src/app/components/HomeSummary.module.scss
+@import '../../../styles/colors.scss';
+
+.homeSummarySection {
+  padding: 60px 20px;
+  background-color: $light-blue; // Matches the background color of testimonials
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: $dark-blue; // Matches the dark blue color used in testimonials
+}
+
+.header {
+    font-size: 36px;
+    color: $dark-blue;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      margin-right: 10px;
+      color: $dark-blue;
+      font-size: 30px;
+    }
+    &:hover{
+        text-decoration: underline;
+        cursor:pointer;
+    }
+  }
+
+  .description {
+    font-size: 18px;
+    color: $dark-blue;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.summaryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.summaryCard {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 300px;
+  padding: 30px 20px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.iconWrapper {
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 3rem;
+  color: $primary-blue; // Matches the primary blue color used in testimonials
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: $dark-blue; // Matches the dark blue color used in testimonials
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: $dark-blue; // Matches the dark blue color used in testimonials
+}
+}

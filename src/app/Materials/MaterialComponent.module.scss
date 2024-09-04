@@ -9,7 +9,7 @@
     font-family: $font-family-base;
     font-size: $font-size-normal;
     overflow-x: hidden !important;
-
+    scroll-behavior: smooth;
     .heroSection {
         position: relative;
         display: flex;

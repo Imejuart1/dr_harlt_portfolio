@@ -1,74 +1,113 @@
-// src/components/ProjectSummaryCarousel.tsx
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowAltCircleRight, faLightbulb, faHandshake, faUserCircle } from '@fortawesome/free-regular-svg-icons'; // Using different regular icons
+import { faHeart, faBrain, faChevronLeft, faChevronRight, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faLightbulb, faHandshake, faUserCircle } from '@fortawesome/free-regular-svg-icons';
 import styles from './ProjectSummaryCarousel.module.scss';
 
 const projectSummaries = [
-    {
-        title: "Research",
-        text: "Shaping the future of spinal care with cutting-edge research.",
-        imageUrl: "img/stemcells2.jpeg",
-        link: "/Project/research",
-        icon: faLightbulb, // Regular lightbulb icon for innovative research
-    },
-    {
-        title: "Tanzania",
-        text: "Dr. Roger Hartl's 15-year journey creating a global impact from New York to Tanzania.",
-        imageUrl: "img/tanzania.png",
-        link: "/Project/tanzania-project",
-        icon: faHandshake, // Regular handshake icon for global collaboration
-    },
-    {
-        title: "Physician Education",
-        text: "Join our summer master class in tubular decompression, now open for registration.",
-        imageUrl: "img/nycmiss.webp",
-        link: "https://nyc-miss.org/",
-        icon: faUserCircle, // Regular user circle icon for medical education
-    },
+  {
+    icon: faLightbulb,
+    title: "Research",
+    description: "Shaping the future of spinal care with cutting-edge research.",
+    imageUrl: "img/stemcells2.jpeg",
+    link: "/Project/research",
+  },
+  {
+    icon: faHandshake,
+    title: "Tanzania",
+    description: "Dr. Roger Hartl's 15-year journey creating a global impact from New York to Tanzania.",
+    imageUrl: "img/tanzania.png",
+    link: "/Project/tanzania-project",
+  },
+  {
+    icon: faUserCircle,
+    title: "Physician Education",
+    description: "Join our summer master class in tubular decompression, now open for registration.",
+    imageUrl: "img/nycmiss.webp",
+    link: "https://nyc-miss.org/",
+  },
 ];
 
-const ProjectSummaryCarousel = () => {
+const ProjectSummaryCarousel: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const slideInterval = useRef<NodeJS.Timeout | null>(null);
+   // const [transitioning, setTransitioning] = useState(false);
+  
+   useEffect(() => {
+    projectSummaries.forEach((projectSummary) => {
+      const img = new Image();
+      img.src = projectSummary.imageUrl;
+    });
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % projectSummaries.length);
-        }, 5000); // Change slide every 4 seconds
+    startSlideShow();
 
-        return () => clearInterval(intervalId);
-    }, []);
+    return () => stopSlideShow(); // Cleanup on unmount
+  }, []);
 
-    return (
-        <section className={styles.projectSection}>
-            <h2 className={styles.sectionTitle}>
-                <FontAwesomeIcon icon={faLightbulb} className={styles.icon} /> Explore Our Projects
-            </h2>
-            <p className={styles.sectionIntro}>
-                Delve into our groundbreaking research, international collaborations, and advanced educational programs. Each project is designed to push the boundaries of spinal care and global health initiatives.
-            </p>
+    const startSlideShow = () => {
+        slideInterval.current = setInterval(() => {
+            setCurrentIndex((prevSlide) => (prevSlide + 1) % projectSummaries.length);
+        }, 5000); // Change every 7 seconds
+      };
+    
+      const stopSlideShow = () => {
+        if (slideInterval.current) {
+          clearInterval(slideInterval.current);
+        }
+      };
+  
+    const handleNext = () => {
+        stopSlideShow(); 
+        setCurrentIndex((prevSlide) => (prevSlide + 1) % projectSummaries.length);
+    startSlideShow(); 
+    };
+  
+    const handlePrev = () => {
+        stopSlideShow(); 
+        setCurrentIndex((prevSlide) => (prevSlide - 1 + projectSummaries.length) % projectSummaries.length);
+        startSlideShow();
+    };
+  return (
+    <section className={styles.projectSection}>
+      <Link href='/Project'>
+        <h2 className={styles.sectionTitle}>
+          <FontAwesomeIcon icon={faLightbulb} className={styles.icon} /> Explore Our Projects
+        </h2>
+      </Link>
+      <p className={styles.sectionIntro}>
+        Delve into our groundbreaking research, international collaborations, and advanced educational programs. Each project is designed to push the boundaries of spinal care and global health initiatives.
+      </p>
 
-            <div className={styles.carousel}>
-                {projectSummaries.map((project, index) => (
-                    <div
-                        key={index}
-                        className={`${styles.slide} ${index === currentIndex ? styles.active : ""}`}
-                        style={{ backgroundImage: `url(${project.imageUrl})` }}
-                    >
-                        <div className={styles.overlay}>
-                            <h3><FontAwesomeIcon icon={project.icon} className={styles.icon} /> {project.title}</h3>
-                            <p>{project.text}</p>
-                            <Link href={project.link}>
-                                Learn More <FontAwesomeIcon icon={faArrowAltCircleRight} />
-                            </Link>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+      <div className={styles.carousel}>
+        <div
+          className={`${styles.slide}`}
+          style={{ backgroundImage: `url(${projectSummaries[currentIndex].imageUrl})` }}
+        >
+          <div className={styles.overlay}>
+            <h3>
+              <FontAwesomeIcon icon={projectSummaries[currentIndex].icon} className={styles.icon} />
+              {projectSummaries[currentIndex].title}
+            </h3>
+            <p>{projectSummaries[currentIndex].description}</p>
+            <Link href={projectSummaries[currentIndex].link}>
+              Learn More <FontAwesomeIcon icon={faArrowAltCircleRight} />
+            </Link>
+          </div>
+        </div>
+      </div>
+      
+      <div className={styles.controls}>
+        <button onClick={handlePrev} className={styles.prevButton}>
+          <FontAwesomeIcon icon={faChevronLeft} className={styles.icon} />
+        </button>
+        <button onClick={handleNext} className={styles.nextButton}>
+          <FontAwesomeIcon icon={faChevronRight} className={styles.icon} />
+        </button>
+      </div>
+    </section>
+  );
 };
 
 export default ProjectSummaryCarousel;

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faBrain, faChevronLeft, faChevronRight, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
 import {faHandshake}  from '@fortawesome/free-regular-svg-icons';
 import styles from './Gratitude.module.scss';
+import Link from 'next/link';
 
 const carouselItems = [
   {
@@ -11,21 +12,21 @@ const carouselItems = [
     title: "Gratitude from Dr. Roger Härtl",
     description: "Dr. Härtl expresses deep gratitude for the trust placed in his care. Learn how you can share your experience.",
     imageUrl: 'img/reviewmain1.jpeg',
-    link: "/Reviews",
+    link: "/Reviews#gratitude",
   },
   {
     icon: faHandsHelping,
     title: "Humanitarian Work",
     description: "Support our ongoing humanitarian efforts in Tanzania and make a difference in neurosurgical care.",
     imageUrl: 'img/humaritian.png',
-    link: "/Reviews",
+    link: "/Reviews#gratitude",
   },
   {
     icon: faBrain,
     title: "Spine Research",
     description: "Join us in advancing spine care through groundbreaking research and innovation.",
     imageUrl: 'img/ROGERSPINER.png',
-    link: "/Reviews",
+    link: "/Reviews#gratitude",
   },
 ];
 
@@ -64,9 +65,11 @@ const GratitudeImageCarousel: React.FC = () => {
 
   return (
     <div className={styles.gratitudeContainer}>
+      <Link href='/Reviews#reviews'>
          <h2 className={styles.header}>
         <FontAwesomeIcon icon={faHandshake} className={styles.icon} /> Show Support
       </h2>
+      </Link>
       <div 
         className={`${styles.gratitudeItem} ${transitioning ? styles.sliding : ''}`} 
         style={{ backgroundImage: `url(${carouselItems[currentIndex].imageUrl})` }}
@@ -78,7 +81,7 @@ const GratitudeImageCarousel: React.FC = () => {
             </div>
             <h3 className={styles.title}>{carouselItems[currentIndex].title}</h3>
             <p className={styles.description}>{carouselItems[currentIndex].description}</p>
-            <a href={carouselItems[currentIndex].link} className={styles.link}>Learn More</a>
+            <Link href={carouselItems[currentIndex].link} className={styles.link}>Learn More</Link>
           </div>
         </div>
       </div>

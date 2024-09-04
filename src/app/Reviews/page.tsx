@@ -23,6 +23,36 @@ const ReviewPage: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
+  
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        if (hash === "testimonials" || hash === "reviews" || hash === "gratitude") {
+          setActiveTab(hash as "testimonials" | "reviews" | "gratitude");
+        }
+
+        const element = document.getElementById(hash);
+        if (element) {
+          window.scrollTo({
+            top: element.offsetTop - 30, 
+            behavior: 'smooth',
+          });
+        }
+      }
+    };
+
+    if (window.location.hash) {
+      handleHashChange();
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
   return (
     <section className={styles.reviewSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
@@ -56,12 +86,12 @@ const ReviewPage: React.FC = () => {
       </div>
       <div className={styles.reviewscroll}>   
       {activeTab === "testimonials" && (
-        <div className={styles.testimonialsSection}>
+        <div className={styles.testimonialsSection} id='#testimonials'>
           <Testimonials />
         </div>
       )}
       {activeTab === "reviews" && (
-        <div className={styles.reviewSection_content}>
+        <div className={styles.reviewSection_content} id='#reviews'>
           <div id="healthgrades" className={styles.healthgSection}>
           <div className={styles.healrespo}>
         <img src='img/healthgrades-icon.svg' alt="Healthgrades Icon" className={styles.reviewIcon} />
@@ -71,7 +101,7 @@ const ReviewPage: React.FC = () => {
         </div>
             <HealthgradesReview />
           </div>
-          <div id="vitals" className={styles.vitalsSection}>
+          <div id="vitals" className={styles.vitalsSection} >
           <div className={styles.reviewHeader}>
           <div className={styles.healrespo}>
         <img src='img/vitals.svg' alt="Vitals Icon" className={styles.reviewIcon2} />
@@ -85,7 +115,7 @@ const ReviewPage: React.FC = () => {
         </div>
       )}
       {activeTab === "gratitude" && (
-        <div>
+        <div id='#gratitude'>
           <Gratitude />
         </div>
       )}

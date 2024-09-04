@@ -1,4 +1,3 @@
-// app/honors-and-awards/page.tsx
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './HonorsAndAwards.module.scss';
@@ -48,6 +47,37 @@ const HonorsAndAwardsPage: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        if (hash === "honors" || hash === "news" || hash === "podcasts") {
+          setActiveTab(hash as "honors" | "news" | "podcasts");
+        }
+
+        const element = document.getElementById(hash);
+        if (element) {
+          window.scrollTo({
+            top: element.offsetTop - 30, 
+            behavior: 'smooth',
+          });
+        }
+      }
+    };
+
+    if (window.location.hash) {
+      handleHashChange();
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, []);
+
+
+
   return (
     <section className={styles.honorsSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
@@ -82,7 +112,7 @@ const HonorsAndAwardsPage: React.FC = () => {
       </div>
 
       {activeTab === "honors" && (
-        <div className={styles.contentWrapper}>
+        <div className={styles.contentWrapper} id='#honors'>
           <div className={styles.section}>
             <a href="https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year" target="_blank" rel="noopener noreferrer">
               <div style={{ width: '100%' }}>
@@ -139,7 +169,7 @@ const HonorsAndAwardsPage: React.FC = () => {
       )}
 
       {activeTab === "news" && (
-        <div className={styles.contentWrapper}>
+        <div className={styles.contentWrapper} id='#news'>
           <div className={styles.section}>
             <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">
               <img src="img/hartNews1.jpg" alt="News 1" className={styles.sectionImage} />
@@ -199,7 +229,7 @@ const HonorsAndAwardsPage: React.FC = () => {
       )}
 
       {activeTab === "podcasts" && (
-        <div className={styles.contentWrapper}>
+        <div className={styles.contentWrapper} id='#podcasts'>
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
               <h2>Congresso de Coluna Brasil/Argentina</h2>
