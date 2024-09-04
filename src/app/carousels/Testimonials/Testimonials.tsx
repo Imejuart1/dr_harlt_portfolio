@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 import styles from './Testimonials.module.scss';
+import Link from 'next/link';
 
 const videoUrls = [
   'https://www.youtube.com/embed/kKOoUIsZVFg',
@@ -28,9 +29,11 @@ const Testimonials: React.FC = () => {
 
   return (
     <div className={styles.testimonialsContainer}>
+      <Link href='/Reviews'>
       <h2 className={styles.header}>
         <FontAwesomeIcon icon={faThumbsUp} className={styles.icon} /> Patient Testimonials
       </h2>
+      </Link>
       <p className={styles.description}>
         Watch personal stories and experiences shared by Dr. Hartl&apos;s patients.
       </p>

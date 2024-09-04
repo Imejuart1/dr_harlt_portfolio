@@ -8,7 +8,7 @@ const Bio: React.FC = () => {
       <div className={styles.heroSection} style={{ backgroundImage: `url('img/Aboutme2.jpg')` }}>
         <div className={styles.content_section}>
           <h1>About Dr. Roger Härtl</h1>
-          <p>Dedicated to providing minimally invasive care for spinal and neck disorders.</p>
+          <p>Augmented reality has created a new reality for spinal surgery.</p>
           <ul className={styles.heroNavLinks}>
             <li><a href="#personal-statement">Personal Statement</a></li>
             <li><a href="#biography">Biography</a></li>
@@ -22,7 +22,7 @@ const Bio: React.FC = () => {
         {/* Section 1: Image on left */}
         <div id="personal-statement" className={styles.section}>
           <div className={styles.imageSection}>
-            <img src="img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+            <img src="img/roger2.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
           </div>
           <div className={styles.textSection}>
             <h2>Personal Statement</h2>

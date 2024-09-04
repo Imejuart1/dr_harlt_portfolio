@@ -9,12 +9,12 @@ const HeroSection: React.FC = () => {
       image: 'img/Aboutme2.jpg',
       title: 'Dr. Roger Härtl MD',
       subtitle: 'Neurosurgeon at Och Spine, NewYork-Presbyterian',
-      text: 'Unifying disciplines to provide minimally invasive care for neck disorders.',
+      text: 'Augmented reality has created a new reality for spinal surgery.',
       buttonText: 'Get to Know Me',
       link: '/Bio'
     },
     {
-      image: 'img/review5.jpeg',
+      image: 'img/review5.jpeg', 
       title: 'Expert in Spine Surgery',
       subtitle: 'Specializing in minimally invasive spinal surgery',
       text: 'World-renowned neurosurgeon advancing spine care globally; New York Giants neurosurgeon.',
