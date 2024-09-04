@@ -43,7 +43,7 @@ const HonorsAndAwardsPage: React.FC = () => {
         <FontAwesomeIcon icon={faAward} className={styles.icon} /> 
       <h2 className={styles.sectionTitle}>Explore Honors, News & Podcasts</h2>
       </Link>
-      <p className={styles.sectionIntro}>Discover the latest recognitions, media features, and podcast episodes featuring Dr. Roger Härtl's work in neurosurgery.</p>
+      <p className={styles.sectionIntro}>Discover the latest recognitions, media features, and podcast episodes featuring Dr. Roger Härtl&apos;s work in neurosurgery.</p>
 
       <div className={styles.carouselContainer}>
         {carouselItems.map((item, i) => (
