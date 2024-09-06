@@ -1,4 +1,3 @@
-// src/app/reviews/components/Testimonials.module.scss
 @import '../../../styles/colors.scss';
 
 .testimonialsContainer {
@@ -7,14 +6,6 @@
   background-color: $light-blue;
   border-radius: 8px;
   margin-bottom: 40px;
-
-  @media (max-width: 1200px) {
-    padding: 40px 4rem;
-  }
-
-  @media (max-width: 900px) {
-    padding: 40px 1.5rem;
-  }
 
   @media (max-width: 768px) {
     padding: 2rem 1.5rem;
@@ -55,35 +46,62 @@
     }
   }
 
-  .thumbnailContainer {
+  .thumbnailNavigation {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Increased gap between thumbnails */
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: row;
+    }
+
+    .icon {
+      font-size: 24px;
+      cursor: pointer;
+      color: $dark-blue;
+
+      &:hover {
+        color: $primary-blue;
+      }
+    }
+  }
+
+  .thumbnailContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   .thumbnailWrapper {
-    width: 170px; /* Increased size for better visibility */
+    width: 120px;
     cursor: pointer;
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border: 2px solid transparent; /* Start with a transparent border */
+    border: 2px solid transparent;
 
     &:hover {
-      transform: scale(1.1); /* Larger scale on hover */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-      border-color: $hover-blue; /* Change border color on hover */
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      border-color: $hover-blue;
     }
 
     &.active {
       border: 3px solid $primary-blue;
-      transform: scale(1.1); /* Keep the thumbnail slightly larger when active */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Keep the enhanced shadow when active */
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
-    .thumbnailVideo {
+    .thumbnailImage {
       border-radius: 5px;
+      width: 100%;
     }
   }
 }

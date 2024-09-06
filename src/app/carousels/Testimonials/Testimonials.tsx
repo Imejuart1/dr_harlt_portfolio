@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 import styles from './Testimonials.module.scss';
 import Link from 'next/link';
@@ -26,13 +26,38 @@ const videoThumbnails = [
 
 const Testimonials: React.FC = () => {
   const [selectedVideo, setSelectedVideo] = useState(videoUrls[0]);
+  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handleNext = () => {
+    if (currentThumbnailIndex < videoUrls.length - (isMobile ? 2 : 5)) {
+      setCurrentThumbnailIndex((prev) => prev + (isMobile ? 2 : 5));
+    }
+  };
+
+  const handlePrevious = () => {
+    if (currentThumbnailIndex > 0) {
+      setCurrentThumbnailIndex((prev) => prev - (isMobile ? 2 : 5));
+    }
+  };
 
   return (
     <div className={styles.testimonialsContainer}>
       <Link href='/Reviews'>
-      <h2 className={styles.header}>
-        <FontAwesomeIcon icon={faThumbsUp} className={styles.icon} /> Patient Testimonials
-      </h2>
+        <h2 className={styles.header}>
+          <FontAwesomeIcon icon={faThumbsUp} className={styles.icon} /> Patient Testimonials
+        </h2>
       </Link>
       <p className={styles.description}>
         Watch personal stories and experiences shared by Dr. Hartl&apos;s patients.
@@ -51,20 +76,28 @@ const Testimonials: React.FC = () => {
         ></iframe>
       </div>
 
-      <div className={styles.thumbnailContainer}>
-        {videoThumbnails.map((thumbnail, index) => (
-          <div
-            key={index}
-            className={`${styles.thumbnailWrapper} ${videoUrls[index] === selectedVideo ? styles.active : ''}`}
-            onClick={() => setSelectedVideo(videoUrls[index])}
-          >
-            <img
-              src={thumbnail}
-              alt={`Thumbnail for video ${index + 1}`}
-              className={styles.thumbnailImage}
-            />
-          </div>
-        ))}
+      <div className={styles.thumbnailNavigation}>
+        <FontAwesomeIcon icon={faChevronLeft} onClick={handlePrevious} className={styles.icon} />
+        <div className={styles.thumbnailContainer}>
+          {videoThumbnails
+            .slice(currentThumbnailIndex, currentThumbnailIndex + (isMobile ? 2 : 5)) // 2 on mobile, 5 on desktop
+            .map((thumbnail, index) => (
+              <div
+                key={index}
+                className={`${styles.thumbnailWrapper} ${
+                  videoUrls[currentThumbnailIndex + index] === selectedVideo ? styles.active : ''
+                }`}
+                onClick={() => setSelectedVideo(videoUrls[currentThumbnailIndex + index])}
+              >
+                <img
+                  src={thumbnail}
+                  alt={`Thumbnail for video ${currentThumbnailIndex + index + 1}`}
+                  className={styles.thumbnailImage}
+                />
+              </div>
+            ))}
+        </div>
+        <FontAwesomeIcon icon={faChevronRight} onClick={handleNext} className={styles.icon} />
       </div>
     </div>
   );

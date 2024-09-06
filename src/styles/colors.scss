@@ -18,3 +18,39 @@ $font-family-base: 'Mulish', sans-serif;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
+
+.overallnav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    gap:0.5rem;
+    .icon{
+        color: $primary-blue !important;
+        font-size: 50px!important; 
+        &:hover{
+           color:white !important;
+           cursor:pointer;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px!important; 
+           }
+    }
+  
+}
+.icon{
+    //width: auto !important; 
+    //sheight:20px !important;
+}
+
+.sectionTitle, .header{
+    font-size: 36px !important;
+    @media (max-width: 900px) {
+        font-size: 2rem !important;
+        line-height: 2.5rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.5rem !important;
+        line-height: 2rem;
+      }
+}

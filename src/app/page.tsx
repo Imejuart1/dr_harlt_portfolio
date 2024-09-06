@@ -6,10 +6,7 @@ import HonorsAndAwardsPage from "./carousels/Honors/HonorsAndAwardsPage";
 import MaterialSummaryCarousel from "./carousels/Materials/Material";
 import ProjectSummaryCarousel from "./carousels/Project/ProjectSummaryCarousel";
 import Testimonials from "./carousels/Testimonials/Testimonials";
-
 import HeroSection from "./Herosection/HeroSection";
-
-
 
 export default function Home() {
   return (

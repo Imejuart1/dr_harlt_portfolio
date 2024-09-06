@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faPhone, faEnvelope, faBars, faTimes, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import { faShareSquare } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faLinkedinIn, faPinterestP, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import StickyNavExtras from './StickyNavExtras'; // Import StickyNavExtras
 import styles from './styles/TopBar.module.scss';
@@ -56,7 +57,7 @@ const TopBar: React.FC<TopBarProps> = ({isMenuOpen , toggleMenu}) => {
             <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
           </div>
           <div className={styles.hamburger} onClick={toggleSocialMenu}>
-            <FontAwesomeIcon icon={isSocialMenuOpen ? faTimes : faShareAlt} />
+            <FontAwesomeIcon icon={isSocialMenuOpen ? faTimes : faShareSquare} />
           </div>
         </div>
         <div className={` ${isSocialMenuOpen ? styles.showSocialMenu : styles.showSocial}`}>

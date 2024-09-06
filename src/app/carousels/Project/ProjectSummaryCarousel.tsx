@@ -73,13 +73,12 @@ const ProjectSummaryCarousel: React.FC = () => {
     <section className={styles.projectSection}>
       <Link href='/Project'>
         <h2 className={styles.sectionTitle}>
-          <FontAwesomeIcon icon={faLightbulb} className={styles.icon} /> Explore Our Projects
+          <FontAwesomeIcon icon={faLightbulb} className={styles.icon} fixedWidth /> Explore Our Projects
         </h2>
       </Link>
       <p className={styles.sectionIntro}>
         Delve into our groundbreaking research, international collaborations, and advanced educational programs. Each project is designed to push the boundaries of spinal care and global health initiatives.
-      </p>
-
+      </p>  
       <div className={styles.carousel}>
         <div
           className={`${styles.slide}`}
@@ -91,20 +90,20 @@ const ProjectSummaryCarousel: React.FC = () => {
               {projectSummaries[currentIndex].title}
             </h3>
             <p>{projectSummaries[currentIndex].description}</p>
+            <div className={styles.overallnav}>
+            <button onClick={handlePrev} className={styles.prevButton}>
+          <FontAwesomeIcon icon={faChevronLeft} className={styles.icon} />
+        </button>
             <Link href={projectSummaries[currentIndex].link}>
               Learn More <FontAwesomeIcon icon={faArrowAltCircleRight} />
             </Link>
-          </div>
-        </div>
-      </div>
-      
-      <div className={styles.controls}>
-        <button onClick={handlePrev} className={styles.prevButton}>
-          <FontAwesomeIcon icon={faChevronLeft} className={styles.icon} />
-        </button>
-        <button onClick={handleNext} className={styles.nextButton}>
+            <button onClick={handleNext} className={styles.nextButton}>
           <FontAwesomeIcon icon={faChevronRight} className={styles.icon} />
         </button>
+        </div>
+
+          </div>
+        </div>
       </div>
     </section>
   );

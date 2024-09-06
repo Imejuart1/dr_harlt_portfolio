@@ -27,7 +27,14 @@
     &:hover{
         text-decoration: underline;
     }
-  
+    @media (max-width: 900px) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
 }
 
 .sectionIntro {
@@ -38,7 +45,7 @@
     margin-left: auto;
     margin-right: auto;
     .icon{
-        font-size: 32px;
+        width: 32px !important; 
     }
 }
 
@@ -51,7 +58,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: $light-blue;
     .icon{
-        font-size: 28px;
+        font-size: 28px ;
     }
 }
 
@@ -110,6 +117,9 @@ a {
         background-color: $hover-blue;
         color: #fff;
     }
+    @media (max-width: 768px) {
+        font-size:13px !important;
+    }
 }
 
 }
@@ -127,14 +137,17 @@ a {
         background-color: $hover-blue;
         color: #fff;
     }
+    @media (max-width: 768px) {
+        font-size:12px !important;
+    }
 }
 }
 
 .controls {
     position: absolute;
     top: 50%;
-    left: 3%;
-    right: 3%;
+    left: 3rem;
+    right: 3rem;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -162,7 +175,7 @@ a {
     }
     .icon {
         color: $primary-blue;
-        font-size: 50px; // Increased size for better visibility
+        font-size: 70px; // Increased size for better visibility
       }
   }
 
