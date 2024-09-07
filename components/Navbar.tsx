@@ -105,14 +105,14 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
           </div>
         )}
 
-        <div className={styles.trustItems}>
+       {/*} <div className={styles.trustItems}>
           <div>
             <img src="/img/WeilCornel.png" alt="WeilCornell" />
           </div>
           <div>
             <img src="/img/newyorkp.png" alt="NewYorkP" />
           </div>
-        </div>
+        </div>*/}
       </div>
 
       <div ref={navExtrasRef} className={`${styles.navExtras} ${styles.originalNavExtras}`}>

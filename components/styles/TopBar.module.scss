@@ -1,6 +1,7 @@
 // src/styles/TopBar.module.scss
 @import '../../src/styles/colors.scss';
 .topBar {
+  overflow-x: hidden;
   font-family: $font-family-base;
   background-color: #f8f9fa;
   padding: 1rem 7.125rem; 
