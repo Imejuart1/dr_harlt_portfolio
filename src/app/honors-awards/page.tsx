@@ -4,23 +4,23 @@ import styles from './HonorsAndAwards.module.scss';
 import Link from 'next/link';
 
 const images = [
-  'img/Brazil.png',
-  'img/Brazil2.png',
-  'img/awardroger1.jpeg'
+  '/img/Brazil.png',
+  '/img/Brazil2.png',
+  '/img/awardroger1.jpeg'
 ];
 
 const brazilimages = [
-  'img/Brazil.png',
-  'img/Brazil2.png',
-  'img/Brazil2.png',
+  '/img/Brazil.png',
+  '/img/Brazil2.png',
+  '/img/Brazil2.png',
 ];
 
 const annaimages = [
-  'img/anastory.png',
-  'img/annaspine.png',
-  'img/annastory2.png',
-  'img/augmented reality.png',
-  'img/augmented3.png',
+  '/img/anastory.png',
+  '/img/annaspine.png',
+  '/img/annastory2.png',
+  '/img/augmented reality.png',
+  '/img/augmented3.png',
 ];
 
 const HonorsAndAwardsPage: React.FC = () => {
@@ -116,7 +116,7 @@ const HonorsAndAwardsPage: React.FC = () => {
           <div className={styles.section}>
             <a href="https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year" target="_blank" rel="noopener noreferrer">
               <div style={{ width: '100%' }}>
-                <img src="img/awardroger1.jpeg" alt="Honor 1" className={styles.sectionImage} />
+                <img src="/img/awardroger1.jpeg" alt="Honor 1" className={styles.sectionImage} />
               </div>
             </a>
             <div className={styles.textContent}>
@@ -142,7 +142,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             </div>
             <a href="https://frame.foundation/hans-kraus-award" target="_blank" rel="noopener noreferrer">
               <div style={{ width: '100%' }}>
-                <img src="img/HansKraus2.png" alt="Honor 2" className={styles.sectionImage} />
+                <img src="/img/HansKraus2.png" alt="Honor 2" className={styles.sectionImage} />
               </div>
             </a>
           </div>
@@ -150,7 +150,7 @@ const HonorsAndAwardsPage: React.FC = () => {
           <div className={styles.section}>
             <a href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024" target="_blank" rel="noopener noreferrer">
               <div style={{ width: '100%' }}>
-                <img src="img/bestspineppp.png" alt="Honor 3" className={styles.sectionImage} />
+                <img src="/img/bestspineppp.png" alt="Honor 3" className={styles.sectionImage} />
               </div>
             </a>
             <div className={styles.textContent}>
@@ -172,7 +172,7 @@ const HonorsAndAwardsPage: React.FC = () => {
         <div className={styles.contentWrapper} id='#news'>
           <div className={styles.section}>
             <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">
-              <img src="img/hartNews1.jpg" alt="News 1" className={styles.sectionImage} />
+              <img src="/img/hartNews1.jpg" alt="News 1" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
               <h2>New York-Presbyterian Augmented Reality Advances Feature</h2>
@@ -202,7 +202,7 @@ const HonorsAndAwardsPage: React.FC = () => {
 
           <div className={styles.section}>
             <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">
-              <img src="img/medicalmarvel.png" alt="News 2" className={styles.sectionImage} />
+              <img src="/img/medicalmarvel.png" alt="News 2" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
               <h2>Medical Marvel - New York Magazine Feature</h2>
@@ -222,7 +222,7 @@ const HonorsAndAwardsPage: React.FC = () => {
               <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
             <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">
-              <img src="img/piece (2).png" alt="News 6" className={styles.sectionImage} />
+              <img src="/img/piece (2).png" alt="News 6" className={styles.sectionImage} />
             </a>
           </div>
         </div>
@@ -253,7 +253,7 @@ const HonorsAndAwardsPage: React.FC = () => {
                 <div onClick={showVideo} className={styles.thumbnailWrapper}>
                   <div className={styles.indSection} style={{ backgroundImage: `url(${brazilimages[currentImageIndex]})` }}></div>
                   <div className={styles.playButton}>
-                    <img src='img/play-button.svg' />
+                    <img src='/img/play-button.svg' />
                   </div>
                 </div>
               )}
@@ -288,7 +288,7 @@ const HonorsAndAwardsPage: React.FC = () => {
 
           <div className={styles.section}>
             <a href="https://podcasts.apple.com/us/podcast/beckers-healthcare-spine-and-orthopedic-podcast/id1512530263" target="_blank" rel="noopener noreferrer">
-              <img src="img/beckerpodcast.png" alt="News 3" className={styles.sectionImage} />
+              <img src="/img/beckerpodcast.png" alt="News 3" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
               <h2>Becker&apos;s Healthcare: Spine and Orthopedic Podcast</h2>
@@ -309,13 +309,13 @@ const HonorsAndAwardsPage: React.FC = () => {
               <a href="https://www.beckersspine.com/spine/55630-the-potential-of-ar-in-minimally-invasive-tlif-procedures.html?utm_medium=email&utm_content=newsletter" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
             <a href="https://www.beckersspine.com/spine/55630-the-potential-of-ar-in-minimally-invasive-tlif-procedures.html?utm_medium=email&utm_content=newsletter" target="_blank" rel="noopener noreferrer">
-              <img src="img/becker.png" alt="News 4" className={styles.sectionImage} />
+              <img src="/img/becker.png" alt="News 4" className={styles.sectionImage} />
             </a>
           </div>
 
           <div className={styles.section}>
             <a href="https://www.beckershospitalreview.com/podcasts/podcasts-beckers-hospital-review/roger-h-rtl-director-of-neurosurgery-spine-at-weill-cornell-medicine-94433094.html" target="_blank" rel="noopener noreferrer">
-              <img src="img/becker2.png" alt="News 5" className={styles.sectionImage} />
+              <img src="/img/becker2.png" alt="News 5" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
               <h2>Becker&apos;s Hospital Review: Podcast Features</h2>
@@ -332,7 +332,7 @@ const HonorsAndAwardsPage: React.FC = () => {
               <a href="https://podcasts.apple.com/us/podcast/the-visionary-seeing-the-future-of-spine-surgery/id1671647417?i=1000605317340" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
             <a href="https://podcasts.apple.com/us/podcast/the-visionary-seeing-the-future-of-spine-surgery/id1671647417?i=1000605317340" target="_blank" rel="noopener noreferrer">
-              <img src="img/advancepodcast6.png" alt="News 6" className={styles.sectionImage} />
+              <img src="/img/advancepodcast6.png" alt="News 6" className={styles.sectionImage} />
             </a>
           </div>
 
@@ -344,7 +344,7 @@ const HonorsAndAwardsPage: React.FC = () => {
               <a href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
             <a href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel" target="_blank" rel="noopener noreferrer">
-              <img src="img/healthpodcast.jpeg" alt="News 6" className={styles.sectionImage} />
+              <img src="/img/healthpodcast.jpeg" alt="News 6" className={styles.sectionImage} />
             </a>
           </div>
 

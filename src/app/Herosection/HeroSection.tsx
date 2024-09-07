@@ -6,7 +6,7 @@ import styles from './HeroSection.module.scss';
 const HeroSection: React.FC = () => {
   const slides = [
     {
-      image: 'img/Aboutme2.jpg',
+      image: '/img/Aboutme2.jpg',
       title: 'Dr. Roger Härtl MD',
       subtitle: 'Neurosurgeon at Och Spine, NewYork-Presbyterian',
       text: 'Augmented reality has created a new reality for spinal surgery.',
@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
       link: '/Bio'
     },
     {
-      image: 'img/review5.jpeg', 
+      image: '/img/review5.jpeg', 
       title: 'Expert in Spine Surgery',
       subtitle: 'Specializing in minimally invasive spinal surgery',
       text: 'World-renowned neurosurgeon advancing spine care globally; New York Giants neurosurgeon.',
@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
       link: '/Reviews'
     },
     {
-      image: 'img/research.jpeg',
+      image: '/img/research.jpeg',
       title: 'Research and Training',
       subtitle: 'Innovative Spine Care',
       text: 'Leading innovative, less invasive spinal treatments and pioneering disc regeneration.',

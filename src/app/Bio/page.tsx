@@ -5,7 +5,7 @@ const Bio: React.FC = () => {
   return (
     <section className={styles.bioSection}>
 
-      <div className={styles.heroSection} style={{ backgroundImage: `url('img/Aboutme2.jpg')` }}>
+      <div className={styles.heroSection} style={{ backgroundImage: `url('/img/Aboutme2.jpg')` }}>
         <div className={styles.content_section}>
           <h1>About Dr. Roger Härtl</h1>
           <p>Augmented reality has created a new reality for spinal surgery.</p>
@@ -22,7 +22,7 @@ const Bio: React.FC = () => {
         {/* Section 1: Image on left */}
         <div id="personal-statement" className={styles.section}>
           <div className={styles.imageSection}>
-            <img src="img/roger2.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+            <img src="/img/roger2.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
           </div>
           <div className={styles.textSection}>
             <h2>Personal Statement</h2>
@@ -39,7 +39,7 @@ const Bio: React.FC = () => {
         <div id="biography" className={styles.section}>
           {/* Uncomment the image section if needed */}
           {/* <div className={styles.imageSection}>
-          <img src="img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+          <img src="/img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
           </div> */}
           <div className={styles.textSection}>
             <h2>Biography</h2>
@@ -76,7 +76,7 @@ const Bio: React.FC = () => {
         <div id="training" className={styles.section}>
          {/* Uncomment the image section if needed */}
           {/* <div className={styles.imageSection}>
-          <img src="img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+          <img src="/img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
           </div> */}
           <div className={styles.textSection}>
             <h2>Training</h2>
@@ -96,7 +96,7 @@ const Bio: React.FC = () => {
         <div id="research" className={styles.section}>
           {/* Uncomment the image section if needed */}
           {/* <div className={styles.imageSection}>
-          <img src="img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+          <img src="/img/roger.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
           </div> */}
           <div className={styles.textSection}>
             <h2>Research</h2>

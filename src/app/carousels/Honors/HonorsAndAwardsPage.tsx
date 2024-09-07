@@ -10,19 +10,19 @@ const carouselItems = [
   {
     title: "Honors & Awards",
     icon: faTrophy,
-    images: ['img/bestspineppp.png', 'img/Brazil2.png', 'img/awardroger1.jpeg'],
+    images: ['/img/bestspineppp.png', '/img/Brazil2.png', '/img/awardroger1.jpeg'],
     link: "/honors-awards#honors",
   },
   {
     title: "News",
     icon: faNewspaper,
-    images: ['img/hartNews1.jpg', 'img/medicalmarvel.png', 'img/Brazil.png' ],
+    images: ['/img/hartNews1.jpg', '/img/medicalmarvel.png', '/img/Brazil.png' ],
     link: "/honors-awards#news",
   },
   {
     title: "Podcasts",
     icon: faPodcast,
-    images: ['img/beckerpodcast.png', 'img/advancepodcast6.png', 'img/healthpodcast.jpeg'],
+    images: ['/img/beckerpodcast.png', '/img/advancepodcast6.png', '/img/healthpodcast.jpeg'],
     link: "/honors-awards#podcasts"
   }
 ];

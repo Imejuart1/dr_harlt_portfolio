@@ -33,7 +33,7 @@ const MaterialComponent: React.FC = () => {
 
   return (
     <section className={styles.materialSection}>
-      <div className={styles.heroSection} style={{ backgroundImage: `url('img/research.jpeg')` }}>
+      <div className={styles.heroSection} style={{ backgroundImage: `url('/img/research.jpeg')` }}>
         <div className={styles.content}>
           <h1>Materials & Resources</h1>
           <p>Explore our comprehensive resources for pre-operative, post-operative care, referrals, healthy spine, and Imaging.</p>

@@ -6,19 +6,19 @@ import styles from './ProjectComponent.module.scss';
 const projectSections = [
     {
         title: "Research",
-        imageUrl: "img/stemcells2.jpeg", // Replace with your actual image paths
+        imageUrl: "/img/stemcells2.jpeg", // Replace with your actual image paths
        text:"Discover our cutting-edge research that is shaping the future of spinal care and regeneration",
         link: "Project/research",
     },
     {
         title: "Tanzania",
-        imageUrl: "img/tanzania.png", // Replace with your actual image paths
+        imageUrl: "/img/tanzania.png", // Replace with your actual image paths
         text:"From New York to Tanzania: How Dr. Roger Hartl has spent 15 years creating a global impact,He sought out ways to return to Africa through Doctors Without Borders",
         link: "Project/tanzania-project",
     },
     {
         title: "Physician Education ",
-        imageUrl: "img/nycmiss.webp", // Replace with your actual image paths
+        imageUrl: "/img/nycmiss.webp", // Replace with your actual image paths
         text:'Our summer master class in tubular decompression now open for registration',
         link: "https://nyc-miss.org/",
     },
@@ -29,7 +29,7 @@ const ProjectComponent = () => {
     return (
         <section className={styles.projectSection}>
             {/* Hero Section */}
-            <div className={styles.heroSection} style={{ backgroundImage: `url('/img/ROGERSPINER.png')` }}>
+            <div className={styles.heroSection} style={{ backgroundImage: `url('//img/ROGERSPINER.png')` }}>
                 <div className={styles.content}>
                     <h1>Explore Our Projects</h1>
                     <p>Delve into our groundbreaking research, international collaborations, and advanced imaging projects.</p>

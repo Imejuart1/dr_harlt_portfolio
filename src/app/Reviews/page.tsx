@@ -8,8 +8,8 @@ import Testimonials from './components/Testimonials'; // Import the Testimonials
 import styles from './Review.module.scss';
 
 const images = [
-  'img/reviewmain1.jpeg',
-  'img/reviewmain3.jpeg'
+  '/img/reviewmain1.jpeg',
+  '/img/reviewmain3.jpeg'
 ];
 
 const ReviewPage: React.FC = () => {
@@ -94,7 +94,7 @@ const ReviewPage: React.FC = () => {
         <div className={styles.reviewSection_content} id='#reviews'>
           <div id="healthgrades" className={styles.healthgSection}>
           <div className={styles.healrespo}>
-        <img src='img/healthgrades-icon.svg' alt="Healthgrades Icon" className={styles.reviewIcon} />
+        <img src='/img/healthgrades-icon.svg' alt="Healthgrades Icon" className={styles.reviewIcon} />
         <div>
         <a href="https://www.healthgrades.com/physician/dr-roger-hartl-yy2qb?referrerSource=autosuggest" target="_blank" rel="noopener noreferrer" className={styles.moreLink}>See Source</a>
         </div>
@@ -104,7 +104,7 @@ const ReviewPage: React.FC = () => {
           <div id="vitals" className={styles.vitalsSection} >
           <div className={styles.reviewHeader}>
           <div className={styles.healrespo}>
-        <img src='img/vitals.svg' alt="Vitals Icon" className={styles.reviewIcon2} />
+        <img src='/img/vitals.svg' alt="Vitals Icon" className={styles.reviewIcon2} />
         <div>
         <a href="https://www.vitals.com/doctors/Dr_Roger_Hartl.html" target="_blank" rel="noopener noreferrer" className={styles.moreLinkvitals}>See Source</a>
         </div>

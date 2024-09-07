@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link'; // Import Next.js Link component
 import styles from './styles/Navbar.module.scss';
 import StickyNavExtras from './StickyNavExtras';
+import ContactFormPopup from '@/app/Contact/ContactFormPopup';
 
 interface NavbarProps {
   setStickyNavVisible: (visible: boolean) => void;
@@ -12,10 +13,19 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
   const pathname = usePathname();
   const navExtrasRef = useRef<HTMLDivElement>(null);
+  const enlargedQRCodeRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isEnlarged, setIsEnlarged] = useState(false); // State to track QR enlargement
-
+  const [isPopupOpen, setIsPopupOpen] = useState(false); 
   const isActive = (path: string) => pathname === path;
+
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen); // Toggle the menu's visibility
@@ -50,11 +60,30 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
     };
   }, [setStickyNavVisible]);
 
+  // Add event listener to close the enlarged QR code when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (enlargedQRCodeRef.current && !enlargedQRCodeRef.current.contains(event.target as Node)) {
+        setIsEnlarged(false);
+      }
+    };
+
+    if (isEnlarged) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isEnlarged]);
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.left}>
         <div className={styles.logo}>
-          <img src="img/Dr.Hartls.png" alt="Mediz Logo" />
+          <img src="/img/Dr.Hartls.png" alt="Mediz Logo" />
           <div className={styles.logoText}>
             <h1>Dr. Roger Härtl MD</h1>
             <span>Och Spine at NewYork-Presbyterian</span>
@@ -63,14 +92,14 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
         
 
         <div className={styles.QRcode} onClick={handleEnlarge}>
-          <img src="img/QR CODE.png" alt="QR Code" />
+          <img src="/img/QR CODE.png" alt="QR Code" />
           <span><b>Click to Enlarge</b></span>
         </div>
 
         {isEnlarged && (
           <div className={styles.enlargedOverlay}>
-            <div className={styles.enlargedQRCode}>
-              <img src="img/QR CODE.png" alt="QR Code Enlarged" />
+            <div ref={enlargedQRCodeRef} className={styles.enlargedQRCode}>
+              <img src="/img/QR CODE.png" alt="QR Code Enlarged" />
               <button className={styles.closeButton} onClick={handleCloseEnlarged}>X</button>
             </div>
           </div>
@@ -78,10 +107,10 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
 
         <div className={styles.trustItems}>
           <div>
-            <img src="img/WeilCornel.png" alt="WeilCornell" />
+            <img src="/img/WeilCornel.png" alt="WeilCornell" />
           </div>
           <div>
-            <img src="img/newyorkp.png" alt="NewYorkP" />
+            <img src="/img/newyorkp.png" alt="NewYorkP" />
           </div>
         </div>
       </div>
@@ -110,12 +139,11 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
             <Link href="/Contact">Contact</Link>
           </li>
         </ul>
-        <button className={styles.contactButton}>Contact Me</button>
+        <button className={styles.contactButton} onClick={handleOpenPopup}>Email Me</button>
       </div>
+      {isPopupOpen && <ContactFormPopup onClose={handleClosePopup} />}
     </nav>
   );
 };
 
 export default Navbar;
-
-

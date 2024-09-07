@@ -1,16 +1,20 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
-import styles from './Contact.module.scss';
+import styles from './ContactFormPopup.module.scss';
 import Popup from '../../../components/Popup'; // Import the Popup component
 
-const Contact: React.FC = () => {
+interface ContactFormPopupProps {
+  onClose: () => void;
+}
+
+const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
   const [status, setStatus] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); // For showing the spinner
   const [popup, setPopup] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -42,55 +46,24 @@ const Contact: React.FC = () => {
     } catch (error) {
       console.error('Error:', error);
       setPopup({ message: 'An error occurred. Please try again.', type: 'error' });
-    }finally {
-      setLoading(false); 
+    } finally {
+      setLoading(false);
     }
   };
 
   const handleClosePopup = () => {
-    setPopup(null); 
+    setPopup(null); // Close the popup
   };
 
   return (
-    <section className={styles.contactSection}>
-      <div className={styles.heroSection}>
-        <div className={styles.contactContent}>
-          <h1>Contact</h1>
-          <h1>Dr. Roger Härtl</h1>
-          <p>Och Spine at NewYork-Presbyterian at the Weill Cornell Medicine Center for Comprehensive Spine Care</p>
+    <div className={styles.overlay} onClick={onClose}>
+      <div className={styles.popupContainer} onClick={(e) => e.stopPropagation()}>
+        <div className={styles.leftSection}>
+          <img src="/img/Aboutme2.jpg" alt="Dr. Roger Härtl" />
         </div>
-        <div className={styles.mapContainer}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.759965967281!2d-73.964666!3d40.76056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e67073cb37%3A0x88f28a806c367f69!2s240%20E%2059th%20St%202nd%20floor%2C%20New%20York%2C%20NY%2010022%2C%20USA!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-
-      <div className={styles.content}>
-        <div className={styles.infoSection}>
-          <div className={styles.address}>
-            <h2>Office Location</h2>
-            <p>240 East 59th Street, 2nd Floor<br />New York, NY 10022</p>
-            <p><strong>Phone:</strong> (212) 746-2152</p>
-            <p><strong>Fax:</strong> (646) 962-0640</p>
-          </div>
-          <div className={styles.officeContacts}>
-            <h2>Dr. Härtl&apos;s Office</h2>
-            <p><strong>Appointment Scheduling:</strong> (Destiny Boliscar, Heidy Burmudez) - (212) 746-2152</p>
-            <p><strong>Office Nurse Practitioner:</strong> (Ed Butler) - (212) 746-2152</p>
-            <p><strong>Surgical Coordinator:</strong> (Nuribeel Gonzalez) - (212) 746-2152</p>
-            <p><strong>Executive Assistant:</strong> (Erma Bell) - (212) 746-5138</p>
-            <p><strong>Email:</strong>Dr. Härtl's office can always be reached by email at: <b>hartlspine@med.cornell.edu</b></p>
-          </div>
-        </div>
-        <div className={styles.formSection}>
-          <h2>Email Dr. Härtl</h2>
+        <div className={styles.rightSection}>
+          <button className={styles.closeButton} onClick={onClose}>X</button>
+          <h2><b>Contact Dr. Roger Härtl</b></h2>
           <form onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
               <label htmlFor="name">Name</label>
@@ -126,17 +99,16 @@ const Contact: React.FC = () => {
               ></textarea>
             </div>
             <button type="submit" className={styles.submitButton} disabled={loading}>
-               {loading ? <span className={styles.spinner}></span> : 'Send Message'}
-              </button>
+              {loading ? 'Sending ...' : 'Send Message'}
+            </button>
           </form>
+          {popup && (
+            <Popup message={popup.message} type={popup.type} onClose={handleClosePopup} />
+          )}
         </div>
       </div>
-
-      {popup && (
-        <Popup message={popup.message} type={popup.type} onClose={handleClosePopup} />
-      )}
-    </section>
+    </div>
   );
 };
 
-export default Contact;
+export default ContactFormPopup;

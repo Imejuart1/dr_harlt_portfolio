@@ -5,6 +5,7 @@ import Link from 'next/link'; // Import Next.js Link component
 import styles from './styles/StickyNavExtras.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faPhone, faEnvelope, faBars, faTimes, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import ContactFormPopup from '@/app/Contact/ContactFormPopup';
 
 interface StickyNavExtrasProps {
   isMenuOpen: boolean;
@@ -14,25 +15,17 @@ interface StickyNavExtrasProps {
 
 const StickyNavExtras: React.FC<StickyNavExtrasProps> = ({ isMenuOpen, toggleMenu, isVisible }) => {
   const pathname = usePathname();
-  //const [isVisible, setIsVisible] = useState(false);
   const isActive = (path: string) => pathname === path;
+  const [isPopupOpen, setIsPopupOpen] = useState(false); 
   const menuRef = useRef<HTMLDivElement>(null);
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
 
- {/*} useEffect(() => {
-    const handleScroll = () => {
-      const navExtras = document.querySelector(`.${styles.originalNavExtras}`);
-      if (navExtras) {
-        const rect = navExtras.getBoundingClientRect();
-        setIsVisible(rect.top <= 0);
-      }
-    };
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);*/}
 const [isBackgroundVisible, setIsBackgroundVisible] = useState(false);
 const [isMenuVisible, setIsMenuVisible] = useState(false);
   useEffect(() => {
@@ -72,8 +65,9 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
     };
   }, [menuRef, toggleMenu]);
 
-  return isMenuOpen ? (
+  return  (
     <>
+    { isMenuOpen ? (<>
   <div className={`${styles.backgroundLayer} ${isBackgroundVisible ? styles.fisible : styles.hidden}`}></div>
   <div ref={menuRef} className={`${styles.stickyNavExtras_menu} ${isMenuVisible ? styles.fisible : styles.hidden}`}>
       <div className={`${styles.navExtras}`}>
@@ -103,9 +97,13 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
             <Link href="/Contact" onClick={handleCloseMenu}>Contact</Link>
           </li>
           </ul>
-        <button className={styles.contactButton} onClick={handleCloseMenu}>Contact Me</button>
+          <button className={styles.contactButton} onClick={() => {handleCloseMenu(); handleOpenPopup(); }}>
+  Email Me
+</button>
       </div>
+     
     </div>
+  
   </>) : (
     <div className={`${styles.stickyNavExtras} ${styles.navbar} ${isVisible ? styles.visible : ''}`}>
       <div className={`${styles.navExtras}`}>
@@ -133,9 +131,13 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
           </li>
           
         </ul>
-        <button className={styles.contactButton}>Contact Me</button>
+        <button className={styles.contactButton} onClick={handleOpenPopup}>Email Me</button>
       </div>
+      
     </div>
+   )}
+   {isPopupOpen && <ContactFormPopup onClose={handleClosePopup} />}
+    </>
   );
 };
 

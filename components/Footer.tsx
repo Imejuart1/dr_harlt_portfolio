@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         <div className={styles.trustcode} >
           <div>
           <div className={styles.logo}>
-            <img src="img/Dr.Hartls.png" alt="Dr. Roger Härtl Logo" />
+            <img src="/img/Dr.Hartls.png" alt="Dr. Roger Härtl Logo" />
             <div className={styles.logoText}>
               <h1>Dr. Roger Härtl MD</h1>
               <span>Och Spine at NewYork-Presbyterian</span>
@@ -30,17 +30,17 @@ const Footer: React.FC = () => {
           </div>
           <div className={styles.contactInfo}>
             <p><strong>Address:</strong> 525 East 68th Street, New York, NY 10065</p>
-            <p><strong>Phone:</strong> +1-2345-3455-33</p>
-            <p><strong>Email:</strong> test@gmail.com</p>
+            <p><strong>Phone:</strong> (212) 746-2152</p>
+            <p><strong>Email:</strong> hartlspine@med.cornell.edu</p>
           </div>
           </div>
              {/* Trust Items Section */}
              <div className={styles.trustItems}>
             <div>
-              <img src="img/WeilCornel.png" alt="WeilCornell" />
+              <img src="/img/WeilCornel.png" alt="WeilCornell" />
             </div>
             <div>
-              <img src="img/newyorkp.png" alt="NewYorkP" />
+              <img src="/img/newyorkp.png" alt="NewYorkP" />
             </div>
           </div>
           </div>
@@ -48,14 +48,14 @@ const Footer: React.FC = () => {
           <div className={styles.trustcode2}>
           {/* QR Code Section */}
           <div className={styles.QRcode} onClick={handleEnlarge}>
-            <img src="img/QR CODE.png" alt="QR Code" />
+            <img src="/img/QR CODE.png" alt="QR Code" />
             <span><b>Click to Enlarge</b></span>
           </div>
 
           {isEnlarged && (
             <div className={styles.enlargedOverlay}>
               <div className={styles.enlargedQRCode}>
-                <img src="img/QR CODE.png" alt="QR Code Enlarged" />
+                <img src="/img/QR CODE.png" alt="QR Code Enlarged" />
                 <button className={styles.closeButton} onClick={handleCloseEnlarged}>X</button>
               </div>
             </div>

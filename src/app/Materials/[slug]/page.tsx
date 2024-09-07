@@ -31,7 +31,7 @@ const MaterialPage: React.FC = () => {
     <div className={styles.mainmaterial}>
       <div
         className={styles.heroSection}
-        style={{ backgroundImage: `url('img/surgical (2).jpeg')` }}
+        style={{ backgroundImage: `url('/img/surgical (2).jpeg')` }}
       >
         <div className={styles.content}>
           <h1>{material.title}</h1>

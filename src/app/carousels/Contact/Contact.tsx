@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   return (
     <section className={styles.contactSection}>
       <div className={styles.contactImage}
-        style={{ backgroundImage: `url(/img/Aboutme.jpg)`}}></div> {/* Background image section */}
+        style={{ backgroundImage: `url(//img/Aboutme.jpg)`}}></div> {/* Background image section */}
       <div className={styles.contactContent}>
         <Link href='/Contact'>
         <h2 className={styles.sectionTitle}>
