@@ -7,7 +7,7 @@ const tanzania = () => {
     return (
         <section className={styles.researchSection}>
             {/* Hero Section */}
-            <div className={styles.heroSection} style={{ backgroundImage: `url('//img/tanzania.png')` }}>
+            <div className={styles.heroSection} style={{ backgroundImage: `url('/img/tanzania.png')` }}>
                 <div className={styles.content}>
                     <h1>Tanzania Neurosurgery Project</h1>
                     <p>The Tanzania Neurosurgery Project is conducted by Weill Cornell Medicine Neurological Surgery ...</p>
@@ -17,7 +17,7 @@ const tanzania = () => {
             {/* Content Section */}
             <div className={styles.contentSection}>
                 <div className={styles.imageContainer2}>
-                    <img src="//img/tanzania.png" alt="Research Imagse" />
+                    <img src="/img/tanzania.png" alt="Research Imagse" />
                 </div>
                 <div className={styles.textContainer}>
                     <h2>Homepage</h2>
@@ -64,14 +64,14 @@ const tanzania = () => {
                     <Link href="https://www.beckersspine.com/spine/56558-dr-roger-haertl-performs-1st-3d-navigation-spinal-surgery-in-sub-saharan-africa.html" target='__blank'>Learn More</Link>
                 </div>
                 <div className={styles.imageContainer2}>
-                    <img src="//img/becktan.webp" alt="Disc Degeneration Repair" />
+                    <img src="/img/becktan.webp" alt="Disc Degeneration Repair" />
                 </div>
                
             </div>
 
             <div className={styles.contentSection}>
                 <div className={styles.imageContainer2}>
-                <img src="//img/tanzaniaroger.jpg" alt="Disc Degeneration Repair" /> 
+                <img src="/img/tanzaniaroger.jpg" alt="Disc Degeneration Repair" /> 
                 </div>
                 <div className={styles.textContainer}>
                     <h2>Becker&apos;s Hospital Review: From New York to Tanzania</h2>

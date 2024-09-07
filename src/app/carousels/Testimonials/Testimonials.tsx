@@ -16,12 +16,12 @@ const videoUrls = [
 ];
 
 const videoThumbnails = [
-  'https://img.youtube.com/vi/kKOoUIsZVFg/0.jpg',
-  'https://img.youtube.com/vi/ns5M41ePn14/0.jpg',
-  'https://img.youtube.com/vi/ByqSJ8XleYc/0.jpg',
-  'https://img.youtube.com/vi/F7Gl05S6SZk/0.jpg',
-  'https://img.youtube.com/vi/LbQFK64lVYE/0.jpg',
-  'https://img.youtube.com/vi/AQ3zAqrGYQw/0.jpg',
+  'https:/img/.youtube.com/vi/kKOoUIsZVFg/0.jpg',
+  'https:/img/.youtube.com/vi/ns5M41ePn14/0.jpg',
+  'https:/img/.youtube.com/vi/ByqSJ8XleYc/0.jpg',
+  'https:/img/.youtube.com/vi/F7Gl05S6SZk/0.jpg',
+  'https:/img/.youtube.com/vi/LbQFK64lVYE/0.jpg',
+  'https:/img/.youtube.com/vi/AQ3zAqrGYQw/0.jpg',
 ];
 
 const Testimonials: React.FC = () => {

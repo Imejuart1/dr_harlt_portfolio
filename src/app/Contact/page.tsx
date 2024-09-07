@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
             <p><strong>Office Nurse Practitioner:</strong> (Ed Butler) - (212) 746-2152</p>
             <p><strong>Surgical Coordinator:</strong> (Nuribeel Gonzalez) - (212) 746-2152</p>
             <p><strong>Executive Assistant:</strong> (Erma Bell) - (212) 746-5138</p>
-            <p><strong>Email:</strong>Dr. Härtl's office can always be reached by email at: <b>hartlspine@med.cornell.edu</b></p>
+            <p><strong>Email:</strong>Dr. Härtl&apos;s office can always be reached by email at: <b>hartlspine@med.cornell.edu</b></p>
           </div>
         </div>
         <div className={styles.formSection}>

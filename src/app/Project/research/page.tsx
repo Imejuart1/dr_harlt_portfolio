@@ -7,7 +7,7 @@ const ResearchComponent = () => {
     return (
         <section className={styles.researchSection}>
             {/* Hero Section */}
-            <div className={styles.heroSection} style={{ backgroundImage: `url('//img/stemcells2.jpeg')` }}>
+            <div className={styles.heroSection} style={{ backgroundImage: `url('/img/stemcells2.jpeg')` }}>
                 <div className={styles.content}>
                     <h1>Research Projects</h1>
                     <p>Discover our cutting-edge research that is shaping the future of spinal care and regeneration.</p>
@@ -17,7 +17,7 @@ const ResearchComponent = () => {
             {/* Content Section */}
             <div className={styles.contentSection}>
                 <div className={styles.imageContainer2}>
-                    <img src="//img/stemcells.png" alt="Research Imagse" />
+                    <img src="/img/stemcells.png" alt="Research Imagse" />
                 </div>
                 <div className={styles.textContainer}>
                     <h2>Guide for Stem Cell Procedure</h2>
@@ -34,7 +34,7 @@ const ResearchComponent = () => {
                     <Link href="/Materials/disc-degeneration">Learn More</Link>
                 </div>
                 <div className={styles.imageContainer2}>
-                    <img src="//img/spinexx.png" alt="Disc Degeneration Repair" />
+                    <img src="/img/spinexx.png" alt="Disc Degeneration Repair" />
                 </div>
                
             </div>

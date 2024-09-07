@@ -23,9 +23,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <Head>
         {/* Preload images */}
-        <link rel="preload" href="//img/Aboutme2.jpg" as="image" />
-        <link rel="preload" href="//img/review5.jpeg" as="image" />
-        <link rel="preload" href="//img/research.jpeg" as="image" />
+        <link rel="preload" href="/img/Aboutme2.jpg" as="image" />
+        <link rel="preload" href="/img/review5.jpeg" as="image" />
+        <link rel="preload" href="/img/research.jpeg" as="image" />
       </Head>
       <body>
         <Header />
