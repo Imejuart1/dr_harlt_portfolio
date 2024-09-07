@@ -9,7 +9,7 @@ const tanzania = () => {
             {/* Hero Section */}
             <div className={styles.heroSection} style={{ backgroundImage: `url('/img/tanzania.png')` }}>
                 <div className={styles.content}>
-                    <h1>Tanzania Neurosurgery Project</h1>
+                    <h1>Tanzania Project</h1>
                     <p>The Tanzania Neurosurgery Project is conducted by Weill Cornell Medicine Neurological Surgery ...</p>
                 </div>
             </div>
