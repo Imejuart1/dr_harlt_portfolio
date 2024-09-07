@@ -1,7 +1,6 @@
 @import '../../src/styles/colors.scss';
 
 .navbar {
-
   font-family: $font-family-base;
   display: flex;
   flex-direction: column;
@@ -247,8 +246,8 @@
     flex-direction: row;
     align-items: center;
   //  justify-content: space-between; 
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     position: relative;
     overflow: hidden; 
     width:100%;
