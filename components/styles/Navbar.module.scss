@@ -234,6 +234,15 @@
 }
 @media (max-width: 650px) {
   .trustItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  width:100%;
+  }
+}
+@media (max-width: 450px) {
+  .trustItems {
     display: flex;
     flex-direction: row;
     align-items: center;
