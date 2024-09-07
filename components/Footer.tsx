@@ -64,11 +64,11 @@ const Footer: React.FC = () => {
 <div className={styles.rightSection}>
           {/* Social Media Section */}
           <div className={styles.socialMedia}>
-            <div><a href="#"><FontAwesomeIcon icon={faFacebookF} /></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faPinterestP} /></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></div>
+            <div><a href="https://www.facebook.com/roger.hartl/"><FontAwesomeIcon icon={faFacebookF} fixedWidth/></a></div>
+            <div><a href="https://www.linkedin.com/in/roger-härtl-92955b185" target='__blank'><FontAwesomeIcon icon={faLinkedinIn} fixedWidth/></a></div>
+            {/*<div><a href="#"><FontAwesomeIcon icon={faPinterestP} fixedWidth/></a></div>*/}
+            <div><a href="https://x.com/roghartl?t=co3m3RKJCF7s2tMrUts4ZA&s=09" target='__blank'><FontAwesomeIcon icon={faTwitter} fixedWidth/></a></div>
+            <div><a href="#"><FontAwesomeIcon icon={faInstagram} fixedWidth/></a></div>
           </div>
 
           <div className={styles.copyright}>
