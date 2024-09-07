@@ -12,6 +12,7 @@ config.autoAddCss = false
 export const metadata = {
   title: 'Dr. Roger Härtl',
   description: 'Dr. Roger Härtl website',
+  icon:'/img/Dr.Hartls.png'
 };
 
 interface RootLayoutProps {
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <Head>
+      <link rel="icon" href="/img/Dr.Hartls.png" type="image/png" />
         {/* Preload images */}
         <link rel="preload" href="/img/Aboutme2.jpg" as="image" />
         <link rel="preload" href="/img/review5.jpeg" as="image" />

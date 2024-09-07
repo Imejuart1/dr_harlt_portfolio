@@ -83,7 +83,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
     <nav className={styles.navbar}>
       <div className={styles.left}>
         <div className={styles.logo}>
-          <img src="/img/Dr.Hartls.png" alt="Mediz Logo" />
+          <img src="/img/Dr.Hartls.png" alt="harlt Logo" />
           <div className={styles.logoText}>
             <h1>Dr. Roger Härtl MD</h1>
             <span>Och Spine at NewYork-Presbyterian</span>
