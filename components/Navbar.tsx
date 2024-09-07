@@ -1,23 +1,58 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'; // Import Next.js Link component
 import styles from './styles/Navbar.module.scss';
+import StickyNavExtras from './StickyNavExtras';
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  setStickyNavVisible: (visible: boolean) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
   const pathname = usePathname();
   const navExtrasRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isEnlarged, setIsEnlarged] = useState(false); // State to track QR enlargement
+
   const isActive = (path: string) => pathname === path;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen); // Toggle the menu's visibility
   };
 
+  const handleEnlarge = () => {
+    setIsEnlarged(true);
+  };
+
+  const handleCloseEnlarged = () => {
+    setIsEnlarged(false);
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setStickyNavVisible(!entry.isIntersecting);
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (navExtrasRef.current) {
+      observer.observe(navExtrasRef.current);
+    }
+
+    return () => {
+      if (navExtrasRef.current) {
+        observer.unobserve(navExtrasRef.current);
+      }
+    };
+  }, [setStickyNavVisible]);
 
   return (
     <nav className={styles.navbar}>
-  <div className={styles.left}>
+      <div className={styles.left}>
         <div className={styles.logo}>
           <img src="img/Dr.Hartls.png" alt="Mediz Logo" />
           <div className={styles.logoText}>
@@ -25,6 +60,22 @@ const Navbar: React.FC = () => {
             <span>Och Spine at NewYork-Presbyterian</span>
           </div>
         </div>
+        
+
+        <div className={styles.QRcode} onClick={handleEnlarge}>
+          <img src="img/QR CODE.png" alt="QR Code" />
+          <span><b>Click to Enlarge</b></span>
+        </div>
+
+        {isEnlarged && (
+          <div className={styles.enlargedOverlay}>
+            <div className={styles.enlargedQRCode}>
+              <img src="img/QR CODE.png" alt="QR Code Enlarged" />
+              <button className={styles.closeButton} onClick={handleCloseEnlarged}>X</button>
+            </div>
+          </div>
+        )}
+
         <div className={styles.trustItems}>
           <div>
             <img src="img/WeilCornel.png" alt="WeilCornell" />
@@ -33,7 +84,8 @@ const Navbar: React.FC = () => {
             <img src="img/newyorkp.png" alt="NewYorkP" />
           </div>
         </div>
-        </div>
+      </div>
+
       <div ref={navExtrasRef} className={`${styles.navExtras} ${styles.originalNavExtras}`}>
         <ul className={styles.navLinks}>
           <li className={isActive('/') ? styles.activeLink : ''}>
@@ -46,7 +98,7 @@ const Navbar: React.FC = () => {
             <Link href="/Reviews">Reviews</Link>
           </li>
           <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
-            <Link href="/honors-awards">Honors  and News</Link>
+            <Link href="/honors-awards">Honors and News</Link>
           </li>
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
             <Link href="/Materials">Materials</Link>
@@ -65,3 +117,5 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
+

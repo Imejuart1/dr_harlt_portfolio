@@ -23,7 +23,49 @@ const healthgradesSlides: Slide[] = [
     author: "Leonard Harlan",
     date: "Jan 26, 2024",
     rating: 5
-  }
+  },
+  {
+    text: "Dr Hartl is a genius and angel in equal measure!",
+    author: "Kenny Schachter ",
+    date: "Apr 06, 2024",
+    rating: 5
+  },
+  {
+    text: "He’s one of the most skilled and knowledgeable surgeons for spine. His attention to his patients is unparalleled and his staff is the best. You know you are good hands with a Dr that really cares.",
+    author: "Anonymous",
+    date: "Jun 23, 2024",
+    rating: 5
+  },
+  {
+    text: "Dr. Hartl comprehensively performed an extensive physical exams and with me reviewed every aspect of an MRI of my entire spine. He explained all was very patient and caring.",
+    author: "William Sherman",
+    date: "Feb 17, 2024",
+    rating: 5
+  },
+  {
+    text: "I came into the emergency room with a headache, soon after I was receiving emergency brain surgery under the guide of Dr. Hartl. Forever grateful for a second chance at life. Thank you Dr. Hartl",
+    author: "Cosmo Ramirez",
+    date: "Nov 04, 2023",
+    rating: 5
+  },
+  {
+    text: "Dr. Härtl explained my condition thoroughly as well as the surgical procedure. I have not yet had surgery, but so far so good.",
+    author: "Jane",
+    date: "Mar 18, 2023",
+    rating: 5
+  },
+  {
+    text: "Dr Hartl was right on time for my appointment and was very polite and very thorough",
+    author: "Les ",
+    date: "Oct 28, 2022",
+    rating: 5
+  },
+  {
+    text: "I felt completely trusting of Dr Hartls advice and expertise. He was straight forward, competent and did not push for any unnecessary surgical intervention. He suggested alternate treatment such as Physical Therapy and/or a possible steroid injections for my pain. I respect his conservative...",
+    author: "Nancy K de Groot ",
+    date: "Oct 13, 2022",
+    rating: 5
+  },
 ];
 
 const HealthgradesReview: React.FC = () => {

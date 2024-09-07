@@ -7,6 +7,7 @@ import StickyNavExtras from './StickyNavExtras';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isStickyNavVisible, setIsStickyNavVisible] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   useEffect(() => {
@@ -25,8 +26,8 @@ return () => {
   return (
     <header>
       <TopBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-      <Navbar />
-      <StickyNavExtras isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      <Navbar setStickyNavVisible={setIsStickyNavVisible}/>
+      <StickyNavExtras isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} isVisible={isStickyNavVisible}/>
     </header>
   );
 };

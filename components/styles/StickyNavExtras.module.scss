@@ -13,6 +13,7 @@
     transition: opacity 0.3s ease-in-out;
   
   }
+
   
   .visible {
     display: block;
@@ -41,10 +42,11 @@
         display: none;
       }
     }
-
-  
-    
+ 
     .stickyNavExtras_menu {
+      @media (min-width: 769px) {
+        display: none;
+      }
       position: fixed;
       display: flex;
       align-items: center;
@@ -54,7 +56,7 @@
       width: 85%; 
       height: 100%;
       background-color: rgba(0, 0, 0, 0.9); 
-      z-index: 9000;
+      z-index: 90000;
       transition: left 0.5s ease-in-out;
       color: #fff; 
       padding: 1rem; 

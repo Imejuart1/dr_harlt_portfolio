@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     width:100%;
-    margin-top: -3.5rem;
+    //margin-top: -3.5rem;
     @media (max-width: 768px) {
       margin-top: 0.1rem;
     }
@@ -93,6 +93,8 @@
       }
     }
 
+  
+
     .profileImage {
       margin-left: 15px;
 
@@ -159,23 +161,6 @@
     @media (max-width: 768px) {
       display: none;
     }
-    .trustItems {
-      display: flex;
-      align-items: center;
-
-      span {
-        display: flex;
-        align-items: center;
-        margin-right: 30px;
-        font-size: 14px;
-        color: $dark-blue; /* Darker blue for trust items */
-
-        i {
-          color: $primary-blue; /* Primary blue for icons */
-          margin-right: 8px;
-        }
-      }
-    }
 
     .contactButton {
       background-color: #0056b3;
@@ -200,11 +185,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right:-3rem;
+  //margin-right:-3rem;
+  @media (max-width: 768px) {
+   flex-direction: column;
+   }
   @media (max-width: 650px) {
     margin-right:0rem;
    }
   div{
+    margin-right:-3rem;
    //width:10rem;
     img{
       width:10rem;
@@ -219,7 +208,8 @@
         margin-top: 2rem;
        width:19rem;
         @media (max-width: 768px) {
-          margin-top:0rem;
+          margin-top:-3rem;
+          margin-bottom: -3rem;
           width:19rem;
         }
       }
@@ -284,20 +274,110 @@
       opacity: 1;
     }
     40% {
-      transform: translateX(0); /* Stay in the center */
+      transform: translateX(0);
       opacity: 1;
     }
     60% {
-      transform: translateX(-100%); /* Start moving off-screen to the left */
+      transform: translateX(-100%); 
       opacity: 1;
     }
     90% {
-      transform: translateX(-100%); /* Continue moving off-screen */
+      transform: translateX(-100%);
       opacity: 0;
     }
     100% {
-      transform: translateX(-100%); /* Completely off-screen */
+      transform: translateX(-100%); 
       opacity: 0;
+    }
+  }
+}
+
+.qrsinfo{
+  display:flex;
+  flex-direction: row;
+  gap:0.4rem;
+justify-content: space-between;
+  .logo{
+   // width: 100%;
+  }
+ 
+}
+.QRcode {
+  position: relative;
+  cursor: pointer;
+  @media (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+    @media (max-width: 1000px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    @media (max-width: 1000px) {
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+.enlargedOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); // Black overlay with transparency
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.enlargedQRCode {
+  position: relative;
+
+  img {
+    width: 400px; // Enlarged QR code size
+    height: 400px;
+    z-index: 100000;
+    @media (max-width: 768px) {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .closeButton {
+    position: absolute;
+    top: -80px;
+    right: -40px;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 102;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
     }
   }
 }

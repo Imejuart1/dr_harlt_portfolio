@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'; // Import Next.js Link component
@@ -10,15 +9,16 @@ import { faClock, faPhone, faEnvelope, faBars, faTimes, faShareAlt } from '@fort
 interface StickyNavExtrasProps {
   isMenuOpen: boolean;
   toggleMenu: () => void;
+  isVisible: boolean; 
 }
 
-const StickyNavExtras: React.FC<StickyNavExtrasProps> = ({ isMenuOpen, toggleMenu }) => {
+const StickyNavExtras: React.FC<StickyNavExtrasProps> = ({ isMenuOpen, toggleMenu, isVisible }) => {
   const pathname = usePathname();
-  const [isVisible, setIsVisible] = useState(false);
+  //const [isVisible, setIsVisible] = useState(false);
   const isActive = (path: string) => pathname === path;
   const menuRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+ {/*} useEffect(() => {
     const handleScroll = () => {
       const navExtras = document.querySelector(`.${styles.originalNavExtras}`);
       if (navExtras) {
@@ -32,7 +32,7 @@ const StickyNavExtras: React.FC<StickyNavExtrasProps> = ({ isMenuOpen, toggleMen
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, []);*/}
 const [isBackgroundVisible, setIsBackgroundVisible] = useState(false);
 const [isMenuVisible, setIsMenuVisible] = useState(false);
   useEffect(() => {
@@ -97,13 +97,13 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
               <Link href="/Materials" onClick={handleCloseMenu}>Materials</Link>
             </li>
             <li className={isActive('/Project') ? styles.activeLink : ''}>
-            <Link href="/Project">Projects</Link>
+            <Link href="/Project" onClick={handleCloseMenu}>Projects</Link>
           </li>
           <li className={isActive('/Contact') ? styles.activeLink : ''}>
-            <Link href="/Contact">Contact</Link>
+            <Link href="/Contact" onClick={handleCloseMenu}>Contact</Link>
           </li>
           </ul>
-        <button className={styles.contactButton}>Contact Me</button>
+        <button className={styles.contactButton} onClick={handleCloseMenu}>Contact Me</button>
       </div>
     </div>
   </>) : (

@@ -13,17 +13,60 @@ interface Slide {
 
 const vitalsSlides: Slide[] = [
   {
-    text: "An amazing doctor who listens and explains everything thoroughly. Highly recommended.",
-    author: "John Doe",
-    date: "Dec 15, 2023",
+    text: "Went in for a 2 level ACDF. Discharged the next day without a brace and feeling great. All that worrying for nothing. A month later and I'm feeling great",
+    author: "",
+    date: "Feb 2nd, 2024",
     rating: 4
   },
   {
-    text: "Dr Härtl is extremely knowledgeable and caring. I felt at ease throughout my treatment.",
-    author: "Jane Smith",
-    date: "Nov 20, 2023",
+    text: "Amazing doctor, I am grateful that I was referred to Dr. Hartl, he was able to pin point my fathers back pain and recommended the appropriate surgery. He then right away connected us to the surgical team to start scheduling everything. Very smooth and easy process.",
+    author: "",
+    date: "Feb 03, 2023",
     rating: 5
-  }
+  },
+  {
+    text: "Excellent surgeon!",
+    author: "",
+    date: "July 27th, 2016",
+    rating: 5
+  },
+  {
+    text: "Dr. Hartl and his staff were terrific. He performed a laminectomy to L5/S1. No post-op pain, didn't need to fill the RX for pain meds! I was up and about the next day.",
+    author: "",
+    date: "July 16th, 2015",
+    rating: 5
+  },
+  {
+    text: "Dr. Hartl helped my husband walk again. He was always there at the hospital to check on my husband. We would definitely recommend him since he is an excellent doctor.",
+    author: "",
+    date: "October 30th, 2014",
+    rating: 5
+  },
+  {
+    text: "Dr. Hartl is a world class surgeon. I was in pain for over a year and a day after surgery, pain free. My recovery was rapid with no complications. He was recommended to me by 2 different sources and I will not hesitate to recommend him to others.",
+    author: "",
+    date: "July 17th, 2014",
+    rating: 5
+  },
+  {
+    text: "Dr. Hartl is extremely smart and patient. I had neck surgery and was so scared. I am not only pleased with the results but also the scar after two weeks you can hardly see. He also sat with me and answered all my questions without me feeling rushed. I highly recommend Dr. Hartl.",
+    author: "",
+    date: "June 2nd, 2013",
+    rating: 5
+  },
+  {
+    text: "Dr. Hartl is a wonderful doctor. Not only is he at the top of his game but he is very caring and considerate. He take care of you as if you were the only one that matters, while having many patients. He is very smart and looks out for the least invasive option possible for that patient. He is in a word wonderful!",
+    author: "",
+    date: "February 16th, 2010",
+    rating: 5
+  },
+
+  {
+    text: "He is the best neurosurgeon. He cured my back pain. I had been to many so called top doctors and no one found the reason for my pain. He did in a heartbeat. It was a tough surgery but so worth it. I have no pain . It was a long haul but there was a pot of gold at the end of the rainbow! Thank you",
+    author: "",
+    date: "August 18th, 2013",
+    rating: 5
+  },
 ];
 
 const VitalsReview: React.FC = () => {
@@ -100,49 +143,49 @@ const VitalsReview: React.FC = () => {
                 <h2>Dr. Hartl&apos;s Reviews</h2>
                 <div className={styles.ratingSummary}>
                   <div className={styles.ratingOverall}>
-                    <h3 className={styles.rateh3}>4.8</h3>
+                    <h3 className={styles.rateh3}>4</h3>
                     <div className={styles.stariop}>
                     <div className={styles.stars}>
-                      {renderStars(5)}
+                      {renderStars(4)}
                     </div>
-                    <p className={styles.ratep}> 306+ ratings, 214+ with a written review</p>
+                    <p className={styles.ratep}> 83+ ratings with 34 comments</p>
                     </div>
                   </div>
                   <div className={styles.ratingBreakdown}>
                     <div className={styles.ratingRow}>
                       <span>5 Star</span>
                       <div className={styles.ratingBar}>
-                        <div className={styles.ratingFill} style={{ width: '92%' }} />
+                        <div className={styles.ratingFill} style={{ width: '70%' }} />
                       </div>
-                      <span>92%</span>
+                      <span> 70.24%</span>
                     </div>
                     <div className={styles.ratingRow}>
                       <span>4 Star</span>
                       <div className={styles.ratingBar}>
-                        <div className={styles.ratingFill} style={{ width: '3%' }} />
+                        <div className={styles.ratingFill} style={{ width: '24%' }} />
                       </div>
-                      <span>3%</span>
+                      <span>24.10%</span>
                     </div>
                     <div className={styles.ratingRow}>
                       <span>3 Star</span>
                       <div className={styles.ratingBar}>
-                        <div className={styles.ratingFill} style={{ width: '1%' }} />
+                        <div className={styles.ratingFill} style={{ width: '4%' }} />
                       </div>
-                      <span>1%</span>
+                      <span>1.82%</span>
                     </div>
                     <div className={styles.ratingRow}>
                       <span>2 Star</span>
                       <div className={styles.ratingBar}>
-                        <div className={styles.ratingFill} style={{ width: '1%' }} />
+                        <div className={styles.ratingFill} style={{ width: '4%' }} />
                       </div>
-                      <span>1%</span>
+                      <span>1.82%</span>
                     </div>
                     <div className={styles.ratingRow}>
                       <span>1 Star</span>
                       <div className={styles.ratingBar}>
-                        <div className={styles.ratingFill} style={{ width: '4%' }} />
+                        <div className={styles.ratingFill} style={{ width: '1%' }} />
                       </div>
-                      <span>4%</span>
+                      <span>1.20%</span>
                     </div>
                     </div>
                   </div>
@@ -150,70 +193,94 @@ const VitalsReview: React.FC = () => {
             )}
               {subTab === "detailed" && (<div className={styles.dropdownContent}>
                 <h4 className={styles.h4v}>Provider Feedback</h4>
-                <p className={styles.p}>96% positive</p>
+                <p className={styles.p}>80% positive</p>
                 <ul className={styles.ul}>
                   <li className={styles.li}>
-                    <span className={styles.feedbackText}>Trusted the provider&apos;s decisions</span>
+                    <span className={styles.feedbackText}>Easy Appointment</span>
                     <div className={styles.feedbackBar}>
                       <div className={styles.progress}>
                         <div
                           className={styles.progressFilled}
-                          style={{ width: '96%' }} // Dynamically adjust width here
+                          style={{ width: '80%' }} // Dynamically adjust width here
                         ></div>
                       </div>
-                      <span className={styles.feedbackVotes}>268 agree, 11 disagree</span>
+                      <span className={styles.feedbackVotes}>4 STAR</span>
                     </div>
                   </li>
                   <li className={styles.li}>
-                    <span className={styles.feedbackText}>Listened & answered questions</span>
+                    <span className={styles.feedbackText}>Friendly Staff</span>
                     <div className={styles.feedbackBar}>
                       <div className={styles.progress}>
                         <div
                           className={styles.progressFilled}
-                          style={{ width: '95%' }} // Adjust according to the data
+                          style={{ width: '80%' }} // Adjust according to the data
                         ></div>
                       </div>
-                      <span className={styles.feedbackVotes}>263 agree, 13 disagree</span>
+                      <span className={styles.feedbackVotes}>4 STAR</span>
                     </div>
                   </li>
                   <li className={styles.li}>
-                    <span className={styles.feedbackText}>Explained conditions well</span>
+                    <span className={styles.feedbackText}>Bedside Manner</span>
                     <div className={styles.feedbackBar}>
                       <div className={styles.progress}>
                         <div
                           className={styles.progressFilled}
-                          style={{ width: '96%' }} // Adjust according to the data
+                          style={{ width: '80%' }} // Adjust according to the data
                         ></div>
                       </div>
-                      <span className={styles.feedbackVotes}>263 agree, 11 disagree</span>
+                      <span className={styles.feedbackVotes}>4 STAR</span>
                     </div>
                   </li>
                   <li className={styles.li}>
-                    <span className={styles.feedbackText}>Appointment wasn&apos;t rushed</span>
+                    <span className={styles.feedbackText}>Appropriate Followup</span>
                     <div className={styles.feedbackBar}>
                       <div className={styles.progress}>
                         <div
                           className={styles.progressFilled}
-                          style={{ width: '96%' }} // Adjust according to the data
+                          style={{ width: '80%' }} // Adjust according to the data
                         ></div>
                       </div>
-                      <span className={styles.feedbackVotes}>254 agree, 10 disagree</span>
+                      <span className={styles.feedbackVotes}>4 STAR</span>
                     </div>
                   </li>
                   <li className={styles.li}>
-                    <span className={styles.feedbackText}>I felt respected</span>
+                    <span className={styles.feedbackText}>Promptness</span>
                     <div className={styles.feedbackBar}>
                       <div className={styles.progress}>
                         <div
                           className={styles.progressFilled}
-                          style={{ width: '100%' }} // Adjust according to the data
+                          style={{ width: '80%' }} // Adjust according to the data
                         ></div>
                       </div>
-                      <span className={styles.feedbackVotes}>21 agree, 0 disagree</span>
+                      <span className={styles.feedbackVotes}>4 STAR</span>
+                    </div>
+                  </li>
+                  <li className={styles.li}>
+                    <span className={styles.feedbackText}>Accurate Diagnosis</span>
+                    <div className={styles.feedbackBar}>
+                      <div className={styles.progress}>
+                        <div
+                          className={styles.progressFilled}
+                          style={{ width: '80%' }} // Adjust according to the data
+                        ></div>
+                      </div>
+                      <span className={styles.feedbackVotes}>4 STAR</span>
+                    </div>
+                  </li>
+                  <li className={styles.li}>
+                    <span className={styles.feedbackText}>Spends Time with Patients</span>
+                    <div className={styles.feedbackBar}>
+                      <div className={styles.progress}>
+                        <div
+                          className={styles.progressFilled}
+                          style={{ width: '80%' }} // Adjust according to the data
+                        ></div>
+                      </div>
+                      <span className={styles.feedbackVotes}>4 STAR</span>
                     </div>
                   </li>
                 </ul>
-                <h4 className={styles.office}>Office + Staff Feedback</h4>
+                {/*<h4 className={styles.office}>Office + Staff Feedback</h4>
                 <p className={styles.p}>94% positive</p>
                 <ul className={styles.ul}>
                   <li className={styles.li}>
@@ -240,7 +307,7 @@ const VitalsReview: React.FC = () => {
                       <span className={styles.feedbackVotes}>231 agree, 21 disagree</span>
                     </div>
                   </li>
-                </ul>
+                </ul>*/}
               </div>)}
               </> )}
           </div>
