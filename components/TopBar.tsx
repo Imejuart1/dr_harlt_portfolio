@@ -69,7 +69,7 @@ const TopBar: React.FC<TopBarProps> = ({isMenuOpen , toggleMenu}) => {
           <div className={`  ${isSocialMenuOpen ? styles.showSocialMenu2 : styles.socialMedia}`}>
             <div><a href="https://www.facebook.com/roger.hartl/"><FontAwesomeIcon icon={faFacebookF} fixedWidth/></a></div>
             <div><a href="https://www.linkedin.com/in/roger-härtl-92955b185" target='__blank'><FontAwesomeIcon icon={faLinkedinIn} fixedWidth/></a></div>
-            <div><a href="#"><FontAwesomeIcon icon={faPinterestP} fixedWidth/></a></div>
+            {/*<div><a href="#"><FontAwesomeIcon icon={faPinterestP} fixedWidth/></a></div>*/}
             <div><a href="https://x.com/roghartl?t=co3m3RKJCF7s2tMrUts4ZA&s=09" target='__blank'><FontAwesomeIcon icon={faTwitter} fixedWidth/></a></div>
             <div><a href="#"><FontAwesomeIcon icon={faInstagram} fixedWidth/></a></div>
           </div>
