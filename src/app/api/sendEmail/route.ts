@@ -16,7 +16,7 @@ export async function POST(request: Request) {
     // Send email to Dr. Roger Härtl's office
     await transporter.sendMail({
       from: email,
-      to: 'mikwuegbuenyi@gmail.com', // Dr. Härtl's email or assistant's email
+      to: 'hartlspine@med.cornell.edu', // Dr. Härtl's email or assistant's email
       subject: `New Inquiry from ${name}`,
       text: message,
       html: `
