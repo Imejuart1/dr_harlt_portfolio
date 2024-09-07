@@ -36,7 +36,7 @@
       width: 90%;
       height: 100%;
       background-color: rgba(10, 81, 223, 0.5); /* Blue background layer */
-      z-index: 1000;
+      z-index: 90000;
       transition: left 0.5s ease-in-out; 
       @media (min-width: 769px) {
         display: none;

@@ -138,11 +138,11 @@ const HonorsAndAwardsPage: React.FC = () => {
               <p>Dr. Roger Härtl has received the Hans Kraus Award for his groundbreaking work in spine surgery and patient care.<br></br>
               &quot;We are proud to present the award to Roger Härtl MD, the Hansen-MacDonald Professor of Neurological Surgery and Director of Neurosurgery Spine at the Weill Cornell Medicine Brain and Spine Center in New York.&quot;</p>
               <a href="https://frame.foundation/hans-kraus-award" target="_blank" rel="noopener noreferrer">Read more</a><br></br>
-              <a>See pdf</a>
+              <a href="https://drive.google.com/file/d/1cRrmQZABK_TlDbzbp6CESOsyfFB8u6r3/view" target="_blank" rel="noopener noreferrer">See pdf</a>
             </div>
             <a href="https://frame.foundation/hans-kraus-award" target="_blank" rel="noopener noreferrer">
               <div style={{ width: '100%' }}>
-                <img src="/img/HansKraus2.png" alt="Honor 2" className={styles.sectionImage} />
+                <img src="/img/Hanskraus2.png" alt="Honor 2" className={styles.sectionImage} />
               </div>
             </a>
           </div>
@@ -172,7 +172,7 @@ const HonorsAndAwardsPage: React.FC = () => {
         <div className={styles.contentWrapper} id='#news'>
           <div className={styles.section}>
             <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">
-              <img src="/img/hartNews1.jpg" alt="News 1" className={styles.sectionImage} />
+              <img src="/img/hartnews1.jpg" alt="News 1" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
               <h2>New York-Presbyterian Augmented Reality Advances Feature</h2>

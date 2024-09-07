@@ -31,6 +31,15 @@ const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, title, previe
             )}*/}
           </div>
         )}
+
+{type === 'images' && (
+          <div className={styles.pdfContainer}>
+            <img src={previewImage} alt={`Preview of ${title}`} className={styles.pdfPreviewImage} />
+  
+          </div>
+        )}
+        
+
         {type === 'video' && (
           <a href={src} target="_blank">
           <div className={styles.videoContainer}>

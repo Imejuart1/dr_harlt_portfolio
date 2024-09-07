@@ -6,6 +6,14 @@ import MediaCardComponent from "../MediaCardComponent";
 import styles from "./Slug.module.scss";
 import { materialData } from "./Materialsdata/materialData";
 
+interface MediaItem {
+  type: string;
+  src: string;
+  title: string;
+  previewImage?: string; 
+}
+
+
 const MaterialPage: React.FC = () => {
   const params = useParams();
   const slug = params.slug as string;
@@ -14,8 +22,9 @@ const MaterialPage: React.FC = () => {
 
   const pdfs = material?.media.filter((item) => item.type === "pdf") || [];
   const videos = material?.media.filter((item) => item.type === "video") || [];
+  const images = material?.media.filter((item) => item.type === "images") || [];
 
-  const guidesAvailable = pdfs.length > 0;
+  const guidesAvailable = pdfs.length || images.length> 0;
   const videosAvailable = videos.length > 0;
 
   // Set initial active tab based on availability
@@ -76,7 +85,16 @@ const MaterialPage: React.FC = () => {
                 title={item.title}
               />
             ))}
-
+             {activeTab === "guides" &&
+            images.map((item: MediaItem, index) => (
+              <MediaCardComponent
+                key={index}
+                type={item.type}
+                src={item.src}
+                title={item.title}
+                previewImage={item.previewImage}
+              />
+            ))}
           {activeTab === "videos" &&
             videos.map((item, index) => (
               <MediaCardComponent
@@ -86,7 +104,10 @@ const MaterialPage: React.FC = () => {
                 title={item.title}
               />
             ))}
+
+           
         </div>
+       
       </div>
     </div>
   );

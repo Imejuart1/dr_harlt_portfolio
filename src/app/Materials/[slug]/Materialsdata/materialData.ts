@@ -100,7 +100,7 @@ export const materialData = {
       "post-op-activity-timeline" :{
         title: "Post OP Activity Timeline",
         content:
-          "Explore instructional video for Post op activity timeline.",
+          "Explore instructional guide for Post op activity timeline.",
         media: [
           {
             type: "",
@@ -108,9 +108,9 @@ export const materialData = {
             title: "",
           },
           {
-            type: "video",
-            src: "https://www.youtube.com/embed/pgodXc8sqjg",
-            title: "Activity after Spine Surgery",
+            type: "pdf",
+            src: "https://drive.google.com/file/d/1YfdNDpN8uOe7FmRs-qR5JUOwbi5n6eI4/preview",
+            title: "Post OP Activity Timeline",
             previewImage: "/img/surgy1.png",
           },
         ],
@@ -643,6 +643,19 @@ export const materialData = {
             type: "pdf",
             src: "https://drive.google.com/file/d/1C1fHRyf-2limIKvx0sxQryyfnRIw3wpN/preview",
             title: "Ambra SPINE Instructions",
+            previewImage: "/img/surgy1.png",
+          }
+        ]
+      },
+      "B.L.T" :{
+        title:"B.L.T Video",
+        content:
+       "Activity after Spine Surgery",
+        media: [
+          {
+            type: "video",
+            src: "https://www.youtube.com/embed/pgodXc8sqjg",
+            title: "B.L.T Video",
             previewImage: "/img/surgy1.png",
           }
         ]

@@ -112,6 +112,9 @@
 
 @media (max-width: 768px) {
   .topBar {
+    position:fixed;
+    z-index:10000;
+    width:100%;
   .contactInfo, .socialMedia {
    // display: none;
     height: 0;

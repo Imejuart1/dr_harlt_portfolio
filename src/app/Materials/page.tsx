@@ -62,6 +62,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/post-op-posture">Post-Op Posture</Link></li>
             <li><Link href="/Materials/hans-kraus-post-op-exercises">Hans-Kraus Post-Op Exercises</Link></li>
             <li><Link href="/Materials/post-op-activity-timeline">Post-Op Activity Timeline</Link></li>
+            <li><Link href="/Materials/B.L.T">B.L.T. Video</Link></li>
             <li><Link href="https://www.rickysinghmd.com/exercises/" target='_blank'>Dr. Ricky Singh&apos;s Exercises &gt; 6 Weeks After Surgery</Link></li>
           </ul>
         </div>

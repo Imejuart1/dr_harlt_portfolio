@@ -16,6 +16,9 @@
   @media (max-width: 900px) {
     padding: 1rem 1.5rem;
   }
+  @media (max-width: 768px) {
+   padding-top: 5rem;
+  }
   .left {
     display: flex;
     justify-content: space-between;
