@@ -34,6 +34,14 @@ const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, title, previe
 
 {type === 'images' && (
           <div className={styles.pdfContainer}>
+            {src &&
+            <div className={styles.pdfHeader}>
+             <div className={styles.pdfActions}>
+                <a href={src} target="_blank" rel="noopener noreferrer" className={styles.pdfLink}>
+                  READ
+                </a>
+              </div>
+              </div>}
             <img src={previewImage} alt={`Preview of ${title}`} className={styles.pdfPreviewImage} />
   
           </div>

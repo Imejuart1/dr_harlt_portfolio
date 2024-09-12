@@ -47,10 +47,10 @@ const Gratitude: React.FC = () => {
         <div className={styles.grandImage} id='3'>
           <h3 className={styles.imageTitle} id="spine-research">Spine Research Projects</h3>
           <p> We also work on improving spine care by developing new and innovative ways of making spine surgery less invasive through biological disc repair and regeneration. 
-            Please consider making a donation to support our spine research projects. <strong>Click me to donate.</strong></p>
+            Please consider making a donation to support our spine research projects.<a href='https://neurosurgery.weillcornell.org/donate-now' target="_blank"><strong>Click me to donate.</strong></a></p>
           <div className={styles.imageContainer}>
             <div className={styles.imageBox}>
-              <a href="https://www.childrensbraintumorproject.org/" target="_blank" rel="noopener noreferrer">
+              <a href="https://neurosurgery.weill.cornell.edu/research/our-laboratories/dr-roger-hartl-biological-spine-tissue" target="_blank" rel="noopener noreferrer">
                 <img src="/img/bine-spine.jpg" alt="Biological Spine Tissue" />
                 <div className={styles.imageTitle}>Biological Spine Tissue</div>
                 <div className={styles.arrowIcon}></div>

@@ -19,11 +19,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+   
     .icon {
       margin-right: 10px;
       color: $dark-blue;
       font-size: 30px;
+    }
+    &:hover{
+      text-decoration: underline;
     }
   }
 
