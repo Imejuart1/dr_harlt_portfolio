@@ -2,9 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import styles from './HeroSection.module.scss';
-
-const HeroSection: React.FC = () => {
-  const slides = [
+/*
     {
       image: '/img/Aboutme2.jpg',
       title: 'Dr. Roger Härtl MD',
@@ -20,14 +18,25 @@ const HeroSection: React.FC = () => {
       text: 'World-renowned neurosurgeon advancing spine care globally; New York Giants neurosurgeon.',
       buttonText: 'See Reviews',
       link: '/Reviews'
-    },
-    {
+       {
       image: '/img/research.jpeg',
-      title: 'Research and Training',
+      title: 'Dr. Roger Härtl MD',
       subtitle: 'Innovative Spine Care',
-      text: 'Leading innovative, less invasive spinal treatments and pioneering disc regeneration.',
+      text: 'World-renowned neurosurgeon advancing spine care globally; New York Giants neurosurgeon.Leading innovative, less invasive spinal treatments.',
       buttonText: 'Explore',
       link: '/Materials'
+    }
+    },*/
+const HeroSection: React.FC = () => {
+  const slides = [
+    {
+      image: '/img/research.jpeg',
+      title: 'Dr. Roger Härtl MD',
+      subtitle: 'Neurosurgeon at Och Spine, NewYork-Presbyterian',
+      text: 'World-renowned neurosurgeon advancing spine care globally; New York Giants neurosurgeon.',
+      text2: 'Leading innovative, less invasive spinal treatments.',
+      buttonText: 'Contact Me',
+      link: '/Contact'
     }
   ];
 
@@ -69,7 +78,7 @@ const HeroSection: React.FC = () => {
     startSlideShow(); // Restart the interval
   };
 
-  const { image, title, subtitle, text, buttonText, link } = slides[currentSlide];
+  const { image, title, subtitle, text, buttonText, link , text2} = slides[currentSlide];
 
   return (
     <section
@@ -77,22 +86,23 @@ const HeroSection: React.FC = () => {
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className={styles.content}>
-        {currentSlide === 0 && <h3>I am</h3>}
-        <h1>{title}</h1>
+        {/*{currentSlide === 0 && <h3>I am</h3>}
+*/}        <h1>{title}</h1>
         <h2>{subtitle}</h2>
         <p>{text}</p>
+        <p>{text2}</p>
         <Link href={link} passHref>
           <button className={styles.contactButton}>{buttonText}</button>
         </Link>
       </div>
 
       {/* Navigation Arrows */}
-      <div className={styles.navArrowLeft} onClick={goToPrevSlide}>
-        &#9664; {/* Left Arrow (Unicode character) */}
+      {/*<div className={styles.navArrowLeft} onClick={goToPrevSlide}>
+        &#9664; 
       </div>
       <div className={styles.navArrowRight} onClick={goToNextSlide}>
-        &#9654; {/* Right Arrow (Unicode character) */}
-      </div>
+        &#9654;
+      </div>*/}
     </section>
   );
 };
