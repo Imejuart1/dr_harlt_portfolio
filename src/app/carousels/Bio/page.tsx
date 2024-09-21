@@ -6,11 +6,11 @@ import { faLightbulb, faHistory } from '@fortawesome/free-solid-svg-icons';
 const Bio: React.FC = () => {
   return (
     <section className={styles.bioSection}>
-<div className={styles.contentSS}>
+{/*<div className={styles.contentSS}>
 <h2 className={styles.sectionTitle}>
           <FontAwesomeIcon icon={faHistory} className={styles.icon} fixedWidth /> BIOGRAPHY
         </h2>
-        </div>
+        </div>*/}
       <div className={styles.content}>
         {/* Section 1: Image on left */}
         <div id="personal-statement" className={styles.section}>

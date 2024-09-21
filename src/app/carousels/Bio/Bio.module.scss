@@ -9,7 +9,8 @@
     font-family: $font-family-base;
     font-size: $font-size-normal;
     overflow-x: hidden !important;
-
+    margin-top: 2rem;
+    background-color: $light-blue;
     .content {
         display: flex;
         flex-direction: column;

@@ -10,6 +10,7 @@ import ProjectSummaryCarousel from "./carousels/Project/ProjectSummaryCarousel";
 import Testimonials from "./carousels/Testimonials/Testimonials";
 import HeroSection from "./Herosection/HeroSection";
 import VitalsReview from "./carousels/honors-awards/VitalsReview";
+import SurgeonReview from "./carousels/honors-awards/SurgeonReview";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HeroSection />
       <Bio/>
       <HonorsAndAwardsPages/>
+      <SurgeonReview />
       <VitalsReview/>
       <Testimonials/>
       <ProjectSummaryCarousel/>

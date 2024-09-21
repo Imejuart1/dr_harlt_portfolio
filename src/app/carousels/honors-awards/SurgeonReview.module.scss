@@ -1,0 +1,97 @@
+@import '../../../styles/colors.scss'; // Import the colors file to access your color variables
+.vitalsSection{
+    background-color: $light-blue;
+   padding-bottom: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0rem 7.125rem;
+  @media (max-width: 1200px) {
+    padding: 1rem 4rem;
+  }
+  @media (max-width: 900px) {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   // margin: 2rem auto;
+    padding: 0rem 7.125rem;
+    background-color: #fff;
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    @media (max-width: 1200px) {
+        padding: 1rem 4rem;
+      }
+      @media (max-width: 900px) {
+        padding: 1rem 1.5rem;
+      }
+}
+
+.reviewCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid $border-blue;
+    @media (max-width: 1200px) {
+        padding: 1rem 4rem;
+      }
+      @media (max-width: 900px) {
+        padding: 1rem 1.5rem;
+      }
+}
+
+.reviewTextContainer {
+  flex: 2;
+  text-align: justify;
+}
+
+.reviewText {
+  color: $dark-blue;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.surgeonDetailsContainer {
+  flex: 1;
+  text-align: center;
+}
+
+.surgeonPhoto {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.surgeonDetails {
+  padding-top: 10px; // Space between photo and text details
+}
+
+.surgeonName {
+  color: $primary-blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.surgeonTitle {
+  color: $dark-blue;
+  font-size: 16px;
+}
+
+.surgeonLocation {
+  font-size: 16px;
+  color: $dark-blue;
+}
