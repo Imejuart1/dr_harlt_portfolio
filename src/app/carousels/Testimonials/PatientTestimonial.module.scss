@@ -1,0 +1,46 @@
+@import '../../../styles/colors.scss'; // Ensure consistency with colors
+
+.container {
+  padding: 2rem 7.125rem; // Consistent padding with other sections
+  background-color: $light-blue; // Using the light blue background
+}
+
+.sectionTitle {
+  color: $primary-blue;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testimonialCard {
+  border: 1px solid $border-blue;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.testimonialImage {
+  width: 100%;
+  height: 200px; // Adjust based on your needs
+  object-fit: cover;
+}
+
+.testimonialTitle {
+  padding: 1rem;
+  background-color: white;
+  color: $dark-blue;
+  text-align: center;
+}
