@@ -1,6 +1,6 @@
 // src/app/carousels/PatientTestimonials/PatientTestimonials.tsx
 import React from 'react';
-import styles from './PatientTestimonials.module.scss';
+import styles from './PatientTestimonial.module.scss';
 import Link from 'next/link';
 
 interface Testimonial {
@@ -32,6 +32,7 @@ const PatientTestimonials: React.FC = () => {
           <Link key={index} href={testimonial.link} passHref>
             <div className={styles.testimonialCard}>
               <img src={testimonial.image} alt={testimonial.title} className={styles.testimonialImage} />
+              <div className={styles.testimonialTitle}>{testimonial.title}</div>
             </div>
           </Link>
         ))}

@@ -45,6 +45,7 @@ $font-weight-bold: 700;
 
 .sectionTitle, .header{
     font-size: 36px !important;
+
     @media (max-width: 900px) {
         font-size: 2rem !important;
         line-height: 2.5rem;
@@ -60,7 +61,6 @@ $font-weight-bold: 700;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    //margin: 2rem auto;
     padding: 2rem 7.125rem;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -74,11 +74,12 @@ $font-weight-bold: 700;
       }
     
       h2 {
+
         color: $dark-blue;
         font-weight: $font-weight-bold;
         position: relative;
         padding-bottom: 0.5rem;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         letter-spacing: 1px;
 
         &::after {

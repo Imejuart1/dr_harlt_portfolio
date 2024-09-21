@@ -28,6 +28,7 @@ const SurgeonReview: React.FC = () => {
     <section className={styles.vitalsSection}>
     <div className={styles.contentSS}>
     <h2 className={styles.sectionTitle}>Surgeon's Reviews</h2>
+    <p>See what top surgeon have to say about Dr. Hartl</p>
   </div>
     <div className={styles.container}>
       {surgeonReviews.map((review, index) => (
