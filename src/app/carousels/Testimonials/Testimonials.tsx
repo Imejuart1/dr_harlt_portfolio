@@ -56,7 +56,7 @@ const Testimonials: React.FC = () => {
     <div className={styles.testimonialsContainer}>
       <Link href='/Reviews'>
         <h2 className={styles.header}>
-          <FontAwesomeIcon icon={faThumbsUp} className={styles.icon} /> Patient Testimonials (Videos)
+          <FontAwesomeIcon icon={faThumbsUp} className={styles.icon} /> Patient Testimonials
         </h2>
       </Link>
       <p className={styles.description}>
