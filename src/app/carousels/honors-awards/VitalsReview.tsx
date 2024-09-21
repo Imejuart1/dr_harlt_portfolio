@@ -4,6 +4,9 @@ import React, { useState, useEffect } from 'react';
 import { FaStar, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import styles from './Vitals.module.scss';
 import Link from 'next/link';
+import { faBuyNLarge } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserDoctor } from '@fortawesome/free-solid-svg-icons';
 
 interface Slide {
   text: string;
@@ -198,7 +201,10 @@ const VitalsReview: React.FC = () => {
   return (
     <section className={styles.vitalsSection}>
       <div className={styles.contentSS}>
-        <h2 className={styles.sectionTitle}>Patient Reviews</h2>
+        <h2 className={styles.sectionTitle}>
+        <FontAwesomeIcon icon={faUserDoctor} className={styles.icon} fixedWidth/> 
+          Patient Reviews
+          </h2>
       </div>
       <div className={styles.content}>
         {/* Healthgrades Reviews */}

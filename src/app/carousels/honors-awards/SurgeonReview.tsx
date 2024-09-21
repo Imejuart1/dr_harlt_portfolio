@@ -1,6 +1,9 @@
 // src/app/carousels/SurgeonReview/SurgeonReview.tsx
 import React from 'react';
 import styles from './SurgeonReview.module.scss';
+import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserDoctor } from '@fortawesome/free-solid-svg-icons';
 
 interface SurgeonReviewProps {
   image: string;
@@ -27,7 +30,10 @@ const SurgeonReview: React.FC = () => {
   return (
     <section className={styles.vitalsSection}>
     <div className={styles.contentSS}>
-    <h2 className={styles.sectionTitle}>Surgeon's Reviews</h2>
+    <h2 className={styles.sectionTitle}>
+    <FontAwesomeIcon icon={faUserDoctor} className={styles.icon} fixedWidth/> 
+      Surgeon's Reviews
+      </h2>
     <p>See what top surgeon have to say about Dr. Hartl</p>
   </div>
     <div className={styles.container}>

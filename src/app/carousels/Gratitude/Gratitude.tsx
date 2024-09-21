@@ -38,7 +38,7 @@ const GratitudeImageCarousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 5000); // Slide every 5 seconds
+    }, 7000); // Slide every 5 seconds
 
     return () => clearInterval(interval); // Clear the interval on component unmount
   }, [currentIndex]);

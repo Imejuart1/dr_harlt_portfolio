@@ -37,7 +37,8 @@
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
-
+  height: 100%; // Makes sure all cards have the same height
+ // min-height: 350px;
   &:hover {
     transform: translateY(-5px);
   }
