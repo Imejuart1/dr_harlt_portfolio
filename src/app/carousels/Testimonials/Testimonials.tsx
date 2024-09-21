@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
+import { faThumbsUp , faFileVideo} from '@fortawesome/free-regular-svg-icons';
 import styles from './Testimonials.module.scss';
 import Link from 'next/link';
 
@@ -56,7 +56,7 @@ const Testimonials: React.FC = () => {
     <div className={styles.testimonialsContainer}>
       <Link href='/Reviews'>
         <h2 className={styles.header}>
-          <FontAwesomeIcon icon={faThumbsUp} className={styles.icon} /> Patient Testimonials
+          <FontAwesomeIcon icon={faFileVideo} className={styles.icon} /> Watch Patient Testimonials
         </h2>
       </Link>
       <p className={styles.description}>

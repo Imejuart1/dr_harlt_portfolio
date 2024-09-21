@@ -1,0 +1,15 @@
+
+@import '../../../styles/colors.scss';
+
+.combinedContainer {
+  display: grid;
+flex-direction: column;
+  //flex-wrap: wrap; 
+  gap: 20px;
+  background-color: $light-blue;
+ // padding: 2rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column; 
+  }
+}

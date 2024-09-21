@@ -98,4 +98,12 @@ $font-weight-bold: 700;
         }
     }
     }
+    
+    p {
+      font-size: $font-size-big;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: $dark-blue;
+      text-align: center;
+  }
 }

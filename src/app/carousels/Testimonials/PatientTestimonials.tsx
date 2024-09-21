@@ -11,25 +11,55 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    image: "/img/testimonial1.jpg",
+    image: "/img/stories1.png",
     title: "Overcoming Spine Challenges",
-    link: "https://example.com/testimonial1"
+    link: "https://neurosurgery.weillcornell.org/patient-story/more-precision-less-incision-augmented-reality-spine-tumor-story"
   },
   {
-    image: "/img/testimonial2.jpg",
-    title: "A Journey Through Recovery",
-    link: "https://example.com/testimonial2"
+    image: "/img/stories2.png",
+    title: "Going for the Win: A Spine Tumor Story",
+    link: "https://neurosurgery.weillcornell.org/patient-story/going-win-spine-tumor-story"
   },
-  // Add more testimonials as needed
+  {
+    image: "/img/stories3.png",
+    title: "Alicia Ortega: Dr. Härtl Is My Angel!",
+    link: "https://neurosurgery.weillcornell.org/patient-story/alicia-ortega-dr-h%C3%A4rtl-my-angel"
+  },
+  {
+    image: "/img/stories4.png",
+    title: "I Was Like the Leaning Tower of Pisa Before!",
+    link: "https://neurosurgery.weillcornell.org/patient-story/i-was-leaning-tower-pisa"
+  },
+  {
+    image: "/img/stories5.png",
+    title: "The Very First Rung on a Very Tall Ladder",
+    link: "https://neurosurgery.weillcornell.org/patient-story/very-first-rung-very-tall-ladder"
+  },
+  {
+    image: "/img/stories6.png",
+    title: "Navigating Back to Normal Life",
+    link: "https://neurosurgery.weillcornell.org/patient-story/navigating-back-normal-life"
+  },
+  {
+    image: "/img/stories7.png",
+    title: "Going for It: A Patient Story",
+    link: "https://neurosurgery.weillcornell.org/patient-story/going-it-patient-story"
+  },
 ];
 
 const PatientTestimonials: React.FC = () => {
   return (
+    <section className={styles.vitalsSection}>
+  {/*  <div className={styles.contentSS}>
+    <h2 className={styles.sectionTitle}>Patient Testimonials</h2>
+<p>Discover firsthand accounts from patients who have experienced transformative care under Dr. Hartl. Their stories illuminate the profound impact of his expertise on their lives and well-being.</p>
+
+</div>*/}
+    
     <div className={styles.container}>
-      <h2 className={styles.sectionTitle}>Patient Testimonials</h2>
       <div className={styles.testimonialsGrid}>
         {testimonials.map((testimonial, index) => (
-          <Link key={index} href={testimonial.link} passHref>
+          <Link key={index} href={testimonial.link} passHref target='__blank'>
             <div className={styles.testimonialCard}>
               <img src={testimonial.image} alt={testimonial.title} className={styles.testimonialImage} />
               <div className={styles.testimonialTitle}>{testimonial.title}</div>
@@ -38,6 +68,7 @@ const PatientTestimonials: React.FC = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
