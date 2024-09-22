@@ -68,7 +68,7 @@ const healthgradesSlides: Slide[] = [
   },
 ];
 
-const HealthgradesReview: React.FC = () => {
+const googleReview: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const [subTab, setSubTab] = useState<"overview" | "detailed">("overview");
@@ -76,7 +76,7 @@ const HealthgradesReview: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % healthgradesSlides.length);
-    }, 8000);
+    }, 12000);
     return () => clearInterval(interval);
   }, []);
 
@@ -290,4 +290,4 @@ const HealthgradesReview: React.FC = () => {
   )
 };
 
-export default HealthgradesReview;
+export default googleReview;

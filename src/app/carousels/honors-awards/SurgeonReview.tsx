@@ -32,7 +32,7 @@ const SurgeonReview: React.FC = () => {
     <div className={styles.contentSS}>
     <h2 className={styles.sectionTitle}>
     <FontAwesomeIcon icon={faUserDoctor} className={styles.icon} fixedWidth/> 
-      Surgeon's Reviews
+      Surgeon&apos;s Reviews
       </h2>
     <p>See what top surgeon have to say about Dr. Hartl</p>
   </div>

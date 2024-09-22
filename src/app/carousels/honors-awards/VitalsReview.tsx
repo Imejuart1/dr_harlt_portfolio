@@ -186,7 +186,7 @@ const ReviewSection: React.FC<{ title: string; link: string; reviews: Slide[] }>
               <FaStar key={i} className={styles.star} />
             ))}
           </div>
-          <p className={styles.reviewText}>"{slide.text}"</p>
+          <p className={styles.reviewText}>&quot;{slide.text}&quot;</p>
           <div className={styles.reviewMeta}>
             <span>{slide.author || "Anonymous"}</span>
             <span className={styles.date}>{slide.date}</span>

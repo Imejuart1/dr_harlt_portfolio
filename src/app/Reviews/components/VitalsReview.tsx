@@ -77,7 +77,7 @@ const VitalsReview: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % vitalsSlides.length);
-    }, 5000);
+    }, 8000);
     return () => clearInterval(interval);
   }, []);
 

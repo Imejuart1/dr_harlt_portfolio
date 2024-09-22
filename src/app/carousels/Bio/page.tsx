@@ -2,15 +2,28 @@ import React from 'react';
 import styles from './Bio.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb, faHistory } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 const Bio: React.FC = () => {
   return (
     <section className={styles.bioSection}>
-{/*<div className={styles.contentSS}>
-<h2 className={styles.sectionTitle}>
-          <FontAwesomeIcon icon={faHistory} className={styles.icon} fixedWidth /> BIOGRAPHY
-        </h2>
-        </div>*/}
+<div className={styles.headerSection}>
+        <h1>Roger Härtl, M.D.</h1>
+        <p className={styles.title}>
+          Hansen-MacDonald Professor of Neurological Surgery<br />
+          Director of Neurosurgery Spine, Weill Cornell Medicine<br />
+          Neurosurgical Director, Och Spine at NewYork-Presbyterian/Weill Cornell Medical Center<br />
+          Founder, Weill Cornell Tanzania Neurosurgical Initiative
+        </p>
+        <p className={styles.institution}>
+          Weill Cornell Medicine<br />
+          Department of Neurological Surgery
+        </p>
+        <div className={styles.specialties}>
+    <strong>Specialties:</strong> Neurosurgery, Neurological Surgery, Spine Surgery
+  </div>
+        <div>For Appointments Please Call: (212) 746-2152, or click <Link href='/Contact'><b>here.</b></Link></div>
+      </div>
       <div className={styles.content}>
         {/* Section 1: Image on left */}
         <div id="personal-statement" className={styles.section}>
