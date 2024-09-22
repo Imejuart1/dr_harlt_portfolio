@@ -23,6 +23,21 @@ const surgeonReviews: SurgeonReviewProps[] = [
 Dr. Roger Härtl is such a very experienced spine surgeon and such a caring and gentle human being. I appreciate the opportunity I had to learn with him and his amazing team, I will always be thankful for such experience and knowledge and for the fact that I ́m now able to offer my patients different surgery options for their spine conditions.
 Currently, I ́m a Spine Surgeon at the Hospital Galenia Cancun and a Spine Surgeon of the Spine Clinic at the Neurological Center of the “Hospital Galenia Cancun”.`
   },
+  {
+    image: "/img/sebastin.jpeg",
+    name: "PD Dr. med. Sebastian Siller, MHBA, FEBNS",
+    title: "Consultant spine and brain surgeon.",
+    location: "University Hospital Regensburg, Germany.",
+    review: `After finishing neurosurgical training and board-certification in Germany, my wish was to gain additional experience in complex and advanced spinal neurosurgery. The Observational and Research Spine Surgery Fellowship provided by Prof. Hartl and his team at Weill Cornell/Och Spine was warmly recommended by my mentors. I had the opportunity to stay with Prof. Hartl and his amazing team for a couple of weeks and was impressed by his concept of total navigation and minimal-invasive spinal surgery. I had a very warm welcome at Weill Cornell/Och Spine and I really enjoyed the scientific input I got from Prof. Hartl and his team. After a subsequent specialized clinical spine training in London, UK, I returned back to Germany and I am very happy to integrate the impressions I have made at my stay with Prof. Hartl and his team in New York in my practice`
+  },
+  {
+    image: "/img/ASSTPROF.jpeg",
+    name: "Dr. Ammar Dogar FCPS (Orth), FACS, FICS",
+    title: "Assistant Professor.",
+    location: "Ghurki Trust Teaching Hospital Lahore Pakistan.",
+    review: `It was a great honor for me to spend sometime with Dr. Roger Hartl at Weil Cornell Medical Center in 2022. Though I was part of the first and busiest Spine Surgery center in my country Pakistan but working with Dr. Hartl made my vision broader giving me an idea of complex spine surgery emphasizing less invasive approaches to enhance recovery times and outcomes for patients suffering from spinal disorders.
+This has helped me to be of use to my own people in a better way`
+  },
   // Add more reviews as needed
 ];
 

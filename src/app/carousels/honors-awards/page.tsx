@@ -83,10 +83,12 @@ const HonorsAndAwardsPages: React.FC = () => {
   return (
     <section className={styles.honorsSection}>
       <div className={styles.contentSS}>
+      <Link href='/honors-awards#honors'>
       <h2 className={styles.sectionTitle}>
           <FontAwesomeIcon icon={faAward} className={styles.icon} fixedWidth />
           Honors and Awards
         </h2>
+        </Link>
         </div>
      {/* <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>

@@ -1,6 +1,8 @@
 // app/reviews/components/Testimonials.tsx
 import React from 'react';
 import styles from './Testimonials.module.scss';
+import PatientTestimonials from './PatientTestimonials';
+
 
 const videoUrls = [
   'https://www.youtube.com/embed/kKOoUIsZVFg',
@@ -30,7 +32,9 @@ const Testimonials: React.FC = () => {
             ></iframe>
           </div>
         ))}
+       
       </div>
+      <PatientTestimonials/>
     </div>
   );
 };

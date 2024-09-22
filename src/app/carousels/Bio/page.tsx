@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './Bio.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb, faHistory } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 const Bio: React.FC = () => {

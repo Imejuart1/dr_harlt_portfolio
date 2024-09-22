@@ -61,13 +61,13 @@ const Gratitude: React.FC = () => {
                 <div className={styles.arrowIcon}></div>
               </a>
             </div>
-            <div className={styles.imageBox}>
+           {/*} <div className={styles.imageBox}>
               <a href="https://neurosurgery.weillcornell.org/initiatives/epilepsy-research" target="_blank" rel="noopener noreferrer">
                 <img src="/img/Epilepsy.png" alt="Epilepsy Research" />
                 <div className={styles.imageTitle}>Epilepsy Research</div>
                 <div className={styles.arrowIcon}></div>
               </a>
-            </div>
+            </div>*/}
             <div className={styles.imageBox}>
               <a href="https://neurosurgery.weillcornell.org/initiatives/colloid-cyst-research-and-registry" target="_blank" rel="noopener noreferrer">
                 <img src="/img/braintumor.jpg" alt="Colloid Cyst Research and Registry" />

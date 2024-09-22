@@ -37,16 +37,21 @@ const MaterialPage: React.FC = () => {
   }
 
   return (
-    <div className={styles.mainmaterial}>
-      <div
-        className={styles.heroSection}
-        style={{ backgroundImage: `url('/img/surgical (2).jpeg')` }}
-      >
-        <div className={styles.content}>
-          <h1>{material.title}</h1>
-          <p>{material.content}</p>
-        </div>
-      </div>
+<div className={styles.mainmaterial}>
+  <div
+    className={styles.heroSection}
+    style={{ 
+      backgroundImage: `url('/img/Aboutme2.jpg')`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover'
+    }}
+  >
+    <div className={styles.content}>
+      <h1>{material.title}</h1>
+      <p>{material.content}</p>
+    </div>
+  </div>
+
 
       <div className={styles.tabNavigation}>
         <button

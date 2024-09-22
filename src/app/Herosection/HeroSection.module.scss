@@ -226,7 +226,7 @@
     align-items: flex-end;
     height: 50vh; /* Adjust the height to occupy the full screen */
     padding: 20px;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
     &::before {
       background: linear-gradient(to top, rgba(3, 112, 255, 0.9), rgba(3, 112, 255, 0.7) 30%, rgba(3, 112, 255, 0.3) 70%, rgba(3, 112, 255, 0.1));
     }
@@ -241,7 +241,7 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      height:60%;
+      height:fit-content;
       border-radius: 15px;
       text-align: center !important;
       width: 95% !important;
