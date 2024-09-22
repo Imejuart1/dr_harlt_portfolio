@@ -6,6 +6,7 @@ import VitalsReview from './components/VitalsReview';
 import Gratitude from './components/Gratitude';
 import Testimonials from './components/Testimonials'; // Import the Testimonials component
 import styles from './Review.module.scss';
+import GoogleReview from './components/Google';
 
 const images = [
   '/img/reviewmain1.jpeg',
@@ -92,6 +93,7 @@ const ReviewPage: React.FC = () => {
       )}
       {activeTab === "reviews" && (
         <div className={styles.reviewSection_content} id='#reviews'>
+     
           <div id="healthgrades" className={styles.healthgSection}>
           <div className={styles.healrespo}>
         <img src='/img/healthgrades-icon.svg' alt="Healthgrades Icon" className={styles.reviewIcon} />
@@ -111,6 +113,25 @@ const ReviewPage: React.FC = () => {
      </div>
       </div>
             <VitalsReview />
+          </div>
+
+          <div id="healthgrades" className={styles.googlesSection}>
+          <div className={styles.healrespo}>
+        <img src='/img/google_icon.svg' alt="Healthgrades Icon" className={styles.reviewIcon} />
+        <div>
+        <a 
+  href="https://www.google.com/search?q=dr%20hartl%20google%20reviews&client=safari&rls=en&biw=1448&bih=733&ei=CJ_qYoGPINmHptQPr5uh8AM&oq=dr+hartl+google+r&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCCEQoAEyBQghEKsCMgUIIRCrAjIICCEQHhAWEB0yCAghEB4QFhAdMggIIRAeEBYQHTIICCEQHhAWEB0yCAghEB4QFhAdMggIIRAeEBYQHTIICCEQHhAWEB06BwgAEEcQsANKBAhBGABKBAhGGABQnAVYnAVgxxdoAXABeACAAV-IAV-SAQExmAEAoAEByAEFwAEB&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=11833861767777315527&lqi=ChdkciBoYXJ0bCBnb29nbGUgcmV2aWV3cyIFOAGIAQFI5unAv-WAgIAIWhAQABABGAEiCGRyIGhhcnRskgEMbmV1cm9zdXJnZW9umgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJ6YzA5RFpXeEJSUkFCqgEQEAEqDCIIZHIgaGFydGwoAA&ved=2ahUKEwiIsrPNiKv5AhXdkIkEHexIBQMQvS56BAgaEAE&sa=X&rlst=f#lkt=LocalPoiReviews&rlfi=hd:;si:11833861767777315527,l,ChdkciBoYXJ0bCBnb29nbGUgcmV2aWV3cyIFOAGIAQFI5unAv-WAgIAIWhAQABABGAEiCGRyIGhhcnRskgEMbmV1cm9zdXJnZW9umgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJ6YzA5RFpXeEJSUkFCqgEQEAEqDCIIZHIgaGFydGwoAA;mv:[[40.7653584,-73.953091],[40.7603539,-73.9654797]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2" 
+
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className={styles.moreLinkgoogle}
+>
+  See Source
+</a>
+
+        </div>
+        </div>
+            <GoogleReview/>
           </div>
         </div>
       )}

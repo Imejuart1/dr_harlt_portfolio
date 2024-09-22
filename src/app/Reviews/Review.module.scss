@@ -92,12 +92,43 @@
       }
   }
 }
+
+.prevArrow, .nextArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.prevArrow {
+  left: 10px;
+}
+
+.nextArrow {
+  right: 10px;
+}
+
+.prevArrow:hover, .nextArrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
   
   .vitalsSection{
     margin-top: 5rem;
     background: linear-gradient(135deg, #6a0dad, #9b30ff) !important;
   }
-  .healthgSection, .vitalsSection {
+  .googlesSection {
+    margin-top: 5rem;
+  background: linear-gradient(135deg, #FBBC05, #F4B400) !important;
+  }
+  .healthgSection, .vitalsSection, .googlesSection {
     background: linear-gradient(135deg, #0000FF, #1E90FF);
     padding: 0 1.5rem 0.3rem;
     border-radius: 12px;
@@ -183,8 +214,14 @@
           background-color: #6a0dad !important;
         }
       }
+      .moreLinkgoogle{
+        background-color: #af830c !important;
+        &:hover {
+          background-color: #e4b141 !important;
+        }
+      }
         .moreLink ,   
-        .moreLinkvitals {
+        .moreLinkvitals,.moreLinkgoogle {
           display: inline-block;
          // margin-top: 1.5rem;
           padding: 0.5rem 1rem;

@@ -1,7 +1,7 @@
 // components/HealthgradesReview.tsx
 "use client";
-import React, { useState, useEffect } from 'react';
-import { FaStar, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import React, { useState, useEffect, useRef } from 'react';
+import { FaStar, FaChevronDown, FaChevronUp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import styles from '../Review.module.scss'
 
 interface Slide {
@@ -73,11 +73,56 @@ const HealthgradesReview: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const [subTab, setSubTab] = useState<"overview" | "detailed">("overview");
 
+  const autoSlideRef = useRef<NodeJS.Timeout | null>(null);
+
   useEffect(() => {
-    const interval = setInterval(() => {
+    startAutoSlide();
+
+    return () => {
+      stopAutoSlide();
+    };
+  }, []);
+
+  const startAutoSlide = () => {
+    stopAutoSlide();
+    autoSlideRef.current = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % healthgradesSlides.length);
-    }, 8000);
-    return () => clearInterval(interval);
+    }, 12000);
+  };
+
+  const stopAutoSlide = () => {
+    if (autoSlideRef.current) {
+      clearInterval(autoSlideRef.current);
+    }
+  };
+
+  
+  const handlePrevSlide = () => {
+    stopAutoSlide();
+    setCurrentSlide((prev) => (prev === 0 ? healthgradesSlides.length - 1 : prev - 1));
+    restartAutoSlide();
+  };
+
+  const handleNextSlide = () => {
+    stopAutoSlide();
+    setCurrentSlide((prev) => (prev + 1) % healthgradesSlides.length);
+    restartAutoSlide();
+  };
+
+  const restartAutoSlide = () => {
+    stopAutoSlide();
+    setTimeout(() => {
+      startAutoSlide();
+    }, 10000); // Restart auto-slide after 10 seconds of inactivity
+  };
+
+
+  useEffect(() => {
+    startAutoSlide();
+
+    return () => {
+      stopAutoSlide();
+    };
   }, []);
 
   const renderStars = (rating: number) => (
@@ -112,6 +157,12 @@ const HealthgradesReview: React.FC = () => {
             </div>
           ))}
         </div>
+        <button onClick={handlePrevSlide} className={styles.prevArrow}>
+          <FaChevronLeft />
+        </button>
+        <button onClick={handleNextSlide} className={styles.nextArrow}>
+          <FaChevronRight />
+        </button>
       </div>
 
       <div className={styles.dropdown} >
