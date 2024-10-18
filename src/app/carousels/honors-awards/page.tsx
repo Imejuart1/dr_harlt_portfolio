@@ -141,7 +141,7 @@ const HonorsAndAwardsPages: React.FC = () => {
               <a href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
-          <div className={styles.sectionReverse}>
+            <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
               <h2>Hans Kraus Award</h2>
               <p>Dr. Roger Härtl has received the Hans Kraus Award for his groundbreaking work in spine surgery and patient care.<br></br>
@@ -173,6 +173,8 @@ const HonorsAndAwardsPages: React.FC = () => {
               <a href="https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
+
+        
         </div>
       )}
 
