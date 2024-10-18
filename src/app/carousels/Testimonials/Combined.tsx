@@ -15,7 +15,7 @@ const CombinedTestimonials: React.FC = () => {
     <h2 className={styles.sectionTitle}>
     <FontAwesomeIcon icon={faThumbsUp} className={styles.icon} /> Patient Testimonials</h2>
     </Link>
-<p>Discover firsthand accounts from patients who have experienced transformative care under Dr. Hartl. Their stories illuminate the profound impact of his expertise on their lives and well-being.</p>
+<p>Discover firsthand accounts from patients who have experienced transformative care under Dr. Härtl. Their stories illuminate the profound impact of his expertise on their lives and well-being.</p>
 
 </div>
     

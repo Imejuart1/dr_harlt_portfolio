@@ -61,8 +61,8 @@ const Bio: React.FC = () => {
               and he works very closely with other specialists such as neurologists, pain specialists, sports medicine doctors and physical therapists. 
               His patients come from all over the globe and include many physicians, surgeons and even other neurological and spine surgeons. He has been 
               repeatedly named to the lists of New York Super Doctors, America&apos;s Top Surgeons, and America&apos;s Best Doctors, and has been included on the list 
-              of New York&apos;s Best Doctors in New York magazine. He has authored more than 200 scholarly articles in peer-reviewed journals and is the editor 
-              of two books on minimally invasive spinal surgery and biological disc repair and regeneration.
+              of New York&apos;s Best Doctors in New York magazine. He has authored more than 300 scholarly articles in peer-reviewed
+journals and is the editor of three books on minimally invasive spinal surgery and biological disc repair and regeneration.
             </p>
             <p>
               Dr. Härtl has provided commentary for numerous television shows on ABC, NBC, and CBS in addition to national radio shows. His expertise has 
@@ -101,12 +101,18 @@ const Bio: React.FC = () => {
           <div className={styles.textSection}>
             <h2>Research</h2>
             <p>
-              Dr. Härtl&apos;s scientific interest focuses on clinical and basic science research surrounding innovative and less invasive surgical and biological treatment 
-              strategies for degenerative diseases of the spine. Together with the Biomedical Engineering Department at Cornell he is working on tissue-engineering 
-              techniques for the repair and regeneration of degenerated spinal discs, the most common cause of back and neck pain. Dr. Härtl has lectured and published 
-              extensively on the surgical treatment of spinal disorders, and neurotrauma. He is a leader in the application of evidence-based medicine to neurosurgery 
-              and worked with the Brain Trauma Foundation in New York on the development of treatment guidelines for the medical and surgical management of head injury 
-              that are now used worldwide.
+              Dr. Härtl&apos;s scientific interest focuses on clinical and basic science research surrounding
+innovative and less invasive surgical and biological treatment strategies for
+degenerative diseases of the spine. Together with the Biomedical Engineering
+Department at Cornell he is working on tissue-engineering techniques for the repair and
+regeneration of degenerated spinal discs, the most common cause of back and neck
+pain. This has resulted in multiple patents and now clinical trials to address disc
+degeneration in patients. Dr. Härtl has lectured and published extensively on the
+surgical treatment of spinal disorders.
+He is a leader and innovator in the application of computer-assisted navigation and
+augmented reality in spinal surgery and works with his research team, collaborators
+around the world and industry to make spinal surgery safer and more successful for
+patients..
             </p>
           </div>
         </div>

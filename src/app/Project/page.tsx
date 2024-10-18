@@ -13,7 +13,7 @@ const projectSections = [
     {
         title: "Tanzania",
         imageUrl: "/img/tanzania.png", // Replace with your actual image paths
-        text:"From New York to Tanzania: How Dr. Roger Hartl has spent 15 years creating a global impact,He sought out ways to return to Africa through Doctors Without Borders",
+        text:"From New York to Tanzania: How Dr. Roger Härtl has spent 15 years creating a global impact,He sought out ways to return to Africa through Doctors Without Borders",
         link: "Project/tanzania-project",
     },
     {
@@ -21,6 +21,12 @@ const projectSections = [
         imageUrl: "/img/nycmiss.webp", // Replace with your actual image paths
         text:'Our summer master class in tubular decompression now open for registration',
         link: "https://nyc-miss.org/",
+    },
+    {
+        title: "General/Other",
+        imageUrl: "/img/nycmiss.webp", // Replace with your actual image paths
+        text:'Explore Exhibition tours with Dr. Härtl.',
+        link: "/Materials/other",
     },
     // Add more sections as needed
 ];

@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   useEffect(() => {
   const handleResize = () => {
-  if (window.innerWidth >= 769 && isMenuOpen) {
+  if (window.innerWidth >= 901 && isMenuOpen) {
     setIsMenuOpen(false);
   }
 }

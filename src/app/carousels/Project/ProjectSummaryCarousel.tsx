@@ -17,7 +17,7 @@ const projectSummaries = [
   {
     icon: faHandshake,
     title: "Tanzania",
-    description: "Dr. Roger Hartl's 15-year journey creating a global impact from New York to Tanzania.",
+    description: "Dr. Roger Härtl's 15-year journey creating a global impact from New York to Tanzania.",
     imageUrl: "/img/tanzania.png",
     link: "/Project/tanzania-project",
   },

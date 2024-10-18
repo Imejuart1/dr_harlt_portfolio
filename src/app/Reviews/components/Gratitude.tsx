@@ -6,7 +6,7 @@ const Gratitude: React.FC = () => {
   return (
     <div className={styles.gratitudeSection}>
       <div className={styles.content}>
-        <h2>Gratitude from Dr. Roger Härtl</h2>
+        <h2>Gratitude for Dr. Roger Härtl</h2>
         <p>Taking excellent care of you is the biggest privilege I can think of. If your experience with us and the team at NYP Och Spine was positive, please consider leaving a review for us  at the following links:</p>
         
         <div className={styles.linkRow} id='1'>
@@ -38,7 +38,7 @@ const Gratitude: React.FC = () => {
         <div className={styles.bigImageRow} id='2'>
           <div id="humanitarian-work" className={styles.imageContainer}>
             <div className={styles.imageBox}>
-              <h3 className={styles.imageTitle}>Spine Research Projects</h3>
+              <h3 className={styles.imageTitle}>Humanitarian Work</h3>
               <p>Please consider <strong>donating</strong> to our neurosurgery <strong>humanitarian work in Tanzania by clicking me</strong></p>
               <a href="https://neurosurgery.weillcornell.org/donate-now" target="_blank" rel="noopener noreferrer">
                 <img src="/img/humaritian.png" alt="Humanitarian Work" className={styles.bigImage} />
@@ -49,8 +49,23 @@ const Gratitude: React.FC = () => {
           </div>
         </div>
 
-        <div className={styles.grandImage} id='3'>
-          <h3 className={styles.imageTitle} id="spine-research">Spine Research Projects</h3>
+        <div className={styles.bigImageRow} id='2'>
+          <div id="spine-research" className={styles.imageContainer}>
+            <div className={styles.imageBox}>
+              <h3 className={styles.imageTitle}>Spine Research Projects</h3>
+              <p> We also work on improving spine care by developing new and innovative ways of making spine surgery less invasive through biological disc repair and regeneration. 
+              Please consider making a donation to support our spine research projects.<a href='https://neurosurgery.weillcornell.org/donate-now' target="_blank"><strong>Click me to donate.</strong></a></p>
+              <a href="https://neurosurgery.weill.cornell.edu/research/our-laboratories/dr-roger-hartl-biological-spine-tissue" target="_blank" rel="noopener noreferrer">
+                <img src="/img/bine-spine.jpg" alt="Humanitarian Work" className={styles.bigImage} style={{height:'10%'}} />
+                <div className={styles.arrowIcon}></div>
+              </a>
+              <a href="https://neurosurgery.weillcornell.org/donate-now" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>Please Donate</a>
+            </div>
+          </div>
+        </div>
+
+        {/*<div className={styles.grandImage} id='3'>
+          <h3 className={styles.imageTitle} id="spine-research"></h3>
           <p> We also work on improving spine care by developing new and innovative ways of making spine surgery less invasive through biological disc repair and regeneration. 
             Please consider making a donation to support our spine research projects.<a href='https://neurosurgery.weillcornell.org/donate-now' target="_blank"><strong>Click me to donate.</strong></a></p>
           <div className={styles.imageContainer}>
@@ -68,14 +83,14 @@ const Gratitude: React.FC = () => {
                 <div className={styles.arrowIcon}></div>
               </a>
             </div>*/}
-            <div className={styles.imageBox}>
+            {/*<div className={styles.imageBox}>
               <a href="https://neurosurgery.weillcornell.org/initiatives/colloid-cyst-research-and-registry" target="_blank" rel="noopener noreferrer">
                 <img src="/img/braintumor.jpg" alt="Colloid Cyst Research and Registry" />
                 <div className={styles.imageTitle}>Colloid Cyst Research and Registry</div>
                 <div className={styles.arrowIcon}></div>
               </a>
-            </div>
-          </div>
+            </div>*/}
+          {/*</div>
 
           <div className={styles.imageContainer}>
             <div className={styles.imageBox}>
@@ -91,16 +106,16 @@ const Gratitude: React.FC = () => {
                 <div className={styles.imageTitle}>Chiari Research</div>
                 <div className={styles.arrowIcon}></div>
               </a>*/}
-            </div>
-            <div className={styles.imageBox}>
+           {/*</div>
+            {/*<div className={styles.imageBox}>
               <a href="https://neurosurgery.weillcornell.org/tanzania" target="_blank" rel="noopener noreferrer">
                 <img src="/img/baby.png" alt="Tanzania Neurosurgery Project" />
                 <div className={styles.imageTitle}>Tanzania Neurosurgery Project</div>
                 <div className={styles.arrowIcon}></div>
               </a>
-            </div>
-          </div>
-        </div>
+            </div></div>  
+        </div>*/}
+        
       </div>
     </div>
   );

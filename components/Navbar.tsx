@@ -86,14 +86,14 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
           <img src="/img/Dr.Hartls.png" alt="harlt Logo" />
           <div className={styles.logoText}>
             <h1>Dr. Roger Härtl MD</h1>
-            <span>Och Spine at NewYork-Presbyterian</span>
+            <span><b>Minimally Invasive Spinal Surgeon</b></span>
           </div>
         </div>
         
 
         <div className={styles.QRcode} onClick={handleEnlarge}>
           <img src="/img/QR CODE.png" alt="QR Code" />
-          <span><b>Click to Enlarge</b></span>
+          <span><b>Materials For Patients</b></span>
         </div>
 
         {isEnlarged && (
@@ -106,31 +106,37 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
         )}
 
         <div className={styles.trustItems}>
-          <div>
-            <img src="/img/WeilCornel.png" alt="WeilCornell" />
+        <div>
+            <img src="/img/hans.png" alt="NewYorkP" />
           </div>
           <div>
-            <img src="/img/newyorkp.png" alt="NewYorkP" />
+            <img src="/img/awardnew.png" alt="WeilCornell" />
           </div>
+          
         </div>
+
       </div>
 
-      <div ref={navExtrasRef} className={`${styles.navExtras} ${styles.originalNavExtras}`}>
+      <div ref={navExtrasRef} className={`${styles.navExtras} ${styles.originalNavExtras}`}
+      style={{marginTop:'2rem'}}>
         <ul className={styles.navLinks}>
           <li className={isActive('/') ? styles.activeLink : ''}>
             <Link href="/">Home</Link>
           </li>
           <li className={isActive('/Bio') ? styles.activeLink : ''}>
-            <Link href="/Bio">Bio</Link>
+            <Link href="/Bio">About Dr. Härtl</Link>
           </li>
           <li className={isActive('/Reviews') ? styles.activeLink : ''}>
             <Link href="/Reviews">Reviews</Link>
           </li>
           <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
-            <Link href="/honors-awards">Honors and News</Link>
+            <Link href="/honors-awards">Honors/Awards</Link>
+          </li>
+          <li className={isActive('/News') ? styles.activeLink : ''}>
+            <Link href="/News">Dr. Härtl in the News</Link>
           </li>
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
-            <Link href="/Materials">Materials</Link>
+            <Link href="/Materials">Patients Info</Link>
           </li>
           <li className={isActive('/Project') ? styles.activeLink : ''}>
             <Link href="/Project">Projects</Link>
@@ -138,8 +144,11 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
           <li className={isActive('/Contact') ? styles.activeLink : ''}>
             <Link href="/Contact">Contact</Link>
           </li>
+          <div>
+       <button className={styles.contactButton} onClick={handleOpenPopup}>Email Me</button>
+       </div>
         </ul>
-        <button className={styles.contactButton} onClick={handleOpenPopup}>Email Me</button>
+        
       </div>
       {isPopupOpen && <ContactFormPopup onClose={handleClosePopup} />}
     </nav>

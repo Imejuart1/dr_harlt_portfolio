@@ -18,7 +18,9 @@ const Bio: React.FC = () => {
           Department of Neurological Surgery
         </p>
         <div className={styles.specialties}>
-    <strong>Specialties:</strong> Neurosurgery, Neurological Surgery, Spine Surgery
+    <strong>Specialties:</strong> Minimally Invasive Spinal surgery, Augmented Reality, 3D
+Navigation, Spinal tumors, Cervical spinal stenosis, lumbar
+Spondylolisthesis, sports related trauma to the spine
   </div>
         <div>For Appointments Please Call: (212) 746-2152, or click <Link href='/Contact'><b>here.</b></Link></div>
       </div>
@@ -58,9 +60,9 @@ const Bio: React.FC = () => {
               Dr. Härtl&apos;s clinical interest focuses on simple and complex spine surgery for degenerative conditions, tumors and trauma as well as 
               biological approaches for disc repair and regeneration. He is a world-renowned pioneer and leader in minimally invasive spinal surgery 
               and computer-assisted spinal navigation surgery. He is actively involved in improving neurosurgical care in developing countries as 
-              the leader of Weill Cornell&apos;s Global Health Neurosurgery Initiative in Tanzania.
+              the leader of Weill Cornell&apos;s Global Health Neurosurgery Initiative in Tanzania. <Link href='/Bio#biography' style={{textDecoration:'underline'}}><b>Read more</b></Link>
             </p>
-            <p>
+           {/*} <p>
               In order to achieve the very best in patient outcomes, Dr. Härtl&apos;s practice emphasizes an interdisciplinary approach to disease processes 
               and he works very closely with other specialists such as neurologists, pain specialists, sports medicine doctors and physical therapists. 
               His patients come from all over the globe and include many physicians, surgeons and even other neurological and spine surgeons. He has been 
@@ -72,7 +74,7 @@ const Bio: React.FC = () => {
               Dr. Härtl has provided commentary for numerous television shows on ABC, NBC, and CBS in addition to national radio shows. His expertise has 
               been sought through interviews in the New York Times, The New York Post, The New York Daily News, and other media outlets. One of his patients, 
               boxer Danny Jacobs, was recently featured in a TV ad from NewYork-Presbyterian.
-            </p>
+            </p>*/}
           </div>
         </div>
 
@@ -87,11 +89,11 @@ const Bio: React.FC = () => {
             <p>
               Dr. Härtl received his M.D. from the Ludwig-Maximilians University in Munich, Germany. In 1994 Dr. Härtl came to the Weill Cornell Medical College 
               as a post-doctoral research fellow in the Department of Surgery and the Brain Trauma Foundation to pursue research in traumatic brain and spinal 
-              cord injury. He completed another fellowship in neurocritical care at the Charite Hospital of the Humboldt University in Berlin, Germany, followed 
+              cord injury. <Link href='Bio#training' style={{textDecoration:'underline'}}><b>Read more</b></Link>{/*He completed another fellowship in neurocritical care at the Charite Hospital of the Humboldt University in Berlin, Germany, followed 
               by a surgical internship and residency at Allegheny General Hospital in Pittsburgh, Pennsylvania. He completed his neurosurgery residency at 
               NewYork-Presbyterian/Weill Cornell Medical Center and Memorial Sloan-Kettering Cancer Center, after which he pursued specialized training in complex 
               spine surgery at the Barrow&apos;s Neurological Institute in Phoenix under Dr. Volker Sonntag. In 2004 Dr. Härtl returned to re-join the Department of 
-              Neurosurgery at Weill Cornell Medical College.
+              Neurosurgery at Weill Cornell Medical College.*/}
             </p>
           </div>
         </div>
@@ -106,11 +108,11 @@ const Bio: React.FC = () => {
             <h2>Research</h2>
             <p>
               Dr. Härtl&apos;s scientific interest focuses on clinical and basic science research surrounding innovative and less invasive surgical and biological treatment 
-              strategies for degenerative diseases of the spine. Together with the Biomedical Engineering Department at Cornell he is working on tissue-engineering 
+              strategies for degenerative diseases of the spine. <Link href='Bio#research' style={{textDecoration:'underline'}}><b>Read more</b></Link>{/*} Together with the Biomedical Engineering Department at Cornell he is working on tissue-engineering 
               techniques for the repair and regeneration of degenerated spinal discs, the most common cause of back and neck pain. Dr. Härtl has lectured and published 
               extensively on the surgical treatment of spinal disorders, and neurotrauma. He is a leader in the application of evidence-based medicine to neurosurgery 
               and worked with the Brain Trauma Foundation in New York on the development of treatment guidelines for the medical and surgical management of head injury 
-              that are now used worldwide.
+              that are now used worldwide.*/}
             </p>
           </div>
         </div>

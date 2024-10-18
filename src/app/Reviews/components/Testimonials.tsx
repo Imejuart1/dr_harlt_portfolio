@@ -8,7 +8,6 @@ const videoUrls = [
   'https://www.youtube.com/embed/kKOoUIsZVFg',
   'https://www.youtube.com/embed/ns5M41ePn14',
   'https://www.youtube.com/embed/ByqSJ8XleYc',
-  'https://www.youtube.com/embed/F7Gl05S6SZk',
   'https://www.youtube.com/embed/LbQFK64lVYE',
   'https://www.youtube.com/embed/AQ3zAqrGYQw', 
 ];
@@ -17,7 +16,7 @@ const Testimonials: React.FC = () => {
   return (
     <div className={styles.testimonialsContainer}>
       <h2>Patient Testimonials</h2>
-      <p>Watch personal stories and experiences shared by Dr. Hartls&apos; patients.</p>
+      <p>Watch personal stories and experiences shared by Dr. Härtls&apos; patients.</p>
       <div className={styles.videoGrid}>
         {videoUrls.map((url, index) => (
           <div className={styles.videoWrapper} key={index}>

@@ -25,7 +25,7 @@ const healthgradesSlides: Slide[] = [
     rating: 5
   },
   {
-    text: "Dr Hartl is a genius and angel in equal measure!",
+    text: "Dr Härtl is a genius and angel in equal measure!",
     author: "Kenny Schachter ",
     date: "Apr 06, 2024",
     rating: 5
@@ -37,13 +37,13 @@ const healthgradesSlides: Slide[] = [
     rating: 5
   },
   {
-    text: "Dr. Hartl comprehensively performed an extensive physical exams and with me reviewed every aspect of an MRI of my entire spine. He explained all was very patient and caring.",
+    text: "Dr. Härtl comprehensively performed an extensive physical exams and with me reviewed every aspect of an MRI of my entire spine. He explained all was very patient and caring.",
     author: "William Sherman",
     date: "Feb 17, 2024",
     rating: 5
   },
   {
-    text: "I came into the emergency room with a headache, soon after I was receiving emergency brain surgery under the guide of Dr. Hartl. Forever grateful for a second chance at life. Thank you Dr. Hartl",
+    text: "I came into the emergency room with a headache, soon after I was receiving emergency brain surgery under the guide of Dr. Härtl. Forever grateful for a second chance at life. Thank you Dr. Härtl",
     author: "Cosmo Ramirez",
     date: "Nov 04, 2023",
     rating: 5
@@ -55,13 +55,13 @@ const healthgradesSlides: Slide[] = [
     rating: 5
   },
   {
-    text: "Dr Hartl was right on time for my appointment and was very polite and very thorough",
+    text: "Dr Härtl was right on time for my appointment and was very polite and very thorough",
     author: "Les ",
     date: "Oct 28, 2022",
     rating: 5
   },
   {
-    text: "I felt completely trusting of Dr Hartls advice and expertise. He was straight forward, competent and did not push for any unnecessary surgical intervention. He suggested alternate treatment such as Physical Therapy and/or a possible steroid injections for my pain. I respect his conservative...",
+    text: "I felt completely trusting of Dr Härtls advice and expertise. He was straight forward, competent and did not push for any unnecessary surgical intervention. He suggested alternate treatment such as Physical Therapy and/or a possible steroid injections for my pain. I respect his conservative...",
     author: "Nancy K de Groot ",
     date: "Oct 13, 2022",
     rating: 5
@@ -190,7 +190,7 @@ const HealthgradesReview: React.FC = () => {
                />
              </div>
                {subTab === "overview" && (<div className={styles.feedbackOverview}>
-                <h2>Dr. Hartl&apos;s Reviews</h2>
+                <h2>Dr. Härtl&apos;s Reviews</h2>
                 <div className={styles.ratingSummary}>
                   <div className={styles.ratingOverall}>
                     <h3>4.8</h3>

@@ -19,7 +19,7 @@ const vitalsSlides: Slide[] = [
     rating: 4
   },
   {
-    text: "Amazing doctor, I am grateful that I was referred to Dr. Hartl, he was able to pin point my fathers back pain and recommended the appropriate surgery. He then right away connected us to the surgical team to start scheduling everything. Very smooth and easy process.",
+    text: "Amazing doctor, I am grateful that I was referred to Dr. Härtl, he was able to pin point my fathers back pain and recommended the appropriate surgery. He then right away connected us to the surgical team to start scheduling everything. Very smooth and easy process.",
     author: "",
     date: "Feb 03, 2023",
     rating: 5
@@ -31,31 +31,31 @@ const vitalsSlides: Slide[] = [
     rating: 5
   },
   {
-    text: "Dr. Hartl and his staff were terrific. He performed a laminectomy to L5/S1. No post-op pain, didn't need to fill the RX for pain meds! I was up and about the next day.",
+    text: "Dr. Härtl and his staff were terrific. He performed a laminectomy to L5/S1. No post-op pain, didn't need to fill the RX for pain meds! I was up and about the next day.",
     author: "",
     date: "July 16th, 2015",
     rating: 5
   },
   {
-    text: "Dr. Hartl helped my husband walk again. He was always there at the hospital to check on my husband. We would definitely recommend him since he is an excellent doctor.",
+    text: "Dr. Härtl helped my husband walk again. He was always there at the hospital to check on my husband. We would definitely recommend him since he is an excellent doctor.",
     author: "",
     date: "October 30th, 2014",
     rating: 5
   },
   {
-    text: "Dr. Hartl is a world class surgeon. I was in pain for over a year and a day after surgery, pain free. My recovery was rapid with no complications. He was recommended to me by 2 different sources and I will not hesitate to recommend him to others.",
+    text: "Dr. Härtl is a world class surgeon. I was in pain for over a year and a day after surgery, pain free. My recovery was rapid with no complications. He was recommended to me by 2 different sources and I will not hesitate to recommend him to others.",
     author: "",
     date: "July 17th, 2014",
     rating: 5
   },
   {
-    text: "Dr. Hartl is extremely smart and patient. I had neck surgery and was so scared. I am not only pleased with the results but also the scar after two weeks you can hardly see. He also sat with me and answered all my questions without me feeling rushed. I highly recommend Dr. Hartl.",
+    text: "Dr. Härtl is extremely smart and patient. I had neck surgery and was so scared. I am not only pleased with the results but also the scar after two weeks you can hardly see. He also sat with me and answered all my questions without me feeling rushed. I highly recommend Dr. Härtl.",
     author: "",
     date: "June 2nd, 2013",
     rating: 5
   },
   {
-    text: "Dr. Hartl is a wonderful doctor. Not only is he at the top of his game but he is very caring and considerate. He take care of you as if you were the only one that matters, while having many patients. He is very smart and looks out for the least invasive option possible for that patient. He is in a word wonderful!",
+    text: "Dr. Härtl is a wonderful doctor. Not only is he at the top of his game but he is very caring and considerate. He take care of you as if you were the only one that matters, while having many patients. He is very smart and looks out for the least invasive option possible for that patient. He is in a word wonderful!",
     author: "",
     date: "February 16th, 2010",
     rating: 5
@@ -197,7 +197,7 @@ const VitalsReview: React.FC = () => {
                />
              </div>
                {subTab === "overview" && (<div className={styles.feedbackOverview}>
-                <h2>Dr. Hartl&apos;s Reviews</h2>
+                <h2>Dr. Härtl&apos;s Reviews</h2>
                 <div className={styles.ratingSummary}>
                   <div className={styles.ratingOverall}>
                     <h3 className={styles.rateh3}>4</h3>

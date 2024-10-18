@@ -50,7 +50,7 @@ const testimonials: Testimonial[] = [
 const PatientTestimonials: React.FC = () => {
   return (
     <section className={styles.vitalsSection}>
-    <p>Read personal stories and experiences shared by Dr. Hartls&apos; patients.</p>
+    <p>Read personal stories and experiences shared by Dr. Härtls&apos; patients.</p>
     
     <div className={styles.container}>
       <div className={styles.testimonialsGrid}>

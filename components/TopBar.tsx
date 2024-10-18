@@ -36,7 +36,7 @@ const TopBar: React.FC<TopBarProps> = ({isMenuOpen , toggleMenu}) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 769 && isSocialMenuOpen) {
+      if (window.innerWidth >= 901 && isSocialMenuOpen) {
         setIsSocialMenuOpen(false);
       }
     };
@@ -62,9 +62,9 @@ const TopBar: React.FC<TopBarProps> = ({isMenuOpen , toggleMenu}) => {
         </div>
         <div className={` ${isSocialMenuOpen ? styles.showSocialMenu : styles.showSocial}`}>
           <div className={`  ${isSocialMenuOpen ? styles.showSocialMenu1 : styles.contactInfo}`}>
-            <div><FontAwesomeIcon icon={faClock} fixedWidth /> <span>Mon - Sun 0900 - 2100</span></div>
-            <div><FontAwesomeIcon icon={faPhone} fixedWidth /><span> (212) 746-2152</span></div>
-            <div> <FontAwesomeIcon icon={faEnvelope}  fixedWidth/><span> hartlspine@med.cornell.edu</span></div>
+            <div><FontAwesomeIcon icon={faClock} fixedWidth /> <span><b>Mon - Sun 0900 - 2100</b></span></div>
+            <div><FontAwesomeIcon icon={faPhone} fixedWidth /><span><b>(212) 746-2152</b></span></div>
+            <div> <FontAwesomeIcon icon={faEnvelope}  fixedWidth/><span><b> hartlspine@med.cornell.edu</b></span></div>
           </div>
           <div className={`  ${isSocialMenuOpen ? styles.showSocialMenu2 : styles.socialMedia}`}>
             <div><a href="https://www.facebook.com/roger.hartl/"><FontAwesomeIcon icon={faFacebookF} fixedWidth/></a></div>

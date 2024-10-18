@@ -10,7 +10,6 @@ const videoUrls = [
   'https://www.youtube.com/embed/kKOoUIsZVFg',
   'https://www.youtube.com/embed/ns5M41ePn14',
   'https://www.youtube.com/embed/ByqSJ8XleYc',
-  'https://www.youtube.com/embed/F7Gl05S6SZk',
   'https://www.youtube.com/embed/LbQFK64lVYE',
   'https://www.youtube.com/embed/AQ3zAqrGYQw',
 ];
@@ -19,7 +18,6 @@ const videoThumbnails = [
   'https://img.youtube.com/vi/kKOoUIsZVFg/0.jpg',
   'https://img.youtube.com/vi/ns5M41ePn14/0.jpg',
   'https://img.youtube.com/vi/ByqSJ8XleYc/0.jpg',
-  'https://img.youtube.com/vi/F7Gl05S6SZk/0.jpg',
   'https://img.youtube.com/vi/LbQFK64lVYE/0.jpg',
   'https://img.youtube.com/vi/AQ3zAqrGYQw/0.jpg',
 ];
@@ -60,7 +58,7 @@ const Testimonials: React.FC = () => {
         </h2>
       </Link>
       <p className={styles.description}>
-        Watch personal stories and experiences shared by Dr. Hartl&apos;s patients.
+        Watch personal stories and experiences shared by Dr. Härtl&apos;s patients.
       </p>
 
       <div className={styles.mainVideoContainer}>

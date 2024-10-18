@@ -75,7 +75,7 @@ const tanzania = () => {
                 </div>
                 <div className={styles.textContainer}>
                     <h2>Becker&apos;s Hospital Review: From New York to Tanzania</h2>
-                    <p>From New York to Tanzania: How Dr. Roger Hartl has spent 15 years creating a global impact,He sought out ways to return to Africa through Doctors Without Borders and the Bill Gates Foundation but was told they had no need for spine and neurosurgeons; 
+                    <p>From New York to Tanzania: How Dr. Roger Härtl has spent 15 years creating a global impact,He sought out ways to return to Africa through Doctors Without Borders and the Bill Gates Foundation but was told they had no need for spine and neurosurgeons; 
                         only infectious disease specialists. </p>
                     <Link 
                     href="https://www.beckersspine.com/spine/56825-from-new-york-to-tanzania-how-dr-roger-hartl-has-spent-15-years-creating-a-global-impact.html"

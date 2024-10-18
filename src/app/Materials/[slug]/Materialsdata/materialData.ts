@@ -128,7 +128,7 @@ export const materialData = {
           {
             type: "pdf",
             src: "https://drive.google.com/file/u/0/d/16_KThXlHcy6uvBuBdTkahsyyO7TYvtV6/preview",
-            title: "Dr. Hartl Post-Op Instructions(Numbers Included)",
+            title: "Dr. Härtl Post-Op Instructions(Numbers Included)",
             previewImage: "/img/surgy1.png",
           },
         ],
@@ -518,7 +518,7 @@ export const materialData = {
       "finding-balance-neurosurgery" :{
         title:"Exploration, Neurosurgery, and Finding Balance in Life",
         content:
-       "In this remarkable talk, Dr. Hartl talks about exploration, photography, mountaineering, and, of course, neurosurgery.",
+       "In this remarkable talk, Dr. Härtl talks about exploration, photography, mountaineering, and, of course, neurosurgery.",
         media: [
           {
             type: "video",
@@ -531,7 +531,7 @@ export const materialData = {
       "testimonials" :{
         title:"Testimonials",
         content:
-       "In this section, Dr. Hartl's marvel speaks for itself",
+       "In this section, Dr. Härtl's marvel speaks for itself",
         media: [
           {
             type: "video",
@@ -568,7 +568,7 @@ export const materialData = {
       "other" :{
         title:"Exhibitiion tour",
         content:
-       "Explore Exhibition tours with Dr. Hartl.",
+       "Explore Exhibition tours with Dr. Härtl.",
         media: [
           {
             type: "video",

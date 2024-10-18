@@ -18,7 +18,7 @@
   .visible {
     display: block;
     opacity: 1;
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       display: none;
     //  padding: 1.5rem; 
     }
@@ -38,13 +38,13 @@
       background-color: rgba(10, 81, 223, 0.5); /* Blue background layer */
       z-index: 90000;
       transition: left 0.5s ease-in-out; 
-      @media (min-width: 769px) {
+      @media (min-width: 900px) {
         display: none;
       }
     }
  
     .stickyNavExtras_menu {
-      @media (min-width: 769px) {
+      @media (min-width: 900px) {
         display: none;
       }
       position: fixed;
@@ -62,7 +62,7 @@
       padding: 1rem; 
   
     
-  @media (min-width: 769px) {
+  @media (min-width: 901px) {
     display: none;
   }
 

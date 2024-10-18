@@ -35,21 +35,21 @@ const Footer: React.FC = () => {
           </div>
           </div>
              {/* Trust Items Section */}
-             <div className={styles.trustItems}>
+             {/*<div className={styles.trustItems}>
             <div>
               <img src="/img/WeilCornel.png" alt="WeilCornell" />
             </div>
             <div>
               <img src="/img/newyorkp.png" alt="NewYorkP" />
             </div>
+          </div>*/}
           </div>
           </div>
-          </div>
-          <div className={styles.trustcode2}>
-          {/* QR Code Section */}
-          <div className={styles.QRcode} onClick={handleEnlarge}>
+
+             {/* QR Code Section */}
+             <div className={styles.QRcode} onClick={handleEnlarge}>
             <img src="/img/QR CODE.png" alt="QR Code" />
-            <span><b>Click to Enlarge</b></span>
+            <span><b>Materials For Patients</b></span>
           </div>
 
           {isEnlarged && (
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           )}
-
+          <div className={styles.trustcode2}>
 <div className={styles.rightSection}>
           {/* Social Media Section */}
           <div className={styles.socialMedia}>
