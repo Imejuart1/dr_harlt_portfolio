@@ -201,7 +201,7 @@ const HonorsAndAwardsPage: React.FC = () => {
           <div className={styles.section}>
           <div className={styles.textContent}>
         <h2>From Tanzania to the Operating Room: </h2>
-        <p>A Spine Neurosurgeon's Mission | The Rad & Norty Show ,This episode of The Rad & Norty Show features an inspiring conversation with a renowned spine neurosurgeon Dr. Härtl, sharing his incredible journey from Tanzania to becoming a leading expert in the operating room.
+        <p>A Spine Neurosurgeon&apos;s Mission | The Rad & Norty Show ,This episode of The Rad & Norty Show features an inspiring conversation with a renowned spine neurosurgeon Dr. Härtl, sharing his incredible journey from Tanzania to becoming a leading expert in the operating room.
            Tune in to hear about his challenges, successes, 
            and his commitment to helping patients worldwide.</p>
         <Link 
