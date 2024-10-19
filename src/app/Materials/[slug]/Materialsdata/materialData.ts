@@ -594,6 +594,12 @@ export const materialData = {
             title: "",
             previewImage: "/img/siteh.png",
           },
+          {
+            type: "images",
+            src: "https://www.amazon.com/Photographs-Edge-Vittorio-Wilfred-Thesiger/dp/1605830984",
+            title: "",
+            previewImage: "/img/Photographs at the end.png",
+          },
         ],
       },
       "stem-cell-guide" :{

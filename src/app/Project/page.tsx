@@ -6,7 +6,7 @@ import styles from './ProjectComponent.module.scss';
 const projectSections = [
     {
         title: "Research",
-        imageUrl: "/img/stemcells2.jpeg", // Replace with your actual image paths
+        imageUrl: "/img/Researchnew.jpeg", // Replace with your actual image paths
        text:"Discover our cutting-edge research that is shaping the future of spinal care and regeneration",
         link: "Project/research",
     },
@@ -24,7 +24,7 @@ const projectSections = [
     },
     {
         title: "General/Other",
-        imageUrl: "/img/nycmiss.webp", // Replace with your actual image paths
+        imageUrl: "/img/otherprojects.jpeg", // Replace with your actual image paths
         text:'Explore Exhibition tours with Dr. Härtl.',
         link: "/Materials/other",
     },

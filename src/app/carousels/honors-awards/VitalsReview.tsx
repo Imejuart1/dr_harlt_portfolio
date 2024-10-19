@@ -52,7 +52,7 @@ const vitalsSlides: Slide[] = [
     date: "June 2nd, 2013",
     rating: 5
   },
-  {
+ /* {
     text: "Dr. Härtl is a wonderful doctor. Not only is he at the top of his game but he is very caring and considerate. He take care of you as if you were the only one that matters, while having many patients. He is very smart and looks out for the least invasive option possible for that patient. He is in a word wonderful!",
     author: "",
     date: "February 16th, 2010",
@@ -64,7 +64,7 @@ const vitalsSlides: Slide[] = [
     author: "",
     date: "August 18th, 2013",
     rating: 5
-  },
+  },*/
 ];
 
 
@@ -105,7 +105,7 @@ const healthgradesSlides: Slide[] = [
     date: "Nov 04, 2023",
     rating: 5
   },
-  {
+  /*{
     text: "Dr. Härtl explained my condition thoroughly as well as the surgical procedure. I have not yet had surgery, but so far so good.",
     author: "Jane",
     date: "Mar 18, 2023",
@@ -116,7 +116,7 @@ const healthgradesSlides: Slide[] = [
     author: "Nancy K de Groot ",
     date: "Oct 13, 2022",
     rating: 5
-  },
+  },*/
 ];
 
 const googleSlides: Slide[] = [
@@ -156,7 +156,7 @@ const googleSlides: Slide[] = [
     date: "June, 2023",
     rating: 5
   },
-  {
+ /* {
     text: "This is one of the most caring surgeons I’ve been spoken to, in a time of deep confusion. I can’t say enough good things about him. The NY Giants are lucky to have him..",
     author: "CA",
     date: "Mar 18, 2023",
@@ -167,7 +167,7 @@ const googleSlides: Slide[] = [
     author: "David Stone",
     date: "Jan 2024",
     rating: 5
-  },
+  },*/
 
 ];
 

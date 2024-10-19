@@ -17,13 +17,13 @@ const carouselItems = [
     title: "News",
     icon: faNewspaper,
     images: ['/img/hartNews1.jpg', '/img/medicalmarvel.png', '/img/Brazil.png' ],
-    link: "/honors-awards#news",
+    link: "/News#news",
   },
   {
     title: "Podcasts",
     icon: faPodcast,
     images: ['/img/beckerpodcast.png', '/img/advancepodcast6.png', '/img/healthpodcast.jpeg'],
-    link: "/honors-awards#podcasts"
+    link: "/News#podcasts"
   }
 ];
 
@@ -39,7 +39,7 @@ const HonorsAndAwardsPage: React.FC = () => {
 
   return (
     <section className={styles.honorsSection}>
-        <Link href='/honors-awards'>
+        <Link href='/News'>
         <FontAwesomeIcon icon={faAward} className={styles.icon} /> 
       <h2 className={styles.sectionTitle}>Explore Honors, News & Podcasts</h2>
       </Link>

@@ -141,7 +141,19 @@ const HonorsAndAwardsPages: React.FC = () => {
               <a href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
-            <div className={styles.sectionReverse}>
+          <div className={styles.sectionReverse}>
+  <div className={styles.textContent}>
+    <h2>Topping the List of Top Doctors Once Again in 2024</h2>
+    <p>Dr. Roger Härtl has once again been named to the prestigious list of New York&apos;s Top Doctors for 2024, in recognition of his excellence in spine neurosurgery. He continues to lead innovative treatments and patient care at the Weill Cornell Medicine Brain and Spine Center.</p>
+    <a href="https://neurosurgery.weillcornell.org/in-the-news/topping-list-top-doctors-once-again-2024" target="_blank" rel="noopener noreferrer">Read more</a><br />
+  </div>
+  <a href="https://neurosurgery.weillcornell.org/in-the-news/topping-list-top-doctors-once-again-2024" target="_blank" rel="noopener noreferrer">
+    <div style={{ width: '100%' }}>
+      <img src="/img/castle 2024.png" alt="Honor 2" className={styles.sectionImage} />
+    </div>
+  </a>
+</div>
+           {/*} <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
               <h2>Hans Kraus Award</h2>
               <p>Dr. Roger Härtl has received the Hans Kraus Award for his groundbreaking work in spine surgery and patient care.<br></br>
@@ -154,7 +166,7 @@ const HonorsAndAwardsPages: React.FC = () => {
                 <img src="/img/Hanskraus2.png" alt="Honor 2" className={styles.sectionImage} />
               </div>
             </a>
-          </div>
+          </div>*/}
           <div className={styles.section}>
             <a href="https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year" target="_blank" rel="noopener noreferrer">
               <div style={{ width: '100%' }}>

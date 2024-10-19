@@ -30,6 +30,26 @@ const tanzania = () => {
             </div>
 
             {/* Additional Content Sections */}
+            <div className={styles.contentSection}>
+    <div className={styles.textContainer}>
+        <h2>From Tanzania to the Operating Room: </h2>
+        <p>A Spine Neurosurgeon's Mission | The Rad & Norty Show ,This episode of The Rad & Norty Show features an inspiring conversation with a renowned spine neurosurgeon Dr. Härtl, sharing his incredible journey from Tanzania to becoming a leading expert in the operating room.
+           Tune in to hear about his challenges, successes, 
+           and his commitment to helping patients worldwide.</p>
+        <Link 
+            href="https://www.youtube.com/live/qspmogrSnos?si=iTi1ium70-jnKHyO"
+            target="_blank" rel="noopener noreferrer">Watch Video</Link>
+    </div>
+    <div className={styles.imageContainer2}>
+    <iframe 
+    src="https://www.youtube.com/embed/qspmogrSnos" 
+    allowFullScreen
+    width="100%" 
+    height="400" 
+    frameBorder="0">
+</iframe>
+    </div>
+</div>
 
             <div className={styles.contentSection}>
                 <div className={styles.textContainer}>

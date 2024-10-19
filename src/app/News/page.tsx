@@ -200,6 +200,27 @@ const HonorsAndAwardsPage: React.FC = () => {
 
           <div className={styles.section}>
           <div className={styles.textContent}>
+        <h2>From Tanzania to the Operating Room: </h2>
+        <p>A Spine Neurosurgeon's Mission | The Rad & Norty Show ,This episode of The Rad & Norty Show features an inspiring conversation with a renowned spine neurosurgeon Dr. Härtl, sharing his incredible journey from Tanzania to becoming a leading expert in the operating room.
+           Tune in to hear about his challenges, successes, 
+           and his commitment to helping patients worldwide.</p>
+        <Link 
+            href="https://www.youtube.com/live/qspmogrSnos?si=iTi1ium70-jnKHyO"
+            target="_blank" rel="noopener noreferrer">Watch Video</Link>
+    </div>
+    <div className={styles.videoWrapper}>
+    <iframe 
+    src="https://www.youtube.com/embed/qspmogrSnos" 
+    allowFullScreen
+    width="100%" 
+    height="400" 
+    frameBorder="0" className={styles.sectionImage}>
+</iframe>
+    </div>
+</div>
+
+          <div className={styles.section}>
+          <div className={styles.textContent}>
                     <h2>MOI Tanzania TV 2023 Feature</h2>
                     <p>International training on the brain, spine, and nervous system held in Tanzania </p>
                     <Link 
