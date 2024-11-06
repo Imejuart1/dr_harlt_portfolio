@@ -92,14 +92,14 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
         
 
         <div className={styles.QRcode} onClick={handleEnlarge}>
-          <img src="/img/QR CODE.png" alt="QR Code" />
+          <img src="/img/materialqrcode.svg" alt="QR Code" />
           <span><b>Materials For Patients</b></span>
         </div>
 
         {isEnlarged && (
           <div className={styles.enlargedOverlay}>
             <div ref={enlargedQRCodeRef} className={styles.enlargedQRCode}>
-              <img src="/img/QR CODE.png" alt="QR Code Enlarged" />
+              <img src="/img/materialqrcode.svg" alt="QR Code Enlarged" />
               <button className={styles.closeButton} onClick={handleCloseEnlarged}>X</button>
             </div>
           </div>
@@ -136,7 +136,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
             <Link href="/News">Dr. Härtl in the News</Link>
           </li>
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
-            <Link href="/Materials">Patients Info</Link>
+            <Link href="/Materials">Patients Information</Link>
           </li>
           <li className={isActive('/Project') ? styles.activeLink : ''}>
             <Link href="/Project">Projects</Link>
@@ -145,7 +145,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
             <Link href="/Contact">Contact</Link>
           </li>
           <div>
-       <button className={styles.contactButton} onClick={handleOpenPopup}>Email Me</button>
+       {/*<button className={styles.contactButton} onClick={handleOpenPopup}>Email Me</button>*/}
        </div>
         </ul>
         

@@ -91,7 +91,7 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
             <Link href="/News" onClick={handleCloseMenu}>Dr. Härtl in the News</Link>
           </li>
             <li className={isActive('/Materials') ? styles.activeLink : ''}>
-              <Link href="/Materials" onClick={handleCloseMenu}>Patients Info</Link>
+              <Link href="/Materials" onClick={handleCloseMenu}>Patients Information</Link>
             </li>
             <li className={isActive('/Project') ? styles.activeLink : ''}>
             <Link href="/Project" onClick={handleCloseMenu}>Projects</Link>
@@ -100,9 +100,9 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
             <Link href="/Contact" onClick={handleCloseMenu}>Contact</Link>
           </li>
           </ul>
-          <button className={styles.contactButton} onClick={() => {handleCloseMenu(); handleOpenPopup(); }}>
+         {/* <button className={styles.contactButton} onClick={() => {handleCloseMenu(); handleOpenPopup(); }}>
   Email Me
-</button>
+</button>*/}
       </div>
      
     </div>
@@ -127,7 +127,7 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
             <Link href="/News">Dr. Härtl in the News</Link>
           </li>
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
-            <Link href="/Materials">Patients Info</Link>
+            <Link href="/Materials">Patients Information</Link>
           </li>
           <li className={isActive('/Project') ? styles.activeLink : ''}>
             <Link href="/Project">Projects</Link>
@@ -136,7 +136,7 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
             <Link href="/Contact">Contact</Link>
           </li>
           <div>
-       <button className={styles.contactButton} onClick={handleOpenPopup}>Email Me</button>
+      {/*} <button className={styles.contactButton} onClick={handleOpenPopup}>Email Me</button>*/}
        </div>
        </ul>
       </div>
