@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
              {/* QR Code Section */}
              <div className={styles.QRcode} onClick={handleEnlarge}>
             <img src="/img/materialqrcode.svg" alt="QR Code" />
-            <span><b>Materials For Patients</b></span>
+            <span><b>Patients Information</b></span>
           </div>
 
           {isEnlarged && (

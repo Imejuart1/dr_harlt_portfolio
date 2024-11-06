@@ -56,7 +56,7 @@ const Gratitude: React.FC = () => {
               <p> We also work on improving spine care by developing new and innovative ways of making spine surgery less invasive through biological disc repair and regeneration. 
               Please consider making a donation to support our spine research projects.<a href='https://neurosurgery.weillcornell.org/donate-now' target="_blank"><strong>Click me to donate.</strong></a></p>
               <a href="https://neurosurgery.weill.cornell.edu/research/our-laboratories/dr-roger-hartl-biological-spine-tissue" target="_blank" rel="noopener noreferrer">
-                <img src="/img/bine-spine.jpg" alt="Humanitarian Work" className={styles.bigImage} style={{height:'10%'}} />
+                <img src="/img/helper.jpg" alt="Humanitarian Work" className={styles.bigImage} style={{height:'10%'}} />
                 <div className={styles.arrowIcon}></div>
               </a>
               <a href="https://neurosurgery.weillcornell.org/donate-now" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>Please Donate</a>

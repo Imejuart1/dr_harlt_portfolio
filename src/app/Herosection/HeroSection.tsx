@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
   const slides = [
     {
       image: '/img/research.jpeg',
-      title: 'Dr. Roger Härtl MD',
+      title: 'Dr. Roger Härtl',
       subtitle: 'Spine Surgeon at Och Spine, NewYork-Presbyterian and Weil Cornell Medical Center',
       text: 'World-renowned neurosurgeon and leading expert in Minimally Invasive Spine surgery',
       text2: '',
@@ -91,9 +91,9 @@ const HeroSection: React.FC = () => {
         <h2>{subtitle}</h2>
         <p>{text}</p>
         <p>{text2}</p>
-        <Link href={link} passHref>
+        {/*<Link href={link} passHref>
           <button className={styles.contactButton}>{buttonText}</button>
-        </Link>
+        </Link>*/}
       </div>
 
       {/* Navigation Arrows */}

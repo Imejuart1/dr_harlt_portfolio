@@ -85,15 +85,15 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
         <div className={styles.logo}>
           <img src="/img/Dr.Hartls.png" alt="harlt Logo" />
           <div className={styles.logoText}>
-            <h1>Dr. Roger Härtl MD</h1>
-            <span><b>Minimally Invasive Spinal Surgeon</b></span>
+            <h1>Dr. Roger Härtl</h1>
+            <span><b>Leading Expert in Minimally Invasive Spine Surgery </b></span>
           </div>
         </div>
         
 
         <div className={styles.QRcode} onClick={handleEnlarge}>
           <img src="/img/materialqrcode.svg" alt="QR Code" />
-          <span><b>Materials For Patients</b></span>
+          <span><b>Patients Information</b></span>
         </div>
 
         {isEnlarged && (
@@ -105,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
           </div>
         )}
 
-        <div className={styles.trustItems}>
+        {/*<div className={styles.trustItems}>
         <div>
             <img src="/img/hans.png" alt="NewYorkP" />
           </div>
@@ -113,7 +113,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
             <img src="/img/awardnew.png" alt="WeilCornell" />
           </div>
           
-        </div>
+        </div>*/}
 
       </div>
 

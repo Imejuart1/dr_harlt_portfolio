@@ -64,7 +64,7 @@
 
     img {
       border-radius: 50%;
-      height: 5rem;
+      height: 8rem;
       margin-right: 10px;
       @media (max-width: 768px) {
         height: 5rem;
@@ -78,7 +78,7 @@
       
       h1 {
         margin: 0;
-        font-size: $font-size-biggest;
+        font-size: 40px;
         font-weight: 600;
         color: #0a0b0c ; 
         white-space: nowrap;
@@ -88,7 +88,7 @@
       }
 
       span {
-        font-size: $font-size-normal;
+        font-size: 28px;
         color: $primary-blue; 
         @media (max-width: 768px) {
           font-size: 15px;
