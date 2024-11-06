@@ -17,6 +17,17 @@ const Footer: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
+    <div className={styles.memberOrgs}>
+  <h1>Dr. Hartl is a proud member of</h1>
+  <div className={styles.orgLogos}>
+  <img src="/img/aospine (2).png" alt="AOSpine" 
+  style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(93%) saturate(7487%) hue-rotate(207deg) brightness(89%) contrast(101%)'}}/>
+    <img src="/img/NASS.svg" alt="North American Spine Society" />
+    <img src="/img/SMISS.png" alt="Society for Minimally Invasive Spine Surgery" />
+    <img src="/img/cns (2).png" alt="Congress of Neurological Surgeons" />
+    <img src="/img/AANS (2).png" alt="American Association of Neurological Surgeons" />
+  </div>
+</div>
       <div className={styles.footerContent}>
         <div className={styles.leftSection}>
         <div className={styles.trustcode} >
@@ -25,7 +36,7 @@ const Footer: React.FC = () => {
             <img src="/img/Dr.Hartls.png" alt="Dr. Roger Härtl Logo" />
             <div className={styles.logoText}>
               <h1>Dr. Roger Härtl MD</h1>
-              <span>Och Spine at NewYork-Presbyterian</span>
+              <span><b>Leading Expert in Minimally Invasive Spine Surgery </b></span>
             </div>
           </div>
           <div className={styles.contactInfo}>
