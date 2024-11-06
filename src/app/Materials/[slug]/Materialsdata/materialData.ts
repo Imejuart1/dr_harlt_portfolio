@@ -566,7 +566,7 @@ export const materialData = {
         ],
       },
       "other" :{
-        title:"Exhibitiion tour",
+        title:"Exhibition tour",
         content:
        "Explore Exhibition tours with Dr. Härtl.",
         media: [
