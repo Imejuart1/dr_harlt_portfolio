@@ -600,6 +600,12 @@ export const materialData = {
             title: "",
             previewImage: "/img/Photographs at the end.png",
           },
+          {
+            type: "video",
+            src: "https://www.youtube.com/embed/v=UEizbdwpi7A&t=673s",
+            title: "Vittorio Sella and Wilfred Thesiger: Photographs at the Edge",
+            previewImage: "/img/Photographs at the end.png",
+          },
         ],
       },
       "stem-cell-guide" :{

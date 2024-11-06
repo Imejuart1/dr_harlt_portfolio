@@ -51,6 +51,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/surgical-guide-laminoplasty">Surgical Guide for Laminoplasty</Link></li>
             <li><Link href="https://www.nuvasive.com/procedures/ctdr/" target='_blank'>Cervical Disc Arthroplasty</Link></li>
             <li><Link href="https://drive.google.com/file/d/1JxGHNL9sgi19ncuJDXJkeAtblMfRLsCi/view" target='_blank'>Occipitocervical Fusion</Link></li>
+            <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
           </ul>
         </div>
         
@@ -64,6 +65,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/post-op-activity-timeline">Post-Op Activity Timeline</Link></li>
             <li><Link href="/Materials/B.L.T">B.L.T. Video</Link></li>
             <li><Link href="https://www.rickysinghmd.com/exercises/" target='_blank'>Dr. Ricky Singh&apos;s Exercises &gt; 6 Weeks After Surgery</Link></li>
+            <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
           </ul>
         </div>
 
@@ -106,7 +108,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="https://smiss.org/patient-education-videos/" target='_blank'>Patient Education SMISS Videos</Link></li>
             <li><Link href="https://www.nyp.org/ochspine/services" target='_blank'>About Och Spine Hospital</Link></li>
             <li><Link href="/Materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
-            <li><Link href="/Materials/other">Exhibition tour</Link></li>
+            <li><Link href="/Materials/other">Art & Spine</Link></li>
             <li><Link href="/Materials/testimonials">Testimonials</Link></li>
           </ul>
         </div>
