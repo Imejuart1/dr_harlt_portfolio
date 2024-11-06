@@ -16,7 +16,7 @@ interface SurgeonReviewProps {
 const surgeonReviews: SurgeonReviewProps[] = [
   {
     image: "/img/Anasurgeonjpeg.jpeg",
-    name: "ANABEL EUÁN GUTIÉRREZ, MD",
+    name: "ANABEL EUÁN GUTIÉRREZ",
     title: "Orthopaedic Surgeon/Spine Surgeon",
     location: "Cancun, Mexico",
     review: `Becoming part of Dr. Roger ́s Härtl Fellows in Minimally Invasive Spine Surgery was such a privilege and an enriching experience; it helped me to understand better and apply all the knowledge of MISS with my patients.

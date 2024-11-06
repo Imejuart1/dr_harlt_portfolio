@@ -79,7 +79,7 @@ const tanzania = () => {
             <div className={styles.contentSection}>
             <div className={styles.textContainer } style={{marginRight:'0.3rem', paddingLeft:'0'}}>
                     <h2>Becker&apos;s Hospital Review: First 3D Navigated Spinal Surgery in sub-Saharan Africa Feature</h2>
-                    <p>Roger Härtl, MD, director of neurosurgery spine for New York City-based Weill Cornell Medicine and co-director for New York Presbyterian OCH Spine, 
+                    <p>Roger Härtl, director of neurosurgery spine for New York City-based Weill Cornell Medicine and co-director for New York Presbyterian OCH Spine, 
                         has performed the first spine case using 3D navigation in sub-Saharan Africa... </p>
                     <Link href="https://www.beckersspine.com/spine/56558-dr-roger-haertl-performs-1st-3d-navigation-spinal-surgery-in-sub-saharan-africa.html" target='__blank'>Learn More</Link>
                 </div>

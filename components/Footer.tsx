@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           <div className={styles.logo}>
             <img src="/img/Dr.Hartls.png" alt="Dr. Roger Härtl Logo" />
             <div className={styles.logoText}>
-              <h1>Dr. Roger Härtl MD</h1>
+              <h1>Dr. Roger Härtl </h1>
               <span><b>Leading Expert in Minimally Invasive Spine Surgery </b></span>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className={styles.copyright}>
-            <p>&copy; {new Date().getFullYear()} Dr. Roger Härtl MD. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Dr. Roger Härtl . All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -145,7 +145,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             <div className={styles.textContent}>
               <h2>Hans Kraus Award</h2>
               <p>Dr. Roger Härtl has received the Hans Kraus Award for his groundbreaking work in spine surgery and patient care.<br></br>
-              &quot;We are proud to present the award to Roger Härtl MD, the Hansen-MacDonald Professor of Neurological Surgery and Director of Neurosurgery Spine at the Weill Cornell Medicine Brain and Spine Center in New York.&quot;</p>
+              &quot;We are proud to present the award to Roger Härtl , the Hansen-MacDonald Professor of Neurological Surgery and Director of Neurosurgery Spine at the Weill Cornell Medicine Brain and Spine Center in New York.&quot;</p>
               <a href="https://frame.foundation/hans-kraus-award" target="_blank" rel="noopener noreferrer">Read more</a><br></br>
               <a href="https://drive.google.com/file/d/1cRrmQZABK_TlDbzbp6CESOsyfFB8u6r3/view" target="_blank" rel="noopener noreferrer">See pdf</a>
             </div>

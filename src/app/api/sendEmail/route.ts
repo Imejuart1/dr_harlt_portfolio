@@ -31,10 +31,10 @@ export async function POST(request: Request) {
       from: '"Dr. Roger Härtl’s Office" <hartlspine@med.cornell.edu>',  // Dr. Härtl's office email
       to: email,
       subject: 'Thank you for contacting Dr. Roger Härtl',
-      text: `Dear ${name},\n\nThank you for reaching out to the office of Dr. Roger Härtl, MD. Your message has been received, and a member of our team will review your inquiry and respond as soon as possible.\n\nIf this is an urgent matter, please contact our office directly at (212) 746-2152.\n\nBest regards,\nDr. Roger Härtl’s Office\nOch Spine at NewYork-Presbyterian\nWeill Cornell Medicine Center for Comprehensive Spine Care`,
+      text: `Dear ${name},\n\nThank you for reaching out to the office of Dr. Roger Härtl. Your message has been received, and a member of our team will review your inquiry and respond as soon as possible.\n\nIf this is an urgent matter, please contact our office directly at (212) 746-2152.\n\nBest regards,\nDr. Roger Härtl’s Office\nOch Spine at NewYork-Presbyterian\nWeill Cornell Medicine Center for Comprehensive Spine Care`,
       html: `
         <p>Dear ${name},</p>
-        <p>Thank you for reaching out to the office of <strong>Dr. Roger Härtl, MD</strong>. Your message has been received, and a member of our team will review your inquiry and respond as soon as possible.</p>
+        <p>Thank you for reaching out to the office of <strong>Dr. Roger Härtl</strong>. Your message has been received, and a member of our team will review your inquiry and respond as soon as possible.</p>
         <p>If this is an urgent matter, please contact our office directly at <strong>(212) 746-2152</strong>.</p>
         <p>Best regards,<br />
         Dr. Roger Härtl’s Office<br />

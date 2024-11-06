@@ -157,7 +157,7 @@ const HonorsAndAwardsPages: React.FC = () => {
             <div className={styles.textContent}>
               <h2>Hans Kraus Award</h2>
               <p>Dr. Roger Härtl has received the Hans Kraus Award for his groundbreaking work in spine surgery and patient care.<br></br>
-              &quot;We are proud to present the award to Roger Härtl MD, the Hansen-MacDonald Professor of Neurological Surgery and Director of Neurosurgery Spine at the Weill Cornell Medicine Brain and Spine Center in New York.&quot;</p>
+              &quot;We are proud to present the award to Roger Härtl , the Hansen-MacDonald Professor of Neurological Surgery and Director of Neurosurgery Spine at the Weill Cornell Medicine Brain and Spine Center in New York.&quot;</p>
               <a href="https://frame.foundation/hans-kraus-award" target="_blank" rel="noopener noreferrer">Read more</a><br></br>
               <a href="https://drive.google.com/file/d/1cRrmQZABK_TlDbzbp6CESOsyfFB8u6r3/view" target="_blank" rel="noopener noreferrer">See pdf</a>
             </div>
@@ -199,7 +199,7 @@ const HonorsAndAwardsPages: React.FC = () => {
             <div className={styles.textContent}>
               <h2>New York-Presbyterian Augmented Reality Advances Feature</h2>
               <p>Dr. Härtl&apos;s innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
-                For nearly 20 years, Roger Härtl, MD, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicine’s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
+                For nearly 20 years, Roger Härtl, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicine’s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
                 navigation in spinal surgery to guide instrumentation placement and tumor resection in minimally invasive spine surgery.</p>
               <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>

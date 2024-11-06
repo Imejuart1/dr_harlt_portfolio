@@ -5,7 +5,7 @@ import styles from './HeroSection.module.scss';
 /*
     {
       image: '/img/Aboutme2.jpg',
-      title: 'Dr. Roger Härtl MD',
+      title: 'Dr. Roger Härtl ',
       subtitle: 'Neurosurgeon at Och Spine, NewYork-Presbyterian',
       text: 'Augmented reality has created a new reality for spinal surgery.',
       buttonText: 'Get to Know Me',
@@ -20,7 +20,7 @@ import styles from './HeroSection.module.scss';
       link: '/Reviews'
        {
       image: '/img/research.jpeg',
-      title: 'Dr. Roger Härtl MD',
+      title: 'Dr. Roger Härtl ',
       subtitle: 'Innovative Spine Care',
       text: 'World-renowned neurosurgeon advancing spine care globally; New York Giants neurosurgeon.Leading innovative, less invasive spinal treatments.',
       buttonText: 'Explore',
