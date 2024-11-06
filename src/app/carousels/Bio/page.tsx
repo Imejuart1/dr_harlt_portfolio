@@ -19,10 +19,10 @@ const Bio: React.FC = () => {
         </p>
         <div className={styles.specialties}>
     <strong>Specialties:</strong> Minimally Invasive Spinal surgery, Augmented Reality, 3D
-Navigation, Spinal tumors, Cervical spinal stenosis, lumbar
-Spondylolisthesis, sports related trauma to the spine
+Navigation, Spinal tumors, Cervical spinal stenosis,Lumbar Spondylolisthesis, Microdiscectomy, Motion Preserving Spine Surgery, Disc Arthroplasty, Spine Injuries in the athlete
+
   </div>
-        <div>For Appointments Please Call: (212) 746-2152, or click <Link href='/Contact'><b>here.</b></Link></div>
+        <div>Contact: (212) 746-2152, or click <Link href='/Contact'><b>here.</b></Link></div>
       </div>
       <div className={styles.content}>
         {/* Section 1: Image on left */}
