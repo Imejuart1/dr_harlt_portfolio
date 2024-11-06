@@ -203,7 +203,7 @@ const VitalsReview: React.FC = () => {
       <div className={styles.contentSS}>
         <Link href='/Reviews#reviews'>
         <h2 className={styles.sectionTitle}>
-        <FontAwesomeIcon icon={faUserDoctor} className={styles.icon} fixedWidth/> 
+        {/*<FontAwesomeIcon icon={faUserDoctor} className={styles.icon} fixedWidth/>*/}
           Patient Reviews
           </h2>
           </Link>

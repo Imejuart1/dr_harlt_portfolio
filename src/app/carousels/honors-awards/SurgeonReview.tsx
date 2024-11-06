@@ -46,7 +46,7 @@ const SurgeonReview: React.FC = () => {
     <section className={styles.vitalsSection}>
     <div className={styles.contentSS}>
     <h2 className={styles.sectionTitle}>
-    <FontAwesomeIcon icon={faUserDoctor} className={styles.icon} fixedWidth/> 
+    {/*<FontAwesomeIcon icon={faUserDoctor} className={styles.icon} fixedWidth/> */}
       Surgeon&apos;s Reviews
       </h2>
     <p>See what top surgeon have to say about Dr. Härtl</p>

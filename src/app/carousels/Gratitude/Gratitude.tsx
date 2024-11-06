@@ -67,7 +67,7 @@ const GratitudeImageCarousel: React.FC = () => {
     <div className={styles.gratitudeContainer}>
       <Link href='/Reviews#reviews'>
          <h2 className={styles.header}>
-        <FontAwesomeIcon icon={faHandshake} className={styles.icon} /> Show Support
+       {/*} <FontAwesomeIcon icon={faHandshake} className={styles.icon} />*/} Show Support
       </h2>
       </Link>
       <div 

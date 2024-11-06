@@ -73,7 +73,7 @@ const ProjectSummaryCarousel: React.FC = () => {
     <section className={styles.projectSection}>
       <Link href='/Project'>
         <h2 className={styles.sectionTitle}>
-          <FontAwesomeIcon icon={faLightbulb} className={styles.icon} fixedWidth /> Explore Our Projects
+          {/*<FontAwesomeIcon icon={faLightbulb} className={styles.icon} fixedWidth />*/} Explore Our Projects
         </h2>
       </Link>
       <p className={styles.sectionIntro}>

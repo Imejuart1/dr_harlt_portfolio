@@ -85,7 +85,7 @@ const HonorsAndAwardsPages: React.FC = () => {
       <div className={styles.contentSS}>
       <Link href='/honors-awards#honors'>
       <h2 className={styles.sectionTitle}>
-          <FontAwesomeIcon icon={faAward} className={styles.icon} fixedWidth />
+         {/* <FontAwesomeIcon icon={faAward} className={styles.icon} fixedWidth />*/}
           Honors and Awards
         </h2>
         </Link>
