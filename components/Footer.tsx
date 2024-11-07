@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
     <div className={styles.memberOrgs}>
-  <h1>Dr. Hartl is a proud member of</h1>
+  <h1>Dr. Härtl is a proud member of</h1>
   <div className={styles.orgLogos}>
   <img src="/img/aospine (2).png" alt="AOSpine" 
   style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(93%) saturate(7487%) hue-rotate(207deg) brightness(89%) contrast(101%)'}}/>
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
              {/* QR Code Section */}
              <div className={styles.QRcode} onClick={handleEnlarge}>
             <img src="/img/materialqrcode.svg" alt="QR Code" />
-            <span><b>Patients Information</b></span>
+            <span><b>Patient Information</b></span>
           </div>
 
           {isEnlarged && (

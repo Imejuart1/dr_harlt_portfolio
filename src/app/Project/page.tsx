@@ -23,7 +23,7 @@ const projectSections = [
         link: "https://nyc-miss.org/",
     },
     {
-        title: "General/Other",
+        title: "Art and Spine",
         imageUrl: "/img/otherprojects.jpeg", // Replace with your actual image paths
         text:'Explore Exhibition tours with Dr. Härtl.',
         link: "/Materials/other",

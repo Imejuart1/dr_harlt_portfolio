@@ -325,7 +325,7 @@ const VitalsReview: React.FC = () => {
                     </div>
                   </li>
                   <li className={styles.li}>
-                    <span className={styles.feedbackText}>Spends Time with Patients</span>
+                    <span className={styles.feedbackText}>Spends Time with Patient</span>
                     <div className={styles.feedbackBar}>
                       <div className={styles.progress}>
                         <div

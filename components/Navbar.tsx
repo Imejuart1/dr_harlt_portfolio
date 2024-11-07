@@ -93,7 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
 
         <div className={styles.QRcode} onClick={handleEnlarge}>
           <img src="/img/materialqrcode.svg" alt="QR Code" />
-          <span><b>Patients Information</b></span>
+          <span><b>Patient Information</b></span>
         </div>
 
         {isEnlarged && (
@@ -136,7 +136,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
             <Link href="/News">Dr. Härtl in the News</Link>
           </li>
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
-            <Link href="/Materials">Patients Information</Link>
+            <Link href="/Materials">Patient Information</Link>
           </li>
           <li className={isActive('/Project') ? styles.activeLink : ''}>
             <Link href="/Project">Projects</Link>

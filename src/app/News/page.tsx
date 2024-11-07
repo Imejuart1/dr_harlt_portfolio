@@ -24,7 +24,7 @@ const annaimages = [
 ];
 
 const HonorsAndAwardsPage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"honors" | "news" | "podcasts">("news");
+  const [activeTab, setActiveTab] = useState<"honors" | "news" | "podcasts">("podcasts");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [annaImageIndex, setAnnaImageIndex] = useState(0);
   const [iframeSrc, setIframeSrc] = useState("");
@@ -120,6 +120,23 @@ const HonorsAndAwardsPage: React.FC = () => {
               <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
+            
+          <div className={styles.section}>
+            <div className={styles.textContent}>
+                    <h2>Vittorio Sella and Wilfred Thesiger: Photographs at the Edge</h2>
+                    <p>
+                    As photographer Paolo Pellegrin has written, “art allows for the documentation of the alien with truth rather than conquest.” The works of mountaineer and photographer Vittorio Sella (1859–1943) and desert traveler and author Wilfred Thesiger (1910–2003) are central to his collection.
+
+Dr. Härtl continues to push the boundaries of neurological surgery while fostering connections between medical communities worldwide. His multidimensional approach to life reflects a deep-seated curiosity and a commitment to bridging cultural and intellectual divides through exploration and scholarship
+                    </p>
+                    <Link 
+                    href="https://www.youtube.com/live/UEizbdwpi7A"
+                    target='__blank'>Watch Video</Link>
+                </div>
+                <div className={styles.imageContainer2}>
+                <iframe src="https://www.youtube.com/embed/UEizbdwpi7A?si=Krnmkq3zkV0gzbyf"  allowFullScreen className={styles.sectionImage}/>
+                </div>
+            </div>
 
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
@@ -217,7 +234,23 @@ const HonorsAndAwardsPage: React.FC = () => {
     frameBorder="0" className={styles.sectionImage}>
 </iframe>
     </div>
-</div>
+</div>     
+
+             <div className={styles.sectionReverse}>
+            <div className={styles.textContent}>
+                    <h2>Dr. Roger Härtl on MISS Motion Sparing Surgery in the Cervical Spine.</h2>
+                    <p>
+                    Dr. Roger Härtl presented an insightful talk at the 2024 Symposium on "Motion Sparing Surgery in Spine." In his presentation, he explored the role of motion-preserving techniques in cervical spine surgery.
+                     He shared his experiences with minimally invasive "over-the-top" decompression for patients with cervical spinal stenosis.
+                    </p>
+                    <Link 
+                    href="https://www.youtube.com/watch?v=YtYQH1IHVYk"
+                    target='__blank'>Watch Video</Link>
+                </div>
+                <div className={styles.imageContainer2}>
+                <iframe src="https://www.youtube.com/embed/YtYQH1IHVYk?si=YzyUXtRplFW2o-oa"  allowFullScreen className={styles.sectionImage}/>
+                </div>
+            </div>
 
           <div className={styles.section}>
           <div className={styles.textContent}>

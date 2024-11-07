@@ -566,10 +566,16 @@ export const materialData = {
         ],
       },
       "other" :{
-        title:"Exhibition tour",
+        title:"Art and Spine",
         content:
        "Explore Exhibition tours with Dr. Härtl.",
         media: [
+          {
+            type: "video",
+            src: "https://www.youtube.com/embed/UEizbdwpi7A?si=Krnmkq3zkV0gzbyf",
+            title: "Vittorio Sella and Wilfred Thesiger: Photographs at the Edge",
+            previewImage: "/img/Photographs at the end.png",
+          },
           {
             type: "video",
             src: "https://player.vimeo.com/video/689666187?h=d84b417b6a",
@@ -599,13 +605,7 @@ export const materialData = {
             src: "https://www.amazon.com/Photographs-Edge-Vittorio-Wilfred-Thesiger/dp/1605830984",
             title: "",
             previewImage: "/img/Photographs at the end.png",
-          },
-          {
-            type: "video",
-            src: "https://www.youtube.com/embed/v=UEizbdwpi7A&t=673s",
-            title: "Vittorio Sella and Wilfred Thesiger: Photographs at the Edge",
-            previewImage: "/img/Photographs at the end.png",
-          },
+          }
         ],
       },
       "stem-cell-guide" :{
