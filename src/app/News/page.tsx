@@ -240,8 +240,11 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
             <div className={styles.textContent}>
                     <h2>Dr. Roger Härtl on MISS Motion Sparing Surgery in the Cervical Spine.</h2>
                     <p>
-                    Dr. Roger Härtl presented an insightful talk at the 2024 Symposium on "Motion Sparing Surgery in Spine." In his presentation, he explored the role of motion-preserving techniques in cervical spine surgery.
-                     He shared his experiences with minimally invasive "over-the-top" decompression for patients with cervical spinal stenosis.
+                    Dr. Roger Härtl presented an insightful talk at the 2024 Symposium on
+                     Motion Sparing Surgery in Spine. In his presentation, 
+                     he explored the role of motion-preserving techniques in cervical spine surgery.
+                     He shared his experiences with minimally invasive over-the-top
+                      decompression for patients with cervical spinal stenosis.
                     </p>
                     <Link 
                     href="https://www.youtube.com/watch?v=YtYQH1IHVYk"
