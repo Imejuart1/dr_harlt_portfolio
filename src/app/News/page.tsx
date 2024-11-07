@@ -125,7 +125,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             <div className={styles.textContent}>
                     <h2>Vittorio Sella and Wilfred Thesiger: Photographs at the Edge</h2>
                     <p>
-                    As photographer Paolo Pellegrin has written, “art allows for the documentation of the alien with truth rather than conquest.” The works of mountaineer and photographer Vittorio Sella (1859–1943) and desert traveler and author Wilfred Thesiger (1910–2003) are central to his collection.
+                    As photographer Paolo Pellegrin has written,art allows for the documentation of the alien with truth rather than conquest. The works of mountaineer and photographer Vittorio Sella (1859–1943) and desert traveler and author Wilfred Thesiger (1910–2003) are central to his collection.
 
 Dr. Härtl continues to push the boundaries of neurological surgery while fostering connections between medical communities worldwide. His multidimensional approach to life reflects a deep-seated curiosity and a commitment to bridging cultural and intellectual divides through exploration and scholarship
                     </p>
