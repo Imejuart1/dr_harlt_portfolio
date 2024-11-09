@@ -92,14 +92,14 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
         
 
         <div className={styles.QRcode} onClick={handleEnlarge}>
-          <img src="/img/materialqrcode.svg" alt="QR Code" />
+          <img src="/img/QR CODE.jpg" alt="QR Code" />
           <span><b>Patient Information</b></span>
         </div>
 
         {isEnlarged && (
           <div className={styles.enlargedOverlay}>
             <div ref={enlargedQRCodeRef} className={styles.enlargedQRCode}>
-              <img src="/img/materialqrcode.svg" alt="QR Code Enlarged" />
+              <img src="/img/QR CODE.jpg" alt="QR Code Enlarged" />
               <button className={styles.closeButton} onClick={handleCloseEnlarged}>X</button>
             </div>
           </div>

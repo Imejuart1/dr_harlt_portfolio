@@ -18,9 +18,10 @@ const Bio: React.FC = () => {
           Department of Neurological Surgery
         </p>
         <div className={styles.specialties}>
-    <strong>Specialties:</strong> Minimally Invasive Spinal surgery, Augmented Reality, 3D
-Navigation, Spinal tumors, Cervical spinal stenosis,Lumbar Spondylolisthesis, Microdiscectomy, Motion Preserving Spine Surgery, Disc Arthroplasty, Spine Injuries in the athlete
-
+    <strong>Specialties:</strong> Minimally Invasive Spinal Surgery, Microsurgery, Augmented Reality, 3D Navigation, Spinal Tumors, Minimally Invasive Decompression of Spinal Stenosis, Microdiscectomy, Spondyolisthesis,
+     Minimally Invasive Spinal Fusion, Cervical Laminoplasty, 
+     Motion Preserving Spine Surgery, Disc Arthroplasty,
+      Spine Injuries in the Athlete, Sports Trauma
   </div>
         <div>Contact: (212) 746-2152, or click <Link href='/Contact'><b>here.</b></Link></div>
       </div>

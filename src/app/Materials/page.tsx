@@ -52,6 +52,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="https://www.nuvasive.com/procedures/ctdr/" target='_blank'>Cervical Disc Arthroplasty</Link></li>
             <li><Link href="https://drive.google.com/file/d/1JxGHNL9sgi19ncuJDXJkeAtblMfRLsCi/view" target='_blank'>Occipitocervical Fusion</Link></li>
             <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
+            <li><Link href="https://www.atlasspine.com/hijak-ac" target='_blank'>ACDF</Link></li>
           </ul>
         </div>
         

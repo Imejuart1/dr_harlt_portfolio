@@ -67,7 +67,7 @@ const HomeSummary: React.FC = () => {
     <section className={styles.homeSummarySection}>
       <Link href='/Materials'>
        <h2 className={styles.header}>
-        {/*<FontAwesomeIcon icon={faBook} className={styles.icon} />*/} Materials
+        {/*<FontAwesomeIcon icon={faBook} className={styles.icon} />*/} Patient Information
       </h2> </Link>
       <p className={styles.description}>Explore Our Key Resources</p>
      
