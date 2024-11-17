@@ -15,6 +15,13 @@ interface SurgeonReviewProps {
 
 const surgeonReviews: SurgeonReviewProps[] = [
   {
+    image: "/img/Buenos.jpg",
+    name: "Marcelo Valacco MD",
+    title: "Orthopaedic Surgeon/Spine Surgeon",
+    location: "Buenos Aires. Argentina",
+    review: `I have been last week in Weill Cornell visiting Dr Hartl. He showed me the steps by steps in Minimally invasive Spine Surgery in vivo in OR. Was tremendous experience can see him and learn about how he use navigation systems and microsurgery. Also I can attend in clinics and research meetings about the last technology and innovation. In clinics, was a very great experience to see him how the patients are examining and they know about spine patology. The motivation for this stage with Dr Roger Hartl was to learn and develop new technologies in my country nexts years. Thanks to Dr Hartl and his team for kindly accepting at the Hospital.`
+  },
+  {
     image: "/img/Anasurgeonjpeg.jpeg",
     name: "ANABEL EUÁN GUTIÉRREZ",
     title: "Orthopaedic Surgeon/Spine Surgeon",
@@ -38,7 +45,6 @@ Currently, I ́m a Spine Surgeon at the Hospital Galenia Cancun and a Spine Surg
     review: `It was a great honor for me to spend sometime with Dr. Roger Härtl at Weil Cornell Medical Center in 2022. Though I was part of the first and busiest Spine Surgery center in my country Pakistan but working with Dr. Härtl made my vision broader giving me an idea of complex spine surgery emphasizing less invasive approaches to enhance recovery times and outcomes for patients suffering from spinal disorders.
 This has helped me to be of use to my own people in a better way`
   },
-  // Add more reviews as needed
 ];
 
 const SurgeonReview: React.FC = () => {
