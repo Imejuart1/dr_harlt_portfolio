@@ -105,7 +105,7 @@ p {
 }
 a {
     font-size: 16px;
-    color: $primary-blue;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
@@ -115,7 +115,7 @@ a {
 
     &:hover {
         background-color: $hover-blue;
-        color: #fff;
+        color: #fff ;
     }
     @media (max-width: 768px) {
         font-size:13px !important;
@@ -170,12 +170,11 @@ a {
     color: $primary-blue;
 
     &:hover {
-      //background:  $primary-blue;
-      transform: scale(1.1); // Slightly increase size on hover
+      transform: scale(1.1); 
     }
     .icon {
-        color: $primary-blue;
-        font-size: 70px; // Increased size for better visibility
+        color: white !important;
+        font-size: 70px; 
       }
   }
 

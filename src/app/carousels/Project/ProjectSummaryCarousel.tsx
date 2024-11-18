@@ -85,14 +85,14 @@ const ProjectSummaryCarousel: React.FC = () => {
           style={{ backgroundImage: `url(${projectSummaries[currentIndex].imageUrl})` }}
         >
           <div className={styles.overlay}>
-            <h3>
-              <FontAwesomeIcon icon={projectSummaries[currentIndex].icon} className={styles.icon} />
+            <h3 style={{color:'white'}}>
+              {/*<FontAwesomeIcon icon={projectSummaries[currentIndex].icon} className={styles.icon} />*/}
               {projectSummaries[currentIndex].title}
             </h3>
             <p>{projectSummaries[currentIndex].description}</p>
             <div className={styles.overallnav}>
-            <button onClick={handlePrev} className={styles.prevButton}>
-          <FontAwesomeIcon icon={faChevronLeft} className={styles.icon} />
+            <button onClick={handlePrev} className={styles.prevButton} >
+          <FontAwesomeIcon icon={faChevronLeft} className={styles.icon} style={{color:'white'}}/>
         </button>
             <Link href={projectSummaries[currentIndex].link}>
               Learn More <FontAwesomeIcon icon={faArrowAltCircleRight} />

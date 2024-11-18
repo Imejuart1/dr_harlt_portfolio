@@ -105,12 +105,12 @@ const MaterialComponent: React.FC = () => {
           <h2>Dr. Härtl&apos;s YouTube Channel & Other Patient Education Materials</h2>
           <ul>
             <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
-            <li><Link href="/Materials/spine-time">Spine Time</Link></li>
+            <li><Link href="/Materials/spine-time">Spine Time-highlights from our patient education webinar</Link></li>
             <li><Link href="https://smiss.org/patient-education-videos/" target='_blank'>Patient Education SMISS Videos</Link></li>
             <li><Link href="https://www.nyp.org/ochspine/services" target='_blank'>About Och Spine Hospital</Link></li>
             <li><Link href="/Materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
-            <li><Link href="/Materials/other">Art & Spine</Link></li>
-            <li><Link href="/Materials/testimonials">Testimonials</Link></li>
+            {/*<li><Link href="/Materials/other">Art & Spine</Link></li>*/}
+            {/*<li><Link href="/Materials/testimonials">Testimonials</Link></li>*/}
           </ul>
         </div>
 

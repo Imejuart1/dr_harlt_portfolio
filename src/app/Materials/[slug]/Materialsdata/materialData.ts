@@ -202,13 +202,13 @@ export const materialData = {
         media: [
           {
             type: "pdf",
-            src: "https://drive.google.com/file/d/1h8Kuc_TI3krQE0eYKBh38jP16zSAoIvu/preview",
-            title: "Recommended Chiropractors.",
+            src: "https://drive.google.com/file/d/11NSsoGVIz3gDLaxs14JDvQ578k-d-z9u/preview",
+            title: "Eschen prothestic and orthotic labs.",
           },
           {
             type: "pdf",
-            src: "https://drive.google.com/file/d/113uKqiAYADWy5CfoWOlBKznsDFlO6VlR/preview",
-            title: "PT and Chiropractor List.",
+            src: "https://drive.google.com/file/d/1kEo04syp8L-cQRDm-18v08PQhuZZhEwe/preview",
+            title: "Aspen Medical Products.",
           }
         ],
       },
@@ -279,8 +279,8 @@ export const materialData = {
         media: [
           {
             type: "pdf",
-            src: "https://drive.google.com/file/d/16KQ1gT8Ul_lU4ChX6RRUoAM4tuUgdwLP/preview",
-            title: "Psychology Referral",
+            src: "https://drive.google.com/file/d/1SazAy4Q9BLPK8bexweTCo1Kj0TbQH5aK/preview",
+            title: "Orthopedic Specialists at Hospital for Special Surgery",
           },
         ],
       },
@@ -339,7 +339,7 @@ export const materialData = {
         media: [
           {
             type: "pdf",
-            src: "https://drive.google.com/file/u/0/d/1aQFsZrCcgIDcERjlrCoZRA-rvF5Ihj_7/preview",
+            src: "https://drive.google.com/file/d/1Lp4UYi-XvYvz0ZF90iQL-q87lKKr_VH1/preview",
             title: "Supplements recommended for nerve regeneration and neuropathy.",
           },
         ],
@@ -467,7 +467,7 @@ export const materialData = {
         ],
       },
       "spine-time" :{
-        title:"Spine Time",
+        title:"Spine Time-highlights from our patient education webinar",
         content:
        "Explore spine videos, Enjoy!",
         media: [

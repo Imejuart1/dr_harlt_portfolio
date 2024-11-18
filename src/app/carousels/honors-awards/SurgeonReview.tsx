@@ -19,7 +19,7 @@ const surgeonReviews: SurgeonReviewProps[] = [
     name: "Marcelo Valacco MD",
     title: "Orthopaedic Surgeon/Spine Surgeon",
     location: "Buenos Aires. Argentina",
-    review: `I have been last week in Weill Cornell visiting Dr Hartl. He showed me the steps by steps in Minimally invasive Spine Surgery in vivo in OR. Was tremendous experience can see him and learn about how he use navigation systems and microsurgery. Also I can attend in clinics and research meetings about the last technology and innovation. In clinics, was a very great experience to see him how the patients are examining and they know about spine patology. The motivation for this stage with Dr Roger Hartl was to learn and develop new technologies in my country nexts years. Thanks to Dr Hartl and his team for kindly accepting at the Hospital.`
+    review: `I visited and observed Dr Härtl at Weill Cornell. He showed me the “step-by-step” procedures in Minimally Invasive Spinal Surgery in the OR. It was a tremendous experience to observe him and learn about how he uses navigation systems and microsurgery. Also, I attended research meetings about the latest technologies and innovation. In the clinic, it was a very great experience to see him examining patients to find out about their spine pathologies. The motivation for my visit with Dr Roger Härtl was to learn and develop new technologies that I can introduce in my country over the next years. Thanks to Dr Härtl and his team for kindly accepting at the Hospital..`
   },
   {
     image: "/img/Anasurgeonjpeg.jpeg",

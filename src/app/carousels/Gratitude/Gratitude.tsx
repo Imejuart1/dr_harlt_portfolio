@@ -76,9 +76,9 @@ const GratitudeImageCarousel: React.FC = () => {
       >
         <div className={styles.overlay}>
           <div className={styles.textWrapper}>
-            <div className={styles.iconWrapper}>
+           {/*} <div className={styles.iconWrapper}>
               <FontAwesomeIcon icon={carouselItems[currentIndex].icon} className={styles.icons} />
-            </div>
+            </div>*/}
             <h3 className={styles.title}>{carouselItems[currentIndex].title}</h3>
             <p className={styles.description}>{carouselItems[currentIndex].description}</p>
             <Link href={carouselItems[currentIndex].link} className={styles.link}>Learn More</Link>

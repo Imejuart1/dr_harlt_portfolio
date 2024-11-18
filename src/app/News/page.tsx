@@ -121,7 +121,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             </div>
           </div>
             
-          <div className={styles.section}>
+          {/*<div className={styles.section}>
             <div className={styles.textContent}>
                     <h2>Vittorio Sella and Wilfred Thesiger: Photographs at the Edge</h2>
                     <p>
@@ -136,7 +136,7 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
                 <div className={styles.imageContainer2}>
                 <iframe src="https://www.youtube.com/embed/UEizbdwpi7A?si=Krnmkq3zkV0gzbyf"  allowFullScreen className={styles.sectionImage}/>
                 </div>
-            </div>
+            </div>*/}
 
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
