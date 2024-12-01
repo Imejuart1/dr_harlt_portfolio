@@ -26,7 +26,7 @@ export default function Home() {
       {/*<PatientTestimonials/>*/}
       <VitalsReview/>
       {/*<Testimonials/>*/}
-      <ProjectSummaryCarousel/>
+      {/* <ProjectSummaryCarousel/> */}
        <HonorsAndAwardsPage />
        <GratitudeSummaryCarousel/>
        <MaterialSummaryCarousel />

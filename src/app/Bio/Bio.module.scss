@@ -9,7 +9,17 @@
     font-family: $font-family-base;
     font-size: $font-size-normal;
     overflow-x: hidden !important;
-
+    .pledgeList {
+      padding-left: 20px;
+      list-style-type: decimal;
+     // font-size: 1.2rem;
+      //line-height: 1.6;
+      color: $dark-blue;
+    
+      li {
+        margin-bottom: 10px;
+      }
+    }
     .content {
         display: flex;
         flex-direction: column;

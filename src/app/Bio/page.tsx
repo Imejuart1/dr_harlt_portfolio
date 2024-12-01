@@ -25,13 +25,28 @@ const Bio: React.FC = () => {
             <img src="/img/roger2.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
           </div>
           <div className={styles.textSection}>
-            <h2>Personal Statement</h2>
+            <h2>Mission</h2>
             <p>
-              Back and neck pain are the second most common reasons people seek medical advice, but the care has been very fragmented. 
-              It’s long been my passion to bring together all the many disciplines required to provide comprehensive diagnosis, treatment, 
-              and care for back and neck disorders. Surgical intervention is really just a small part of what we do – but when surgery 
-              is required we always strive for the least invasive, most effective option to get our patients back to enjoying their lives.
+            It is my mission to bring together all the disciplines required to provide comprehensive diagnosis,
+             treatment, and care for back and neck disorders in one location. Surgical intervention is just a small part of 
+             what we do – but when surgery is required,
+             I will always strive for the least invasive, most effective option to get my patients back to enjoying their lives.
             </p>
+  <h2>Pledge to My Patients:</h2>
+  <ol className={styles.pledgeList}>
+    <li>
+      Interdisciplinary approach to identify the source of your pain and any other symptoms you may be experiencing.
+    </li>
+    <li>
+      My treatment approach always begins with the least invasive option depending on the severity of your symptoms.
+    </li>
+    <li>
+      If surgery is recommended, I will always offer the least invasive surgical option that is safe, effective, and has excellent long-term outcomes.
+    </li>
+    <li>
+    I will be with you throughout this journey, from diagnosis to treatment to recovery and beyond.
+    </li>
+  </ol>
           </div>
         </div>
 

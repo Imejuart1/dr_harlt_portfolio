@@ -30,7 +30,7 @@ import styles from './HeroSection.module.scss';
 const HeroSection: React.FC = () => {
   const slides = [
     {
-      image: '/img/research.jpeg',
+      image: '/img/herosdd.webp',
       title: 'Dr. Roger Härtl',
       subtitle: 'Spine Surgeon at Och Spine, NewYork-Presbyterian and Weil Cornell Medical Center',
       text: 'Leading expert in Minimally Invasive Spine surgery',
@@ -86,8 +86,10 @@ const HeroSection: React.FC = () => {
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className={styles.content}>
+      <h1>{title}</h1>
         {/*{currentSlide === 0 && <h3>I am</h3>}
-*/}        <h1>{title}</h1>
+*/}        {/*
+    <h1>{title}</h1>
         <h2>{subtitle}</h2>
         <p>{text}</p>
         <p>{text2}</p>
