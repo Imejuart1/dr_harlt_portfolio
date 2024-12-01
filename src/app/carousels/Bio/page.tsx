@@ -81,7 +81,7 @@ const Bio: React.FC = () => {
     <li>Pioneer and leader in minimally invasive spinal surgery and computer-assisted spinal navigation surgery</li>
     <li>Expert in biological approaches for disc repair and regeneration</li>
     <li>Patients come from all over the globe, including physicians, surgeons, and even other neurological and spine surgeons</li>
-    <li>Repeatedly named to the lists of New York Super Doctors, America's Top Surgeons, and America's Best Doctors, and included on the list of New York's Best Doctors in <em>New York</em> magazine</li>
+    <li>Repeatedly named to the lists of New York Super Doctors, America&apos;s Top Surgeons, and America&apos;s Best Doctors, and included on the list of New York&apos;s Best Doctors in <em>New York</em> magazine</li>
     <li>Authored over 300 scholarly articles in peer-reviewed journals and three books on minimally invasive spinal surgery and biological disc repair and regeneration</li>
   </ul>
 </div>
