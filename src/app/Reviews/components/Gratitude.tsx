@@ -39,7 +39,8 @@ const Gratitude: React.FC = () => {
           <div id="humanitarian-work" className={styles.imageContainer}>
             <div className={styles.imageBox}>
               <h3 className={styles.imageTitle}>Humanitarian Work</h3>
-              <p>Please consider <strong>donating</strong> to our neurosurgery <strong>humanitarian work in Tanzania by clicking me</strong></p>
+              <p>Please consider <strong>donating</strong> to our neurosurgery <strong>humanitarian work in Tanzania</strong></p>
+              <a href="https://tanzanianeurosurgery.org/" target="_blank" rel="noopener noreferrer">Find out more about our humanitarian work</a>
               <a href="https://neurosurgery.weillcornell.org/donate-now" target="_blank" rel="noopener noreferrer">
                 <img src="/img/humaritian.png" alt="Humanitarian Work" className={styles.bigImage} />
                 <div className={styles.arrowIcon}></div>

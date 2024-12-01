@@ -180,6 +180,21 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
               <img src="/img/piece (2).png" alt="News 6" className={styles.sectionImage} />
             </a>
           </div>
+         
+          <div className={styles.section}>
+  <a href="https://www.npr.org/sections/shots-health-news/2024/11/11/nx-s1-5185967/low-back-pain-stretch-yoga" target="_blank" rel="noopener noreferrer">
+    <img src="/img/yoga.webp" alt="Yoga and Back Pain" className={styles.sectionImage} />
+  </a>
+  <div className={styles.textContent}>
+    <h2>Online Yoga Classes Prove Helpful for Back Pain</h2>
+    <p>
+      A recent study highlighted by NPR reveals that virtual yoga sessions can significantly alleviate chronic low back pain. Dr. Roger Härtl, neurosurgical director of Och Spine at NewYork-Presbyterian/Weill Cornell Medical Center, who was not involved in the study, commented on the findings, stating, "I find this very exciting because we have this huge chunk of patients, 95% of patients, where we sometimes don't know what to do."
+    </p>
+    <a href="https://www.npr.org/sections/shots-health-news/2024/11/11/nx-s1-5185967/low-back-pain-stretch-yoga" target="_blank" rel="noopener noreferrer">Read more</a>
+  </div>
+</div>
+
+
         </div>
       )}
 

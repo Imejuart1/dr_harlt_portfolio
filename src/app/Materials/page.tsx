@@ -67,6 +67,9 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/B.L.T">B.L.T. Video</Link></li>
             <li><Link href="https://www.rickysinghmd.com/exercises/" target='_blank'>Dr. Ricky Singh&apos;s Exercises &gt; 6 Weeks After Surgery</Link></li>
             <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
+            <li><Link href="https://neurosurgery.weillcornell.org/och-spine-unit-opens-2n" target='_blank'>Private Spine floor: 2 North, 
+            Private Rooms,
+Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Link></li>
           </ul>
         </div>
 
@@ -122,7 +125,7 @@ const MaterialComponent: React.FC = () => {
           </ul>
         </div>
 
-        <div className={styles.materialGroup} id="upload-imaging">
+        <div className={styles.materialGroup} id="gratitude">
           <h2>Gratitude</h2>
           <ul>
             <li><Link href="/Gratitude">Support Dr. Härtl</Link></li>

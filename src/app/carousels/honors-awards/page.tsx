@@ -369,7 +369,6 @@ const HonorsAndAwardsPages: React.FC = () => {
               <img src="/img/healthpodcast.jpeg" alt="News 6" className={styles.sectionImage} />
             </a>
           </div>
-
         </div>
       )}
     </section>
