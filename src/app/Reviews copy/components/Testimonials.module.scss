@@ -1,0 +1,51 @@
+// app/reviews/components/Testimonials.module.scss
+@import '../../../styles/colors.scss';
+
+.testimonialsContainer {
+  background: linear-gradient(135deg, $primary-blue, #5B3EAA);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+  @media (max-width: 900px) {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    @media (max-width: 600px) {
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+  }
+
+  .videoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .videoWrapper {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+  }
+}
