@@ -59,7 +59,7 @@ const ReviewPage: React.FC = () => {
     <section className={styles.reviewSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
-          <h1>Testimonials & Reviewse</h1>
+          <h1>Testimonials & Reviews</h1>
           <p>Read what <strong>Dr. Härtl&apos;s</strong> patients have to say about their experiences.</p>
         </div>
       </div>

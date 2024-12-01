@@ -125,7 +125,7 @@ const MaterialComponent: React.FC = () => {
         <div className={styles.materialGroup} id="upload-imaging">
           <h2>Gratitude</h2>
           <ul>
-            <li><Link href="/Materials/ambra-Instructions">Support Dr. Härtl</Link></li>
+            <li><Link href="/Gratitude">Support Dr. Härtl</Link></li>
           </ul>
         </div>
       </div>

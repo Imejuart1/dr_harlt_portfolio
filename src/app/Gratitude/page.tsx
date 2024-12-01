@@ -59,11 +59,11 @@ const ReviewPage: React.FC = () => {
     <section className={styles.reviewSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
-          <h1>Testimonials & Reviewse</h1>
-          <p>Read what <strong>Dr. Härtl&apos;s</strong> patients have to say about their experiences.</p>
+          <h1>Gratitude</h1>
+          <p>Support <strong>Dr. Härtl&apos;s</strong> innovative work in spinal surgery and research.</p>
         </div>
       </div>
-      <div className={styles.tabNavigation}>
+      {/*<div className={styles.tabNavigation}>
         <button
           className={`${styles.tabButton} ${activeTab === "testimonials" ? styles.active : ""}`}
           onClick={() => setActiveTab("testimonials")}
@@ -81,7 +81,7 @@ const ReviewPage: React.FC = () => {
           onClick={() => setActiveTab("gratitude")}
         >
           Gratitude
-        </button>*/}
+        </button>
         <div
           className={`${styles.tabUnderline} ${activeTab === "testimonials" ? styles.left : activeTab === "reviews" ? styles.right : styles.right}`}
         />
@@ -135,13 +135,13 @@ const ReviewPage: React.FC = () => {
             <GoogleReview/>
           </div>
         </div>
-      )}
-      {activeTab === "gratitude" && (
+      )}</div>*/}
+
         <div id='#gratitude'>
           <Gratitude />
         </div>
-      )}
-        </div>
+
+        
     </section>
   );
 };
