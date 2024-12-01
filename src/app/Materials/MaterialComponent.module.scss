@@ -165,3 +165,23 @@
         }
     }
 }
+
+.materialGroup ul {
+  list-style: none; /* Remove default bullet points */
+  counter-reset: list-counter; /* Initialize counter */
+  padding-left: 0; /* Align content */
+}
+
+.materialGroup ul li {
+  counter-increment: list-counter; /* Increment counter for each <li> */
+  position: relative;
+  padding-left: 25px; /* Space for the number */
+}
+
+.materialGroup ul li::before {
+  content: counter(list-counter) ". "; /* Display the counter */
+  position: absolute;
+  left: 0; /* Position the number */
+  font-weight: bold; /* Optional: make the number bold */
+  color: #0073e6; /* Optional: customize color */
+}
