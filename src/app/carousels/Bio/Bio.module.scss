@@ -97,7 +97,9 @@
             border: 1px solid $border-blue;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
-        
+            @media (max-width: 600px) {
+              font-size:1rem;
+            }
             &:hover {
               transform: translateY(-5px);
               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -161,7 +163,9 @@
           font-size: 1.2rem;
           line-height: 1.6;
           color: $dark-blue;
-        
+          @media (max-width: 600px) {
+            font-size:1rem;
+          }
           li {
             margin-bottom: 10px;
           }
@@ -173,7 +177,10 @@
           list-style-type: disc;
           font-size: 1.2rem;
           line-height: 1.8;
-          color: $dark-blue
+          color: $dark-blue;
+          @media (max-width: 600px) {
+            font-size:1rem;
+          }
           li {
             margin-bottom: 10px;
           }
@@ -182,7 +189,10 @@
           list-style-type: disc;
           font-size: 1.2rem;
           line-height: 1.8;
-          color: $dark-blue
+          color: $dark-blue;
+          @media (max-width: 600px) {
+            font-size:1rem;
+          }
           li {
             margin-bottom: 10px;
           }

@@ -17,7 +17,9 @@
   @media (max-width: 900px) {
     height:20rem;
   }
-  
+  @media (max-width: 600px) {
+    background-position: right;
+  }
 
   &::before {
     content: '';
@@ -226,7 +228,7 @@
     align-items: flex-end;
     height: 50vh; /* Adjust the height to occupy the full screen */
     padding: 20px;
-    margin-bottom: 12rem;
+  //  margin-bottom: 12rem;
     &::before {
       background: linear-gradient(to top, rgba(3, 112, 255, 0.9), rgba(3, 112, 255, 0.7) 30%, rgba(3, 112, 255, 0.3) 70%, rgba(3, 112, 255, 0.1));
     }
@@ -235,10 +237,11 @@
     }
 
     .content {
+      display:none;
       position: absolute;
       background-color: rgba(3, 112, 255, 1);
       padding: 20px;
-      display: flex;
+      //display: flex;
       justify-content: center;
       flex-direction: column;
       height:fit-content;
