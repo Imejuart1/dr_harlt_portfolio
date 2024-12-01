@@ -1,13 +1,8 @@
 // app/reviews/page.tsx
 "use client";
 import React, { useEffect, useState } from 'react';
-import HealthgradesReview from './components/HealthgradesReview';
-import VitalsReview from './components/VitalsReview';
 import Gratitude from './components/Gratitude';
-import Testimonials from './components/Testimonials'; // Import the Testimonials component
 import styles from './Review.module.scss';
-import GoogleReview from './components/Google';
-import PatientTestimonials from '../carousels/Testimonials/PatientTestimonials';
 
 const images = [
   '/img/reviewmain1.jpeg',
