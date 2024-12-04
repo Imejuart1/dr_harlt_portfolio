@@ -129,6 +129,10 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
           <li className={isActive('/Reviews') ? styles.activeLink : ''}>
             <Link href="/Reviews">Reviews</Link>
           </li>
+          
+          <li className={isActive('/Gratitude') ? styles.activeLink : ''}>
+            <Link href="/Gratitude">Gratitude</Link>
+          </li>
           <li className={isActive('/honors-awards') ? styles.activeLink : ''}>
             <Link href="/honors-awards">Honors/Awards</Link>
           </li>

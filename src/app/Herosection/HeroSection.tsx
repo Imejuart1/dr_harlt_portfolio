@@ -30,7 +30,7 @@ import styles from './HeroSection.module.scss';
 const HeroSection: React.FC = () => {
   const slides = [
     {
-      image: '/img/herosdd.webp',
+      image: '/img/Herowebb.png',
       title: 'Dr. Roger Härtl',
       subtitle: 'Spine Surgeon at Och Spine, NewYork-Presbyterian and Weil Cornell Medical Center',
       text: 'Leading expert in Minimally Invasive Spine surgery',

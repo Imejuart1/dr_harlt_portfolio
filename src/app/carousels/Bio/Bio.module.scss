@@ -66,50 +66,35 @@
           font-size:1rem;
         }
       }
-      .specialties {
-        font-size: 2rem;
-        color: $dark-blue;
-        margin-top: 1rem;
-        @media (max-width: 600px) {
-          margin-bottom: 0.6rem;
-          font-size:1rem;
-        }
-        strong {
-          font-weight: $font-weight-bold;
-          color: $primary-blue;
-        }
-        .specialtiesGrid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          gap: 15px;
-          padding: 20px;
-          background-color: $light-blue;
-          border-radius: 8px;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        
-          div {
-            font-size: 1.1rem;
-            color: $dark-blue;
-            text-align: left;
-            padding: 5px 8px;
-            background-color: #ffffff;
-            border-radius: 6px;
-            border: 1px solid $border-blue;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            @media (max-width: 600px) {
-              font-size:1rem;
-            }
-            &:hover {
-              transform: translateY(-5px);
-              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-              background-color: $hover-blue;
-              color: #ffffff;
-            }
+      .specialtiesGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+        background-color: $light-blue;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        list-style: none; /* Remove default list styles */
+        margin: 0;
+        padding-left: 20px; /* Add padding for bullet alignment */
+      
+        li {
+          font-size: 1.1rem;
+          color: $dark-blue;
+          text-align: left;
+          padding: 5px 8px;
+          background-color: #ffffff;
+          border-radius: 6px;
+          border: none; /* Remove border */
+          box-shadow: none; /* Remove shadow */
+          list-style: disc; /* Display bullet points */
+          margin-left: 20px; /* Align bullet points */
+          @media (max-width: 600px) {
+            font-size: 1rem;
           }
         }
-        
       }
+      
       div {
         font-size: 1.5rem;
         color: $primary-blue;

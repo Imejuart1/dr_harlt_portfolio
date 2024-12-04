@@ -11,30 +11,26 @@ const Bio: React.FC = () => {
           Hansen-MacDonald Professor of Neurological Surgery<br />
           Director of Neurosurgery Spine, Weill Cornell Medicine<br />
           Neurosurgical Director, Och Spine at NewYork-Presbyterian/Weill Cornell Medical Center<br />
-          Founder, Weill Cornell Tanzania Neurosurgical Initiative
-        </p>
-        <p className={styles.institution}>
-          Weill Cornell Medicine<br />
-          Department of Neurological Surgerya
         </p>
         <div className={styles.specialties}>
-  <strong>Specialties:</strong>
-  <div className={styles.specialtiesGrid}>
-    <div>Minimally Invasive Spinal Surgery</div>
-    <div>Spinal Microsurgery</div>
-    <div>Spinal Tumors</div>
-    <div>Minimally Invasive Decompression of Spinal Stenosis</div>
-    <div>Microdiscectomy</div>
-    <div>Spondylolisthesis </div>
-    <div>Minimally Invasive Spinal Fusion</div>
-    <div>Cervical Laminoplasty</div>
-    <div>Motion Preserving Spine Surgery</div>
-    <div>Disc Arthroplasty</div>
-    <div>Spine Injuries in the Athlete</div>
-    <div>Sports Trauma</div>
-    <div>Augmented Reality</div>
-    <div>3D Navigation</div>
-  </div>
+        <strong>Specialties:</strong>
+<ul className={styles.specialtiesGrid}>
+  <li>Minimally Invasive Spinal Surgery</li>
+  <li>Spinal Microsurgery</li>
+  <li>Spinal Tumors</li>
+  <li>Microdiscectomy</li>
+  <li>Spondylolisthesis</li>
+  <li>Minimally Invasive Spinal Fusion</li>
+  <li>Cervical Laminoplasty</li>
+  <li>Motion Preserving Spine Surgery</li>
+  <li>Disc Arthroplasty</li>
+  <li>Spine Injuries in the Athlete</li>
+  <li>Sports Trauma</li>
+  <li>Augmented Reality</li>
+  <li>3D Navigation</li>
+  <li>Minimally Invasive Decompression of Spinal Stenosis</li>
+</ul>
+
 </div>
 
         <div>Contact: (212) 746-2152, or click <Link href='/Contact'><b>here.</b></Link></div>
