@@ -24,7 +24,7 @@ const projectSections = [
     },
     {
         title: "Art and Spine",
-        imageUrl: "/img/otherprojects.jpeg", // Replace with your actual image paths
+        imageUrl: "/img/newhartl6.jpg", // Replace with your actual image paths
         text:'Explore Exhibition tours with Dr. Härtl.',
         link: "/Materials/other",
     },

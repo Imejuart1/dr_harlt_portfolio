@@ -9,8 +9,8 @@ import styles from './Review.module.scss';
 import GoogleReview from './components/Google';
 
 const images = [
-  '/img/reviewmain1.jpeg',
-  '/img/reviewmain3.jpeg'
+  '/img/newhartl1.jpg',
+  '/img/newhartl4.jpg'
 ];
 
 const ReviewPage: React.FC = () => {
