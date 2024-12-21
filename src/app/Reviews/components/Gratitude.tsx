@@ -45,7 +45,7 @@ const Gratitude: React.FC = () => {
                 <img src="/img/humaritian.png" alt="Humanitarian Work" className={styles.bigImage} />
                 <div className={styles.arrowIcon}></div>
               </a>
-              <a href="https://neurosurgery.weillcornell.org/donate-now" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>Go to Link</a>
+              <a href="https://tanzanianeurosurgery.org/donate" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>Go to Link</a>
             </div>
           </div>
         </div>
