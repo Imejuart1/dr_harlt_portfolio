@@ -20,7 +20,7 @@ const projectSections = [
         title: "Physician Education ",
         imageUrl: "/img/nycmiss.webp", // Replace with your actual image paths
         text:'Our summer master class in tubular decompression now open for registration',
-        link: "https://nyc-miss.org/",
+        link: "https://nycmiss.org/",
     },
     {
         title: "Art and Spine",
@@ -49,7 +49,7 @@ const ProjectComponent = () => {
                         <img src={section.imageUrl} alt={section.title} />
                         <h3>{section.title}</h3>
                         <p>{section.text}</p>
-                        <Link href={section.link}>Learn More</Link>
+                        <Link href={section.link} target="__blank">Learn More</Link>
                     </div>
                 ))}
             </div>
