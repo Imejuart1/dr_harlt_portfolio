@@ -5,7 +5,7 @@ import styles from './ProjectComponent.module.scss';
 
 const projectSections = [
     {
-        title: "Research",
+        title: "Biological Research",
         imageUrl: "/img/Researchnew.jpeg", // Replace with your actual image paths
        text:"Discover our cutting-edge research that is shaping the future of spinal care and regeneration",
         link: "Project/research",
