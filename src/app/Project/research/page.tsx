@@ -22,14 +22,14 @@ const ResearchComponent = () => {
 
             <div className={styles.contentSection}>
                 <div className={styles.imageContainer2}>
-              {/*}  <iframe 
-  src="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview" 
+             <iframe 
+  src="https://www.youtube.com/embed/YVdUAgBZCRQ?si=2OORcbX4udpml67y" 
   width="640" 
   height="480" 
   allow="autoplay" 
   allowFullScreen>
-</iframe>   */}    
-{!showIframe ? (
+</iframe>     
+{/*{!showIframe ? (
         <img
           src="/img/image1.png"
           alt="Thumbnail"
@@ -44,7 +44,7 @@ const ResearchComponent = () => {
           allow="autoplay"
           allowFullScreen
         />
-      )}          
+      )}   */}       
                 </div>
                
                 <div className={styles.textContainer}>

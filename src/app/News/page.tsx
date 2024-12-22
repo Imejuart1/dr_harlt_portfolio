@@ -199,7 +199,24 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
       )}
 
       {activeTab === "podcasts" && (
+
         <div className={styles.contentWrapper} id='#podcasts'>
+             <div className={styles.section}>
+            <div className={styles.textContent}>
+            <h2> Advancing Solutions for Degenerative Disc Disease Through Regeneration, Repair, and Replacement</h2>
+            <p>Biology research is advancing lasting solutions for degenerative disc diseaese 
+            through regeneration, repair, replacement.</p>
+              <a href="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview" target="_blank" rel="noopener noreferrer">View Podcast</a>
+            </div>
+              <iframe
+                src="https://www.youtube.com/embed/YVdUAgBZCRQ?si=2OORcbX4udpml67y"
+                allowFullScreen
+                width="100%" 
+                height="400" 
+                frameBorder="0" className={styles.sectionImage}>
+            </iframe>
+          </div>
+
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
               <h2>Congresso de Coluna Brasil/Argentina</h2>
