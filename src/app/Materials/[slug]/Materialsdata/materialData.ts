@@ -353,7 +353,19 @@ export const materialData = {
             type: "images",
             src: "https://www.amazon.com/Essential-Techniques-Minimally-Invasive-Surgery/dp/1684200091",
             title: "Essential-Techniques-Minimally-Invasive-Surgery.",
-            previewImage: "/img/",
+            previewImage: "/img/B1.jpg",
+          },
+          {
+            type: "images",
+            src: "https://www.amazon.com/Technical-Advances-Minimally-Invasive-Surgery/dp/9811901740",
+            title: "Technical-Advances-Minimally-Invasive-Surgery.",
+            previewImage: "/img/B2.jpg",
+          },
+          {
+            type: "images",
+            src: "https://www.amazon.com/Biological-Approaches-Spinal-Regeneration-Clinicians/dp/1626232504",
+            title: "Biological-Approaches-Spinal-Regeneration-Clinicians.",
+            previewImage: "/img/B4.jpg",
           },
           {
             type: "images",
