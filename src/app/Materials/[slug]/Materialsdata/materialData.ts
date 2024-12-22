@@ -351,6 +351,12 @@ export const materialData = {
         media: [
           {
             type: "images",
+            src: "https://www.amazon.com/Essential-Techniques-Minimally-Invasive-Surgery/dp/1684200091",
+            title: "Essential-Techniques-Minimally-Invasive-Surgery.",
+            previewImage: "/img/",
+          },
+          {
+            type: "images",
             src: "",
             title: "Square one.",
             previewImage: "/img/Book1.jpg",
