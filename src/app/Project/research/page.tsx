@@ -1,16 +1,57 @@
 "use client";
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 import styles from './research.module.scss';
 
 const ResearchComponent = () => {
+    const [showIframe, setShowIframe] = useState(false);
+
+  const handleThumbnailClick = () => {
+    setShowIframe(true);
+  };
     return (
         <section className={styles.researchSection}>
             {/* Hero Section */}
-            <div className={styles.heroSection} style={{ backgroundImage: `url('/img/stemcells2.jpeg')` }}>
+            <div className={styles.heroSection} style={{ backgroundImage: `url('/img/Researchnew.jpeg')` }}>
                 <div className={styles.content}>
                     <h1>Research Projects</h1>
                     <p>Discover our cutting-edge research that is shaping the future of spinal care and regeneration.</p>
+                </div>
+            </div>
+
+
+            <div className={styles.contentSection}>
+                <div className={styles.imageContainer2}>
+              {/*}  <iframe 
+  src="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview" 
+  width="640" 
+  height="480" 
+  allow="autoplay" 
+  allowFullScreen>
+</iframe>   */}    
+{!showIframe ? (
+        <img
+          src="/img/image1.png"
+          alt="Thumbnail"
+          style={{ width: '100%', height: '100%', cursor: 'pointer' }}
+          onClick={handleThumbnailClick}
+        />
+      ) : (
+        <iframe
+          src="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview"
+          width= '640'
+          height= '480' 
+          allow="autoplay"
+          allowFullScreen
+        />
+      )}          
+                </div>
+               
+                <div className={styles.textContainer}>
+                    <h2> Advancing Solutions for Degenerative Disc Disease Through Regeneration, Repair, and Replacement</h2>
+                    <p>Biology research is advancing lasting solutions for degenerative disc diseaese 
+                        through regeneration, repair, replacement.</p>
+                    <Link href="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview" target="__blank">Watch Lecture</Link>
                 </div>
             </div>
 
@@ -55,4 +96,3 @@ const ResearchComponent = () => {
 };
 
 export default ResearchComponent;
-

@@ -252,7 +252,7 @@ const HonorsAndAwardsPages: React.FC = () => {
 
       {activeTab === "podcasts" && (
         <div className={styles.contentWrapper} id='#podcasts'>
-          <div className={styles.sectionReverse}>
+            <div className={styles.section}>
             <div className={styles.textContent}>
               <h2>Congresso de Coluna Brasil/Argentina</h2>
               <p>Dr. Roger Härtl was featured in a special podcast episode during the Congresso de Coluna
@@ -264,6 +264,33 @@ const HonorsAndAwardsPages: React.FC = () => {
             <div className={styles.videoWrapper}>
               <iframe
                 src={iframeSrc}
+                width="640"
+                height="480"
+                allow="autoplay; fullscreen"
+                className={`${styles.videoIframe} ${videoVisible ? styles.visible : ''}`}
+                ref={iframeRef}
+                style={{ display: videoVisible ? 'block' : 'none' }}
+              />
+              {!videoVisible && (
+                <div onClick={showVideo} className={styles.thumbnailWrapper}>
+                  <div className={styles.indSection} style={{ backgroundImage: `url(${brazilimages[currentImageIndex]})` }}></div>
+                  <div className={styles.playButton}>
+                    <img src='/img/play-button.svg' />
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+          <div className={styles.sectionReverse}>
+            <div className={styles.textContent}>
+            <h2> Advancing Solutions for Degenerative Disc Disease Through Regeneration, Repair, and Replacement</h2>
+            <p>Biology research is advancing lasting solutions for degenerative disc diseaese 
+            through regeneration, repair, replacement.</p>
+              <a href="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview" target="_blank" rel="noopener noreferrer">View Podcast</a>
+            </div>
+            <div className={styles.videoWrapper}>
+              <iframe
+                src="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview"
                 width="640"
                 height="480"
                 allow="autoplay; fullscreen"

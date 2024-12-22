@@ -127,7 +127,7 @@ surgical treatment of spinal disorders.
 He is a leader and innovator in the application of computer-assisted navigation and
 augmented reality in spinal surgery and works with his research team, collaborators
 around the world and industry to make spinal surgery safer and more successful for
-patients..
+patients.
             </p>
           </div>
         </div>

@@ -131,6 +131,14 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
             <li><Link href="/Gratitude">Support Dr. Härtl</Link></li>
           </ul>
         </div>
+
+        <div className={styles.materialGroup} id="publications">
+          <h2>Publications</h2>
+          <ul>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Roger+Hartl&sort=date"
+            target="__blank">Dr. Roger Härtl PUBLICATIONS</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   );
