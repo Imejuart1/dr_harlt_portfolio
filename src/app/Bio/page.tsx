@@ -131,6 +131,171 @@ patients.
             </p>
           </div>
         </div>
+        <div id="publications" className={styles.sectionpub}>
+  <div className={styles.textSection}>
+    <h2>Publications</h2>
+    <p>
+      Dr. Härtl's groundbreaking work in neurosurgery and spine care is highlighted through his numerous
+      publications. Below is a selection of his latest contributions:
+    </p>
+    <ul className={styles.publicationList}>
+      {[
+        {
+          title: 'Introduction. Robotics in the neurosurgical operating room.',
+          authors: 'Vajkoczy P, et al. Among authors: hartl r.',
+          journal: 'Neurosurg Focus',
+          year: 2024,
+          pmid: '39616643',
+          free: false,
+        },
+        {
+          title: 'A Tai chi and qigong mind-body program for low back pain.',
+          authors: 'Yang Y, et al. Among authors: hartl r.',
+          journal: 'N Am Spine Soc J',
+          year: 2024,
+          pmid: '39469294',
+          free: true,
+        },
+        {
+          title: 'Complications in Minimally Invasive Spine Surgery in the Last 10 Years: A Narrative Review.',
+          authors: 'Boadi BI, et al. Among authors: hartl r.',
+          journal: 'Neurospine',
+          year: 2024,
+          pmid: '39363458',
+          free: true,
+        },
+        {
+          title: 'High Accuracy of Three-Dimensional Navigated Kirschner-Wire-Less Single-Step Pedicle Screw System (SSPSS) in Lumbar Fusions: Comparison of Intraoperatively Planned versus Final Screw Position.',
+          authors: 'Bielecki M, Boadi BI, Xie Y, Ikwuegbuenyi CA, Farooq M, Berger J, Hernández-Hernández A, Hussain I, Härtl R.',
+          journal: 'Brain Sci.',
+          year: 2024,
+          pmid: '39335369',
+          free: true,
+        },
+        {
+          title: 'Continuing Education for Global Neurosurgery Graduates: Visiting Surgeons, Skills Teaching, Bootcamps, and Twinning Programs.',
+          authors: 'Woodfield J, Reese J, Härtl R, Rock J.',
+          journal: 'Neurosurg Clin N Am.',
+          year: 2024,
+          pmid: '39244316',
+          free: false,
+        },
+        {
+          title: 'Clinical Capacity Building Through Partnerships: Boots on the Ground in Global Neurosurgery.',
+          authors: 'Lippa L, Cadieux M, Barthélemy EJ, et al. Among authors: Härtl R.',
+          journal: 'Neurosurgery',
+          year: 2024,
+          pmid: '39185894',
+          free: true,
+        },
+        {
+          title: 'The Use of Augmented Reality as an Educational Tool in Minimally Invasive Transformational Lumbar Interbody Fusion.',
+          authors: 'Schmidt FA, Hussain I, Boadi B, Sommer FJ, Thomé C, Härtl R.',
+          journal: 'Oper Neurosurg (Hagerstown).',
+          year: 2024,
+          pmid: '39185869',
+          free: true,
+        },
+        {
+          title: 'Where are the women in spine surgery? A demographic study of the range of gender disparity in academic spine hospitals in the United States.',
+          authors: 'Bratescu RA, Berger J, Härtl R.',
+          journal: 'Spine J.',
+          year: 2024,
+          pmid: '39154946',
+          free: true,
+        },
+        {
+          title: 'Flexible support material maintains disc height and supports the formation of hydrated tissue engineered intervertebral discs in vivo.',
+          authors: 'Fidai AB, Kim B, Lintz M, Kirnaz S, et al. Among authors: Härtl R.',
+          journal: 'JOR Spine',
+          year: 2024,
+          pmid: '39104832',
+          free: true,
+        },
+        {
+          title: 'Is mechanism of injury associated with outcome in spinal trauma? An observational cohort study from Tanzania.',
+          authors: 'Ikwuegbuenyi CA, Woodfield J, Waterkeyn F, et al. Among authors: Härtl R.',
+          journal: 'PLoS One.',
+          year: 2024,
+          pmid: '39024312',
+          free: true,
+        },
+        // Add more publications as needed
+      ].map((publication, index) => (
+        <li key={index} className={styles.publicationItem}>
+          <h3>{publication.title}</h3>
+          <p>{publication.authors}</p>
+          <p>
+            <em>{publication.journal}</em>, {publication.year}. PMID: {publication.pmid}.
+            {publication.free && (
+              <span className={styles.freeBadge}>Free PMC article</span>
+            )}
+          </p>
+        </li>
+      ))}
+    </ul>
+    <div className={styles.seeMore}>
+      <a
+        href="https://pubmed.ncbi.nlm.nih.gov/?term=Roger%20Hartl&sort=date&page=2"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.seeMoreLink}
+      >
+        See More Publications
+      </a>
+    </div>
+  </div>
+  {/* Book Recommendations Section */}
+  <div className={styles.bookRecommendations}>
+    <h2>Book Recommendations by Dr. Härtl</h2>
+    <p>Explore books recommended by the great surgeon Dr. Härtl:</p>
+    <div className={styles.bookGrid}>
+      {[
+        {
+          src: 'https://www.amazon.com/Essential-Techniques-Minimally-Invasive-Surgery/dp/1684200091',
+          title: 'Essential Techniques Minimally Invasive Surgery',
+          previewImage: '/img/Book2.png',
+        },
+        {
+          src: 'https://www.amazon.com/Technical-Advances-Minimally-Invasive-Surgery/dp/9811901740',
+          title: 'Technical Advances Minimally Invasive Surgery',
+          previewImage: '/img/B2.jpg',
+        },
+        {
+          src: 'https://www.amazon.com/Biological-Approaches-Spinal-Regeneration-Clinicians/dp/1626232504',
+          title: 'Biological Approaches Spinal Regeneration',
+          previewImage: '/img/B4.jpg',
+        },
+        {
+          src: 'https://www.amazon.com/Square-One-Simple-Guide-Balanced/dp/1684019184',
+          title: 'Square One: A Simple Guide to a Balanced Life',
+          previewImage: '/img/Book1.jpg',
+        },
+        {
+          src: 'https://www.amazon.com/Taijiquan-Art-Nurturing-Science-Power/dp/0974099007',
+          title: 'Taijiquan: The Art of Nurturing, The Science of Power',
+          previewImage: '/img/Book3.jpg',
+        },
+      ].map((book, index) => (
+        <a
+          key={index}
+          href={book.src}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.bookItem}
+        >
+          <img
+            src={book.previewImage}
+            alt={book.title}
+            className={styles.bookImage}
+          />
+          <p>{book.title}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );

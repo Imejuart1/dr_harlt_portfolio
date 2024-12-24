@@ -237,3 +237,132 @@
         }
     }
 }
+.sectionpub{
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #f5f7f9; // Light blue for a clean look
+    border-radius: 8px;
+ 
+  .textSection {
+    h2 {
+      font-size: 1.8rem;
+      color: $primary-blue; // Use your defined colors
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .publicationList {
+    list-style: none;
+    padding: 0;
+  
+    .publicationItem {
+      padding: 1rem;
+      border-bottom: 1px solid $border-blue;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+        color: $dark-blue;
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 0.5rem;
+  
+        em {
+          font-style: italic;
+        }
+      }
+  
+      .freeBadge {
+        display: inline-block;
+        margin-left: 0.5rem;
+        background-color: $primary-blue;
+        color: #fff;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+      }
+    }
+  }
+  .seeMore {
+    margin-top: 2rem;
+    text-align: center;
+  
+    .seeMoreLink {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: $primary-blue;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $dark-blue;
+      }
+    }
+  } 
+}
+
+.bookRecommendations {
+  margin-top: 3rem;
+
+  h2 {
+    font-size: 1.8rem;
+    color: $primary-blue;
+    margin-bottom: 1rem;
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+}
+  }
+
+  p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  .bookGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .bookItem {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .bookImage {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $dark-blue;
+      font-weight: 600;
+    }
+  }
+}
