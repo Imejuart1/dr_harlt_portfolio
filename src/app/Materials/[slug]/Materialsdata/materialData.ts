@@ -351,27 +351,33 @@ export const materialData = {
         media: [
           {
             type: "images",
-            src: "",
+            src: "https://www.amazon.com/Essential-Techniques-Minimally-Invasive-Surgery/dp/1684200091",
+            title: "Essential-Techniques-Minimally-Invasive-Surgery.",
+            previewImage: "/img/Book2.png",
+          },
+          {
+            type: "images",
+            src: "https://www.amazon.com/Technical-Advances-Minimally-Invasive-Surgery/dp/9811901740",
+            title: "Technical-Advances-Minimally-Invasive-Surgery.",
+            previewImage: "/img/B2.jpg",
+          },
+          {
+            type: "images",
+            src: "https://www.amazon.com/Biological-Approaches-Spinal-Regeneration-Clinicians/dp/1626232504",
+            title: "Biological-Approaches-Spinal-Regeneration-Clinicians.",
+            previewImage: "/img/B4.jpg",
+          },
+          {
+            type: "images",
+            src: "https://www.amazon.com/Square-One-Simple-Guide-Balanced/dp/1684019184/ref=sr_1_1?crid=3IU6SKW9M5C86&dib=eyJ2IjoiMSJ9.mk6VNm1FTQaCOFLQCFgdqMJZiw8eeuetB8lednB2zOWviWx1MmjwyUZVQFsKHycrAhpm7h3og2XcFSwSO0Q_9cgR90r5g6QZW1UEfAspC20bSdgo7altkwMVhcdI9qgC6MdnRX9GX3nUQC0ESgpgeFyMjxPodEiPNd6mFY064egYl7p6MfGDjcacXmCHq8zHM9IPAKr1Lf7lZR_pzgTjsnUt4YLG1ZZXnXb8tVnTiKU.sJAf5GpotLr3m0wE-xd95HGVAq5l1cmdDI1GKDrErWY&dib_tag=se&keywords=Square+one+joseph&qid=1734867302&s=books&sprefix=square+one+joseph%2Cstripbooks-intl-ship%2C417&sr=1-1",
             title: "Square one.",
             previewImage: "/img/Book1.jpg",
           },
           {
             type: "images",
-            src: "",
-            title: "Supplements recommended for nerve regeneration and neuropathy.",
-            previewImage: "/img/Book2.png",
-          },
-          {
-            type: "images",
-            src: "",
+            src: "https://www.amazon.com/Taijiquan-Art-Nurturing-Science-Power/dp/0974099007",
             title: "Supplements recommended for nerve regeneration and neuropathy.",
             previewImage: "/img/Book3.jpg",
-          },
-          {
-            type: "images",
-            src: "",
-            title: "Supplements recommended for nerve regeneration and neuropathy.",
-            previewImage: "/img/Book4.jpg",
           },
         ],
       },

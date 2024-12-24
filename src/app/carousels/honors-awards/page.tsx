@@ -290,7 +290,7 @@ const HonorsAndAwardsPages: React.FC = () => {
             </div>
             <div className={styles.videoWrapper}>
               <iframe
-                src="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview"
+                src="https://www.youtube.com/embed/YVdUAgBZCRQ?si=2OORcbX4udpml67y"
                 width="640"
                 height="480"
                 allow="autoplay; fullscreen"
@@ -298,14 +298,14 @@ const HonorsAndAwardsPages: React.FC = () => {
                 ref={iframeRef}
                 style={{ display: videoVisible ? 'block' : 'none' }}
               />
-              {!videoVisible && (
+             {/*} {!videoVisible && (
                 <div onClick={showVideo} className={styles.thumbnailWrapper}>
                   <div className={styles.indSection} style={{ backgroundImage: `url(${brazilimages[currentImageIndex]})` }}></div>
                   <div className={styles.playButton}>
                     <img src='/img/play-button.svg' />
                   </div>
                 </div>
-              )}
+              )}*/}
             </div>
           </div>
 
