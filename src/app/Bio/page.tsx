@@ -133,54 +133,58 @@ patients.
         </div>
         <div id="publications" className={styles.sectionpub}>
            {/* Book Recommendations Section */}
-  <div className={styles.bookRecommendations}>
-    <h2>Book Recommendations by Dr. Härtl</h2>
-    <p>Recommended by the great surgeon Dr. Härtl:</p>
-    <div className={styles.bookGrid}>
-      {[
-        {
-          src: 'https://www.amazon.com/Essential-Techniques-Minimally-Invasive-Surgery/dp/1684200091',
-          title: 'Essential Techniques Minimally Invasive Surgery',
-          previewImage: '/img/Book2.png',
-        },
-        {
-          src: 'https://www.amazon.com/Technical-Advances-Minimally-Invasive-Surgery/dp/9811901740',
-          title: 'Technical Advances Minimally Invasive Surgery',
-          previewImage: '/img/B2.jpg',
-        },
-        {
-          src: 'https://www.amazon.com/Biological-Approaches-Spinal-Regeneration-Clinicians/dp/1626232504',
-          title: 'Biological Approaches Spinal Regeneration',
-          previewImage: '/img/B4.jpg',
-        },
-       /* {
-          src: 'https://www.amazon.com/Square-One-Simple-Guide-Balanced/dp/1684019184',
-          title: 'Square One: A Simple Guide to a Balanced Life',
-          previewImage: '/img/Book1.jpg',
-        },
-        {
-          src: 'https://www.amazon.com/Taijiquan-Art-Nurturing-Science-Power/dp/0974099007',
-          title: 'Taijiquan: The Art of Nurturing, The Science of Power',
-          previewImage: '/img/Book3.jpg',
-        },*/
-      ].map((book, index) => (
-        <a
-          key={index}
-          href={book.src}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.bookItem}
-        >
+           <div className={styles.bookRecommendations}>
+  <h2>Book Recommendations by Dr. Härtl</h2>
+  <p>Explore books recommended by the great surgeon Dr. Härtl:</p>
+  <div className={styles.bookGrid}>
+    {[
+      {
+        src: 'https://www.amazon.com/Essential-Techniques-Minimally-Invasive-Surgery/dp/1684200091',
+        title: 'Essential Techniques Minimally Invasive Surgery',
+        previewImage: '/img/Book2.png',
+      },
+      {
+        src: 'https://www.amazon.com/Technical-Advances-Minimally-Invasive-Surgery/dp/9811901740',
+        title: 'Technical Advances Minimally Invasive Surgery',
+        previewImage: '/img/B2.jpg',
+      },
+      {
+        src: 'https://www.amazon.com/Biological-Approaches-Spinal-Regeneration-Clinicians/dp/1626232504',
+        title: 'Biological Approaches Spinal Regeneration',
+        previewImage: '/img/B4.jpg',
+      },
+      /*{
+        src: 'https://www.amazon.com/Square-One-Simple-Guide-Balanced/dp/1684019184',
+        title: 'Square One: A Simple Guide to a Balanced Life',
+        previewImage: '/img/Book1.jpg',
+      },
+      {
+        src: 'https://www.amazon.com/Taijiquan-Art-Nurturing-Science-Power/dp/0974099007',
+        title: 'Taijiquan: The Art of Nurturing, The Science of Power',
+        previewImage: '/img/Book3.jpg',
+      },*/
+    ].map((book, index) => (
+      <a
+        key={index}
+        href={book.src}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.bookItem}
+      >
+        <div className={styles.bookCover}>
+          <div className={styles.bookSpine}></div>
           <img
             src={book.previewImage}
             alt={book.title}
             className={styles.bookImage}
           />
-          <p>{book.title}</p>
-        </a>
-      ))}
-    </div>
+        </div>
+        <p className={styles.bookTitle}>{book.title}</p>
+      </a>
+    ))}
   </div>
+</div>
+
   <div className={styles.textSection}>
     <h2>Publications</h2>
     <p>
