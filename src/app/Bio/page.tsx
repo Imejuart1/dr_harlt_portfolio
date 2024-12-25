@@ -135,7 +135,7 @@ patients.
            {/* Book Recommendations Section */}
            <div className={styles.bookRecommendations}>
   <h2>Book Recommendations by Dr. Härtl</h2>
-  <p>Explore books recommended by the great surgeon Dr. Härtl:</p>
+  <p>Recommended by the great surgeon Dr. Härtl:</p>
   <div className={styles.bookGrid}>
     {[
       {
