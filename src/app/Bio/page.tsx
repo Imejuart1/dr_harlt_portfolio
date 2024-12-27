@@ -134,8 +134,7 @@ patients.
         <div id="publications" className={styles.sectionpub}>
            {/* Book Recommendations Section */}
            <div className={styles.bookRecommendations}>
-  <h2>Book Recommendations by Dr. Härtl</h2>
-  <p>Recommended by the great surgeon Dr. Härtl:</p>
+  <h2>Book by Dr. Härtl</h2>
   <div className={styles.bookGrid}>
     {[
       {
