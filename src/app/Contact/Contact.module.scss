@@ -264,4 +264,11 @@
       }
     }
   }
-  
+  .mapControls{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 3rem;
+  }

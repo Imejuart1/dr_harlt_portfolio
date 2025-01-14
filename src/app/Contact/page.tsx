@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
     email: '',
     message: '',
   });
-  const [status, setStatus] = useState('');
+  const [currentMapIndex, setCurrentMapIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const [popup, setPopup] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
 
@@ -51,6 +51,24 @@ const Contact: React.FC = () => {
     setPopup(null); 
   };
 
+  const maps = [
+    {
+      title: 'Primary Office Map',
+      src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.759965967281!2d-73.964666!3d40.76056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e67073cb37%3A0x88f28a806c367f69!2s240%20E%2059th%20St%202nd%20floor%2C%20New%20York%2C%20NY%2010022%2C%20USA!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus',
+    },
+    {
+      title: 'Wednesday Office Map',
+      src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.323245656502!2d-73.99893848459513!3d40.75468177932708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ad82d83569%3A0x1f7cf03bb6a8b264!2s504%20W%2035th%20St%2C%20New%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2sus!4v1699928479398!5m2!1sen!2sus",
+    },
+  ];
+  const handleNextMap = () => {
+    setCurrentMapIndex((prevIndex) => (prevIndex + 1) % maps.length);
+  };
+
+  const handlePrevMap = () => {
+    setCurrentMapIndex((prevIndex) => (prevIndex - 1 + maps.length) % maps.length);
+  };
+
   return (
     <section className={styles.contactSection}>
       <div className={styles.heroSection}>
@@ -58,17 +76,30 @@ const Contact: React.FC = () => {
           <h1>Contact</h1>
           <h1>Dr. Roger Härtl</h1>
           <p>Och Spine at NewYork-Presbyterian at the Weill Cornell Medicine Center for Comprehensive Spine Care</p>
+
+          
+          <div className={styles.mapControls}>
+            <button onClick={handlePrevMap} className={styles.arrowButton}>
+              &#8592; {/* Left Arrow */}
+            </button>
+            <p>{maps[currentMapIndex].title}</p>
+            <button onClick={handleNextMap} className={styles.arrowButton}>
+              &#8594; {/* Right Arrow */}
+            </button>
+          </div>
         </div>
-        <div className={styles.mapContainer}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.759965967281!2d-73.964666!3d40.76056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e67073cb37%3A0x88f28a806c367f69!2s240%20E%2059th%20St%202nd%20floor%2C%20New%20York%2C%20NY%2010022%2C%20USA!5e0!3m2!1sen!2sus!4v1691234567890!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div className={styles.mapContainer}>
+            <iframe
+              src={maps[currentMapIndex].src}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={maps[currentMapIndex].title}
+            ></iframe>
+
         </div>
       </div>
 
@@ -76,7 +107,14 @@ const Contact: React.FC = () => {
         <div className={styles.infoSection}>
           <div className={styles.address}>
             <h2>Office Location</h2>
+            <div>
+            <span><b>PRIMARY OFFICE:</b></span>
             <p>240 East 59th Street, 2nd Floor<br />New York, NY 10022</p>
+            </div>
+            <div>
+            <span><b>ON WEDNESDAY:</b></span> 
+            <p>504 W 35th St, New York, NY 10001, United States</p>
+            </div>
             <p><strong>Phone:</strong> (212) 746-2152</p>
             <p><strong>Fax:</strong> (646) 962-0640</p>
           </div>

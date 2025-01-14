@@ -108,6 +108,23 @@ const HonorsAndAwardsPage: React.FC = () => {
  
       {activeTab === "news" && (
         <div className={styles.contentWrapper} id='#news'>
+           <div className={styles.sectionReverse}>
+            <div className={styles.textContent}>
+            <h2> Och Spine at NewYork-Presbyterian/The Spiral</h2>
+            <p>A state-of-the-art spine center is now open in The Spiral at Hudson Yards at 504 West 35th Street. This new center brings together spine care specialists from 
+              Columbia and Weill Cornell Medicine, and will provide outpatient spine care for children and adults.</p>
+              <a href="https://www.nyp.org/ochspine/thespiral" target="_blank" rel="noopener noreferrer">See more</a>
+            </div>
+            <div>
+            <iframe
+                src="https://player.vimeo.com/video/1044763140"
+                allowFullScreen
+                width="100%" 
+                height="400" 
+                frameBorder="0" className={styles.sectionImage}>
+            </iframe>
+            </div>
+          </div>
           <div className={styles.section}>
             <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">
               <img src="/img/hartnews1.jpg" alt="News 1" className={styles.sectionImage} />
