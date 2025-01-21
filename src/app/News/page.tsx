@@ -108,6 +108,23 @@ const HonorsAndAwardsPage: React.FC = () => {
  
       {activeTab === "news" && (
         <div className={styles.contentWrapper} id='#news'>
+  
+  <div className={styles.section}>
+            <a href="https://www.nyp.org/advances/article/neurology-neurosurgery/stemming-the-tide-of-disc-degeneration-after-microdiscectomy#:~:text=That%20puts%20every%20patient%20who,level%20from%20the%20same%20side." target="_blank" rel="noopener noreferrer">
+              <img src="/img/newhartl6.jpg" alt="News 1" className={styles.sectionImage} />
+            </a>
+            <div className={styles.textContent}>
+              <h2>Stemming the Tide of Disc Degeneration After Microdiscectomy</h2>
+              <p>A world-renowned pioneer and leader in minimally invasive spinal surgery,
+                 Roger Härtl, MD, continually pursues research seeking innovative and less invasive 
+                 surgical and biological treatment strategies for degenerative diseases of the spine. 
+                 Most recently, Dr. Härtl, Co-Director of Och Spine at NewYork-Presbyterian and Director 
+                 of the Weill Cornell Medicine&apos;s Center for Comprehensive Spine Care, is exploring novel 
+                 tissue engineering techniques for the repair and regeneration of degenerated spinal discs, 
+                 the most common cause of back and neck pain.</p>
+              <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">Read more</a>
+            </div>
+          </div>
            <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
             <h2> Och Spine at NewYork-Presbyterian/The Spiral</h2>

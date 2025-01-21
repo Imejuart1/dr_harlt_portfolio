@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const videoUrls = [
   'https://www.youtube.com/embed/ByqSJ8XleYc',
-  'https://player.vimeo.com/video/1038693609?h=27782dfff0',
+  /*'https://player.vimeo.com/video/1038693609?h=27782dfff0',*/
   'https://www.youtube.com/embed/kKOoUIsZVFg',
   'https://www.youtube.com/embed/ns5M41ePn14',
   'https://www.youtube.com/embed/LbQFK64lVYE',
@@ -18,7 +18,7 @@ const videoUrls = [
 
 const videoThumbnails = [
   'https://img.youtube.com/vi/ByqSJ8XleYc/0.jpg',
-  'https://i.vimeocdn.com/video/1960932790-5fb98d31c6e3ab6126ae5428610a3fb7865ae0feec4ce78ceaf665fd17ded029-d?f=webp',
+  /*'https://i.vimeocdn.com/video/1960932790-5fb98d31c6e3ab6126ae5428610a3fb7865ae0feec4ce78ceaf665fd17ded029-d?f=webp',*/
   'https://img.youtube.com/vi/kKOoUIsZVFg/0.jpg',
   'https://img.youtube.com/vi/ns5M41ePn14/0.jpg',
   'https://img.youtube.com/vi/LbQFK64lVYE/0.jpg',
