@@ -27,9 +27,9 @@ export default function Home() {
       <VitalsReview/>
       {/*<Testimonials/>*/}
       {/* <ProjectSummaryCarousel/> */}
-       <HonorsAndAwardsPage />
-       <GratitudeSummaryCarousel/>
-       <MaterialSummaryCarousel />
+        {/*<HonorsAndAwardsPage />*/}
+       {/*<GratitudeSummaryCarousel/>*/}
+       {/*<MaterialSummaryCarousel />*/}
        <Contact/>
       </main>
     </div>

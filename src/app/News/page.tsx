@@ -24,7 +24,7 @@ const annaimages = [
 ];
 
 const HonorsAndAwardsPage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"honors" | "news" | "podcasts">("podcasts");
+  const [activeTab, setActiveTab] = useState<"honors" | "news" | "podcasts">("news");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [annaImageIndex, setAnnaImageIndex] = useState(0);
   const [iframeSrc, setIframeSrc] = useState("");

@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className={styles.contactInfo}>
-            <p><strong>Address:</strong> 525 East 68th Street, New York, NY 10065</p>
+            <p><strong>Address:</strong> 525 East 59th Street, New York, NY 10065</p>
             <p><strong>Phone:</strong> (212) 746-2152</p>
             <p><strong>Email:</strong> hartlspine@med.cornell.edu</p>
           </div>

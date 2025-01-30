@@ -22,7 +22,7 @@ const Bio: React.FC = () => {
         {/* Section 1: Image on left */}
         <div id="personal-statement" className={styles.section}>
           <div className={styles.imageSection}>
-            <img src="/img/roger2.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+            <img src="/img/newhartl6.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
           </div>
           <div className={styles.textSection}>
             <h2>Mission</h2>
@@ -134,7 +134,7 @@ patients.
         <div id="publications" className={styles.sectionpub}>
            {/* Book Recommendations Section */}
            <div className={styles.bookRecommendations}>
-  <h2>Book by Dr. Härtl</h2>
+  <h2>Books by Dr. Härtl</h2>
   <div className={styles.bookGrid}>
     {[
       {
