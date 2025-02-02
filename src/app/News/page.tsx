@@ -113,7 +113,7 @@ const HonorsAndAwardsPage: React.FC = () => {
     <img src="/img/father.png" alt="News 1" className={styles.sectionImage} style={{objectFit:'contain'}} />
   </a>
   <div className={styles.textContent}>
-    <h2>Archbishop Anoushavan's Post-Operative Visit</h2>
+    <h2>Archbishop Anoushavan&apos;s Post-Operative Visit</h2>
     <p>On Tuesday, May 28, during his post-operative visit to Och Spine at New York-Presbyterian at the Weill Cornell Medicine Center for Comprehensive Spine Care, Archbishop Anoushavan had all 20 stitches removed.</p>
     <p>During the visit, His Eminence met with his renowned neurosurgeon, Dr. Roger Härtl, who was pleased with the results of the surgery and encouraged the prelate to continue his treatment over the next four weeks, followed by physiotherapy.</p>
     <p>As a token of his gratitude, Archbishop Anoushavan presented Dr. Härtl with an Armenian-style cross, which was accepted with great appreciation.</p>
