@@ -124,7 +124,8 @@ const HonorsAndAwardsPage: React.FC = () => {
 
   <div className={styles.section}>
             <a href="https://www.nyp.org/advances/article/neurology-neurosurgery/stemming-the-tide-of-disc-degeneration-after-microdiscectomy#:~:text=That%20puts%20every%20patient%20who,level%20from%20the%20same%20side." target="_blank" rel="noopener noreferrer">
-              <img src="/img/hartl1mage.jpg" alt="News 1" className={styles.sectionImage} />
+              <img src="/img/hartl1mage.jpg" alt="News 1" className={styles.sectionImage} 
+              style={{objectFit:'contain'}}/>
             </a>
             <div className={styles.textContent}>
               <h2>Stemming the Tide of Disc Degeneration After Microdiscectomy</h2>
