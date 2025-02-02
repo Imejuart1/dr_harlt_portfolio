@@ -108,10 +108,23 @@ const HonorsAndAwardsPage: React.FC = () => {
  
       {activeTab === "news" && (
         <div className={styles.contentWrapper} id='#news'>
-  
+<div className={styles.sectionReverse}>
+  <a href="https://www.nyp.org/advances/article/neurology-neurosurgery/stemming-the-tide-of-disc-degeneration-after-microdiscectomy#:~:text=That%20puts%20every%20patient%20who,level%20from%20the%20same%20side." target="_blank" rel="noopener noreferrer">
+    <img src="/img/father.png" alt="News 1" className={styles.sectionImage} style={{objectFit:'contain'}} />
+  </a>
+  <div className={styles.textContent}>
+    <h2>Archbishop Anoushavan's Post-Operative Visit</h2>
+    <p>On Tuesday, May 28, during his post-operative visit to Och Spine at New York-Presbyterian at the Weill Cornell Medicine Center for Comprehensive Spine Care, Archbishop Anoushavan had all 20 stitches removed.</p>
+    <p>During the visit, His Eminence met with his renowned neurosurgeon, Dr. Roger Härtl, who was pleased with the results of the surgery and encouraged the prelate to continue his treatment over the next four weeks, followed by physiotherapy.</p>
+    <p>As a token of his gratitude, Archbishop Anoushavan presented Dr. Härtl with an Armenian-style cross, which was accepted with great appreciation.</p>
+    <p>The Prelate continues fulfilling his obligations from home.</p>
+    <a href="https://armenianprelacy.org/2024/05/30/update-on-prelates-health/" target="_blank" rel="noopener noreferrer">Read more</a>
+  </div>
+</div>
+
   <div className={styles.section}>
             <a href="https://www.nyp.org/advances/article/neurology-neurosurgery/stemming-the-tide-of-disc-degeneration-after-microdiscectomy#:~:text=That%20puts%20every%20patient%20who,level%20from%20the%20same%20side." target="_blank" rel="noopener noreferrer">
-              <img src="/img/newhartl6.jpg" alt="News 1" className={styles.sectionImage} />
+              <img src="/img/hartl1mage.jpg" alt="News 1" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
               <h2>Stemming the Tide of Disc Degeneration After Microdiscectomy</h2>
