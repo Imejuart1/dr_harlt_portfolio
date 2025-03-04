@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
       image: '/img/Herowebb.png',
       title: 'Dr. Roger Härtl',
       subtitle: 'Spine Surgeon at Och Spine, NewYork-Presbyterian and Weil Cornell Medical Center',
-      text: 'Leading expert in Minimally Invasive Spine surgery',
+      text: 'One of the top spine surgeons in the United States',
       text2: '',
       buttonText: 'Contact Me',
       link: '/Contact'

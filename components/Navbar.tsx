@@ -86,7 +86,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
           <img src="/img/Dr.Hartls.png" alt="harlt Logo" />
           <div className={styles.logoText}>
             <h1>Dr. Roger Härtl</h1>
-            <span><b>Leading Expert in Minimally Invasive Spine Surgery </b></span>
+            <span><b>One of the top spine surgeons in the United States </b></span>
           </div>
         </div>
         

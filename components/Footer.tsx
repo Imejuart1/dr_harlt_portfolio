@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             <img src="/img/Dr.Hartls.png" alt="Dr. Roger Härtl Logo" />
             <div className={styles.logoText}>
               <h1>Dr. Roger Härtl </h1>
-              <span><b>Leading Expert in Minimally Invasive Spine Surgery </b></span>
+              <span><b>Named one of the best spine surgeons in the U.S. </b></span>
             </div>
           </div>
           <div className={styles.contactInfo}>

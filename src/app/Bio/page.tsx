@@ -63,7 +63,7 @@ const Bio: React.FC = () => {
               Medicine Brain and Spine Center in New York, as well as the co-director of NewYork-Presbyterian Och Spine. He is also the founder 
               and director of the Weill Cornell Medicine Center for Comprehensive Spine Care as well as Weill Cornell Medicine&apos;s Global Neurosurgery 
               Initiative in Tanzania (for which he was named AANS Humanitarian of the Year for 2022). He also serves as the official neurosurgeon 
-              for the New York Giants Football Team.
+              for the New York Giants Football Team, Named one of the best spine surgeons in the U.S. by Newsweek.
             </p>
             <p>
               Dr. Härtl&apos;s clinical interest focuses on simple and complex spine surgery for degenerative conditions, tumors and trauma as well as 

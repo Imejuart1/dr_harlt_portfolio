@@ -71,6 +71,7 @@ const Bio: React.FC = () => {
   <h2>Biography</h2>
   <ul className={styles.biographyList}>
     <li>Hansen-MacDonald Professor of Neurological Surgery</li>
+    <li>Named one of the best spine surgeons in the U.S. by Newsweek</li>
     <li>Director of Neurosurgery Spine at Weill Cornell Medicine and Co-director of NewYork-Presbyterian Och Spine</li>
     <li>Founder and Co-Director of the Och Spine at NewYork-Presbyterian/Weill Cornell Medicine Center for Comprehensive Spine Care</li>
     <li>Neurosurgeon for the New York Giants Football Team</li>
