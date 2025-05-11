@@ -3,8 +3,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'; // Import Next.js Link component
 import styles from './styles/Navbar.module.scss';
-import StickyNavExtras from './StickyNavExtras';
 import ContactFormPopup from '@/app/Contact/ContactFormPopup';
+import { FaVideo } from 'react-icons/fa';
+import { FiVideo } from 'react-icons/fi';
 
 interface NavbarProps {
   setStickyNavVisible: (visible: boolean) => void;
@@ -14,21 +15,12 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
   const pathname = usePathname();
   const navExtrasRef = useRef<HTMLDivElement>(null);
   const enlargedQRCodeRef = useRef<HTMLDivElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
   const [isEnlarged, setIsEnlarged] = useState(false); // State to track QR enlargement
   const [isPopupOpen, setIsPopupOpen] = useState(false); 
   const isActive = (path: string) => pathname === path;
 
-  const handleOpenPopup = () => {
-    setIsPopupOpen(true);
-  };
-
   const handleClosePopup = () => {
     setIsPopupOpen(false);
-  };
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu's visibility
   };
 
   const handleEnlarge = () => {
@@ -90,12 +82,19 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
           </div>
         </div>
         
-
+        <div className={styles.rightText}>
+          <Link href='/videos'>
+        <div className={styles.centerIcon}>
+  <img src='/img/footage.png' className={styles.image} />
+  <span><b>Dr. Hartl's Videos</b></span>
+</div>
+</Link>
         <div className={styles.QRcode} onClick={handleEnlarge}>
           <img src="/img/QR CODE.jpg" alt="QR Code" />
           <span><b>Patient Information</b></span>
-        </div>
-
+        </div> 
+</div>
+</div>
         {isEnlarged && (
           <div className={styles.enlargedOverlay}>
             <div ref={enlargedQRCodeRef} className={styles.enlargedQRCode}>
@@ -104,18 +103,6 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
             </div>
           </div>
         )}
-
-        {/*<div className={styles.trustItems}>
-        <div>
-            <img src="/img/hans.png" alt="NewYorkP" />
-          </div>
-          <div>
-            <img src="/img/awardnew.png" alt="WeilCornell" />
-          </div>
-          
-        </div>*/}
-
-      </div>
 
       <div ref={navExtrasRef} className={`${styles.navExtras} ${styles.originalNavExtras}`}
       style={{marginTop:'2rem'}}>

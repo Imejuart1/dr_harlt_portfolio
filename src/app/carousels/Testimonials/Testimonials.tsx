@@ -13,6 +13,7 @@ const videoUrls = [
   'https://www.youtube.com/embed/ns5M41ePn14',
   'https://www.youtube.com/embed/LbQFK64lVYE',
   'https://www.youtube.com/embed/AQ3zAqrGYQw',
+  'https://wcm.app.box.com/s/0rp775k8bddb5eue0cgj6c57p6ivixmf'
 ];
 
 const videoThumbnails = [
@@ -22,7 +23,9 @@ const videoThumbnails = [
   'https://img.youtube.com/vi/ns5M41ePn14/0.jpg',
   'https://img.youtube.com/vi/LbQFK64lVYE/0.jpg',
   'https://img.youtube.com/vi/AQ3zAqrGYQw/0.jpg',
+  '/img/video tai chi.png'
 ];
+
 
 const Testimonials: React.FC = () => {
   const [selectedVideo, setSelectedVideo] = useState(videoUrls[0]);
