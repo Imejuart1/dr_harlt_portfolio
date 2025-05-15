@@ -83,7 +83,7 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
         </div>
         
         <div className={styles.rightText}>
-          <Link href='/videos'>
+          <Link href='/Videos'>
         <div className={styles.centerIcon}>
   <img src='/img/footage.png' className={styles.image} />
   <span><b>Dr. Hartl's Videos</b></span>

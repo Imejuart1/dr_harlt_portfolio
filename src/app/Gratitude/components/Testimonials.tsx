@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './Testimonials.module.scss';
 import PatientTestimonials from './PatientTestimonials';
 
-
 const videoUrls = [
   'https://www.youtube.com/embed/kKOoUIsZVFg',
   'https://www.youtube.com/embed/ns5M41ePn14',
