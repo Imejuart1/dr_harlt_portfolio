@@ -7,18 +7,18 @@ const videoData = [
   {
     title: 'Lecture Videos',
     videos: [
-      'https://www.youtube.com/embed/ByqSJ8XleYc',
-      'https://www.youtube.com/embed/_eojuoLUn8I',
-      'https://www.youtube.com/embed/kKOoUIsZVFg',
+      'https://www.youtube.com/embed/JvoIHZ8fnl0', 
+'https://www.youtube.com/embed/-Gv0lPB9v2U', 
+'https://www.youtube.com/embed/7jN4fx51lBo', 
     ],
     link: '/Videos/lectures',
   },
   {
     title: 'Surgical Videos',
-    videos: [
-      'https://www.youtube.com/embed/ns5M41ePn14',
-      'https://www.youtube.com/embed/LbQFK64lVYE',
-      'https://www.youtube.com/embed/AQ3zAqrGYQw',
+    videos: [ 
+      'https://www.youtube.com/embed/Eo1GtDXxJYg',
+      'https://www.youtube.com/embed/pgodXc8sqjg',
+      'https://www.youtube.com/embed/Eo1GtDXxJYg',
     ],
     link: '/Videos/surgical',
   },
@@ -72,7 +72,7 @@ const AutoVideoCard = ({ title, videos, link }: { title: string; videos: string[
 const ProjectVideoComponent = () => {
   return (
     <section className={styles.projectSection}>
-      <div className={styles.heroSection} style={{ backgroundImage: `url('/img/ROGERSPINER.png')` }}>
+      <div className={styles.heroSection} style={{ backgroundImage: `url('/img/hartl2mage.jpg')` }}>
         <div className={styles.content}>
           <h1>Video Library</h1>
           <p>Watch lectures, surgical procedures, and inspiring patient stories.</p>

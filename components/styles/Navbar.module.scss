@@ -22,7 +22,7 @@
   .left {
     display: flex;
     justify-content: space-between !important;
-    align-items: center;
+    align-items: flex-end;
     width:100%;
     @media (max-width: 768px) {
       margin-top: 0.1rem;

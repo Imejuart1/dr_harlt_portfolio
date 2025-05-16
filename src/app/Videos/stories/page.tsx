@@ -27,6 +27,10 @@ const videoData = [
     title: "Patient Story 5",
     src: "https://www.youtube.com/embed/AQ3zAqrGYQw",
   },
+  {
+    title: "Patient Story 5",
+    src: "https://www.youtube.com/embed/_eojuoLUn8I",
+  },
 ];
 
 const PatientStoriesComponent = () => {
@@ -35,7 +39,7 @@ const PatientStoriesComponent = () => {
       {/* Hero Section */}
       <div
         className={styles.heroSection}
-        style={{ backgroundImage: `url('/img/Researchnew.jpeg')` }}
+        style={{ backgroundImage: `url('/img/newhartl1.jpg')` }}
       >
         <div className={styles.content}>
           <h1>Patient Stories</h1>

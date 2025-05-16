@@ -81,14 +81,13 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
             <span><b>One of the top spine surgeons in the United States </b></span>
           </div>
         </div>
-        
-        <div className={styles.rightText}>
-          <Link href='/Videos'>
+        <Link href='/Videos'>
         <div className={styles.centerIcon}>
-  <img src='/img/footage.png' className={styles.image} />
+  <FiVideo size={120}/>
   <span><b>Dr. Hartl's Videos</b></span>
 </div>
 </Link>
+        <div className={styles.rightText}>
         <div className={styles.QRcode} onClick={handleEnlarge}>
           <img src="/img/QR CODE.jpg" alt="QR Code" />
           <span><b>Patient Information</b></span>

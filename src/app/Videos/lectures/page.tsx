@@ -79,7 +79,7 @@ const MaterialLecturesComponent: React.FC = () => {
   
   return (
     <section className={styles.materialSection}>
-      <div className={styles.heroSection} style={{ backgroundImage: `url('/img/newhartl3.jpg')` }}>
+      <div className={styles.heroSection} style={{ backgroundImage: `url(/img/lecturehero.png)` }}>
         <div className={styles.content}>
           <h1>Lecture Videos</h1>
           <p>Watch webinars, conferences, and media features where Dr. Härtl shares insights on spine surgery, augmented reality, and global care initiatives.</p>
