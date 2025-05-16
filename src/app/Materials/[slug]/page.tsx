@@ -29,14 +29,17 @@ const MaterialPage: React.FC = () => {
 
   const [activeTab, setActiveTab] = useState<"guides" | "videos">("guides");
 
-useEffect(() => {
-  const referrer = document.referrer;
-  if (referrer.includes("/Videos") && videosAvailable) {
-    setActiveTab("videos");
-  } else if (!guidesAvailable && videosAvailable) {
-    setActiveTab("videos");
-  }
-}, [videosAvailable, guidesAvailable]);
+  useEffect(() => {
+    const fromVideos = sessionStorage.getItem("fromVideos");
+
+    if (fromVideos && videosAvailable) {
+      setActiveTab("videos");
+      sessionStorage.removeItem("fromVideos");
+    } else if (!guidesAvailable && videosAvailable) {
+      setActiveTab("videos");
+    }
+  }, [videosAvailable, guidesAvailable]);
+
   
   if (!slug || !material) {
     return <div>{!slug ? "Invalid material" : "Material not found"}</div>;

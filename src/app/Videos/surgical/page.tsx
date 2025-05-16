@@ -3,6 +3,75 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import styles from './surgical.module.scss';
 
+interface MaterialLink {
+  title: string;
+  href: string;
+  isExternal?: boolean;
+  triggerVideosTab?: boolean;
+}
+
+interface MaterialGroup {
+  id: string;
+  heading: string;
+  links: MaterialLink[];
+}
+
+const materialGroups: MaterialGroup[] = [
+  {
+    id: 'pre-operative-information',
+    heading: 'Pre-Operative Information',
+    links: [
+      {
+        title: 'Surgical Guide for Minimally Invasive Tubular Surgery',
+        href: '/Materials/surgical-guide-minimally-invasive-tubular-surgery',
+        triggerVideosTab: true,
+      },
+      {
+        title: 'Surgical Guide for Minimally Invasive TLIF',
+        href: '/Materials/surgical-guide-minimally-invasive-tlif',
+        triggerVideosTab: true,
+      },
+      {
+        title: 'Surgical Guide for ELIF, XLIF, LLIF, DLIF',
+        href: '/Materials/surgical-guide-elif-xlif-llif-dlif',
+        triggerVideosTab: true,
+      },
+      {
+        title: 'Occipitocervical Fusion',
+        href: 'https://drive.google.com/file/d/1JxGHNL9sgi19ncuJDXJkeAtblMfRLsCi/view',
+        isExternal: true,
+      },
+    ],
+  },
+  {
+    id: 'post-operative-information',
+    heading: 'Post-Operative Information',
+    links: [
+      {
+        title: 'B.L.T. Video',
+        href: '/Materials/B.L.T',
+        triggerVideosTab: true,
+      },
+    ],
+  },
+  {
+    id: 'youtube-education',
+    heading: 'Dr. Härtl\'s YouTube Channel & Other Patient Education Materials',
+    links: [
+      {
+        title: 'Surgical Videos',
+        href: '/Materials/surgical-videos',
+        triggerVideosTab: true,
+      },
+      {
+        title: 'Spine Time - highlights from our patient education webinar',
+        href: '/Materials/spine-time',
+        triggerVideosTab: true,
+      },
+    ],
+  },
+];
+
 const SurgicalVideosComponent: React.FC = () => {
   useEffect(() => {
     const handleHashChange = () => {
@@ -28,42 +97,50 @@ const SurgicalVideosComponent: React.FC = () => {
 
   return (
     <section className={styles.materialSection}>
-      <div className={styles.heroSection} style={{ backgroundImage: `url('/img/newhartl3.jpg')` }}>
+      <div
+        className={styles.heroSection}
+        style={{ backgroundImage: `url('/img/newhartl3.jpg')` }}
+      >
         <div className={styles.content}>
           <h1>Surgical Videos</h1>
-          <p>Explore detailed surgical procedures and guides by Dr. Härtl, covering minimally invasive and advanced spine surgeries.</p>
+          <p>
+            Explore detailed surgical procedures and guides by Dr. Härtl,
+            covering minimally invasive and advanced spine surgeries.
+          </p>
         </div>
       </div>
-      
+
       <div className={styles.materialLinks}>
-        {/* Pre-Operative Information Section */}
-        <div className={styles.materialGroup} id="pre-operative-information">
-          <h2>Pre-Operative Information</h2>
-          <ul>
-            <li><Link href="/Materials/surgical-guide-minimally-invasive-tubular-surgery">Surgical Guide for Minimally Invasive Tubular Surgery</Link></li>
-            <li><Link href="/Materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
-            <li><Link href="/Materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
-            <li><Link href="https://drive.google.com/file/d/1JxGHNL9sgi19ncuJDXJkeAtblMfRLsCi/view" target='_blank'>Occipitocervical Fusion</Link></li>
-          </ul>
-        </div>
-        
-        {/* Post-Operative Information Section */}
-        <div className={styles.materialGroup} id="post-operative-information">
-          <h2>Post-Operative Information</h2>
-          <ul>
-            <li><Link href="/Materials/B.L.T">B.L.T. Video</Link></li>
-          </ul>
-        </div>
-
-        {/* YouTube & Patient Education Materials Section */}
-        <div className={styles.materialGroup} id="youtube-education">
-          <h2>Dr. Härtl&apos;s YouTube Channel & Other Patient Education Materials</h2>
-          <ul>
-            <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
-            <li><Link href="/Materials/spine-time">Spine Time-highlights from our patient education webinar</Link></li>
-          </ul>
-        </div>
-
+        {materialGroups.map((group) => (
+          <div key={group.id} className={styles.materialGroup} id={group.id}>
+            <h2>{group.heading}</h2>
+            <ul>
+              {group.links.map((link, index) => (
+                <li key={index}>
+                  {link.isExternal ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.title}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      onClick={() =>
+                        link.triggerVideosTab &&
+                        sessionStorage.setItem('fromVideos', 'true')
+                      }
+                    >
+                      {link.title}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
