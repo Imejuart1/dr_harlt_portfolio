@@ -2,12 +2,31 @@
 import React from 'react';
 import styles from './research.module.scss';
 
-const videoUrls = [
-  'https://www.youtube.com/embed/kKOoUIsZVFg',
-  'https://www.youtube.com/embed/ns5M41ePn14',
-  'https://www.youtube.com/embed/ByqSJ8XleYc',
-  'https://www.youtube.com/embed/LbQFK64lVYE',
-  'https://www.youtube.com/embed/AQ3zAqrGYQw',
+const videoData = [
+  {
+    title: "The Most Interesting Man in the World",
+    src: "https://www.dropbox.com/transfer/AAAAAE7rk2bdvcFBOTGN1PmZwmIluCDrZvrdJ5wDixFPu4YtiESYGpg",
+  },
+  {
+    title: "Patient Story 1",
+    src: "https://www.youtube.com/embed/kKOoUIsZVFg",
+  },
+  {
+    title: "Patient Story 2",
+    src: "https://www.youtube.com/embed/ns5M41ePn14",
+  },
+  {
+    title: "Patient Story 3",
+    src: "https://www.youtube.com/embed/ByqSJ8XleYc",
+  },
+  {
+    title: "Patient Story 4",
+    src: "https://www.youtube.com/embed/LbQFK64lVYE",
+  },
+  {
+    title: "Patient Story 5",
+    src: "https://www.youtube.com/embed/AQ3zAqrGYQw",
+  },
 ];
 
 const PatientStoriesComponent = () => {
@@ -24,16 +43,17 @@ const PatientStoriesComponent = () => {
         </div>
       </div>
 
-      {/* Horizontal Flex Video Section */}
+      {/* Video Grid Section */}
       <div className={styles.videoGrid}>
-        {videoUrls.map((url, index) => (
+        {videoData.map((video, index) => (
           <div key={index} className={styles.videoWrapper}>
             <iframe
-              src={`${url}?autoplay=0&mute=0&controls=1`}
+              src={video.src.includes('youtube') ? `${video.src}?autoplay=0&mute=0&controls=1` : video.src}
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title={`Patient story ${index + 1}`}
+              title={video.title}
             ></iframe>
+            <h3>{video.title}</h3>
           </div>
         ))}
       </div>

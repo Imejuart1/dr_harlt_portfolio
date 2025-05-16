@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import React from "react";
 import MediaCardComponent from "../MediaCardComponent";
 import styles from "./Slug.module.scss";
@@ -27,11 +27,17 @@ const MaterialPage: React.FC = () => {
   const guidesAvailable = pdfs.length || images.length> 0;
   const videosAvailable = videos.length > 0;
 
-  // Set initial active tab based on availability
-  const [activeTab, setActiveTab] = useState<"guides" | "videos">(
-    guidesAvailable ? "guides" : "videos"
-  );
+  const [activeTab, setActiveTab] = useState<"guides" | "videos">("guides");
 
+useEffect(() => {
+  const referrer = document.referrer;
+  if (referrer.includes("/Videos") && videosAvailable) {
+    setActiveTab("videos");
+  } else if (!guidesAvailable && videosAvailable) {
+    setActiveTab("videos");
+  }
+}, [videosAvailable, guidesAvailable]);
+  
   if (!slug || !material) {
     return <div>{!slug ? "Invalid material" : "Material not found"}</div>;
   }

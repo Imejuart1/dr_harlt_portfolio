@@ -1,0 +1,187 @@
+@import '../../../styles/colors.scss';
+
+.materialSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    color: $dark-blue;
+    font-family: $font-family-base;
+    font-size: $font-size-normal;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    .heroSection {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 25rem;
+        width: 100%;
+        color: white;
+        padding: 2rem;
+        background-size: cover;
+        background-position: 50% 25%;
+        background-repeat: no-repeat;
+        background-color: $primary-blue;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        transition: background-image 1s ease-in-out;
+        @media (max-width: 768px) {
+          padding-left: 1.5rem;
+        }
+      
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(3, 112, 255, 0.9), rgba(3, 112, 255, 0.7) 30%, rgba(3, 112, 255, 0.3) 70%, rgba(3, 112, 255, 0.1));
+            z-index: 1;
+            pointer-events: none;
+            border-radius: 8px;
+        }
+      
+        .content {
+            z-index: 2;
+            text-align: left;
+            //width: 60%;
+            margin-top: 16rem;
+            // margin-left: 7.125rem;
+       
+      
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                color: white;
+                font-weight: 700;
+                width:100%;
+                @media (max-width: 1024px) {
+                 
+                }
+                @media (max-width: 900px) {
+                  font-size: 2rem;
+                  line-height:2.5rem;
+                }
+                @media (max-width: 768px) {
+                  //width:65%;
+                  margin-bottom: 1rem;
+                  font-size:2rem;
+                  line-height:2rem;
+                }
+                @media (max-width: 600px) {
+                  //width:65%;
+                  margin-bottom: 0.6rem;
+                  font-size:1.5rem;
+                  line-height:2rem;
+                }
+            }
+      
+            p {
+                font-size: 1.2rem;
+                color: #dddfe8;
+                @media (max-width: 600px) {
+                  font-size: 1rem;
+                  line-height:1.5rem;
+                }
+            }
+        }
+      }
+
+      .materialLinks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0 7.125rem;      
+        @media (max-width: 1200px) {
+            padding: 0rem 4rem;
+          }
+      
+          @media (max-width: 900px) {
+            display: flex;
+            padding: 0rem 1.5rem;
+            flex-direction: column;
+          }
+
+        .materialGroup {
+            flex: 1;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 2rem;
+            //margin-right: 2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            h2 {
+                font-size: $font-size-big;
+                color: $primary-blue;
+                margin-bottom: 1rem;
+                font-weight: $font-weight-bold;
+                position: relative;
+                padding-bottom: 0.5rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 50px;
+                    height: 3px;
+                    background-color: $hover-blue;
+                    border-radius: 3px;
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 1rem;
+
+                    a {
+                        display: block;
+                        padding: 1rem;
+                        background-color: $primary-blue;
+                        color: white;
+                        text-decoration: none;
+                        border-radius: 8px;
+                        transition: background-color 0.3s ease;
+
+                        &:hover {
+                            background-color: $hover-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.materialGroup ul {
+  list-style: none; /* Remove default bullet points */
+  counter-reset: list-counter; /* Initialize counter */
+  padding-left: 0; /* Align content */
+}
+
+.materialGroup ul li {
+  counter-increment: list-counter; /* Increment counter for each <li> */
+  position: relative;
+  padding-left: 25px; /* Space for the number */
+}
+
+.materialGroup ul li::before {
+  content: counter(list-counter) ". "; /* Display the counter */
+  position: absolute;
+  left: 0; /* Position the number */
+  font-weight: bold; /* Optional: make the number bold */
+  color: #0073e6; /* Optional: customize color */
+}
