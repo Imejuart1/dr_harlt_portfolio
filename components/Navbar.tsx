@@ -81,19 +81,19 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
             <span><b>One of the top spine surgeons in the United States </b></span>
           </div>
         </div>
-        <Link href='/Videos'>
+        {/*<Link href='/Videos'>
         <div className={styles.centerIcon}>
   <FiVideo size={120}/>
   <span><b>Dr. Hartl's Videos</b></span>
-</div>
-</Link>
+</div> </div>
         <div className={styles.rightText}>
+</Link>*/}
         <div className={styles.QRcode} onClick={handleEnlarge}>
           <img src="/img/QR CODE.jpg" alt="QR Code" />
           <span><b>Patient Information</b></span>
         </div> 
 </div>
-</div>
+
         {isEnlarged && (
           <div className={styles.enlargedOverlay}>
             <div ref={enlargedQRCodeRef} className={styles.enlargedQRCode}>
@@ -127,6 +127,9 @@ const Navbar: React.FC<NavbarProps> = ({ setStickyNavVisible }) => {
           </li>
           <li className={isActive('/Materials') ? styles.activeLink : ''}>
             <Link href="/Materials">Patient Information</Link>
+          </li>
+          <li className={isActive('/Videos') ? styles.activeLink : ''}>
+            <Link href="/Videos">Videos</Link>
           </li>
           <li className={isActive('/Project') ? styles.activeLink : ''}>
             <Link href="/Project">Projects</Link>

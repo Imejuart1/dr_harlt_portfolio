@@ -8,7 +8,7 @@ export const materialData = {
         {
           type: "video",
           src: "https://www.youtube.com/embed/nQOpQtxvtDI",
-          title: "Minimally Invasive Tubular Surgery Video",
+          title: "Cervical ULBD MIS Tubular",
         },
         {
           type: "pdf",
@@ -19,27 +19,27 @@ export const materialData = {
         {
           type: "video",
           src: "https://www.youtube.com/embed/UTc3eNLauUw",
-          title: "Additional Video 1",
+          title: "Posterior Cervical Foraminotomy (MIS PCF)",
         },
         {
           type: "video",
           src: "https://www.youtube.com/embed/O7m0paEhn60",
-          title: "Additional Video 2",
+          title: "MIS Microdiscectomy for Lumbar Giant Spinal Disc Heriniation",
         },
         {
           type: "video",
           src: "https://www.youtube.com/embed/SXAP0TNRbFM",
-          title: "Additional Video 3",
+          title: "MIS Over the Top ULBD for contralateral foraminal disc herniation",
         },
         {
           type: "video",
           src: "https://www.youtube.com/embed/B3xjrJ8kMpc",
-          title: "Additional Video 4",
+          title: "MIS Lumbar Laminectomy and Contralateral Foraminotomy",
         },
         {
           type: "video",
           src: "https://www.youtube.com/embed/AfsXdKMvRrc",
-          title: "Additional Video 5",
+          title: "MIS L4-5 Over-the-Top ULBD for Lumbar Spinal Stenosis",
         },
       ],
     },
