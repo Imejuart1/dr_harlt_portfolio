@@ -5,7 +5,7 @@ import styles from './research.module.scss';
 const videoData = [
   {
     title: "The Most Interesting Man in the World",
-    src: "https://www.dropbox.com/transfer/AAAAAE7rk2bdvcFBOTGN1PmZwmIluCDrZvrdJ5wDixFPu4YtiESYGpg",
+    src: "https://www.youtube.com/embed/GftHDs8fjps",
   },
   {
     title: "Patient Story 1",
