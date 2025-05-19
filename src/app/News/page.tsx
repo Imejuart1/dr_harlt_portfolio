@@ -249,6 +249,22 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
       {activeTab === "podcasts" && (
 
         <div className={styles.contentWrapper} id='#podcasts'>
+  <div className={styles.sectionReverse}>
+    <div className={styles.textContent}>
+      <h2>Enhancing Neurosurgical Capacity in Tanzania: Donation of Brainlab Cranial Navigation System</h2>
+      <p>Recent interview in Tanzania highlights the donation of a Brainlab cranial navigation system to improve neurosurgical care and education.</p>
+      <a href="https://www.youtube.com/watch?v=aPf51vo5SaM" target="_blank" rel="noopener noreferrer">View Interview</a>
+    </div>
+    <iframe
+      src="https://www.youtube.com/embed/aPf51vo5SaM"
+      allowFullScreen
+      width="100%" 
+      height="400" 
+      frameBorder="0" 
+      className={styles.sectionImage}>
+    </iframe>
+  </div>
+
              <div className={styles.section}>
             <div className={styles.textContent}>
             <h2> Advancing Solutions for Degenerative Disc Disease Through Regeneration, Repair, and Replacement</h2>

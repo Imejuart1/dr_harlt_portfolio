@@ -99,7 +99,7 @@ const SurgicalVideosComponent: React.FC = () => {
     <section className={styles.materialSection}>
       <div
         className={styles.heroSection}
-        style={{ backgroundImage: `url('/img/newhartl3.jpg')` }}
+        style={{ backgroundImage: `url('/img/newhartl2.jpg')` }}
       >
         <div className={styles.content}>
           <h1>Surgical Videos</h1>

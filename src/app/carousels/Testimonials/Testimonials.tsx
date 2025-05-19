@@ -18,7 +18,7 @@ const videoUrls = [
 
 const videoThumbnails = [
   'https://img.youtube.com/vi/ByqSJ8XleYc/0.jpg',
-  'https://img.youtube.com/vi/GftHDs8fjps/0.jpg',
+  '/img/maninterest.png',
     'https://img.youtube.com/vi/_eojuoLUn8I/0.jpg',
   'https://img.youtube.com/vi/kKOoUIsZVFg/0.jpg',
   'https://img.youtube.com/vi/ns5M41ePn14/0.jpg',
