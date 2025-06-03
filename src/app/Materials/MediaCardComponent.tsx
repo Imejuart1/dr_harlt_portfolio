@@ -10,7 +10,7 @@ interface MediaCardProps {
   previewImage?: string; // Optional preview image for PDF
 }
 
-const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, scr2 , title, previewImage }) => {
+const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, src2 , title, previewImage }) => {
   return (
     <div className={styles.mediaCardContainer}>
       <div className={styles.mediaCard}>
