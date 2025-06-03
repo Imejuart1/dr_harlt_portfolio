@@ -36,6 +36,7 @@ const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, title, previe
           <div className={styles.pdfContainer}>
             {src &&
             <div className={styles.pdfHeader}>
+              <h2>{title}</h2>
              <div className={styles.pdfActions}>
                 <a href={src} target="_blank" rel="noopener noreferrer" className={styles.pdfLink}>
                   READ
