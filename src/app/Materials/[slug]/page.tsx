@@ -9,7 +9,7 @@ import { materialData } from "./Materialsdata/materialData";
 interface MediaItem {
   type: string;
   src: string;
-  scr2?:string;
+  src2?:string;
   title: string;
   previewImage?: string; 
 }
