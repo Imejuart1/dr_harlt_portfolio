@@ -157,8 +157,9 @@ export const materialData = {
           "Explore detailed guide for Post OP Posture.",
         media: [
              {
-      type: "images",
-      src: "https://itunes.apple.com/us/app/the-wall-street-journal./id364387007",
+      type: "link",
+      scr2: "https://itunes.apple.com/us/app/the-wall-street-journal./id364387007",
+      src: "https://www.msn.com/en-us/health/other/ar-AA1FumXM",
       title: "Yes, You Should Stand Up Straight—for All Sorts of Reasons (WSJ article)",
     previewImage: "/img/standst.png",
     },
