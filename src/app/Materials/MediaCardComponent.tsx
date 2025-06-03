@@ -5,6 +5,7 @@ import { FaFilePdf } from 'react-icons/fa';
 interface MediaCardProps {
   type: string;
   src: string;
+  src2?:string;
   title: string;
   previewImage?: string; // Optional preview image for PDF
 }
