@@ -23,7 +23,7 @@ const MaterialPage: React.FC = () => {
   const pdfs = material?.media.filter((item) => item.type === "pdf") || [];
   const videos = material?.media.filter((item) => item.type === "video") || [];
   const images = material?.media.filter((item) => item.type === "images") || [];
-   const images = material?.media.filter((item) => item.type === "link") || [];
+   const link = material?.media.filter((item) => item.type === "link") || [];
   const guidesAvailable = pdfs.length || images.length> 0 || link.length > 0;
   const videosAvailable = videos.length > 0;
 
