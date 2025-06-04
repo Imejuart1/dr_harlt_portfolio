@@ -91,13 +91,14 @@ const MaterialPage: React.FC = () => {
       <div className={styles.materialGroup}>
         <div className={styles.mediaContainer}>
            {activeTab === "guides" &&
-            link.map((item, index) => (
+            link.map((item: MediaItem, index) => (
               <MediaCardComponent
                 key={index}
                 type={item.type}
                 src={item.src}
                 src2={item.src2}
                 title={item.title}
+                previewImage={item.previewImage}
               />
             ))}
           {activeTab === "guides" &&
