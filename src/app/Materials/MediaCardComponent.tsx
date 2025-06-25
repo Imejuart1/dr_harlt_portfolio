@@ -21,7 +21,7 @@ const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, src2 , title,
               <FaFilePdf className={styles.pdfIcon} />
               <h2>{title}</h2>
               <div className={styles.pdfActions}>
-                <a href={src2} target="_blank" rel="noopener noreferrer" className={styles.pdfLink} style={{marginRight:'0.5rem', marginLeft:'0.5rem',}}>
+                <a href={src2} target="_blank" rel="noopener noreferrer" className={styles.pdfLink} style={{marginRight:'0.5rem', marginLeft:'0.5rem'}}>
                   GET APP
                 </a>
                 <a href={src} target="_blank" rel="noopener noreferrer" className={styles.pdfLink} style={{alignItems:'center', justifyContent:'center'}}>

@@ -158,7 +158,7 @@ export const materialData = {
         media: [
              {
       type: "link",
-      scr2: "https://itunes.apple.com/us/app/the-wall-street-journal./id364387007",
+      src2: "https://itunes.apple.com/us/app/the-wall-street-journal./id364387007",
       src: "https://www.msn.com/en-us/health/other/ar-AA1FumXM",
       title: "Stand Up Straight—for All Sorts of Reasons (WSJ article)",
     previewImage: "/img/standst.png",

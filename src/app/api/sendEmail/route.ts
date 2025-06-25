@@ -15,8 +15,9 @@ export async function POST(request: Request) {
   try {
     // Send email to Dr. Roger Härtl's office
     await transporter.sendMail({
-      from: email,
+     from: '"Website Contact Form hartlspine@med.cornell.edu" <hartlspine@med.cornell.edu>',
       to: 'hartlspine@med.cornell.edu', // Dr. Härtl's email or assistant's email
+      replyTo: email,
       subject: `New Inquiry from ${name}`,
       text: message,
       html: `
@@ -28,7 +29,7 @@ export async function POST(request: Request) {
 
     // Send a confirmation email back to the user
     await transporter.sendMail({
-      from: '"Dr. Roger Härtl’s Office" <hartlspine@med.cornell.edu>',  // Dr. Härtl's office email
+      from: '"Dr. Roger Härtl’s Office hartlspine@med.cornell.edu" <hartlspine@med.cornell.edu>',  // Dr. Härtl's office email
       to: email,
       subject: 'Thank you for contacting Dr. Roger Härtl',
       text: `Dear ${name},\n\nThank you for reaching out to the office of Dr. Roger Härtl. Your message has been received, and a member of our team will review your inquiry and respond as soon as possible.\n\nIf this is an urgent matter, please contact our office directly at (212) 746-2152.\n\nBest regards,\nDr. Roger Härtl’s Office\nOch Spine at NewYork-Presbyterian\nWeill Cornell Medicine Center for Comprehensive Spine Care`,
