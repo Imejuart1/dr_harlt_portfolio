@@ -15,11 +15,18 @@ interface SurgeonReviewProps {
 
 const surgeonReviews: SurgeonReviewProps[] = [
   {
+    image: "/img/indiaman.jpg",
+    name: "Dr Hardik Darji ",
+    title: "Consultant Neurosurgeon",
+    location: "Ahmedabad, Gujarat. India",
+    review: `Dr. Roger Hartl is one of the best spine surgeons, a great mentor, and a wonderful human being. It was a great honor for me to learn about minimally invasive spine surgery in detail under his guidance. I feel fortunate to have learned everything from the basics of MISS to advanced concepts, techniques, and technologies from him. I was truly impressed by his diagnostic methods and treatment plans. This fellowship program will definitely help budding spine surgeons like me to grow further in our careers. Dr. Roger Hartl is a dedicated, disciplined, and dynamic spine surgeon. I wish him all the best and am very grateful to him for having me at Weill Cornell Medicine, New York.`
+  },
+  {
     image: "/img/Buenos.jpg",
     name: "Marcelo Valacco MD",
     title: "Orthopaedic Surgeon/Spine Surgeon",
     location: "Buenos Aires. Argentina",
-    review: `I visited and observed Dr Härtl at Weill Cornell. He showed me the “step-by-step” procedures in Minimally Invasive Spinal Surgery in the OR. It was a tremendous experience to observe him and learn about how he uses navigation systems and microsurgery. Also, I attended research meetings about the latest technologies and innovation. In the clinic, it was a very great experience to see him examining patients to find out about their spine pathologies. The motivation for my visit with Dr Roger Härtl was to learn and develop new technologies that I can introduce in my country over the next years. Thanks to Dr Härtl and his team for kindly accepting at the Hospital..`
+    review: `I visited and observed Dr Härtl at Weill Cornell. He showed me the “step-by-step” procedures in Minimally Invasive Spinal Surgery in the OR. It was a tremendous experience to observe him and learn about how he uses navigation systems and microsurgery. Also, I attended research meetings about the latest technologies and innovation. In the clinic, it was a very great experience to see him examining patients to find out about their spine pathologies. The motivation for my visit with Dr Roger Härtl was to learn and develop new technologies that I can introduce in my country over the next years. Thanks to Dr Härtl and his team for kindly accepting at the Hospital.`
   },
   {
     image: "/img/Anasurgeonjpeg.jpeg",

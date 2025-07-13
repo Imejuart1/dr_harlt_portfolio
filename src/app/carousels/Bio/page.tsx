@@ -44,10 +44,7 @@ const Bio: React.FC = () => {
           <div className={styles.textSection}>
             <h2>Mission</h2>
             <p>
-            It is my mission to bring together all the disciplines required to provide comprehensive diagnosis,
-             treatment, and care for back and neck disorders in one location. Surgical intervention is just a small part of 
-             what we do – but when surgery is required,
-             I will always strive for the least invasive, most effective option to get my patients back to enjoying their lives.
+             My mission is to bring together leading experts and streamlined services to deliver complete care for back and neck problems—all in one convenient location. Surgery is just one of the tools we offer. And when it&apos;s needed, I focus on the least invasive, most effective option to help patients return to the life and activities they love.
             </p>
   <h2>Pledge to My Patients:</h2>
   <ol className={styles.pledgeList}>
