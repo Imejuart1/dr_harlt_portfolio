@@ -185,27 +185,27 @@ export const materialData = {
           },
         ],
       },
-      "physical-therapy-chiropractors" :{
-        title: "Physical Therapy and Chiropractors ",
+      "physical-therapy" :{
+        title: "Physical Therapy  ",
         content:
-          "Explore Referral Lists for physical-therapy-chiropractors.",
+          "Explore Referral Lists for physical-therapy.",
         media: [
           {
             type: "pdf",
             src: "https://drive.google.com/file/d/1h8Kuc_TI3krQE0eYKBh38jP16zSAoIvu/preview",
-            title: "Recommended Chiropractors.",
+            title: "Recommended Physical Therapy Providers",
           },
           {
             type: "pdf",
             src: "https://drive.google.com/file/d/113uKqiAYADWy5CfoWOlBKznsDFlO6VlR/preview",
-            title: "PT and Chiropractor List.",
+            title: "Physical Therapy  List.",
           }
         ],
       },
       "braces-lumbar-support" :{
         title: "Braces for Lumbar Support",
         content:
-          "Explore Referral Lists for physical-therapy-chiropractors.",
+          "Explore Referral Lists for physical-therapy.",
         media: [
           {
             type: "pdf",
