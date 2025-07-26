@@ -78,6 +78,7 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
           <h2>Referrals</h2>
           <ul>
             <li><Link href="/Materials/physical-therapy">Physical Therapy </Link></li>
+            <li><Link href="/Materials/chiropractors">Chiropractors</Link></li>
             <li><Link href="/Materials/braces-lumbar-support">Braces for Lumbar Support</Link></li>
             <li><Link href="https://www.amazon.com/UTTU-Sandwich-Adjustable-Orthopedic-CertiPUR-US/dp/B079FK5QKD?th=1" target='_blank'>Pillows for Neck Pain</Link></li>
             <li><Link href="/Materials/spine-center-referrals">Spine Center Referrals</Link></li>

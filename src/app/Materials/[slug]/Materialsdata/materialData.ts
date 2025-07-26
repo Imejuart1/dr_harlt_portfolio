@@ -186,13 +186,13 @@ export const materialData = {
         ],
       },
       "physical-therapy" :{
-        title: "Physical Therapy  ",
+        title: "Physical Therapy",
         content:
           "Explore Referral Lists for physical-therapy.",
         media: [
           {
             type: "pdf",
-            src: "https://drive.google.com/file/d/1h8Kuc_TI3krQE0eYKBh38jP16zSAoIvu/preview",
+            src: "https://docs.google.com/document/d/12u8IgcpJ77oXbt3JhP5NNdk7r25emwQa/edit?usp=sharing&ouid=112948707949812976493&rtpof=true&sd=true",
             title: "Recommended Physical Therapy Providers",
           },
           {
@@ -200,6 +200,23 @@ export const materialData = {
             src: "https://drive.google.com/file/d/113uKqiAYADWy5CfoWOlBKznsDFlO6VlR/preview",
             title: "Physical Therapy  List.",
           }
+        ],
+      },
+      "chiropractors" :{
+        title: "Chiropractors",
+        content:
+          "Explore Referral Lists for chiropractors.",
+        media: [
+          {
+            type: "pdf",
+            src: "https://docs.google.com/document/d/1jUM6vFglAIDcDAKk0O-muqwBmi_t0kR_/edit?usp=drive_link&ouid=112948707949812976493&rtpof=true&sd=true",
+            title: "Recommended Chiropractors Providers",
+          },
+          {/*{
+            type: "pdf",
+            src: "https://drive.google.com/file/d/113uKqiAYADWy5CfoWOlBKznsDFlO6VlR/preview",
+            title: "Physical Therapy  List.",
+          }*/}
         ],
       },
       "braces-lumbar-support" :{
