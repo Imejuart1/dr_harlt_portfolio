@@ -3,13 +3,12 @@ import styles from './MediaCardComponent.module.scss';
 import { FaFilePdf } from 'react-icons/fa';
 
 interface MediaCardProps {
-  type: string;
-  src: string;
-  src2?:string;
-  title: string;
-  previewImage?: string; // Optional preview image for PDF
+  type: any;
+  src: any;
+  src2?:any;
+  title: any;
+  previewImage?: any; 
 }
-
 const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, src2 , title, previewImage }) => {
   return (
     <div className={styles.mediaCardContainer}>

@@ -7,11 +7,11 @@ import styles from "./Slug.module.scss";
 import { materialData } from "./Materialsdata/materialData";
 
 interface MediaItem {
-  type: string;
-  src: string;
-  src2?:string;
-  title: string;
-  previewImage?: string; 
+  type: any;
+  src: any;
+  src2?:any;
+  title: any;
+  previewImage?: any; 
 }
 
 const MaterialPage: React.FC = () => {
@@ -91,7 +91,7 @@ const MaterialPage: React.FC = () => {
       <div className={styles.materialGroup}>
         <div className={styles.mediaContainer}>
            {activeTab === "guides" &&
-            link.map((item: MediaItem, index) => (
+            link.map((item: any, index) => (
               <MediaCardComponent
                 key={index}
                 type={item.type}
@@ -102,7 +102,7 @@ const MaterialPage: React.FC = () => {
               />
             ))}
           {activeTab === "guides" &&
-            pdfs.map((item, index) => (
+            pdfs.map((item: any, index) => (
               <MediaCardComponent
                 key={index}
                 type={item.type}
@@ -111,7 +111,7 @@ const MaterialPage: React.FC = () => {
               />
             ))}
              {activeTab === "guides" &&
-            images.map((item: MediaItem, index) => (
+            images.map((item: any, index) => (
               <MediaCardComponent
                 key={index}
                 type={item.type}
@@ -121,7 +121,7 @@ const MaterialPage: React.FC = () => {
               />
             ))}
           {activeTab === "videos" &&
-            videos.map((item, index) => (
+            videos.map((item: any, index) => (
               <MediaCardComponent
                 key={index}
                 type={item.type}
