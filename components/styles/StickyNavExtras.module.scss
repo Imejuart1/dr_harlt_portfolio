@@ -72,14 +72,15 @@
   flex-direction: column; // Align links vertically like in the image
   align-items: center;
   width:100%;
+
 }
 .hamburger {
   //display: none;
   font-size: 3rem;
   align-self: flex-end;
-  margin-right: 20%;
-  margin-top: -0.5rem;
- margin-bottom: 2rem;
+  //margin-right: 20%;
+ //margin-top: 1rem;
+ margin-bottom: -3rem;
   //color: $dark-blue;
   cursor: pointer;
 }
@@ -136,8 +137,14 @@
 .fisible {
     left: 0; 
     transition: left 0.5s ease-in-out;
-  }
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
+.fisible::-webkit-scrollbar {
+    display: none;
+}
   .hidden {
     left: -100%; 
     //transition: left 0.5s ease-in-out;
