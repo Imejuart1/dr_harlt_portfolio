@@ -1,3 +1,4 @@
+"use client";
 import Script from "next/script";
 import HeroSection from "./Herosection/HeroSection";
 import Bio from "./carousels/Bio/page";
