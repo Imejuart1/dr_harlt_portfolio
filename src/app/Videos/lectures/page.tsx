@@ -71,6 +71,14 @@ const MaterialLecturesComponent: React.FC = () => {
       title: "Vittorio Sella & Wilfred Thesiger Lecture",
       src: "https://www.youtube.com/embed/UEizbdwpi7A",
     },
+    {
+      title: "Dr. Roger Härtl on MISS Motion Sparing Surgery in the Cervical Spine.",
+      src: "https://www.youtube.com/embed/YtYQH1IHVYk?si=YzyUXtRplFW2o-oa",
+    },
+    {
+      title: "NYC-MISS 2023 Summer Master Class (Weill Cornell Medicine, featuring Dr. Roger Hartl).",
+      src: "https://www.youtube.com/embed/o6uRfi36Ciw?si=zGujABhrPCqGnjTY",
+    },
   ];
   
   const filteredVideos = lectureVideos.filter(video =>

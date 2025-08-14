@@ -69,6 +69,21 @@ const materialGroups: MaterialGroup[] = [
         triggerVideosTab: true,
       },
     ],
+  }, {
+    id: 'youtube-education',
+    heading: 'Dr. Härtl\'s YouTube Channel & Other Patient Education Materials',
+    links: [
+      {
+        title: 'Surgical Videos',
+        href: '/Materials/surgical-videos',
+        triggerVideosTab: true,
+      },
+      {
+        title: 'Spine Time - highlights from our patient education webinar',
+        href: '/Materials/spine-time',
+        triggerVideosTab: true,
+      },
+    ],
   },
 ];
 
