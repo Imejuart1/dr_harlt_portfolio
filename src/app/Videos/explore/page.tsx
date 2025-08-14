@@ -36,7 +36,14 @@ const MaterialLecturesComponent: React.FC = () => {
       title: "Tanzania Neurosurgery Project 2019: Dr. Roger Hartl in New ICU at MOI",
       src: "https://www.youtube.com/embed/ji83vBbXR7E?si=jtJxt3RF7VIYWT_s",
     },
-    
+       {
+      title: "NYC-MISS 2019: Dr. Roger Hartl",
+      src: "https://www.youtube.com/embed/zV4a9RQppj8?si=EDU9y6D6gv_UNc-o",
+    },
+     {
+      title: "NYC-MISS 2019: Dr. Roger Hartl in the Lab",
+      src: "https://www.youtube.com/embed/0RyCrtTLkBA?si=oX5vyswHbe_7PX9p",
+    },
   ];
   
   const filteredVideos = lectureVideos.filter(video =>
@@ -45,7 +52,7 @@ const MaterialLecturesComponent: React.FC = () => {
   
   return (
     <section className={styles.materialSection}>
-      <div className={styles.heroSection} style={{ backgroundImage: `url(/img/lecturehero.png)` }}>
+      <div className={styles.heroSection} style={{ backgroundImage: `url(/img/newhartl2.jpg)` }}>
         <div className={styles.content}>
           <h1>Explore Videos</h1>
           <p>Watch insightful exploration videos from Dr. Härtl.</p>

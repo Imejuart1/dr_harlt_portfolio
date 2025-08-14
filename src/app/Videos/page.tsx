@@ -33,11 +33,11 @@ const videoData = [
   },
   {
     title: 'Explore Videos',
-    videos: [
-      'https://www.youtube.com/embed/ji83vBbXR7E?si=jtJxt3RF7VIYWT_s',
-      'https://www.youtube.com/embed/_eojuoLUn8I',
-      'https://www.youtube.com/embed/kKOoUIsZVFg',
-    ],
+   videos: [
+  'https://www.youtube.com/embed/ji83vBbXR7E',
+  'https://www.youtube.com/embed/zV4a9RQppj8',
+  'https://www.youtube.com/embed/kKOoUIsZVFg',
+],
     link: '/Videos/explore',
   },
 ];

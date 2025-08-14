@@ -1,19 +1,28 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import Head from "next/head";
-import Script from "next/script";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./HonorsAndAwards.module.scss";
+import React, { useEffect, useRef, useState } from 'react';
+import styles from './HonorsAndAwards.module.scss';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLightbulb, faAward } from '@fortawesome/free-solid-svg-icons';
 
-const images = ["/img/Brazil.png", "/img/Brazil2.png", "/img/awardroger1.jpeg"];
-const brazilimages = ["/img/Brazil.png", "/img/Brazil2.png", "/img/Brazil2.png"];
+const images = [
+  '/img/Brazil.png',
+  '/img/Brazil2.png',
+  '/img/awardroger1.jpeg'
+];
+
+const brazilimages = [
+  '/img/Brazil.png',
+  '/img/Brazil2.png',
+  '/img/Brazil2.png',
+];
+
 const annaimages = [
-  "/img/anastory.png",
-  "/img/annaspine.png",
-  "/img/annastory2.png",
-  "/img/augmented reality.png",
-  "/img/augmented3.png",
+  '/img/anastory.png',
+  '/img/annaspine.png',
+  '/img/annastory2.png',
+  '/img/augmented reality.png',
+  '/img/augmented3.png',
 ];
 
 const HonorsAndAwardsPages: React.FC = () => {
@@ -27,208 +36,145 @@ const HonorsAndAwardsPages: React.FC = () => {
   const showVideo = () => {
     setIframeSrc("https://drive.google.com/file/d/1X5e09YgGcg7M0TPshxWdQnJ2mKWnp3lP/preview");
     setVideoVisible(true);
-    if (iframeRef.current) iframeRef.current.focus();
+    if (iframeRef.current) {
+      iframeRef.current.focus();
+    }
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnnaImageIndex((i) => (i + 1) % annaimages.length);
-      setCurrentImageIndex((i) => (i + 1) % images.length);
+      setAnnaImageIndex((prevIndex) => (prevIndex + 1) % annaimages.length);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
     const handleHashChange = () => {
-      const hash = window.location.hash.replace("#", "");
-      if (hash === "honors" || hash === "news" || hash === "podcasts") {
-        setActiveTab(hash as typeof activeTab);
-        const el = document.getElementById(hash);
-        if (el) window.scrollTo({ top: el.offsetTop - 30, behavior: "smooth" });
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        if (hash === "honors" || hash === "news" || hash === "podcasts") {
+          setActiveTab(hash as "honors" | "news" | "podcasts");
+        }
+
+        const element = document.getElementById(hash);
+        if (element) {
+          window.scrollTo({
+            top: element.offsetTop - 30, 
+            behavior: 'smooth',
+          });
+        }
       }
     };
-    if (window.location.hash) handleHashChange();
-    window.addEventListener("hashchange", handleHashChange);
-    return () => window.removeEventListener("hashchange", handleHashChange);
+
+    if (window.location.hash) {
+      handleHashChange();
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
   }, []);
 
-  const canonical = "https://yourdomain.com/honors-awards";
 
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://yourdomain.com/" },
-      { "@type": "ListItem", position: 2, name: "Honors & Awards", item: canonical },
-    ],
-  };
-
-  const honorsItemListJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Honors & Awards",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        item: {
-          "@type": "CreativeWork",
-          name: "America's Best Spine Surgeons 2024",
-          url: "https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024",
-        },
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        item: {
-          "@type": "CreativeWork",
-          name: "Top Doctors 2024 (Castle Connolly)",
-          url: "https://neurosurgery.weillcornell.org/in-the-news/topping-list-top-doctors-once-again-2024",
-        },
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        item: {
-          "@type": "CreativeWork",
-          name: "AANS Humanitarian of the Year",
-          url: "https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year",
-        },
-      },
-    ],
-  };
 
   return (
-    <>
-      <Head>
-        <title>Honors, Awards, News & Podcasts | Dr. Roger Härtl</title>
-        <meta
-          name="description"
-          content="Explore awards, honors, major news features, and podcasts highlighting Dr. Roger Härtl, world-renowned neurosurgeon and spine specialist."
-        />
-        <link rel="canonical" href={canonical} />
-        <meta property="og:title" content="Honors & Awards — Roger Härtl, M.D." />
-        <meta
-          property="og:description"
-          content="Recognitions, media features, and podcasts about Dr. Roger Härtl."
-        />
-        <meta property="og:url" content={canonical} />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://yourdomain.com/img/og-honors.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-
-      <Script id="breadcrumbs-jsonld" type="application/ld+json">
-        {JSON.stringify(breadcrumbJsonLd)}
-      </Script>
-      <Script id="honors-itemlist-jsonld" type="application/ld+json">
-        {JSON.stringify(honorsItemListJsonLd)}
-      </Script>
-
-      <section className={styles.honorsSection}>
-        <div className={styles.contentSS}>
-          <Link href="/honors-awards#honors">
-            <h2 className={styles.sectionTitle}>Honors and Awards</h2>
-          </Link>
+    <section className={styles.honorsSection}>
+      <div className={styles.contentSS}>
+      <Link href='/honors-awards#honors'>
+      <h2 className={styles.sectionTitle}>
+         {/* <FontAwesomeIcon icon={faAward} className={styles.icon} fixedWidth />*/}
+          Honors and Awards
+        </h2>
+        </Link>
         </div>
+     {/* <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
+        <div className={styles.content}>
+          <h1>Honors, News & Podcasts</h1>
+          <p>Explore the prestigious honors and awards received by Dr. Roger Härtl, along with the latest news features.</p>
+        </div>
+      </div>
 
-        {/* HONORS */}
-        <div
-          id="honors"
-          className={styles.contentWrapper}
-          data-tab="honors"
-          data-active={activeTab === "honors"}
-          aria-hidden={activeTab !== "honors"}
+      <div className={styles.tabNavigation}>
+        <button
+          className={`${styles.tabButton} ${activeTab === "honors" ? styles.active : ""}`}
+          onClick={() => setActiveTab("honors")}
         >
-          <div className={styles.section}>
-            <a
-              href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div style={{ width: "100%" }}>
-                <Image
-                  src="/img/bestspineppp.png"
-                  alt="Newsweek badge: America's Best Spine Surgeons 2024"
-                  className={styles.sectionImage}
-                  width={1600}
-                  height={900}
-                  sizes="(max-width: 800px) 100vw, 800px"
-                  priority={true}
-                />
+          Honors & Awards
+        </button>
+        <button
+          className={`${styles.tabButton} ${activeTab === "news" ? styles.active : ""}`}
+          onClick={() => setActiveTab("news")}
+        >
+          News
+        </button>
+        <button
+          className={`${styles.tabButton} ${activeTab === "podcasts" ? styles.active : ""}`}
+          onClick={() => setActiveTab("podcasts")}
+        >
+          Podcasts
+        </button>
+        <div
+          className={`${styles.tabUnderline} ${activeTab === "honors" ? styles.left : activeTab === "news" ? styles.center : styles.right}`}
+        />
+      </div>*/}
+
+      {activeTab === "honors" && (
+        <div className={styles.contentWrapper} id='#honors'>
+           <div className={styles.section}>
+            <a href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024" target="_blank" rel="noopener noreferrer">
+              <div style={{ width: '100%' }}>
+                <img src="/img/bestspineppp.png" alt="Honor 3" className={styles.sectionImage} />
               </div>
             </a>
             <div className={styles.textContent}>
               <h2>America&apos;s Best Spine Surgeons 2024</h2>
-              <p>
-                Dr. Härtl has been recognized as one of the best spine surgeons in the United States by{" "}
-                <strong>Newsweek</strong>. The ranking, developed with Statista, evaluated physician performance,
-                certifications, and professional reputation to identify the top 150 U.S. spine surgeons. Dr. Härtl is the
-                Hansen-MacDonald Professor of Neurological Surgery and Director of Spinal Surgery at Weill Cornell
-                Medicine and Co-Director of Och Spine at NewYork-Presbyterian/Weill Cornell Medical Center.
-              </p>
-              <a
-                href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read more
-              </a>
+              <p>Dr. Härtl has been recognized as one of the best spine surgeons in the United States by Newsweek magazine.
+                 Newsweek partnered with Statista to evaluate physician performance data, certifications, 
+                 and professional reputation for American spine surgeons in 2024, resulting in the list 
+                 of the top 150 in the country. Dr. Härtl is the Hansen-MacDonald Professor of Neurological 
+                 Surgery and director of spinal surgery at Weill Cornell Medicine as well as co-director of Och 
+                 Spine at NewYork-Presbyterian/Weill Cornell Medical Center.
+                 He is one of four spine surgeons at Och Spine at NewYork-Presbyterian named to the list.</p>
+              <a href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
-
           <div className={styles.sectionReverse}>
+  <div className={styles.textContent}>
+    <h2>Topping the List of Top Doctors Once Again in 2024</h2>
+    <p>Dr. Roger Härtl has once again been named to the prestigious list of New York&apos;s Top Doctors for 2024, in recognition of his excellence in spine neurosurgery. He continues to lead innovative treatments and patient care at the Weill Cornell Medicine Brain and Spine Center.</p>
+    <a href="https://neurosurgery.weillcornell.org/in-the-news/topping-list-top-doctors-once-again-2024" target="_blank" rel="noopener noreferrer">Read more</a><br />
+  </div>
+  <a href="https://neurosurgery.weillcornell.org/in-the-news/topping-list-top-doctors-once-again-2024" target="_blank" rel="noopener noreferrer">
+    <div style={{ width: '100%' }}>
+      <img src="/img/castle 2024.png" alt="Honor 2" className={styles.sectionImage} />
+    </div>
+  </a>
+</div>
+           {/*} <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
-              <h2>Topping the List of Top Doctors Once Again in 2024</h2>
-              <p>
-                Dr. Roger Härtl was named to New York&apos;s Top Doctors for 2024 for his excellence in spine neurosurgery,
-                continuing leadership in innovation and patient care at the Weill Cornell Medicine Brain and Spine Center.
-              </p>
-              <a
-                href="https://neurosurgery.weillcornell.org/in-the-news/topping-list-top-doctors-once-again-2024"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read more
-              </a>
+              <h2>Hans Kraus Award</h2>
+              <p>Dr. Roger Härtl has received the Hans Kraus Award for his groundbreaking work in spine surgery and patient care.<br></br>
+              &quot;We are proud to present the award to Roger Härtl , the Hansen-MacDonald Professor of Neurological Surgery and Director of Neurosurgery Spine at the Weill Cornell Medicine Brain and Spine Center in New York.&quot;</p>
+              <a href="https://frame.foundation/hans-kraus-award" target="_blank" rel="noopener noreferrer">Read more</a><br></br>
+              <a href="https://drive.google.com/file/d/1cRrmQZABK_TlDbzbp6CESOsyfFB8u6r3/view" target="_blank" rel="noopener noreferrer">See pdf</a>
             </div>
-            <a
-              href="https://neurosurgery.weillcornell.org/in-the-news/topping-list-top-doctors-once-again-2024"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/img/castle 2024.png"
-                alt="Castle Connolly Top Doctors 2024 badge"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+            <a href="https://frame.foundation/hans-kraus-award" target="_blank" rel="noopener noreferrer">
+              <div style={{ width: '100%' }}>
+                <img src="/img/Hanskraus2.png" alt="Honor 2" className={styles.sectionImage} />
+              </div>
             </a>
-          </div>
-
+          </div>*/}
           <div className={styles.section}>
-            <a
-              href="https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div style={{ width: "100%" }}>
-                <Image
-                  src="/img/awardroger1.jpeg"
-                  alt="AANS Humanitarian of the Year Award feature"
-                  className={styles.sectionImage}
-                  width={1600}
-                  height={900}
-                  sizes="(max-width: 800px) 100vw, 800px"
-                  loading="lazy"
-                />
+            <a href="https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year" target="_blank" rel="noopener noreferrer">
+              <div style={{ width: '100%' }}>
+                <img src="/img/awardroger1.jpeg" alt="Honor 1" className={styles.sectionImage} />
               </div>
             </a>
             <div className={styles.textContent}>
-              <h2>Spine News International: AANS Humanitarian of the Year</h2>
+              <h2>Spine News International AANS Humanitarian of the Year Award Feature</h2>
               <p>Dr. Härtl has been honored with the AANS Humanitarian of the Year Award, recognizing his dedication to advancing spine care.
                 At the 2022 annual meeting of the American Association of Neurological Surgeons in Philadelphia,
                 Dr. Härtl was honored as the AANS Humanitarian of the Year.
@@ -236,407 +182,223 @@ const HonorsAndAwardsPages: React.FC = () => {
                 and for his commitment to global neurosurgical education
                 through CME courses and European training classes.
                 The award is one of the highest honors bestowed by the AANS, which recognized Dr. Härtl for his years of dedication to these projects.</p>
-              <a
-                href="https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read more
-              </a>
+              <a href="https://neurosurgery.weillcornell.org/in-the-news/dr-roger-h%C3%A4rtl-named-aans-humanitarian-year" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
-        </div>
 
-        {/* NEWS */}
-        <div
-          id="news"
-          className={styles.contentWrapper}
-          data-tab="news"
-          data-active={activeTab === "news"}
-          aria-hidden={activeTab !== "news"}
-        >
+        
+        </div>
+      )}
+
+      {activeTab === "news" && (
+        <div className={styles.contentWrapper} id='#news'>
           <div className={styles.section}>
             <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/img/hartnews1.jpg"
-                alt="NewYork-Presbyterian feature on augmented reality in spine surgery"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+              <img src="/img/hartnews1.jpg" alt="News 1" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
-              <h2>NewYork-Presbyterian: Augmented Reality Advances</h2>
-              <p>
-                For nearly 20 years, Dr. Härtl has used intraoperative imaging and stereotactic navigation in minimally
-                invasive spine surgery. AR further improves precision and outcomes.
-              </p>
-              <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">
-                Read more
-              </a>
+              <h2>New York-Presbyterian Augmented Reality Advances Feature</h2>
+              <p>Dr. Härtl&apos;s innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
+                For nearly 20 years, Roger Härtl, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicine’s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
+                navigation in spinal surgery to guide instrumentation placement and tumor resection in minimally invasive spine surgery.</p>
+              <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
 
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
-              <h2>Dr. Orna Guralnik&apos;s Spine Tumor Story</h2>
-              <p>
-                A complex tumor resection guided by augmented reality enabled a faster recovery and return to work for Dr.
-                Guralnik.
+              <h2>Dr. Orna Guralink&apos;s Spine Tumor Story</h2>
+              <p>Dr. Roger Härtl utilized cutting-edge augmented reality technology
+                to precisely remove a spinal tumor, enabling a faster recovery for Orna
+                Guralnik. Her insistence on further investigation led to a life-changing
+                surgery that allowed her to quickly return to her busy life as a renowned therapist and TV host.
               </p>
-              <a
-                href="https://neurosurgery.weillcornell.org/patient-story/more-precision-less-incision-augmented-reality-spine-tumor-story"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read Story
-              </a>
+              <a href="https://neurosurgery.weillcornell.org/patient-story/more-precision-less-incision-augmented-reality-spine-tumor-story" target="_blank" rel="noopener noreferrer">Read Story</a>
             </div>
             <div className={styles.thumbnailWrapper}>
-              <a
-                href="https://neurosurgery.weillcornell.org/patient-story/more-precision-less-incision-augmented-reality-spine-tumor-story"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div
-                  className={styles.indSection2}
-                  style={{ backgroundImage: `url(${annaimages[annaImageIndex]})` }}
-                  aria-label="Patient story thumbnails"
-                />
+              <a href="https://neurosurgery.weillcornell.org/patient-story/more-precision-less-incision-augmented-reality-spine-tumor-story" target="_blank" rel="noopener noreferrer">
+                <div className={styles.indSection2} style={{ backgroundImage: `url(${annaimages[annaImageIndex]})` }}></div>
               </a>
             </div>
           </div>
 
           <div className={styles.section}>
             <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/img/medicalmarvel.png"
-                alt="New York Magazine Medical Marvel feature"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+              <img src="/img/medicalmarvel.png" alt="News 2" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
-              <h2>Medical Marvel — New York Magazine</h2>
-              <p>
-                Dr. Härtl reattached a firefighter’s skull to his spine after the Black Sunday fire — a case with only a 5%
-                survival chance — resulting in a remarkable recovery.
-              </p>
-              <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">
-                Read more
-              </a>
+              <h2>Medical Marvel - New York Magazine Feature</h2>
+              <p>Dr. Roger Härtl performed a life-saving surgery on firefighter Eugene Stolowski, reconnecting his nearly severed skull to his spine after a devastating fall during the Black Sunday fire. Despite a mere 5% survival chance,
+                Dr. Härtl&apos;s expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
+              <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
-
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
               <h2>Kenny Schachter Piece</h2>
-              <p>
-                After evaluation by Dr. Härtl, surgical intervention led to recovery — detailed in Schachter’s “Busted-Disc
-                Diaries.”
-              </p>
-              <a
-                href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Listen to the Podcast
-              </a>
+              <p>Kenny Schachter Emerges From Surgery With Dirt on Damien Hirst, Ed Sheeran, and a Lot More
+              In part one of his &apos;Busted-Disc Diaries,&apos; he recounts blowing out his back moving his art.
+               He&apos;s recovering, and just as indefatigable as ever. Thank his art-loving doctors!<br></br>
+               After a brief examination by Dr. Roger Härtl—who is nothing short of a magician, a brilliant virtuoso, and the director of spinal surgery at Och Spine at NewYork-Presbyterian/Weill 
+               Cornell Medical Center—it was flagrantly clear that I needed surgery, which...</p>
+              <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
-            <a
-              href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/img/piece (2).png"
-                alt="Kenny Schachter article artwork"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+            <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">
+              <img src="/img/piece (2).png" alt="News 6" className={styles.sectionImage} />
             </a>
           </div>
         </div>
+      )}
 
-        {/* PODCASTS */}
-        <div
-          id="podcasts"
-          className={styles.contentWrapper}
-          data-tab="podcasts"
-          data-active={activeTab === "podcasts"}
-          aria-hidden={activeTab !== "podcasts"}
-        >
-          <div className={styles.section}>
+      {activeTab === "podcasts" && (
+        <div className={styles.contentWrapper} id='#podcasts'>
+            <div className={styles.section}>
             <div className={styles.textContent}>
               <h2>Congresso de Coluna Brasil/Argentina</h2>
-              <p>
-                Dr. Härtl discusses the latest advances in spine surgery, including augmented reality in complex procedures,
-                and international collaboration in spinal care.
-              </p>
-              <a
-                href="https://drive.google.com/file/d/1X5e09YgGcg7M0TPshxWdQnJ2mKWnp3lP/view?t=541"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Podcast
-              </a>
+              <p>Dr. Roger Härtl was featured in a special podcast episode during the Congresso de Coluna
+                Brasil/Argentina. In this episode, he discusses the latest advancements in spine surgery,
+                including the use of augmented reality in complex procedures. Dr. Härtl shares insights
+                from his extensive experience and highlights the collaboration between Brazil and Argentina in advancing spinal care.</p>
+              <a href="https://drive.google.com/file/d/1X5e09YgGcg7M0TPshxWdQnJ2mKWnp3lP/view?t=541" target="_blank" rel="noopener noreferrer">View Podcast</a>
             </div>
             <div className={styles.videoWrapper}>
               <iframe
-                title="Congresso de Coluna Brasil/Argentina"
                 src={iframeSrc}
                 width="640"
                 height="480"
                 allow="autoplay; fullscreen"
-                className={`${styles.videoIframe} ${videoVisible ? styles.visible : ""}`}
+                className={`${styles.videoIframe} ${videoVisible ? styles.visible : ''}`}
                 ref={iframeRef}
-                style={{ display: videoVisible ? "block" : "none" }}
-                loading="lazy"
+                style={{ display: videoVisible ? 'block' : 'none' }}
               />
               {!videoVisible && (
-                <div onClick={showVideo} className={styles.thumbnailWrapper} role="button" aria-label="Play podcast video">
-                  <div
-                    className={styles.indSection}
-                    style={{ backgroundImage: `url(${brazilimages[currentImageIndex]})` }}
-                  />
+                <div onClick={showVideo} className={styles.thumbnailWrapper}>
+                  <div className={styles.indSection} style={{ backgroundImage: `url(${brazilimages[currentImageIndex]})` }}></div>
                   <div className={styles.playButton}>
-                    <Image src="/img/play-button.svg" alt="Play" width={64} height={64} />
+                    <img src='/img/play-button.svg' />
                   </div>
                 </div>
               )}
             </div>
           </div>
-
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
-              <h2>Advancing Solutions for Degenerative Disc Disease</h2>
-              <p>Biologic strategies for durable disc regeneration, repair, and replacement.</p>
-              <a
-                href="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Podcast
-              </a>
+            <h2> Advancing Solutions for Degenerative Disc Disease Through Regeneration, Repair, and Replacement</h2>
+            <p>Biology research is advancing lasting solutions for degenerative disc diseaese 
+            through regeneration, repair, replacement.</p>
+              <a href="https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview" target="_blank" rel="noopener noreferrer">View Podcast</a>
             </div>
             <div className={styles.videoWrapper}>
               <iframe
-                title="Degenerative Disc Disease — Research talk"
                 src="https://www.youtube.com/embed/YVdUAgBZCRQ?si=2OORcbX4udpml67y"
                 width="640"
                 height="480"
                 allow="autoplay; fullscreen"
-                className={`${styles.videoIframe} ${videoVisible ? styles.visible : ""}`}
+                className={`${styles.videoIframe} ${videoVisible ? styles.visible : ''}`}
                 ref={iframeRef}
-                style={{ display: videoVisible ? "block" : "none" }}
-                loading="lazy"
+                style={{ display: videoVisible ? 'block' : 'none' }}
               />
+             {/*} {!videoVisible && (
+                <div onClick={showVideo} className={styles.thumbnailWrapper}>
+                  <div className={styles.indSection} style={{ backgroundImage: `url(${brazilimages[currentImageIndex]})` }}></div>
+                  <div className={styles.playButton}>
+                    <img src='/img/play-button.svg' />
+                  </div>
+                </div>
+              )}*/}
             </div>
           </div>
 
           <div className={styles.section}>
-            <div className={styles.textContent}>
-              <h2>MOI Tanzania TV 2023 Feature</h2>
-              <p>International training on the brain, spine, and nervous system held in Tanzania.</p>
-              <Link href="https://www.youtube.com/watch?v=ceQxOqsr2uE" target="__blank">
-                Watch Video
-              </Link>
+          <div className={styles.textContent}>
+                    <h2>MOI Tanzania TV 2023 Feature</h2>
+                    <p>International training on the brain, spine, and nervous system held in Tanzania </p>
+                    <Link 
+                    href="https://www.youtube.com/watch?v=ceQxOqsr2uE"
+                    target='__blank'>Watch Video</Link>
+                </div>
+                <div className={styles.videoWrapper}>
+                <iframe src="https://www.youtube.com/embed/ceQxOqsr2uE?si=BV1-7JrOtsmTXvBc"  allowFullScreen className={styles.sectionImage}/>
+                </div>
             </div>
-            <div className={styles.videoWrapper}>
-              <iframe
-                title="MOI Tanzania TV 2023 Feature"
-                src="https://www.youtube.com/embed/ceQxOqsr2uE?si=BV1-7JrOtsmTXvBc"
-                allowFullScreen
-                className={styles.sectionImage}
-                loading="lazy"
-              />
-            </div>
-          </div>
 
-          <div className={styles.sectionReverse}>
+            <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
-              <h2>MOI Tanzania TV 2024 Feature</h2>
-              <p>International training on the brain, spine, and nervous system held in Tanzania.</p>
-              <Link href="https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/view" target="__blank">
-                Watch Video
-              </Link>
+                    <h2>MOI Tanzania TV 2024 Feature</h2>
+                    <p>International training on the brain, spine, and nervous system held in Tanzania </p>
+                    <Link 
+                    href="https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/view"
+                    target='__blank'>Watch Video</Link>
+                </div>
+                <div className={styles.imageContainer2}>
+                <iframe src="https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/preview" allowFullScreen className={styles.sectionImage}/>
+                </div>
             </div>
-            <div className={styles.imageContainer2}>
-              <iframe
-                title="MOI Tanzania TV 2024 Feature"
-                src="https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/preview"
-                allowFullScreen
-                className={styles.sectionImage}
-                loading="lazy"
-              />
-            </div>
-          </div>
 
           <div className={styles.section}>
-            <a
-              href="https://podcasts.apple.com/us/podcast/beckers-healthcare-spine-and-orthopedic-podcast/id1512530263"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/img/beckerpodcast.png"
-                alt="Becker's Healthcare: Spine and Orthopedic Podcast cover"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+            <a href="https://podcasts.apple.com/us/podcast/beckers-healthcare-spine-and-orthopedic-podcast/id1512530263" target="_blank" rel="noopener noreferrer">
+              <img src="/img/beckerpodcast.png" alt="News 3" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
               <h2>Becker&apos;s Healthcare: Spine and Orthopedic Podcast</h2>
-              <p>
-                Dr. Härtl shares insights into minimally invasive spine surgery, mission work in Tanzania, and key trends
-                shaping the field.
-              </p>
-              <a
-                href="https://podcasts.apple.com/us/podcast/beckers-healthcare-spine-and-orthopedic-podcast/id1512530263"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Listen to the Podcast
-              </a>
+              <p>Dr. Roger Härtl, Professor of Neurological Surgery and Director of Spinal Surgery at Weill Cornell Medicine
+                as well as Neurosurgical Director, Och Spine at NewYork-Presbyterian, provides a glimpse into his journey,
+                offers insights into his expertise in neurological surgery, developments in his field, and trends
+                shaping the industry as we approach 2024. He delves into his mission work in Tanzania,
+                discussing his proudest achievements and providing guidance for other surgeons eager to contribute to a cause.</p>
+              <a href="https://podcasts.apple.com/us/podcast/beckers-healthcare-spine-and-orthopedic-podcast/id1512530263" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
           </div>
 
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
-              <h2>Becker&apos;s Spine Review: AR in MIS-TLIF</h2>
-              <p>Weill Cornell researchers completed 10 MIS-TLIFs using augmented reality with no complications.</p>
-              <a
-                href="https://www.beckersspine.com/spine/55630-the-potential-of-ar-in-minimally-invasive-tlif-procedures.html?utm_medium=email&utm_content=newsletter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read more
-              </a>
+              <h2>Becker&apos;s Spine Review: AR in MIS-TLIF Feature</h2>
+              <p>Researchers with New York City-based Weill Cornell Medicine were able to complete 10 minimally
+                invasive transforaminal lumbar interbody fusions using augmented reality with no complications ...</p>
+              <a href="https://www.beckersspine.com/spine/55630-the-potential-of-ar-in-minimally-invasive-tlif-procedures.html?utm_medium=email&utm_content=newsletter" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
-            <a
-              href="https://www.beckersspine.com/spine/55630-the-potential-of-ar-in-minimally-invasive-tlif-procedures.html?utm_medium=email&utm_content=newsletter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/img/becker.png"
-                alt="Becker's Spine Review cover"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+            <a href="https://www.beckersspine.com/spine/55630-the-potential-of-ar-in-minimally-invasive-tlif-procedures.html?utm_medium=email&utm_content=newsletter" target="_blank" rel="noopener noreferrer">
+              <img src="/img/becker.png" alt="News 4" className={styles.sectionImage} />
             </a>
           </div>
 
           <div className={styles.section}>
-            <a
-              href="https://www.beckershospitalreview.com/podcasts/podcasts-beckers-hospital-review/roger-h-rtl-director-of-neurosurgery-spine-at-weill-cornell-medicine-94433094.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/img/becker2.png"
-                alt="Becker's Hospital Review podcast cover"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+            <a href="https://www.beckershospitalreview.com/podcasts/podcasts-beckers-hospital-review/roger-h-rtl-director-of-neurosurgery-spine-at-weill-cornell-medicine-94433094.html" target="_blank" rel="noopener noreferrer">
+              <img src="/img/becker2.png" alt="News 5" className={styles.sectionImage} />
             </a>
             <div className={styles.textContent}>
               <h2>Becker&apos;s Hospital Review: Podcast Features</h2>
-              <p>Patient access, minimally invasive surgery, and leadership insights from Dr. Härtl.</p>
-              <a
-                href="https://www.beckershospitalreview.com/podcasts/podcasts-beckers-hospital-review/roger-h-rtl-director-of-neurosurgery-spine-at-weill-cornell-medicine-94433094.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Listen to the Podcast
-              </a>
+              <p>Roger Härtl, Director of Neurosurgery Spine at Weill Cornell Medicine, joins the podcast to discuss his background, his focus on patient access to quality care & minimally invasive spine surgery, and what healthcare leaders need to be successful.</p>
+              <a href="https://www.beckershospitalreview.com/podcasts/podcasts-beckers-hospital-review/roger-h-rtl-director-of-neurosurgery-spine-at-weill-cornell-medicine-94433094.html" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
           </div>
 
           <div className={styles.sectionReverse}>
             <div className={styles.textContent}>
-              <h2>NYP Advances in Care Podcast</h2>
-              <p>Navigation tech, AR adoption, and global training work in Tanzania.</p>
-              <a
-                href="https://podcasts.apple.com/us/podcast/the-visionary-seeing-the-future-of-spine-surgery/id1671647417?i=1000605317340"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Listen to the Podcast
-              </a>
+              <h2>NYP Advances in Care Podcast Feature</h2>
+              <p>Dr. Roger Härtl is no stranger to forging new ground in neurosurgery. In this episode, Dr. Härtl and Host Catherine Price discuss how far navigation technology has come over the past 20 years and look ahead to how implementing augmented reality can make surgery even more precise for surgeons and less invasive for patients. Dr. Härtl also shares the impact of his work teaching
+                and training neurosurgeons in Tanzania and discusses where he hopes technology will take the field of neurosurgery next.</p>
+              <a href="https://podcasts.apple.com/us/podcast/the-visionary-seeing-the-future-of-spine-surgery/id1671647417?i=1000605317340" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
-            <a
-              href="https://podcasts.apple.com/us/podcast/the-visionary-seeing-the-future-of-spine-surgery/id1671647417?i=1000605317340"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/img/advancepodcast6.png"
-                alt="NYP Advances in Care podcast cover"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+            <a href="https://podcasts.apple.com/us/podcast/the-visionary-seeing-the-future-of-spine-surgery/id1671647417?i=1000605317340" target="_blank" rel="noopener noreferrer">
+              <img src="/img/advancepodcast6.png" alt="News 6" className={styles.sectionImage} />
             </a>
           </div>
 
           <div className={styles.section}>
             <div className={styles.textContent}>
-              <h2>Healthcare Digital Interview (German)</h2>
-              <p>Robots in the OR, AI in diagnostics, and live demo at Brainlab Spine Symposium in Munich.</p>
-              <a
-                href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Listen to the Podcast
-              </a>
+              <h2>Healthcare Digital Interview in German</h2>
+              <p>Healthcare Digital #10: Robots in the OR, AI in diagnostics, a gateway to TI, In future, access to the TI will be via a gateway. eHex Managing Director Frédéric Naujokat knows why and how. Spinal surgery with the surgical robot, on the other hand, is the domain of Prof. Dr. Roger Härtl. He demonstrated this live at this year&apos;s Brainlab Spine Symposium in Munich
+                s. Our colleague Johannes Kapfer was there and spoke to him...</p>
+              <a href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
-            <a
-              href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/img/healthpodcast.jpeg"
-                alt="Healthcare Digital podcast cover"
-                className={styles.sectionImage}
-                width={1600}
-                height={900}
-                sizes="(max-width: 800px) 100vw, 800px"
-                loading="lazy"
-              />
+            <a href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel" target="_blank" rel="noopener noreferrer">
+              <img src="/img/healthpodcast.jpeg" alt="News 6" className={styles.sectionImage} />
             </a>
           </div>
         </div>
-      </section>
-
-      <style jsx global>{`
-        /* Keep all sections in DOM; hide inactive with CSS (better crawlability) */
-        [data-tab][data-active="false"] {
-          display: none;
-        }
-      `}</style>
-    </>
+      )}
+    </section>
   );
 };
 
