@@ -83,9 +83,21 @@ const MaterialLecturesComponent: React.FC = () => {
     {
       title: "NYC-MISS 2023 Summer Master Class (Weill Cornell Medicine, featuring Dr. Roger Hartl).",
       src: "https://www.youtube.com/embed/o6uRfi36Ciw?si=zGujABhrPCqGnjTY",
+    }, 
+    {
+      title: "Dr. Roger Härtl on Non-Surgical Approaches to Back Pain: Conservative Management Strategies &Tai Chi",
+      src: "https://www.youtube.com/embed/qHnS_x4wuAo?si=oK0I5Rj34D9pDX8_" ,
+    },
+     {
+      title: "WCM Neurosurgery Grand Rounds: Dr. Roger Härtl, The 5 Ts of Minimally Invasive Spinal Surgery",
+      src: "https://www.youtube.com/embed/3uUjtwErP5c?si=fEvSVzfevVMzdfZl" ,
+    },
+     {
+      title: "MISS Target Philosophy Roger Hartl, MD",
+      src: "https://www.youtube.com/embed/26EXjg-C00o?si=uZWizKKYzax68sdb"  ,
     },
   ];
-  
+
   const filteredVideos = lectureVideos.filter(video =>
     video.title.toLowerCase().includes(searchTerm.toLowerCase())
   );

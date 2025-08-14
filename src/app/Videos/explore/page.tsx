@@ -31,7 +31,10 @@ const MaterialLecturesComponent: React.FC = () => {
   }, []);
 
   const lectureVideos = [
-  
+  {
+      title: "Dr. Roger Hartl -14 Years inTanzania (J&J Interview 2022)",
+      src: "https://www.youtube.com/embed/n81sJVbMIUw?si=fEmR9pM2tps23x6S",
+    },
    {
       title: "Tanzania Neurosurgery Project 2019: Dr. Roger Hartl in New ICU at MOI",
       src: "https://www.youtube.com/embed/ji83vBbXR7E?si=jtJxt3RF7VIYWT_s",
@@ -43,6 +46,14 @@ const MaterialLecturesComponent: React.FC = () => {
      {
       title: "NYC-MISS 2019: Dr. Roger Hartl in the Lab",
       src: "https://www.youtube.com/embed/0RyCrtTLkBA?si=oX5vyswHbe_7PX9p",
+    },
+     {
+      title: "Tanzania Neurosurgery Project 2019: Dr. Roger Hartl and Dr. Jose Corredor",
+      src: "https://www.youtube.com/embed/IIsgHCwkW1c?si=9FZ99Kl1OHUgJxd6",
+    },
+    {
+      title: "Tanzania Neurosurgery Project 2019: Dr. Roger Hartl Update",
+      src: "https://www.youtube.com/embed/sr8QTPt5N9g?si=VIouyzETyu9tWAr_",
     },
   ];
   
