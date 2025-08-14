@@ -31,6 +31,15 @@ const videoData = [
     ],
     link: '/Videos/stories',
   },
+  {
+    title: 'Explore Videos',
+    videos: [
+      'https://www.youtube.com/embed/ji83vBbXR7E?si=jtJxt3RF7VIYWT_s',
+      'https://www.youtube.com/embed/_eojuoLUn8I',
+      'https://www.youtube.com/embed/kKOoUIsZVFg',
+    ],
+    link: '/Videos/explore',
+  },
 ];
 
 const AutoVideoCard = ({ title, videos, link }: { title: string; videos: string[]; link: string }) => {
