@@ -147,6 +147,38 @@
   color: $dark-blue;
 }
 
+.contactBlock {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: $dark-blue;
+  text-align: center;
+
+  p {
+    margin: 0.4rem 0;
+  }
+
+  .phoneLink {
+    color: $primary-blue;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: $hover-blue;
+      text-decoration: underline;
+    }
+  }
+
+  .contactLink {
+    color: $hover-blue;
+    text-decoration: underline;
+
+    &:hover {
+      color: $primary-blue;
+    }
+  }
+}
+
+
       /*.specialtiesGrid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
