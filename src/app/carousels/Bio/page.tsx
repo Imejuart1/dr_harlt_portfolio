@@ -109,19 +109,19 @@ const Bio: React.FC = () => {
   </ul>
           </div>
 
-         <div className="contactBlock">
-  <p>
+         <div className={styles.contactBlock}>
+  <span>
     <strong>Contact:</strong>{' '}
-    <a href="tel:+12127462152" className="phoneLink">
+    <a href="tel:+12127462152" className={styles.phoneLink}>
       (212) 746-2152
     </a>
-  </p>
-  <p>
+  </span>
+  <span>
     Or reach us directly{' '}
-    <Link href="/Contact" className="contactLink">
+    <Link href="/Contact" className={styles.contactLink}>
       <b>here</b>
     </Link>.
-  </p>
+  </span>
 </div>
 
         </div>
