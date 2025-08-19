@@ -35,6 +35,23 @@ const Bio: React.FC = () => {
     ]
   };
 
+  const specialties = [
+  { title: "Minimally Invasive Spinal Surgery", slug: "minimally-invasive-spinal-surgery", img: "/img/Bio01.png" },
+  { title: "Spinal Microsurgery", slug: "spinal-microsurgery", img: "/img/Bio02.png" },
+  { title: "Spinal Tumors", slug: "spinal-tumors", img: "/img/Bio03.png" },
+  { title: "Microdiscectomy", slug: "microdiscectomy", img: "/img/Bio04.png" },
+  { title: "Spondylolisthesis", slug: "spondylolisthesis", img: "/img/Bio05.png" },
+  { title: "Minimally Invasive Spinal Fusion", slug: "minimally-invasive-spinal-fusion", img: "/img/Bio06.png" },
+  { title: "Cervical Laminoplasty", slug: "cervical-laminoplasty", img: "/img/Bio07.png" },
+  { title: "Motion-Preserving Spine Surgery", slug: "motion-preserving-spine-surgery", img: "/img/Bio08.png"  },
+  { title: "Disc Arthroplasty", slug: "disc-arthroplasty", img: "/img/Bio09.png"  },
+  { title: "Spine Injuries in the Athlete", slug: "spine-injuries-athletes", img: "/img/Bio10.png"  },
+  { title: "Sports Trauma", slug: "sports-trauma", img: "/img/Bio11.png" },
+  { title: "Augmented Reality", slug: "augmented-reality",img: "/img/Bio12.png" },
+  { title: "3D Navigation", slug: "3d-navigation", img: "/img/Bio13.png" },
+  { title: "Minimally Invasive Decompression of Spinal Stenosis", slug: "minimally-invasive-decompression", img: "/img/Bio14.png" },
+];
+
   return (
     <>
       <Head>
@@ -69,23 +86,27 @@ const Bio: React.FC = () => {
           </p>
 
           <div className={styles.specialties} aria-label="Clinical specialties">
-            <strong>Specialties:</strong>
-            <ul className={styles.specialtiesGrid}>
-              <li>Minimally Invasive Spinal Surgery</li>
-              <li>Spinal Microsurgery</li>
-              <li>Spinal Tumors</li>
-              <li>Microdiscectomy</li>
-              <li>Spondylolisthesis</li>
-              <li>Minimally Invasive Spinal Fusion</li>
-              <li>Cervical Laminoplasty</li>
-              <li>Motion-Preserving Spine Surgery</li>
-              <li>Disc Arthroplasty</li>
-              <li>Spine Injuries in the Athlete</li>
-              <li>Sports Trauma</li>
-              <li>Augmented Reality</li>
-              <li>3D Navigation</li>
-              <li>Minimally Invasive Decompression of Spinal Stenosis</li>
-            </ul>
+            <strong><h1>SPECIALTIES</h1></strong>
+             <ul className={styles.specialtiesGrid}>
+    {specialties.map((s) => (
+      <li key={s.slug} className={styles.specialtyCard}>
+        <p className={styles.cardLink}>
+          <div className={styles.thumbWrap} aria-hidden="true">
+            {/* Next/Image keeps CLS low href={`/specialties/${s.slug}`}*/}
+            <Image
+              src={s.img}
+              alt=""
+              fill
+              sizes="(max-width: 900px) 50vw, 200px"
+              className={styles.thumb}
+              priority={false}
+            />
+          </div>
+          <span className={styles.cardTitle}><b>{s.title}</b></span>
+        </p>
+      </li>
+    ))}
+  </ul>
           </div>
 
           <div>

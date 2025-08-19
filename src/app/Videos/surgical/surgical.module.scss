@@ -20,7 +20,7 @@
         color: white;
         padding: 2rem;
         background-size: cover;
-        background-position: 50% 25%;
+        background-position: 70% 60%;
         background-repeat: no-repeat;
         background-color: $primary-blue;
         border-radius: 8px;
@@ -184,4 +184,78 @@
   left: 0; /* Position the number */
   font-weight: bold; /* Optional: make the number bold */
   color: #0073e6; /* Optional: customize color */
+}
+.flexWrapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem 7.125rem;
+
+  @media (max-width: 1200px) {
+    padding: 2rem 4rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+
+  .materialLinks {
+    flex: 1 1 35%;
+    min-width: 300px;
+  }
+
+  .videoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 5vw;
+  }
+  
+  .videoCard {
+    flex: 1 1 360px;
+    max-width: 420px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+  
+    &:hover {
+      transform: scale(1.02);
+    }
+  
+    h3 {
+      font-size: 1rem;
+      padding: 1rem;
+      color: #033f8e;
+      font-weight: 600;
+      line-height: 1.4rem;
+    }
+  
+    iframe {
+      border: none;
+    }
+  }
+}
+  
+.searchContainer {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: -3rem;
 }

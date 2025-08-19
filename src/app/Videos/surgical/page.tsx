@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import styles from './surgical.module.scss';
 
@@ -16,6 +16,7 @@ interface MaterialGroup {
   links: MaterialLink[];
 }
 
+  
 const materialGroups: MaterialGroup[] = [
   {
     id: 'pre-operative-information',
@@ -88,6 +89,7 @@ const materialGroups: MaterialGroup[] = [
 ];
 
 const SurgicalVideosComponent: React.FC = () => {
+  const [searchTerm, setSearchTerm] = useState('');
   useEffect(() => {
     const handleHashChange = () => {
       const elementId = window.location.hash.replace('#', '');
@@ -109,7 +111,17 @@ const SurgicalVideosComponent: React.FC = () => {
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+ const surgicalVideos = [
+    
+    {
+      title: "Spinal Navigation Nuances - Roger Härtl, M.D.",
+      src: "https://www.youtube.com/embed/CuFUrso3Orw?si=mOhCTmLMXAdVPZIY" ,
+    },
+  ]
 
+   const filteredVideos = surgicalVideos.filter(video =>
+    video.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <section className={styles.materialSection}>
       <div
@@ -124,7 +136,29 @@ const SurgicalVideosComponent: React.FC = () => {
           </p>
         </div>
       </div>
-
+       <div className={styles.flexWrapContainer}>
+          <div className={styles.searchContainer}>
+  <input
+    type="text"
+    placeholder="Search videos..."
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+    className={styles.searchInput}
+  />
+</div>
+      <div className={styles.videoGrid}>
+  {filteredVideos.map((video, index) => (
+    <div key={index} className={styles.videoCard}>
+      <iframe src={video.src} allowFullScreen width="100%" height="250" />
+      <h3>
+      <a href={video.src} target="_blank" rel="noopener noreferrer">
+          {video.title}
+        </a>
+        </h3>
+    </div>
+  ))}
+</div>
+</div>
       <div className={styles.materialLinks}>
         {materialGroups.map((group) => (
           <div key={group.id} className={styles.materialGroup} id={group.id}>
@@ -157,6 +191,7 @@ const SurgicalVideosComponent: React.FC = () => {
           </div>
         ))}
       </div>
+      
     </section>
   );
 };

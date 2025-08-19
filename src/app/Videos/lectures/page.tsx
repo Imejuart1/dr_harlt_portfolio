@@ -45,6 +45,10 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/-Gv0lPB9v2U",
     },
     {
+      title: "Complication Avoidance, Pearls of MIS Surgery",
+      src: "https://www.youtube.com/embed/AmpW3aKUytI?si=KXCuYb1X_AYwZ_L0",
+    },
+    {
       title: "MIS & Navigation: Pros & Cons - Roger Hartl, M.D.",
       src: "https://www.youtube.com/embed/7jN4fx51lBo",
     },
@@ -75,7 +79,12 @@ const MaterialLecturesComponent: React.FC = () => {
     {
       title: "Vittorio Sella & Wilfred Thesiger Lecture",
       src: "https://www.youtube.com/embed/UEizbdwpi7A",
-    },
+    }, 
+
+{
+      title: "Complication Avoidance, Pearls of MIS Surgery ",
+      src: "https://www.youtube.com/embed/Dc0LNYoouHE?si=M0ajRZ0QFpVuEEBn",
+    }, 
     {
       title: "Dr. Roger Härtl on MISS Motion Sparing Surgery in the Cervical Spine.",
       src: "https://www.youtube.com/embed/YtYQH1IHVYk?si=YzyUXtRplFW2o-oa",
@@ -96,6 +105,22 @@ const MaterialLecturesComponent: React.FC = () => {
       title: "MISS Target Philosophy Roger Hartl, MD",
       src: "https://www.youtube.com/embed/26EXjg-C00o?si=uZWizKKYzax68sdb"  ,
     },
+    {
+      title:"MIS & Navigation: Pros & Cons - Roger Hartl, MD",
+     src:"https://www.youtube.com/embed/7jN4fx51lBo?si=oDdOnXg4Kz4Fmgdf"
+    },
+    {
+      title:"Does MIS Have a Role in Adult Deformity Surgery",
+     src:"https://www.youtube.com/embed/KTu4DxQ8XZw?si=vh60l-Uu52gFs2iO"
+    },
+     {
+      title:"Surgical Management of Benign Tumors of the Spine",
+     src:"https://www.youtube.com/embed/-Gv0lPB9v2U?si=aCI6p5ILzSxNDIQN"
+    },
+      { 
+      title:"MIS, Navigation, and AR: Techniques for the Resection of Spinal Tumors",
+     src:"https://www.youtube.com/embed/SziIt5QfOSU?si=OSRfQu6sf1Ci4ZoR"
+    },  
   ];
 
   const filteredVideos = lectureVideos.filter(video =>
