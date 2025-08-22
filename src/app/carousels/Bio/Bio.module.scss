@@ -1,339 +1,211 @@
 @import '../../../styles/colors.scss';
 
 .bioSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  color: $dark-blue;
+  font-family: $font-family-base;
+  font-size: $font-size-normal;
+  overflow-x: hidden !important;
+  margin-top: 2rem;
+  background-color: $light-blue;
+
+  .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
-    color: $dark-blue;
-    font-family: $font-family-base;
-    font-size: $font-size-normal;
-    overflow-x: hidden !important;
-    margin-top: 2rem;
-    background-color: $light-blue;
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-       // margin: 2rem auto;
-        padding: 0rem 7.125rem;
-        background-color: #fff;
-        //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        margin-bottom: 2rem;
-        @media (max-width: 1200px) {
-            padding: 1rem 4rem;
-          }
-          @media (max-width: 900px) {
-            padding: 1rem 1.5rem;
-          }
-    }
-    .headerSection {
-      text-align: center;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      width:90%;
-      @media (max-width: 900px) {
-        width:100%;
-      }
-      @media (max-width: 600px) {
-        padding: 0.3rem;
-      }
-      h1 {
-        font-size: 2.5rem;
-        color: $primary-blue;
-        font-weight: $font-weight-bold;
-        margin-bottom: 1rem;
-        @media (max-width: 900px) {
-          font-size: 2rem;
-        }
-        @media (max-width: 768px) {
-          font-size:2rem;
-        }
-        @media (max-width: 600px) {
-          margin-bottom: 0.6rem;
-          font-size:1.5rem;
-        }
-      }
-  
-      .title, .institution {
-        font-size: 1.2rem;
-        color: $dark-blue;
-        margin-bottom: 0.5rem;
-        @media (max-width: 600px) {
-          margin-bottom: 0.6rem;
-          font-size:1rem;
-        }
-      }
-  .specialtiesGrid {
-  list-style: none;
-  padding: 16px;
-  margin: 0;
+    width: 100%;
+    padding: 0rem 7.125rem;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 2rem;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; // keeps items centered if fewer than 3
-  gap: 16px;
-
-  background-color: $light-blue;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-
-.specialtyCard {
-  flex: 1 1 calc(33.333% - 16px); // 3 per row
-  max-width: calc(33.333% - 16px);
-  
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
-  transition: transform .2s ease, box-shadow .2s ease;
-  will-change: transform;
-  outline: none;
-  padding: 10px;
-
-  &:hover,
-  &:focus-within {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    @media (max-width: 1200px) { padding: 1rem 4rem; }
+    @media (max-width: 900px) { padding: 1rem 1.5rem; }
   }
 
-  // Responsive breakpoints
-  @media (max-width: 1200px) {
-    flex: 1 1 calc(50% - 16px); // 2 per row
-    max-width: calc(50% - 16px);
-  }
+  .headerSection {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
 
-  @media (max-width: 768px) {
-    flex: 1 1 100%; // full width
-    max-width: 100%;
-  }
-}
+    @media (max-width: 900px) { width: 100%; }
+    @media (max-width: 600px) { padding: 0.3rem; }
 
-.cardLink {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-
-  &:focus {
-    outline: 3px solid $hover-blue;
-    outline-offset: 2px;
-    border-radius: 12px;
-  }
-}
-
-.thumbWrap {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9; // keeps clean responsive box
-  overflow: hidden;
-}
-
-.thumb {
-  object-fit: cover; // fills nicely without distortion
-  width: 100%;
-  height: 100%;
-}
-
-.cardTitle {
-  display: block;
-  padding: 12px 14px 16px;
-  font-size: 1.06rem;
-  line-height: 1.35;
-  color: $dark-blue;
-}
-
-.contactBlock {
-  margin-top: 2.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap:1rem;
-  justify-content: center;
-  color: $dark-blue;
-  text-align: center;
-  width:100%;
-  font-size: 2rem;
-  .phoneLink {
-    color: $primary-blue;
-    font-weight: 600;
-    text-decoration: none;
-     
-    &:hover {
-      color: $hover-blue;
-      text-decoration: underline;
-    }
-  }
-
-  .contactLink {
-    color: $hover-blue;
-    text-decoration: underline;
-
-    &:hover {
+    h1 {
+      font-size: 2.5rem;
       color: $primary-blue;
+      font-weight: $font-weight-bold;
+      margin-bottom: 1rem;
+
+      @media (max-width: 900px) { font-size: 2rem; }
+      @media (max-width: 600px) { font-size: 1.5rem; margin-bottom: 0.6rem; }
+    }
+
+    .title, .institution {
+      font-size: 1.2rem;
+      color: $dark-blue;
+      margin-bottom: 0.5rem;
+      @media (max-width: 600px) { font-size: 1rem; margin-bottom: 0.6rem; }
+    }
+
+    .specialtiesGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      background-color: $light-blue;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      margin: 0;
+      padding-left: 20px;
+
+      li {
+        font-size: 1.1rem;
+        color: $dark-blue;
+        text-align: left;
+        padding: 5px 8px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        list-style: disc;
+        margin-left: 20px;
+
+        @media (max-width: 600px) { font-size: 1rem; }
+      }
+    }
+
+    div {
+      font-size: 1.5rem;
+      color: $primary-blue;
+      margin-top: 1rem;
+
+      @media (max-width: 600px) { font-size: 1rem; }
+
+      a {
+        color: $hover-blue;
+        text-decoration: underline;
+        &:hover { color: $dark-blue; }
+      }
     }
   }
-}
 
-      
-      div {
-        font-size: 1.5rem;
+  .section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    scroll-margin-top: 80px;
+
+    &:nth-child(even) { flex-direction: row; }
+    @media (max-width: 900px) { flex-direction: column-reverse; }
+
+    .imageSection {
+      background-color: rgba(3, 112, 255, 0.9);
+      margin-right: 20%;
+      text-align: center;
+
+      .profileImage {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-left: 2rem;
+      }
+
+      @media (max-width: 900px) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        align-self: center;
+      }
+    }
+
+    .pledgeList {
+      padding-left: 20px;
+      list-style-type: decimal;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: $dark-blue;
+
+      @media (max-width: 600px) { font-size: 1rem; }
+      li { margin-bottom: 10px; }
+    }
+
+    .biographyList, .List {
+      padding-left: 20px;
+      list-style-type: disc;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: $dark-blue;
+
+      @media (max-width: 600px) { font-size: 1rem; }
+      li { margin-bottom: 10px; }
+    }
+
+    .textSection {
+      flex: 1;
+      text-align: left;
+
+      @media (max-width: 900px) { text-align: center; }
+
+      h2 {
+        font-size: $font-size-biggest;
         color: $primary-blue;
-        margin-top: 1rem;
-        @media (max-width: 600px) {
-          font-size:1rem;
-        }
-        a {
-          color: $hover-blue;
-          text-decoration: underline;
-          &:hover {
-            color: $dark-blue;
+        margin-bottom: 1rem;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        padding-bottom: 0.5rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 50px;
+          height: 3px;
+          background-color: $hover-blue;
+          border-radius: 3px;
+
+          @media (max-width: 900px) {
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
       }
+
+      p {
+        font-size: $font-size-big;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        color: $dark-blue;
+        text-align: justify;
+      }
     }
-    .section {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        margin-bottom: 2rem;
-        scroll-margin-top: 80px;
-        &:nth-child(even) {
-            flex-direction: row; /* Image on right for even sections */
-        }
-        @media (max-width: 900px) {
-            flex-direction: column-reverse;
-          }
+  }
 
-        .imageSection {
-           background-color: rgba(3, 112, 255, 0.9);
-           margin-right: 20%;
-            text-align: center;
-            .profileImage {
-                flex: 1;
-                width: 100%;
-                max-width: 400px;
-                border-radius: 4px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                padding-left: 2rem;
-            }
-            @media (max-width: 900px) {
-                margin-right: 0;
-                align-self: center;
-                margin-bottom:1rem;
-              }
-        }
-        .pledgeList {
-          padding-left: 20px;
-          list-style-type: decimal;
-          font-size: 1.2rem;
-          line-height: 1.6;
-          color: $dark-blue;
-          @media (max-width: 600px) {
-            font-size:1rem;
-          }
-          li {
-            margin-bottom: 10px;
-          }
-        }
-        
+  .iconSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
 
-        .biographyList {
-          padding-left: 20px;
-          list-style-type: disc;
-          font-size: 1.2rem;
-          line-height: 1.8;
-          color: $dark-blue;
-          @media (max-width: 600px) {
-            font-size:1rem;
-          }
-          li {
-            margin-bottom: 10px;
-          }
-        }.List {
-          padding-left: 20px;
-          list-style-type: disc;
-          font-size: 1.2rem;
-          line-height: 1.8;
-          color: $dark-blue;
-          @media (max-width: 600px) {
-            font-size:1rem;
-          }
-          li {
-            margin-bottom: 10px;
-          }
-        }
-        
-        .textSection {
-            flex: 1;
-            text-align: left;
-            @media (max-width: 900px) {
-                text-align: center;
-              }
+    .iconItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-            h2 {
-                font-size: $font-size-biggest;
-                color: $primary-blue;
-                margin-bottom: 1rem;
-                font-weight: $font-weight-bold;
-                position: relative;
-                padding-bottom: 0.5rem;
-                text-transform: uppercase;
-                letter-spacing: 1px;
+      img { width: 50px; height: 50px; margin-bottom: 0.5rem; }
 
-                &::after {
-                    content: '';
-                    position: absolute;
-                    left: 0%; 
-                    
-                    bottom: 0;
-                    width: 50px;
-                    height: 3px;
-                    background-color: $hover-blue;
-                    border-radius: 3px;
-                    @media (max-width: 900px) {
-                       left:50%;
-                       transform: translateX(-50%); 
-                }
-            }
-            }
-
-            p {
-                font-size: $font-size-big;
-                line-height: 1.6;
-                margin-bottom: 1.5rem;
-                color: $dark-blue;
-                text-align: justify;
-            }
-        }
+      h2 {
+        font-size: $font-size-normal;
+        color: $primary-blue;
+        font-weight: $font-weight-medium;
+      }
     }
-
-    .iconSection {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 2rem;
-
-        .iconItem {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            img {
-                width: 50px;
-                height: 50px;
-                margin-bottom: 0.5rem;
-            }
-
-            h2 {
-                font-size: $font-size-normal;
-                color: $primary-blue;
-                font-weight: $font-weight-medium;
-            }
-        }
-    }
+  }
 }
