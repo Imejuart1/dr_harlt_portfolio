@@ -243,7 +243,7 @@ export const materialData = {
         media: [
           {
             type: "pdf",
-            src: "https://drive.google.com/file/u/0/d/18peA_W3mVj7-35xBPHrfTZRjkaJE3bqG/preview",
+            src: "/pdfs/newspine.pdf",
             title: "Recommended Spinal doctors.",
           },
         ],
