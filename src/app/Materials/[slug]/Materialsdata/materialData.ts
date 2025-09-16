@@ -192,7 +192,7 @@ export const materialData = {
         media: [
           {
             type: "pdf",
-            src: "https://docs.google.com/document/d/12u8IgcpJ77oXbt3JhP5NNdk7r25emwQa/edit?usp=sharing&ouid=112948707949812976493&rtpof=true&sd=true",
+            src: "/pdfs/Recommended Physical Therapists .pdf",
             title: "Recommended Physical Therapy Providers",
           },
           {

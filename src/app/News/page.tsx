@@ -247,8 +247,30 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
       )}
 
       {activeTab === "podcasts" && (
-
         <div className={styles.contentWrapper} id='#podcasts'>
+
+  <div className={styles.sectionReverse}>
+    <div className={styles.textContent}>
+      <h2>What&apos;s Brewing Globally? – Featuring Dr. Roger Hartl</h2>
+      <p>Listen to Dr. Roger Hartl discuss global neurosurgery perspectives and initiatives in this Spotify podcast episode.</p>
+      <a href="https://open.spotify.com/episode/2EIQp9HAD2DposeUNKrO6S?si=TBKBr7LTRm-SIyPuNXuTxQ" target="_blank" rel="noopener noreferrer">
+        Listen on Spotify
+      </a>
+    </div>
+    <div>
+    <iframe
+      src="https://open.spotify.com/embed/episode/2EIQp9HAD2DposeUNKrO6S?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      width="80%" 
+      height="232" 
+      frameBorder="0" 
+      scrolling="no"
+      className={styles.sectionImage}>
+    </iframe>
+    </div>
+  </div>
+
+
   <div className={styles.sectionReverse}>
     <div className={styles.textContent}>
       <h2>Enhancing Neurosurgical Capacity in Tanzania: Donation of Brainlab Cranial Navigation System</h2>
