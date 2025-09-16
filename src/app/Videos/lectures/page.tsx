@@ -33,7 +33,7 @@ const MaterialLecturesComponent: React.FC = () => {
   const lectureVideos = [
       {
     title: "Segmental Lordosis Restoration with Expandable Cervical Interbody Cages - Roger Härtl, MD",
-    src: "https://player.vimeo.com/video/1078359511",
+    src: "https://player.vimeo.com/video/1078359511?h=a5787ab73e" 
   },
     {
       title: "Dr. Roger Härtl on Global Neurosurgery Collaboration MOI/Dar Es Salaam Tanzania.",
