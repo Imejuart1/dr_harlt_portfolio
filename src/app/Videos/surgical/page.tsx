@@ -12,6 +12,14 @@ const SurgicalVideosComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/bNDthvkzlNs?si=_bK_Fa_tPSxA8DhJ",
     },
     {
+      title: "Transforaminal Lumbar Interbody Fusion (TLIF)",
+      src: "https://www.youtube.com/embed/KDQmEC7qvuc?si=L5Wo3sE_dyoqu4eZ",
+    },
+    {
+      title: "Minimally Invasive Tubular Discectomy for a Left L4/5 Far Lateral Disc Herniation",
+      src: "https://www.youtube.com/embed/CzryjLsYoXM?si=Jvs0J2hels5IHZvC" ,
+    },
+    {
       title: "Tubular MIS injection of BMAC after discectomy into intradiscal space",
       src: "https://www.youtube.com/embed/t3RTCaorCWE?si=FElaYu5gsHQKNy9w",
     },
@@ -22,6 +30,10 @@ const SurgicalVideosComponent: React.FC = () => {
     {
       title: "Posterior Cervical Foraminotomy (MIS PCF)",
       src: "https://www.youtube.com/embed/UTc3eNLauUw",
+    },
+     {
+      title: "NYC-MISS 2021 ULBD Surgical Demonstration - Weill Cornell Medicine CME",
+      src: "https://www.youtube.com/embed/mq1XA_APQZE?si=VM1XLEv-jOuYee1n",
     },
     {
       title: "MIS Microdiscectomy for Lumbar Giant Spinal Disc Herniation",
@@ -34,6 +46,14 @@ const SurgicalVideosComponent: React.FC = () => {
     {
       title: "MIS Lumbar Laminectomy and Contralateral Foraminotomy",
       src: "https://www.youtube.com/embed/B3xjrJ8kMpc",
+    },
+     {
+      title: "MIS Lumbar AR Tumor Resection (Augmented Reality)",
+      src: "https://www.youtube.com/embed/eirQBtNagiI?si=CxBxUpVYs8y3Jiof" ,
+    },
+    {
+      title: "MIS Dural Repair Technique",
+      src: "https://www.youtube.com/embed/9rJbNYdkAaE?si=ZiYFQlJwMPs0mhKc" ,
     },
     {
       title: "MIS L4-5 Over-the-Top ULBD for Lumbar Spinal Stenosis",
@@ -50,6 +70,18 @@ const SurgicalVideosComponent: React.FC = () => {
     {
       title: "Spinal Navigation Nuances - Roger Härtl, M.D.",
       src: "https://www.youtube.com/embed/CuFUrso3Orw?si=mOhCTmLMXAdVPZIY",
+    },
+     {
+      title: "Single Stage Lateral Lumbar Spine Interbody Fusion (MIS - SSLIF)",
+      src: "https://www.youtube.com/embed/9iXj1jAg5Vg?si=gpb44MLxG4XKEQ9I" ,
+    },
+    {
+      title: "Thoracic Spinal Cord Herniation Resection and Dural Repair",
+      src: "https://www.youtube.com/embed/NJ5nNi3-JvI?si=AMhrepqOa6w34wzA" ,
+    },
+     {
+      title: "MIS Over the Top ULBD for contralateral foraminal disc herniation",
+      src: "https://www.youtube.com/embed/SXAP0TNRbFM?si=uJ8xGKgqRTYoNPZV"  ,
     },
   ];
 
