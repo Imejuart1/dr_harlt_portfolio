@@ -7,6 +7,10 @@ const videoData = [
     title: "The Most Interesting Man in the World",
     src: "https://www.youtube.com/embed/GftHDs8fjps",
   },
+   {
+    title: "Patient Story 1",
+    src: "https://www.youtube.com/embed/cIUQPQxvTO8",
+  },
   {
     title: "Patient Story 1",
     src: "https://www.youtube.com/embed/kKOoUIsZVFg",

@@ -7,9 +7,7 @@ const videoData = [
   {
     title: 'Lecture Videos',
     videos: [
-      'https://www.youtube.com/embed/JvoIHZ8fnl0', 
-'https://www.youtube.com/embed/-Gv0lPB9v2U', 
-'https://www.youtube.com/embed/7jN4fx51lBo', 
+      'https://www.youtube.com/embed/NGr9cclDlnI', 
     ],
     link: '/Videos/lectures',
   },

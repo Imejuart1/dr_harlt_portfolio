@@ -7,6 +7,10 @@ const SurgicalVideosComponent: React.FC = () => {
 
   // ✅ Full list of videos 
   const surgicalVideos = [
+     {
+      title: "Spinal Navigation Nuances - Roger Härtl, M.D.",
+      src: "https://www.youtube.com/embed/CuFUrso3Orw?si=mOhCTmLMXAdVPZIY" ,
+    },
     {
       title: "Augmented Reality (AR) in a Spine Model",
       src: "https://www.youtube.com/embed/bNDthvkzlNs?si=_bK_Fa_tPSxA8DhJ",
@@ -68,10 +72,6 @@ const SurgicalVideosComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/9iXj1jAg5Vg",
     },
     {
-      title: "Spinal Navigation Nuances - Roger Härtl, M.D.",
-      src: "https://www.youtube.com/embed/CuFUrso3Orw?si=mOhCTmLMXAdVPZIY",
-    },
-     {
       title: "Single Stage Lateral Lumbar Spine Interbody Fusion (MIS - SSLIF)",
       src: "https://www.youtube.com/embed/9iXj1jAg5Vg?si=gpb44MLxG4XKEQ9I" ,
     },
@@ -85,7 +85,13 @@ const SurgicalVideosComponent: React.FC = () => {
     },
   ];
 
-  // ✅ Search filter
+    // ✅ Helper: extract YouTube video ID
+  const getYouTubeId = (url: string) => {
+    const match = url.match(/embed\/([^?]+)/);
+    return match ? match[1] : '';
+  };
+  
+ // ✅ Search filter
   const filteredVideos = surgicalVideos.filter((video) =>
     video.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -94,7 +100,7 @@ const SurgicalVideosComponent: React.FC = () => {
     <section className={styles.materialSection}>
       <div
         className={styles.heroSection}
-        style={{ backgroundImage: `url('/img/newhartl2.jpg')` }}
+        style={{ backgroundImage: `url('/img/Aboutme2.jpg')` }}
       >
         <div className={styles.content}>
           <h1>Surgical Videos</h1>
@@ -117,27 +123,30 @@ const SurgicalVideosComponent: React.FC = () => {
           />
         </div>
 
-        {/* ✅ Video Grid */}
+        {/* ✅ Thumbnail Grid */}
         <div className={styles.videoGrid}>
-          {filteredVideos.map((video, index) => (
-            <div key={index} className={styles.videoCard}>
-              <iframe
-                src={video.src}
-                allowFullScreen
-                width="100%"
-                height="250"
-              />
-              <h3>
+          {filteredVideos.map((video, index) => {
+            const videoId = getYouTubeId(video.src);
+            const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+
+            return (
+              <div key={index} className={styles.videoCard}>
                 <a
-                  href={video.src}
+                  href={video.src.replace('/embed/', '/watch?v=')}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {video.title}
+                  <img
+                    src={thumbnail}
+                    alt={video.title}
+                    className={styles.thumbnail}
+                  />
+                  <div className={styles.playButton}>▶</div>
                 </a>
-              </h3>
-            </div>
-          ))}
+                <h3>{video.title}</h3>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
