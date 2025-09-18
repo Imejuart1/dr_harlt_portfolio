@@ -155,7 +155,7 @@ const MaterialLecturesComponent: React.FC = () => {
   <div className={styles.videoGrid}>
   {filteredVideos.map((video, index) => (
     <div key={index} className={styles.videoCard}>
-      <iframe src={video.src} allowFullScreen width="100%" height="250" />
+      <iframe src={video.src} allowFullScreen width="100%" height="250"  allow="autoplay; fullscreen; picture-in-picture; encrypted-media"/>
       <h3>
       <a href={video.src} target="_blank" rel="noopener noreferrer">
           {video.title}
