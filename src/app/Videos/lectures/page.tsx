@@ -31,6 +31,10 @@ const MaterialLecturesComponent: React.FC = () => {
   }, []);
 
   const lectureVideos = [
+     {
+    title: "Dr. Härtl on Expandable Cervical Interbody Cages",
+    src: "https://www.youtube.com/embed/m-4G6DrD5Uo?si=WvDXrouSQ_jZhYJ5"  
+  },
       {
     title: "Segmental Lordosis Restoration with Expandable Cervical Interbody Cages - Roger Härtl, MD",
     src: "https://player.vimeo.com/video/1078359511?h=a5787ab73e" 
@@ -83,10 +87,41 @@ const MaterialLecturesComponent: React.FC = () => {
       title: "Vittorio Sella & Wilfred Thesiger Lecture",
       src: "https://www.youtube.com/embed/UEizbdwpi7A",
     }, 
-
-{
+    {
       title: "Complication Avoidance, Pearls of MIS Surgery ",
       src: "https://www.youtube.com/embed/Dc0LNYoouHE?si=M0ajRZ0QFpVuEEBn",
+    }, 
+     {
+      title: "Dr. Roger Hartl on Exploration, Neurosurgery, and Finding Balance in Life",
+      src: "https://www.youtube.com/embed/L968wcWuAxw?si=I1yUenK74V-SIakJ",
+    }, 
+    {
+      title: "Roger Härtl: MISS Target Philosophy",
+      src:"https://www.youtube.com/embed/t_dCS7HwlKk?si=HpsV_JTyIcKsdytp",
+    }, 
+    {
+      title: "Optimizing Alignment Occipitocervical Instability 2024",
+      src: "https://www.youtube.com/embed/Eo1GtDXxJYg?si=D9iFtrXDP2dev8Gz",
+    }, 
+     {
+      title: "Optimizing Alignment Occipitocervical Instability 2024",
+      src: "https://www.youtube.com/embed/Eo1GtDXxJYg?si=D9iFtrXDP2dev8Gz",
+    }, 
+    {
+      title: "NYC-MISS 2021 Cervical Laminoplasty Surgical Demonstration - Weill Cornell Medicine CME",
+      src: "https://www.youtube.com/embed/7puFVMZtB4w?si=EXwW0Ha1XRORwyBV" ,
+    }, 
+     {
+      title: "NYC-MISS 2021 Endoscopic Interlaminar Decompression - Weill Cornell CME",
+      src: "https://www.youtube.com/embed/i0TuHMstDA8?si=4M5Ql_0il9A2RLdB" ,
+    }, 
+     {
+      title: "NYC-MISS 2021 TLIF Surgical Demonstration - Weill Cornell Medicine CME",
+      src: "https://www.youtube.com/embed/2Ji0lny79Sk?si=ZuHRk3wy5NHCocOF"  ,
+    }, 
+     {
+      title: "MIS TLIF RealSpine Demo with 3D NAV and Augmented Reality",
+      src: "https://www.youtube.com/embed/h09Qi_IqDSY?si=CDfFyBx4J5ADGrqK"   ,
     }, 
     {
       title: "Dr. Roger Härtl on MISS Motion Sparing Surgery in the Cervical Spine.",
