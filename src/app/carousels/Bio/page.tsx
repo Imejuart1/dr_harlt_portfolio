@@ -71,6 +71,7 @@ const Bio: React.FC = () => {
               <li>Minimally Invasive Spinal Surgery</li>
               <li>Spinal Microsurgery</li>
               <li>Spinal Tumors</li>
+              <li>Thoracic disc Herniations</li>
               <li>Microdiscectomy</li>
               <li>Spondylolisthesis</li>
               <li>Minimally Invasive Spinal Fusion</li>
