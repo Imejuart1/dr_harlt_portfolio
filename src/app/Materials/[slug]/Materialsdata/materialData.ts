@@ -209,7 +209,7 @@ export const materialData = {
         media: [
           {
             type: "pdf",
-            src: "https://drive.google.com/file/d/1h8Kuc_TI3krQE0eYKBh38jP16zSAoIvu/preview",
+            src: "/pdfs/Recommended Chiropractors (2).pdf",
             title: "Recommended Physical Therapy Providers",
           },
           {/*{
