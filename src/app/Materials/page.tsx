@@ -43,8 +43,9 @@ const MaterialComponent: React.FC = () => {
       <div className={styles.materialLinks}>
         {/* Pre-Operative Information Section */}
         <div className={styles.materialGroup} id="pre-operative-information">
-          <h2>Pre-Operative Information</h2>
+          <h2>Spinal Procedure</h2>
           <ul>
+            <li><Link href="https://www.centinelspine.com/"  target='_blank'>Cervical and lumbar disc arthroplasty</Link></li>
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tubular-surgery">Surgical Guide for Minimally Invasive Tubular Surgery</Link></li>
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
