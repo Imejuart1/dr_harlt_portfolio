@@ -14,6 +14,13 @@ interface SurgeonReviewProps {
 }
 
 const surgeonReviews: SurgeonReviewProps[] = [
+   {
+    image: "/img/review10.jpg",
+    name: "Dr. Esteban Espinoza ",
+    title: "Neurosurgeon/Spine Surgeon",
+    location: "Hospital San Camilo, Chile",
+    review: `I would like to express my sincere gratitude to Dr. Roger Härtl for giving me the opportunity to observe and learn from him at Weill Cornell Medicine. My goal in coming to New York was to work alongside Dr. Härtl and deepen my knowledge of minimally invasive spine surgery (MISS), and this experience surpassed all my expectations. Observing his surgical technique, clinical reasoning, and leadership of the team both inside and outside the operating room was truly inspiring. I was particularly impressed by his genuine patient-centered approach, which combines precision and empathy in every decision. This experience has strengthened my commitment to advancing MISS in Chile and to sharing these principles with my colleagues and patients.`
+  },
   {
     image: "/img/indiaman.jpg",
     name: "Dr Hardik Darji ",
