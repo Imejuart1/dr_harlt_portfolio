@@ -69,7 +69,7 @@ const SurgeonReview: React.FC = () => {
     {/*<FontAwesomeIcon icon={faUserDoctor} className={styles.icon} fixedWidth/> */}
       Surgeon&apos;s Reviews
       </h2>
-    <p>See what top surgeon have to say about Dr. Härtl</p>
+    <p>See what other Spine surgeon have to say about Dr. Härtl</p>
   </div>
     <div className={styles.container}>
       {surgeonReviews.map((review, index) => (

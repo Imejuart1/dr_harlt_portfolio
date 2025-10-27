@@ -217,21 +217,6 @@ const Bio: React.FC = () => {
               </ul>
             </div>
           </div>
-
-          <div className={styles.section} aria-label="Helpful links">
-            <div className={styles.textSection}>
-              <h2>Next Steps</h2>
-              <p>
-                Learn about{' '}
-                <Link href="/treatments/minimally-invasive-spine-surgery">
-                  minimally invasive spine surgery
-                </Link>
-                , explore our{' '}
-                <Link href="/conditions/spinal-stenosis">spinal stenosis</Link> resources, or{' '}
-                <Link href="/Contact">request an appointment</Link>.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </>
