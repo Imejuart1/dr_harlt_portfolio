@@ -50,7 +50,7 @@ export const materialData = {
         media: [
           {
             type: "video",
-            src: "https://www.youtube.com/embed/_7WVuwZ1Odc",
+            src: "https://www.youtube.com/embed/KDQmEC7qvuc?si=N1gz1wUOlpF-ta9y",
             title: "Transforaminal Interbody Fusion of the Lumbar Spine (MIS TLIF)",
           },
           {
