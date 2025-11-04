@@ -19,8 +19,7 @@ const surgeonReviews: SurgeonReviewProps[] = [
     name: "Dr. Michele Incerti ",
     title: "Head of the Neurosurgery Unit at the Policlinico di Monza, Specialist in degenerative spinal pathologies, brain and spinal cord tumors.",
     location: "Parma, Emilia-Romagna, Italy",
-    review: `I am an italian neurosurgeon, 2 years ago i visited the department of Neurosurgery of Weill Cornell Hospital to improve my skills in mininvasive tubular neurosurgery.
-Prof Hartl is a top neurosurgeon, one of the most important spine surgeon, my experience was very useful in my clinical practice; i had the possibility to see many surgical interventions and to discuss in a very useful way about the surgical indications.`
+    review: `I am an Italian neurosurgeon, and two years ago I visited the Department of Neurosurgery at Weill Cornell Hospital to enhance my skills in minimally invasive tubular neurosurgery. Professor Hartl is an outstanding neurosurgeon and one of the most prominent spine surgeons in the field. My experience there was extremely valuable for my clinical practice, as I had the opportunity to observe numerous surgical procedures and engage in meaningful discussions about surgical indications.`
   },
    {
     image: "/img/review10.jpg",
