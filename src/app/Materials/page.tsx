@@ -43,7 +43,7 @@ const MaterialComponent: React.FC = () => {
       <div className={styles.materialLinks}>
         {/* Pre-Operative Information Section */}
         <div className={styles.materialGroup} id="pre-operative-information">
-          <h2>Spinal Procedure</h2>
+          <h2>Spinal Procedure/Pre-Operative Information</h2>
           <ul>
              <li><Link href="/pdfs/SpineHealthie Flyer.pdf"  target='_blank'>Spine Healthie - An App to Track Progress</Link></li>
             <li><Link href="/pdfs/MSC Information Sheet Draft 1.pdf"  target='_blank'>Lumbar Disc Augmentation with BMAC cells</Link></li>
@@ -53,7 +53,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-laminoplasty">Surgical Guide for Laminoplasty</Link></li>
             <li><Link href="https://www.nuvasive.com/procedures/ctdr/" target='_blank'>Cervical Disc Arthroplasty</Link></li>
-            <li><Link href="https://drive.google.com/file/d/1JxGHNL9sgi19ncuJDXJkeAtblMfRLsCi/view" target='_blank'>Occipitocervical Fusion</Link></li>
+            <li>Occipitocervical Fusion</li>
             <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
             <li><Link href="https://www.atlasspine.com/hijak-ac" target='_blank'>ACDF</Link></li>
           </ul>
