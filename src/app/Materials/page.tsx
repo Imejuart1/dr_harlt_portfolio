@@ -47,7 +47,9 @@ const MaterialComponent: React.FC = () => {
           <ul>
              <li><Link href="/pdfs/SpineHealthie Flyer.pdf"  target='_blank'>Spine Healthie - An App to Track Progress</Link></li>
             <li><Link href="/pdfs/MSC Information Sheet Draft 1.pdf"  target='_blank'>Lumbar Disc Augmentation with BMAC cells</Link></li>
-            <li><Link href="https://www.centinelspine.com/"  target='_blank'>Cervical and lumbar disc arthroplasty</Link></li>
+            <li><div style={{marginBottom:'10px'}}><Link href="https://www.centinelspine.com/"  target='_blank'>Cervical and lumbar disc Arthroplasty - Prodisc</Link></div>
+            <div><Link href="https://www.centinelspine.com/"  target='_blank'>Cervical and lumbar disc Arthroplasty - Simplify
+</Link></div></li>
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tubular-surgery">Surgical Guide for Minimally Invasive Tubular Surgery</Link></li>
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
