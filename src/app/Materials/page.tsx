@@ -54,10 +54,12 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-laminoplasty">Surgical Guide for Laminoplasty</Link></li>
-            <li><Link href="https://www.nuvasive.com/procedures/ctdr/" target='_blank'>Cervical Disc Arthroplasty</Link></li>
-            <li>Occipitocervical Fusion</li>
+            <li><Link href="">Occipitocervical Fusion</Link></li>
             <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
             <li><Link href="https://www.atlasspine.com/hijak-ac" target='_blank'>ACDF</Link></li>
+            <li><Link href="https://neurosurgery.weillcornell.org/och-spine-unit-opens-2n" target='_blank'>Private Spine floor: 2 North, 
+            Private Rooms,
+Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Link></li>
           </ul>
         </div>
         
@@ -72,9 +74,6 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/B.L.T">B.L.T. Video</Link></li>
             <li><Link href="https://www.rickysinghmd.com/exercises/" target='_blank'>Dr. Ricky Singh&apos;s Exercises &gt; 6 Weeks After Surgery</Link></li>
             <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
-            <li><Link href="https://neurosurgery.weillcornell.org/och-spine-unit-opens-2n" target='_blank'>Private Spine floor: 2 North, 
-            Private Rooms,
-Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Link></li>
           </ul>
         </div>
 
@@ -91,7 +90,7 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
             <li><Link href="/Materials/norman-marcus-pain-referral">Norman Marcus Pain Referral</Link></li>
             <li><Link href="/Materials/weill-cornell-imaging-locations">Weill Cornell Imaging Locations</Link></li>
             <li><Link href="/Materials/psychology-referrals">Psychology Referrals</Link></li>
-            <li><Link href="/Materials/hss-ortho-referrals">HSS Ortho Referrals</Link></li>
+            <li><Link href="/Materials/ortho-referrals">Ortho Referrals</Link></li>
           </ul>
         </div>
 

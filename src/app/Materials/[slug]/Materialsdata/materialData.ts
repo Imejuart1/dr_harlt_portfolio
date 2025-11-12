@@ -296,8 +296,8 @@ export const materialData = {
           },
         ],
       },
-      "hss-ortho-referrals" :{
-        title:"HSS Ortho Referrals.",
+      "ortho-referrals" :{
+        title:"Ortho Referrals.",
         content:
           "Explore Orthopedic Specialists for Special Surgery.",
         media: [
@@ -305,6 +305,12 @@ export const materialData = {
             type: "pdf",
             src: "https://drive.google.com/file/d/1SazAy4Q9BLPK8bexweTCo1Kj0TbQH5aK/preview",
             title: "Orthopedic Specialists at Hospital for Special Surgery",
+          },
+           {
+            type: "images",
+            src: "https://doctors.columbia.edu/us/ny/new-york/william-n-levine-md-161-fort-washington-avenue",
+            title: "William Levine.",
+            previewImage: "/img/William.jpg",
           },
         ],
       },
