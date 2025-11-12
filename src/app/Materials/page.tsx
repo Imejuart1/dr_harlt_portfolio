@@ -60,6 +60,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="https://neurosurgery.weillcornell.org/och-spine-unit-opens-2n" target='_blank'>Private Spine floor: 2 North, 
             Private Rooms,
 Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Link></li>
+            <li><Link href="https://smiss.org/patient-education-videos/" target='_blank'>Patient Education SMISS Videos</Link></li>
           </ul>
         </div>
         
@@ -114,7 +115,7 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
           <ul>
             <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
             <li><Link href="/Materials/spine-time">Spine Time-highlights from our patient education webinar</Link></li>
-            <li><Link href="https://smiss.org/patient-education-videos/" target='_blank'>Patient Education SMISS Videos</Link></li>
+            
             <li><Link href="https://www.nyp.org/ochspine/services" target='_blank'>About Och Spine Hospital</Link></li>
             <li><Link href="/Materials/finding-balance-neurosurgery">Finding Your Balance in Neurosurgery</Link></li>
             {/*<li><Link href="/Materials/other">Art & Spine</Link></li>*/}
