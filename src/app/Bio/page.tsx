@@ -190,6 +190,24 @@ patients.
     <ul className={styles.publicationList}>
       {[
         {
+  title: 'Safety and effectiveness of expandable cages in ACDF: clinical study summary.',
+  authors: 'Hartl R, et al.',
+  journal: 'Becker’s Spine Review',
+  year: 2025,
+  pmid: null, // or the PMID of the actual academic publication
+  free: false,
+  link: 'https://www.beckersspine.com/spine/study-affirms-safety-effectiveness-of-expandable-cages-in-acdf/'
+},
+{
+  title: 'Expandable cages in TLIF are not one-size-fits-all: study analysis.',
+  authors: 'Hartl R, et al.',
+  journal: 'Becker’s Spine Review',
+  year: 2025,
+  pmid: null,
+  free: false,
+  link: 'https://www.beckersspine.com/spine/expandable-cages-arent-a-one-size-fits-all-solution-for-tlif-study/'
+},
+        {
           title: 'Introduction. Robotics in the neurosurgical operating room.',
           authors: 'Vajkoczy P, et al. Among authors: hartl r.',
           journal: 'Neurosurg Focus',
@@ -271,17 +289,32 @@ patients.
         },
         // Add more publications as needed
       ].map((publication, index) => (
-        <li key={index} className={styles.publicationItem}>
-          <h3>{publication.title}</h3>
-          <p>{publication.authors}</p>
-          <p>
-            <em>{publication.journal}</em>, {publication.year}. PMID: {publication.pmid}.
-            {publication.free && (
-              <span className={styles.freeBadge}>Free PMC article</span>
-            )}
-          </p>
-        </li>
-      ))}
+  <li key={index} className={styles.publicationItem}>
+    <h3>
+      {publication.link ? (
+        <a 
+          href={publication.link} 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          {publication.title}
+        </a>
+      ) : (
+        publication.title
+      )}
+    </h3>
+
+    <p>{publication.authors}</p>
+
+    <p>
+      <em>{publication.journal}</em>, {publication.year}. 
+      PMID: {publication.pmid}.
+      {publication.free && (
+        <span className={styles.freeBadge}>Free PMC article</span>
+      )}
+    </p>
+  </li>
+))}
     </ul>
     <div className={styles.seeMore}>
       <a
