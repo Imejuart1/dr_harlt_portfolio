@@ -49,12 +49,11 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/pdfs/MSC Information Sheet Draft 1.pdf"  target='_blank'>Lumbar Disc Augmentation with BMAC cells</Link></li>
             <li><Link href="https://www.centinelspine.com/"  target='_blank'>Cervical and lumbar disc Arthroplasty - Prodisc</Link></li>
             <li><Link href="https://www.centinelspine.com/"  target='_blank'>Cervical and lumbar disc Arthroplasty - Simplify</Link></li>
+            <li><Link href="/Materials/minimally-invasive-spinal-surgery"  target='_blank'>Minimally Invasive Spinal Surgery</Link></li>
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tubular-surgery">Surgical Guide for Minimally Invasive Tubular Surgery</Link></li>
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-laminoplasty">Surgical Guide for Laminoplasty</Link></li>
-            <li><Link href="">Occipitocervical Fusion</Link></li>
-            <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
             <li><Link href="https://www.atlasspine.com/hijak-ac" target='_blank'>ACDF</Link></li>
             <li><Link href="https://neurosurgery.weillcornell.org/och-spine-unit-opens-2n" target='_blank'>Private Spine floor: 2 North, 
             Private Rooms,
@@ -73,7 +72,7 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
             <li><Link href="/Materials/post-op-activity-timeline">Post-Op Activity Timeline</Link></li>
             <li><Link href="/Materials/B.L.T">B.L.T. Video</Link></li>
             <li><Link href="https://www.rickysinghmd.com/exercises/" target='_blank'>Dr. Ricky Singh&apos;s Exercises &gt; 6 Weeks After Surgery</Link></li>
-            <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation</Link></li>
+            <li><Link href="https://spinehealth.org/" target='_blank'>National Spine Health Foundation / Resources for Patients</Link></li>
           </ul>
         </div>
 

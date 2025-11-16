@@ -65,6 +65,19 @@ export const materialData = {
             previewImage: "/img/surgy1.png",
           },
         ],
+      }, 
+        "minimally-invasive-spinal-surgery": {
+        title: "Minimally Invasive Spinal Surgery",
+        content:
+          "Explore detailed guides for Minimally Invasive Spinal Surgery.",
+        media: [
+          {
+            type: "images",
+            src: "/img/miss.png",
+            title: "Minimally Invasive Spinal Surgery.",
+            previewImage: "/img/miss.png",
+          },
+        ],
       },
       "surgical-guide-elif-xlif-llif-dlif" :{
         title: "Minimally invasive spinal fusion",
