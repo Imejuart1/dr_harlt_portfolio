@@ -109,6 +109,42 @@ const HonorsAndAwardsPage: React.FC = () => {
       {activeTab === "news" && (
         <div className={styles.contentWrapper} id='#news'>
 <div className={styles.sectionReverse}>
+<a 
+  href="https://www.beckersspine.com/spine/expandable-cages-arent-a-one-size-fits-all-solution-for-tlif-study/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <img 
+    src="/img/expandable.png" 
+    alt="Expandable Cage TLIF" 
+    className={styles.sectionImage} 
+    style={{ objectFit: 'contain' }} 
+  />
+</a>
+
+<div className={styles.textContent}>
+  <h2>Expandable Cages Are Not a One-Size-Fits-All Solution for TLIF</h2>
+
+  <p>
+    Becker’s also covered Dr. Härtl’s comparative study analyzing two 
+    different lumbar expandable cage designs in minimally invasive TLIF.
+  </p>
+
+  <p>
+    The research showed that cage design heavily influences outcomes, 
+    stressing the importance of personalized implant choice.
+  </p>
+
+  <a 
+    href="https://www.beckersspine.com/spine/expandable-cages-arent-a-one-size-fits-all-solution-for-tlif-study/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Read more
+  </a>
+</div>
+</div>
+<div className={styles.sectionReverse}>
   <a href="https://www.nyp.org/advances/article/neurology-neurosurgery/stemming-the-tide-of-disc-degeneration-after-microdiscectomy#:~:text=That%20puts%20every%20patient%20who,level%20from%20the%20same%20side." target="_blank" rel="noopener noreferrer">
     <img src="/img/father.png" alt="News 1" className={styles.sectionImage} style={{objectFit:'contain'}} />
   </a>
@@ -120,6 +156,43 @@ const HonorsAndAwardsPage: React.FC = () => {
     <p>The Prelate continues fulfilling his obligations from home.</p>
     <a href="https://armenianprelacy.org/2024/05/30/update-on-prelates-health/" target="_blank" rel="noopener noreferrer">Read more</a>
   </div>
+</div>
+
+<div className={styles.sectionReverse}>
+<a 
+  href="https://www.beckersspine.com/spine/study-affirms-safety-effectiveness-of-expandable-cages-in-acdf/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <img 
+    src="/img/roger.jpg" 
+    alt="Expandable Cage ACDF" 
+    className={styles.sectionImage} 
+    style={{ objectFit: 'contain' }} 
+  />
+</a>
+
+<div className={styles.textContent}>
+  <h2>Study Affirms Safety and Effectiveness of Expandable Cages in ACDF</h2>
+
+  <p>
+    Becker’s Spine Review featured Dr. Roger Härtl’s study on the clinical 
+    and radiological results of expandable titanium cages used in ACDF.
+  </p>
+
+  <p>
+    The study demonstrates improved ability to correct cervical deformities 
+    and highlights the role of expandable technology in personalized spine surgery.
+  </p>
+
+  <a 
+    href="https://www.beckersspine.com/spine/study-affirms-safety-effectiveness-of-expandable-cages-in-acdf/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Read more
+  </a>
+</div>
 </div>
 
   <div className={styles.section}>
