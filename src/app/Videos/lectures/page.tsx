@@ -31,6 +31,12 @@ const MaterialLecturesComponent: React.FC = () => {
   }, []);
 
   const lectureVideos = [
+    {
+  title: "Year in Review 2025: Updates in Minimally Invasive Spine Surgery",
+  src: "https://www.vumedi.com/video/year-in-review-2025-updates-in-minimally-invasive-spine-surgery/InllYXItaW4tcmV2aWV3LTIwMjUtdXBkYXRlcy1pbi1taW5pbWFsbHktaW52YXNpdmUtc3BpbmUtc3VyZ2VyeSI:1vXe63:yJRTJovHYPqNdgGhFk1c8J3Rgs8Iv-4hHuTmQCH54Hk/",
+  external: true,
+  thumbnail: "/img/imagedoc.jpg", // local image
+   },
      {
     title: "Dr. Härtl on Expandable Cervical Interbody Cages",
     src: "https://www.youtube.com/embed/m-4G6DrD5Uo?si=WvDXrouSQ_jZhYJ5"  
@@ -189,15 +195,37 @@ const MaterialLecturesComponent: React.FC = () => {
 
   <div className={styles.videoGrid}>
   {filteredVideos.map((video, index) => (
-    <div key={index} className={styles.videoCard}>
-      <iframe src={video.src} allowFullScreen width="100%" height="250"  allow="autoplay; fullscreen; picture-in-picture; encrypted-media"/>
-      <h3>
-      <a href={video.src} target="_blank" rel="noopener noreferrer">
-          {video.title}
-        </a>
-        </h3>
-    </div>
-  ))}
+  <div key={index} className={styles.videoCard}>
+    {video.external ? (
+      <a
+        href={video.src}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.externalVideo}
+      >
+        <img
+          src={video.thumbnail}
+          alt={video.title}
+          className={styles.thumbnail}
+        />
+        <div className={styles.overlay}>
+          ▶ Watch on VuMedi
+        </div>
+      </a>
+    ) : (
+      <iframe
+        src={video.src}
+        allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+        allowFullScreen
+        width="100%"
+        height="250"
+      />
+    )}
+
+    <h3>{video.title}</h3>
+  </div>
+))}
+
 </div>
 <div className={styles.materialLinks}>
     <div className={styles.materialGroup} id="youtube-education">
