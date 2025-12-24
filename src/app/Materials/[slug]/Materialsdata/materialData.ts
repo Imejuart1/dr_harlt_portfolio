@@ -64,6 +64,12 @@ export const materialData = {
             title: "Surgical Guide for Minimally Invasive Tubular Surgery",
             previewImage: "/img/surgy1.png",
           },
+          {
+            type: "pdf",
+            src: "/pdfs/Kartal.pdf",
+            title: "Ten-step technique for navigated tubular transforaminal and extraforaminal lumbar interbody fusion",
+            previewImage: "/img/surgy1.png",
+          },
         ],
       }, 
         "minimally-invasive-spinal-surgery": {
