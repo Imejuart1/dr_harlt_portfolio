@@ -108,6 +108,45 @@ const HonorsAndAwardsPage: React.FC = () => {
  
       {activeTab === "news" && (
         <div className={styles.contentWrapper} id='#news'>
+          <div className={styles.sectionReverse}>
+  <a
+    href="https://www.beckersspine.com/spine/preventing-reherniation-addressing-spine-surgerys-unsolved-problem/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="/img/jartl.png"
+      alt="Preventing Reherniation in Spine Surgery"
+      className={styles.sectionImage}
+      style={{ objectFit: 'contain' }}
+    />
+  </a>
+
+  <div className={styles.textContent}>
+    <h2>Preventing Reherniation: Addressing Spine Surgery’s Unsolved Problem</h2>
+
+    <p>
+      Becker’s Spine Review featured Dr. Roger Härtl discussing one of the most
+      persistent challenges in spine surgery — recurrent disc reherniation
+      following discectomy.
+    </p>
+
+    <p>
+      Dr. Härtl highlighted emerging innovations in spine biologics, annular
+      repair, and AI-assisted surgical workflows, emphasizing that biological
+      interventions may hold the key to long-term disc repair and regeneration.
+    </p>
+
+    <a
+      href="https://www.beckersspine.com/spine/preventing-reherniation-addressing-spine-surgerys-unsolved-problem/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Read more
+    </a>
+  </div>
+</div>
+
 <div className={styles.sectionReverse}>
 <a 
   href="https://www.beckersspine.com/spine/expandable-cages-arent-a-one-size-fits-all-solution-for-tlif-study/" 
