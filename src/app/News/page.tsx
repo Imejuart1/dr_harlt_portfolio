@@ -401,6 +401,47 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
 
       {activeTab === "podcasts" && (
         <div className={styles.contentWrapper} id='#podcasts'>
+          <div className={styles.section}>
+
+  <div className={styles.textContent}>
+    <h2>Dr. Roger Härtl on AI, Biologics & Minimally Invasive Spine Innovation</h2>
+
+    <p>
+      Becker’s Healthcare Podcast featured Dr. Roger Härtl, M.D., Director of
+      Neurosurgery Spine at Weill Cornell Medicine and Neurosurgical Director of
+      Och Spine at NewYork-Presbyterian/Weill Cornell Medical Center, discussing
+      the technologies shaping the next era of spine care.
+    </p>
+
+    <p>
+      In the episode, Dr. Härtl highlights the growing impact of AI-assisted
+      imaging and automated segmentation, advances in biologics for disc
+      regeneration, and workflow improvements in minimally invasive spine
+      surgery.
+    </p>
+
+    <a
+      href="https://podcasts.apple.com/us/podcast/roger-hartl-md-director-of-neurosurgery-spine-at/id1512530263?i=1000745315784"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Listen now
+    </a>
+  </div>
+    <a
+    href="https://podcasts.apple.com/us/podcast/roger-hartl-md-director-of-neurosurgery-spine-at/id1512530263?i=1000745315784"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="/img/AI.png"
+      alt="Dr. Roger Härtl on AI, Biologics & Minimally Invasive Spine Surgery"
+      className={styles.sectionImage}
+      style={{ objectFit: "contain" }}
+    />
+  </a>
+
+</div>
 
   <div className={styles.sectionReverse}>
     <div className={styles.textContent}>
