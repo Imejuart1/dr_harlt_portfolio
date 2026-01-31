@@ -632,6 +632,12 @@ export const materialData = {
         media: [
           {
             type: "video",
+            src: "https://www.youtube.com/embed/gX7_LBE05x4?si=DQUOWEGCvUV3d1QX",
+            title: "The Explorer’s Eye",
+            previewImage: "/img/hartltalk.jpg",
+          },
+          {
+            type: "video",
             src: "https://www.youtube.com/embed/UEizbdwpi7A?si=Krnmkq3zkV0gzbyf",
             title: "Vittorio Sella and Wilfred Thesiger: Photographs at the Edge",
             previewImage: "/img/Photographs at the end.png",
