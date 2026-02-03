@@ -57,9 +57,14 @@ const MediaCardComponent: React.FC<MediaCardProps> = ({ type, src, src2 , title,
             <div className={styles.pdfHeader}>
               <h2>{title}</h2>
              <div className={styles.pdfActions}>
-                <a href={src} target="_blank" rel="noopener noreferrer" className={styles.pdfLink}>
-                  READ
-                </a>
+               <a 
+  href={src} 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className={styles.pdfLink}
+>
+  {src?.includes("ebay.com") ? "BUY IT ON EBAY" : "READ"}
+</a>
               </div>
               </div>}
             <img src={previewImage} alt={`Preview of ${title}`} className={styles.pdfPreviewImage} />
