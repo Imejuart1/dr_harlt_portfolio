@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.scss';
 import Popup from '../../../components/Popup'; // Import the Popup component
+import ReCAPTCHA from "react-google-recaptcha";
+import { useRef } from "react";
+
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +15,7 @@ const Contact: React.FC = () => {
   const [currentMapIndex, setCurrentMapIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const [popup, setPopup] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -21,31 +25,45 @@ const Contact: React.FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
+  e.preventDefault();
 
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+  const captchaToken = recaptchaRef.current?.getValue();
 
-      const result = await response.json();
-      if (result.success) {
-        setPopup({ message: 'Message sent successfully!', type: 'success' });
-      } else {
-        setPopup({ message: 'Failed to send message.', type: 'error' });
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      setPopup({ message: 'An error occurred. Please try again.', type: 'error' });
-    }finally {
-      setLoading(false); 
+  if (!captchaToken) {
+    setPopup({ message: "Please complete the CAPTCHA", type: "error" });
+    return;
+  }
+
+  setLoading(true);
+
+  try {
+    const response = await fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        ...formData,
+        captchaToken,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setPopup({ message: 'Message sent successfully!', type: 'success' });
+      recaptchaRef.current?.reset();
+    } else {
+      setPopup({ message: 'Failed to send message.', type: 'error' });
     }
-  };
+
+  } catch (error) {
+    setPopup({ message: 'An error occurred.', type: 'error' });
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   const handleClosePopup = () => {
     setPopup(null); 
@@ -163,6 +181,11 @@ const Contact: React.FC = () => {
                 required
               ></textarea>
             </div>
+            <ReCAPTCHA
+  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+  ref={recaptchaRef}
+/>
+
             <button type="submit" className={styles.submitButton} disabled={loading}>
                {loading ? <span className={styles.spinner}></span> : 'Send Message'}
               </button>

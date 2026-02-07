@@ -2,7 +2,28 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
-  const { name, email, message } = await request.json();
+  const { name, email, message, captchaToken } = await request.json();
+
+   const verifyRes = await fetch(
+    "https://www.google.com/recaptcha/api/siteverify",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${captchaToken}`,
+    }
+  );
+
+  const verifyData = await verifyRes.json();
+
+  if (!verifyData.success) {
+    return NextResponse.json({
+      success: false,
+      message: "Captcha failed",
+    });
+  }
+
 
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
