@@ -4,7 +4,8 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
   const { name, email, message, captchaToken } = await request.json();
 
-   const verifyRes = await fetch(
+     // ✅ Verify reCAPTCHA v3
+  const verifyRes = await fetch(
     "https://www.google.com/recaptcha/api/siteverify",
     {
       method: "POST",
@@ -17,10 +18,13 @@ export async function POST(request: Request) {
 
   const verifyData = await verifyRes.json();
 
-  if (!verifyData.success) {
+  console.log("reCAPTCHA result:", verifyData);
+
+  // ✅ v3 Score Check (IMPORTANT)
+  if (!verifyData.success || verifyData.score < 0.5) {
     return NextResponse.json({
       success: false,
-      message: "Captcha failed",
+      message: "Spam detected",
     });
   }
 
