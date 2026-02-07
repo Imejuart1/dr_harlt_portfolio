@@ -2,9 +2,7 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.scss';
 import Popup from '../../../components/Popup'; // Import the Popup component
-import ReCAPTCHA from "react-google-recaptcha";
-import { useRef } from "react";
-
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -15,7 +13,7 @@ const Contact: React.FC = () => {
   const [currentMapIndex, setCurrentMapIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const [popup, setPopup] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+const { executeRecaptcha } = useGoogleReCaptcha();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -27,12 +25,12 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
-  const captchaToken = recaptchaRef.current?.getValue();
-
-  if (!captchaToken) {
-    setPopup({ message: "Please complete the CAPTCHA", type: "error" });
+  if (!executeRecaptcha) {
+    setPopup({ message: "Captcha not ready", type: "error" });
     return;
   }
+
+  const captchaToken = await executeRecaptcha("contact_form");
 
   setLoading(true);
 
@@ -52,12 +50,11 @@ const Contact: React.FC = () => {
 
     if (result.success) {
       setPopup({ message: 'Message sent successfully!', type: 'success' });
-      recaptchaRef.current?.reset();
     } else {
       setPopup({ message: 'Failed to send message.', type: 'error' });
     }
 
-  } catch (error) {
+  } catch {
     setPopup({ message: 'An error occurred.', type: 'error' });
   } finally {
     setLoading(false);
@@ -181,10 +178,6 @@ const Contact: React.FC = () => {
                 required
               ></textarea>
             </div>
-            <ReCAPTCHA
-  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-  ref={recaptchaRef}
-/>
 
             <button type="submit" className={styles.submitButton} disabled={loading}>
                {loading ? <span className={styles.spinner}></span> : 'Send Message'}

@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import RecaptchaProvider from "../components/RecaptchaProvider";
 config.autoAddCss = false;
 
 import type { Metadata, Viewport } from "next";
@@ -108,10 +109,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>
+          <RecaptchaProvider>
         <Header />
         {children}
         <Footer />
-
+</RecaptchaProvider>
         {/* If you keep these preloads, make sure the files exist.
            Note: In Next.js, best practice is to use <Image priority /> on your hero images. */}
         <link rel="preload" href="/img/Aboutme2.jpg" as="image" />
