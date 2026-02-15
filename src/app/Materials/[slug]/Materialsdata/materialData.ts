@@ -133,7 +133,7 @@ export const materialData = {
           },
           {
             type: "pdf",
-            src: "https://drive.google.com/file/d/1YfdNDpN8uOe7FmRs-qR5JUOwbi5n6eI4/preview",
+            src: "/pdfs/postoptimeline.pdf",
             title: "Post OP Activity Timeline",
             previewImage: "/img/surgy1.png",
           },
