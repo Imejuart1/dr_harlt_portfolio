@@ -1,26 +1,26 @@
 // materialData.ts
 export const materialData = {
-    "surgical-guide-minimally-invasive-tubular-surgery": {
+    "Minimally-Invasive-lumbar-tubular-laminectomy": {
       title: "Minimally Invasive Tubular Surgery Resources",
       content:
         "Explore detailed guides and instructional videos for minimally invasive tubular surgery.",
       media: [
-        {
+        /*{
           type: "video",
           src: "https://www.youtube.com/embed/nQOpQtxvtDI",
           title: "Cervical ULBD MIS Tubular",
-        },
+        },*/
         {
           type: "pdf",
           src: "https://drive.google.com/file/u/0/d/1O4sU1-072nwh5Sb9NNRhYKHPE5jS_D1_/preview",
           title: "Surgical Guide for Minimally Invasive Tubular Surgery",
           previewImage: "/img/surgy1.png",
         },
-        {
+        /*{
           type: "video",
           src: "https://www.youtube.com/embed/UTc3eNLauUw",
           title: "Posterior Cervical Foraminotomy (MIS PCF)",
-        },
+        },*/
         {
           type: "video",
           src: "https://www.youtube.com/embed/O7m0paEhn60",
@@ -41,6 +41,46 @@ export const materialData = {
           src: "https://www.youtube.com/embed/AfsXdKMvRrc",
           title: "MIS L4-5 Over-the-Top ULBD for Lumbar Spinal Stenosis",
         },
+      ],
+    },"minimally-invasive-cervical-tubular-discectomy": {
+      title: "Minimally Invasive cervical tubular discectomy",
+      content:
+        "Explore detailed guides and instructional videos for minimally invasive cervical tubular discectomy.",
+      media: [
+        {
+          type: "video",
+          src: "https://www.youtube.com/embed/nQOpQtxvtDI",
+          title: "Cervical ULBD MIS Tubular",
+        },
+        {
+          type: "pdf",
+          src: "/pdfs/Posterior foraminotomy.pdf",
+          title: "Posterior foraminotomy", 
+          previewImage: "/img/surgy1.png",
+        },
+         {
+            type: "images",
+            src: "https://surgeryreference.aofoundation.org/spine/degenerative/cervical/disc-herniation/posterior-microscopic-tubular-cervical-foraminotomy",
+            title: "Posterior microscopic tubular cervical for aminotomy.",
+            previewImage: "/img/newchng1.jpg",
+          },
+        {
+          type: "video",
+          src: "https://www.youtube.com/embed/UTc3eNLauUw",
+          title: "Posterior Cervical Foraminotomy (MIS PCF)",
+        },
+      ],
+    },"minimally-invasive-lateral-lumbar-tubular-foraminotomy-discectomy": {
+      title: "Minimally invasive for lateral lumbar tubular for aminotomy",
+      content:
+        "Explore detailed guides and instructional videos for minimally invasive lateral lumbar tubular.",
+      media: [
+         {
+            type: "images",
+            src: "https://surgeryreference.aofoundation.org/spine/degenerative/lumbar/disc-herniation-foraminal-extraforaminal/extraforaminal-microscopic-tubular-lumbar-discectomy",
+            title: "Extraforaminal microscopic tubular lumbar discectomy (EMTLD).",
+            previewImage: "/img/newchng2.jpg",
+          },
       ],
     },
     "surgical-guide-minimally-invasive-tlif": {
@@ -69,6 +109,12 @@ export const materialData = {
             src: "/pdfs/Kartal.pdf",
             title: "Ten-step technique for navigated tubular transforaminal and extraforaminal lumbar interbody fusion",
             previewImage: "/img/surgy1.png",
+          },
+            {
+            type: "images",
+            src: "https://surgeryreference.aofoundation.org/spine/degenerative/lumbar/spinal-stenosis/miss-transforaminal-lumbar-interbody-fusion",
+            title: "MISS Transforaminal lumbar interbody fusion (TLIF).",
+            previewImage: "/img/newchng3.jpg",
           },
         ],
       }, 
