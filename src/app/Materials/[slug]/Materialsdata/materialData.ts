@@ -11,6 +11,12 @@ export const materialData = {
           title: "Cervical ULBD MIS Tubular",
         },*/
         {
+            type: "images",
+            src: "https://surgeryreference.aofoundation.org/spine/degenerative/lumbar/spinal-stenosis/microscopic-tubular-unilateral-laminotomy-for-bilateral-decompression#introduction",
+            title: "Microscopic tubular unilateral laminotomy for bilateral decompression (MT-ULBD).",
+            previewImage: "/img/newchng4.jpg",
+          },
+        {
           type: "pdf",
           src: "https://drive.google.com/file/u/0/d/1O4sU1-072nwh5Sb9NNRhYKHPE5jS_D1_/preview",
           title: "Surgical Guide for Minimally Invasive Tubular Surgery",
@@ -71,7 +77,7 @@ export const materialData = {
         },
       ],
     },"minimally-invasive-lateral-lumbar-tubular-foraminotomy-discectomy": {
-      title: "Minimally invasive for lateral lumbar tubular for aminotomy",
+      title: "Minimally invasive for lateral lumbar tubular foraminotomy",
       content:
         "Explore detailed guides and instructional videos for minimally invasive lateral lumbar tubular.",
       media: [
@@ -81,7 +87,13 @@ export const materialData = {
             title: "Extraforaminal microscopic tubular lumbar discectomy (EMTLD).",
             previewImage: "/img/newchng2.jpg",
           },
+          {
+            type: "video",
+            src: "https://www.youtube.com/embed/CzryjLsYoXM?si=AA2FE2ps5mq4YNWW",
+            title: "Minimally Invasive Tubular Discectomy for a Left L4/5 Far Lateral Disc Herniation",
+          },
       ],
+
     },
     "surgical-guide-minimally-invasive-tlif": {
         title: "Minimally Invasive TLIF",
