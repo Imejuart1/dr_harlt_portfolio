@@ -31,6 +31,12 @@ const MaterialLecturesComponent: React.FC = () => {
   }, []);
 
   const lectureVideos = [
+     {
+  title: "Through Endurance We Conquer Building an Academic Spine Center",
+  src: "https://youtu.be/UKPczenDaD4?si=7fkDWgJ0mFuIdhjr",
+  external: true,
+  thumbnail: "/img/endurance.jpg", // local image
+   },
     {
   title: "Year in Review 2025: Updates in Minimally Invasive Spine Surgery",
   src: "https://www.vumedi.com/video/year-in-review-2025-updates-in-minimally-invasive-spine-surgery/InllYXItaW4tcmV2aWV3LTIwMjUtdXBkYXRlcy1pbi1taW5pbWFsbHktaW52YXNpdmUtc3BpbmUtc3VyZ2VyeSI:1vXe63:yJRTJovHYPqNdgGhFk1c8J3Rgs8Iv-4hHuTmQCH54Hk/",
