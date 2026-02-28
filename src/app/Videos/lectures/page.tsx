@@ -33,9 +33,9 @@ const MaterialLecturesComponent: React.FC = () => {
   const lectureVideos = [
      {
   title: "Through Endurance We Conquer Building an Academic Spine Center",
-  src: "https://youtu.be/UKPczenDaD4?si=7fkDWgJ0mFuIdhjr",
-  external: true,
-  thumbnail: "/img/endurance.jpg", // local image
+  src: "https://www.youtube.com/embed/UKPczenDaD4?si=0EI5pPtsAO3gA4XW",
+ //external: true,
+  //thumbnail: "/img/endurance.jpg", // local image
    },
     {
   title: "Year in Review 2025: Updates in Minimally Invasive Spine Surgery",
