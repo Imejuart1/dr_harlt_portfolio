@@ -401,6 +401,23 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
 
       {activeTab === "podcasts" && (
         <div className={styles.contentWrapper} id='#podcasts'>
+            <div className={styles.sectionReverse}>
+    <div className={styles.textContent}>
+      <h2>Evening with a Spine Surgeon - Roger Härtl, MD.</h2>
+      <p>Evening with a Spine Surgeon - Roger Härtl, MD from
+Seattle Science Foundation</p>
+      <a href="https://www.youtube.com/live/A9oTWIfXfUc?si=XuJdz6aOT5NtQdJ1" target="_blank" rel="noopener noreferrer">View Interview</a>
+    </div>
+    <iframe
+      src="https://www.youtube.com/embed/A9oTWIfXfUc?si=2atWnIRvXSX5W3KF"
+      allowFullScreen
+      width="100%" 
+      height="400" 
+      frameBorder="0" 
+      className={styles.sectionImage}>
+    </iframe>
+  </div>
+
           <div className={styles.section}>
 
   <div className={styles.textContent}>
