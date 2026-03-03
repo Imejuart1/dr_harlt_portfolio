@@ -408,7 +408,7 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
 Seattle Science Foundation</p>
       <a href="https://www.youtube.com/live/A9oTWIfXfUc?si=XuJdz6aOT5NtQdJ1" target="_blank" rel="noopener noreferrer">View Interview</a>
     </div>
-   <img src="/img/evening.jpeg" alt="hart seattle" className={styles.sectionImage} />
+   <img src="/img/evening.jpg" alt="hart seattle" className={styles.sectionImage} style={{ objectFit: "contain" }}/>
   </div>
 
           <div className={styles.section}>
