@@ -43,6 +43,7 @@ const Footer: React.FC = () => {
             <p><strong>Address:</strong> 525 East 59th Street, New York, NY 10065</p>
             <p><strong>Phone:</strong> (212) 746-2152</p>
             <p><strong>Email:</strong> hartlspine@med.cornell.edu</p>
+            <p><strong>Patient Stories:</strong> <a href="https://neurosurgery.weillcornell.org/patient-stories?faculty_id=703" target="_blank" rel="noopener noreferrer">View Patient Stories</a></p>
           </div>
           </div>
              {/* Trust Items Section */}
