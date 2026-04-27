@@ -3,6 +3,14 @@ import React, { useState } from 'react';
 import styles from './Contact.module.scss';
 import Popup from '../../../components/Popup'; // Import the Popup component
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import {
+  officeEmail,
+  officeFax,
+  officePhone,
+  practiceName,
+  primaryOffice,
+  secondaryOffice,
+} from '../../lib/site';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -88,9 +96,8 @@ const { executeRecaptcha } = useGoogleReCaptcha();
     <section className={styles.contactSection}>
       <div className={styles.heroSection}>
         <div className={styles.contactContent}>
-          <h1>Contact</h1>
-          <h1>Dr. Roger Härtl</h1>
-          <p>Och Spine at NewYork-Presbyterian at the Weill Cornell Medicine Center for Comprehensive Spine Care</p>
+          <h1>Contact Roger Hartl, MD</h1>
+          <p>Spine surgeon in New York at {practiceName}</p>
 
           
           <div className={styles.mapControls}>
@@ -124,27 +131,27 @@ const { executeRecaptcha } = useGoogleReCaptcha();
             <h2>Office Location</h2>
             <div>
             <span><b>PRIMARY OFFICE:</b></span>
-            <p>240 East 59th Street, 2nd Floor<br />New York, NY 10022</p>
+            <p>{primaryOffice.fullStreet}<br />{primaryOffice.city}, {primaryOffice.region} {primaryOffice.postalCode}</p>
             </div>
             <div>
             <span><b>ON WEDNESDAY:</b></span> 
-            <p>504 W 35th St, New York, NY 10001, United States</p>
+            <p>{secondaryOffice.fullStreet}, {secondaryOffice.city}, {secondaryOffice.region} {secondaryOffice.postalCode}</p>
             </div>
-            <p><strong>Phone:</strong> (212) 746-2152</p>
-            <p><strong>Fax:</strong> (646) 962-0640</p>
+            <p><strong>Phone:</strong> {officePhone}</p>
+            <p><strong>Fax:</strong> {officeFax}</p>
           </div>
           <div className={styles.officeContacts}>
-            <h2>Dr. Härtl&apos;s Office</h2>
-            <p><strong>Appointment Scheduling:</strong> (Destiny Boliscar, Heidy Burmudez) - (212) 746-2152</p>
-            <p><strong>Office Nurse Practitioner:</strong> (Ed Butler) - (212) 746-2152</p>
-            <p><strong>Surgical Coordinator:</strong> (Nuribeel Gonzalez) - (212) 746-2152</p>
+            <h2>Dr. Hartl&apos;s Office</h2>
+            <p><strong>Appointment Scheduling:</strong> (Destiny Boliscar, Heidy Burmudez) - {officePhone}</p>
+            <p><strong>Office Nurse Practitioner:</strong> (Ed Butler) - {officePhone}</p>
+            <p><strong>Surgical Coordinator:</strong> (Nuribeel Gonzalez) - {officePhone}</p>
             <p><strong>Executive Assistant:</strong> (Erma Bell) - (212) 746-5138</p>
-            <p><strong>Email:</strong>Dr. Härtl&apos;s office can always be reached by email at: <b>hartlspine@med.cornell.edu</b></p>
+            <p><strong>Email:</strong> Dr. Hartl&apos;s office can always be reached by email at: <b>{officeEmail}</b></p>
              <p><strong>Patient Stories:</strong> <a href="https://neurosurgery.weillcornell.org/patient-stories?faculty_id=703" target="_blank" rel="noopener noreferrer">View Patient Stories</a></p>
           </div>
         </div>
         <div className={styles.formSection}>
-          <h2>Email Dr. Härtl</h2>
+          <h2>Email Dr. Hartl</h2>
           <form onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
               <label htmlFor="name">Name</label>

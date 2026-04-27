@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import "./globals.css";
 import "../lib/fontawesome";
 import { ReactNode } from "react";
@@ -7,11 +6,12 @@ import Footer from "../../components/Footer";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import RecaptchaProvider from "../components/RecaptchaProvider";
-config.autoAddCss = false;
-
 import type { Metadata, Viewport } from "next";
 
-/** Mobile viewport + iOS phone-number detection */
+import { doctorName, siteUrl } from "../lib/site";
+
+config.autoAddCss = false;
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -19,34 +19,29 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 };
 
-/** Site-wide SEO */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.hartlmd.net"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Roger Härtl, MD | Spine Surgeon, Neurosurgeon & Professor of Medicine",
-    template: "%s | Roger Härtl, MD",
+    default:
+      "Roger Hartl, MD | Spine Surgeon in New York | Weill Cornell Medicine",
+    template: `%s | ${doctorName}`,
   },
   description:
-    "Official website of Roger Härtl, MD — spine surgeon and neurosurgeon at Weill Cornell Medicine & NewYork-Presbyterian. Minimally invasive spine surgery, disc replacement, spinal tumors, and complex deformity care.",
+    "Roger Hartl, MD is a spine surgeon and neurosurgeon in New York at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine. Explore patient reviews, contact information, spine surgery resources, research, and news.",
   keywords: [
-    "spine surgeon",
-    "neurosurgeon",
-    "spine surgery",
+    "Roger Hartl MD",
+    "spine surgeon in New York",
+    "neurosurgeon in NYC",
+    "Weill Cornell spine surgeon",
+    "best spine surgeon New York",
     "minimally invasive spine surgery",
     "cervical disc replacement",
     "spinal tumors",
-    "New York",
+    "New York spine surgery",
     "Weill Cornell Medicine",
     "Och Spine",
-    "Roger Härtl",
     "Dr. Roger Hartl",
   ],
-  /** Replace with your actual verification tokens when you have them */
-  verification: {
-    google: "REPLACE_WITH_GOOGLE_SITE_VERIFICATION",
-    yandex: "",
-    other: { "msvalidate.01": "REPLACE_WITH_BING_VERIFICATION" },
-  },
   formatDetection: { telephone: true, address: false, email: false },
   alternates: {
     canonical: "/",
@@ -59,32 +54,30 @@ export const metadata: Metadata = {
       { url: "/img/Dr.Hartls.png" },
       { url: "/favicon.ico", rel: "icon", sizes: "any" },
     ],
-    apple: [{ url: "/apple-touch-icon.png" }], // add file if you have it
   },
   openGraph: {
     type: "website",
-    url: "https://www.hartlmd.net/",
-    title: "Roger Härtl, MD | Spine Surgeon, Neurosurgeon & Professor of Medicine",
+    url: `${siteUrl}/`,
+    title: "Roger Hartl, MD | Spine Surgeon in New York",
     description:
-      "Minimally invasive spine surgery, disc replacement, spinal tumor care, and complex deformity surgery at Weill Cornell Medicine & NewYork-Presbyterian.",
+      "Spine surgeon and neurosurgeon in New York at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine.",
     siteName: "hartlmd.net",
     images: [
       {
         url: "/img/Aboutme2.jpg",
         width: 1200,
         height: 630,
-        alt: "Roger Härtl, MD — Spine Surgeon & Neurosurgeon",
+        alt: "Roger Hartl, MD - Spine Surgeon in New York",
       },
     ],
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roger Härtl, MD | Spine Surgeon & Neurosurgeon",
+    title: "Roger Hartl, MD | Spine Surgeon in New York",
     description:
       "Spine surgery, neurosurgery, cervical disc replacement, and complex spinal care in New York.",
     images: ["/img/Aboutme2.jpg"],
-    // creator: "@YourTwitterHandle", // add if you have one
   },
   robots: {
     index: true,
@@ -109,13 +102,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>
-          <RecaptchaProvider>
-        <Header />
-        {children}
-        <Footer />
-</RecaptchaProvider>
-        {/* If you keep these preloads, make sure the files exist.
-           Note: In Next.js, best practice is to use <Image priority /> on your hero images. */}
+        <RecaptchaProvider>
+          <Header />
+          {children}
+          <Footer />
+        </RecaptchaProvider>
         <link rel="preload" href="/img/Aboutme2.jpg" as="image" />
         <link rel="preload" href="/img/review5.jpeg" as="image" />
         <link rel="preload" href="/img/research.jpeg" as="image" />

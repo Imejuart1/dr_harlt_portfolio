@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './Bio.module.scss';
 
 const Bio: React.FC = () => {
@@ -7,8 +8,8 @@ const Bio: React.FC = () => {
 
       <div className={styles.heroSection} style={{ backgroundImage: `url('/img/Aboutme2.jpg')` }}>
         <div className={styles.content_section}>
-          <h1>About Dr. Roger Härtl</h1>
-          <p>Augmented reality has created a new reality for spinal surgery.</p>
+          <h1>About Roger Hartl, MD</h1>
+          <p>Spine surgeon and neurosurgeon in New York at Och Spine, NewYork-Presbyterian and Weill Cornell Medicine.</p>
           <ul className={styles.heroNavLinks}>
             <li><a href="#personal-statement">Personal Statement</a></li>
             <li><a href="#biography">Biography</a></li>
@@ -22,12 +23,12 @@ const Bio: React.FC = () => {
         {/* Section 1: Image on left */}
         <div id="personal-statement" className={styles.section}>
           <div className={styles.imageSection}>
-            <img src="/img/newhartl6.jpg" alt="Dr. Roger Härtl" className={styles.profileImage} />
+            <img src="/img/newhartl6.jpg" alt="Roger Hartl, MD" className={styles.profileImage} />
           </div>
           <div className={styles.textSection}>
             <h2>Mission</h2>
             <p>
-            My mission is to bring together leading experts and streamlined services to deliver complete care for back and neck problems—all in one convenient location. Surgery is just one of the tools we offer. And when itit&apos;s needed, I focus on the least invasive, most effective option to help patients return to the life and activities they love.
+            My mission is to bring together leading experts and streamlined services to deliver complete care for back and neck problems all in one convenient location. Surgery is just one of the tools we offer. When it&apos;s needed, I focus on the least invasive, most effective option to help patients return to the life and activities they love.
             </p>
   <h2>Pledge to My Patients:</h2>
   <ol className={styles.pledgeList}>
@@ -56,20 +57,27 @@ const Bio: React.FC = () => {
           <div className={styles.textSection}>
             <h2>Biography</h2>
             <p>
-              Roger Härtl, M.D., is the Hansen-MacDonald Professor of Neurological Surgery and Director of Spinal Surgery at the Weill Cornell 
-              Medicine Brain and Spine Center in New York, as well as the co-director of NewYork-Presbyterian Och Spine. He is also the founder 
+              Roger Hartl, M.D., is the Hansen-MacDonald Professor of Neurological Surgery and Director of Spinal Surgery at the Weill Cornell 
+              Medicine Brain and Spine Center in New York, as well as the co-director of NewYork-Presbyterian Och Spine. He is one of the leading spine surgeons in New York and the founder 
               and director of the Weill Cornell Medicine Center for Comprehensive Spine Care as well as Weill Cornell Medicine&apos;s Global Neurosurgery 
               Initiative in Tanzania (for which he was named AANS Humanitarian of the Year for 2022). He also serves as the official neurosurgeon 
               for the New York Giants Football Team, Named one of the best spine surgeons in the U.S. by Newsweek.
             </p>
             <p>
-              Dr. Härtl&apos;s clinical interest focuses on simple and complex spine surgery for degenerative conditions, tumors and trauma as well as 
+              Dr. Hartl&apos;s clinical interest focuses on simple and complex spine surgery for degenerative conditions, tumors and trauma as well as 
               biological approaches for disc repair and regeneration. He is a world-renowned pioneer and leader in minimally invasive spinal surgery 
               and computer-assisted spinal navigation surgery. He is actively involved in improving neurosurgical care in developing countries as 
               the leader of Weill Cornell&apos;s Global Health Neurosurgery Initiative in Tanzania.
             </p>
             <p>
-              In order to achieve the very best in patient outcomes, Dr. Härtl&apos;s practice emphasizes an interdisciplinary approach to disease processes 
+              Patients exploring treatment options often compare topics such as{" "}
+              <Link href="/spine-surgeon-new-york">spine surgeon in New York</Link>,{" "}
+              <Link href="/cervical-laminoplasty-new-york">cervical laminoplasty</Link>,{" "}
+              <Link href="/acdf-neurosurgery-nyc">ACDF neurosurgery in NYC</Link>, and what to look for in a{" "}
+              <Link href="/best-neurosurgeon-nyc">best neurosurgeon in NYC for spine care</Link>.
+            </p>
+            <p>
+              In order to achieve the very best in patient outcomes, Dr. Hartl&apos;s practice emphasizes an interdisciplinary approach to disease processes 
               and he works very closely with other specialists such as neurologists, pain specialists, sports medicine doctors and physical therapists. 
               His patients come from all over the globe and include many physicians, surgeons and even other neurological and spine surgeons. He has been 
               repeatedly named to the lists of New York Super Doctors, America&apos;s Top Surgeons, and America&apos;s Best Doctors, and has been included on the list 
@@ -77,7 +85,7 @@ const Bio: React.FC = () => {
 journals and is the editor of three books on minimally invasive spinal surgery and biological disc repair and regeneration.
             </p>
             <p>
-              Dr. Härtl has provided commentary for numerous television shows on ABC, NBC, and CBS in addition to national radio shows. His expertise has 
+              Dr. Hartl has provided commentary for numerous television shows on ABC, NBC, and CBS in addition to national radio shows. His expertise has 
               been sought through interviews in the New York Times, The New York Post, The New York Daily News, and other media outlets. One of his patients, 
               boxer Danny Jacobs, was recently featured in a TV ad from NewYork-Presbyterian.
             </p>
@@ -93,12 +101,12 @@ journals and is the editor of three books on minimally invasive spinal surgery a
           <div className={styles.textSection}>
             <h2>Training</h2>
             <p>
-              Dr. Härtl received his M.D. from the Ludwig-Maximilians University in Munich, Germany. In 1994 Dr. Härtl came to the Weill Cornell Medical College 
+              Dr. Hartl received his M.D. from the Ludwig-Maximilians University in Munich, Germany. In 1994 Dr. Hartl came to the Weill Cornell Medical College 
               as a post-doctoral research fellow in the Department of Surgery and the Brain Trauma Foundation to pursue research in traumatic brain and spinal 
               cord injury. He completed another fellowship in neurocritical care at the Charite Hospital of the Humboldt University in Berlin, Germany, followed 
               by a surgical internship and residency at Allegheny General Hospital in Pittsburgh, Pennsylvania. He completed his neurosurgery residency at 
               NewYork-Presbyterian/Weill Cornell Medical Center and Memorial Sloan-Kettering Cancer Center, after which he pursued specialized training in complex 
-              spine surgery at the Barrow&apos;s Neurological Institute in Phoenix under Dr. Volker Sonntag. In 2004 Dr. Härtl returned to re-join the Department of 
+              spine surgery at the Barrow Neurological Institute in Phoenix under Dr. Volker Sonntag. In 2004 Dr. Hartl returned to re-join the Department of 
               Neurosurgery at Weill Cornell Medical College.
             </p>
           </div>
@@ -113,13 +121,13 @@ journals and is the editor of three books on minimally invasive spinal surgery a
           <div className={styles.textSection}>
             <h2>Research</h2>
             <p>
-              Dr. Härtl&apos;s scientific interest focuses on clinical and basic science research surrounding
+              Dr. Hartl&apos;s scientific interest focuses on clinical and basic science research surrounding
 innovative and less invasive surgical and biological treatment strategies for
 degenerative diseases of the spine. Together with the Biomedical Engineering
 Department at Cornell he is working on tissue-engineering techniques for the repair and
 regeneration of degenerated spinal discs, the most common cause of back and neck
 pain. This has resulted in multiple patents and now clinical trials to address disc
-degeneration in patients. Dr. Härtl has lectured and published extensively on the
+degeneration in patients. Dr. Hartl has lectured and published extensively on the
 surgical treatment of spinal disorders.
 He is a leader and innovator in the application of computer-assisted navigation and
 augmented reality in spinal surgery and works with his research team, collaborators
@@ -131,7 +139,7 @@ patients.
         <div id="publications" className={styles.sectionpub}>
            {/* Book Recommendations Section */}
            <div className={styles.bookRecommendations}>
-  <h2>Books by Dr. Härtl</h2>
+  <h2>Books by Dr. Hartl</h2>
   <div className={styles.bookGrid}>
     {[
       {
@@ -184,7 +192,7 @@ patients.
   <div className={styles.textSection}>
     <h2>Publications</h2>
     <p>
-      Dr. Härtl&apos;s work in neurosurgery and spine care is highlighted through his numerous
+      Dr. Hartl&apos;s work in neurosurgery and spine care is highlighted through his numerous
       publications. Below is a selection of his latest contributions:
     </p>
     <ul className={styles.publicationList}>

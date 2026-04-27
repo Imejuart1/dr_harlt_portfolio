@@ -54,8 +54,8 @@ const ReviewPage: React.FC = () => {
     <section className={styles.reviewSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
-          <h1>Gratitude</h1>
-          <p>Support <strong>Dr. Härtl&apos;s</strong> innovative work in spinal surgery and research.</p>
+          <h1>Support Global Spine Research and Education</h1>
+          <p>Support Dr. Hartl&apos;s innovative work in spinal surgery, research, and global neurosurgery education.</p>
         </div>
       </div>
       {/*<div className={styles.tabNavigation}>

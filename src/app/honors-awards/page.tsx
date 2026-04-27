@@ -82,8 +82,8 @@ const HonorsAndAwardsPage: React.FC = () => {
     <section className={styles.honorsSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
-          <h1>Honors & Awards</h1>
-          <p>Explore the prestigious honors and awards received by Dr. Roger Härtl.</p>
+          <h1>Honors, Awards and Recognition</h1>
+          <p>Explore the honors, awards, and professional recognition received by Roger Hartl, MD, spine surgeon in New York.</p>
         </div>
       </div>
 

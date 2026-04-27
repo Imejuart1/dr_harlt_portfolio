@@ -13,11 +13,11 @@ const Contact: React.FC = () => {
       <div className={styles.contactContent}>
         <Link href='/Contact'>
         <h2 className={styles.sectionTitle}>
-          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Reach Out to Dr. Roger Härtl
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Contact Roger Hartl, MD
         </h2>
         </Link>
         <p className={styles.sectionIntro}>
-          We’re here to help you on your journey to spinal health. Contact us today to schedule an appointment or ask any questions you may have.
+          We&apos;re here to help you on your journey to spinal health. Contact us today to schedule an appointment or ask any questions you may have.
         </p>
         <Link href="/Contact">
           <button className={styles.ctaButton}>Get in Touch</button>

@@ -35,12 +35,22 @@ const MaterialComponent: React.FC = () => {
     <section className={styles.materialSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url('/img/newhartl2.jpg')` }}>
         <div className={styles.content}>
-          <h1>Patient Information</h1>
-          <p>Explore our comprehensive resources for pre-operative, post-operative care, referrals, healthy spine, and Imaging.</p>
+          <h1>Patient Information for Spine Surgery and Recovery</h1>
+          <p>Explore patient guides for spine surgery, recovery, referrals, imaging, healthy spine habits, and minimally invasive procedures.</p>
         </div>
       </div>
       
       <div className={styles.materialLinks}>
+        <div className={styles.materialGroup} id="featured-spine-topics">
+          <h2>Featured Spine Surgery Topics</h2>
+          <ul>
+            <li><Link href="/spine-surgeon-new-york">Spine Surgeon in New York</Link></li>
+            <li><Link href="/cervical-laminoplasty-new-york">Cervical Laminoplasty in New York</Link></li>
+            <li><Link href="/acdf-neurosurgery-nyc">ACDF Neurosurgery in NYC</Link></li>
+            <li><Link href="/best-neurosurgeon-nyc">Best Neurosurgeon in NYC for Spine Care</Link></li>
+          </ul>
+        </div>
+
         {/* Pre-Operative Information Section */}
         <div className={styles.materialGroup} id="pre-operative-information">
           <h2>Spinal Procedure/Pre-Operative Information</h2>
@@ -142,7 +152,7 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
           <h2>Publications</h2>
           <ul>
             <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Roger+Hartl&sort=date"
-            target="__blank">Dr. Roger Härtl PUBLICATIONS</a></li>
+            target="_blank">Dr. Roger Hartl Publications</a></li>
           </ul>
         </div>
       </div>

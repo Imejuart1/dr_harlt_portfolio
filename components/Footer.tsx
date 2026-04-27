@@ -3,6 +3,12 @@ import React, { useState } from 'react';
 import styles from './styles/Footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faPinterestP, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {
+  doctorShortName,
+  officeEmail,
+  officePhone,
+  primaryOffice,
+} from '../src/lib/site';
 
 const Footer: React.FC = () => {
   const [isEnlarged, setIsEnlarged] = useState(false); // State for QR enlargement
@@ -18,7 +24,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
     <div className={styles.memberOrgs}>
-  <h1>Dr. Härtl is a proud member of</h1>
+  <h1>Dr. Hartl is a proud member of</h1>
   <div className={styles.orgLogos}>
   <img src="/img/aospine (2).png" alt="AOSpine" 
   style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(93%) saturate(7487%) hue-rotate(207deg) brightness(89%) contrast(101%)'}}/>
@@ -33,16 +39,16 @@ const Footer: React.FC = () => {
         <div className={styles.trustcode} >
           <div>
           <div className={styles.logo}>
-            <img src="/img/Dr.Hartls.png" alt="Dr. Roger Härtl Logo" />
+            <img src="/img/Dr.Hartls.png" alt="Dr. Roger Hartl Logo" />
             <div className={styles.logoText}>
-              <h1>Dr. Roger Härtl </h1>
+              <h1>Dr. {doctorShortName}</h1>
               <span><b>Named one of the best spine surgeons in the U.S. </b></span>
             </div>
           </div>
           <div className={styles.contactInfo}>
-            <p><strong>Address:</strong> 525 East 59th Street, New York, NY 10065</p>
-            <p><strong>Phone:</strong> (212) 746-2152</p>
-            <p><strong>Email:</strong> hartlspine@med.cornell.edu</p>
+            <p><strong>Address:</strong> {primaryOffice.fullStreet}, {primaryOffice.city}, {primaryOffice.region} {primaryOffice.postalCode}</p>
+            <p><strong>Phone:</strong> {officePhone}</p>
+            <p><strong>Email:</strong> {officeEmail}</p>
             <p><strong>Patient Stories:</strong> <a href="https://neurosurgery.weillcornell.org/patient-stories?faculty_id=703" target="_blank" rel="noopener noreferrer">View Patient Stories</a></p>
           </div>
           </div>
@@ -77,14 +83,14 @@ const Footer: React.FC = () => {
           {/* Social Media Section */}
           <div className={styles.socialMedia}>
             <div><a href="https://www.facebook.com/roger.hartl/"><FontAwesomeIcon icon={faFacebookF} fixedWidth/></a></div>
-            <div><a href="https://www.linkedin.com/in/roger-härtl-92955b185" target='__blank'><FontAwesomeIcon icon={faLinkedinIn} fixedWidth/></a></div>
+            <div><a href="https://www.linkedin.com/in/roger-h%C3%A4rtl-92955b185" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} fixedWidth/></a></div>
             {/*<div><a href="#"><FontAwesomeIcon icon={faPinterestP} fixedWidth/></a></div>*/}
-            <div><a href="https://x.com/roghartl?t=co3m3RKJCF7s2tMrUts4ZA&s=09" target='__blank'><FontAwesomeIcon icon={faTwitter} fixedWidth/></a></div>
+            <div><a href="https://x.com/roghartl?t=co3m3RKJCF7s2tMrUts4ZA&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} fixedWidth/></a></div>
             <div><a href="#"><FontAwesomeIcon icon={faInstagram} fixedWidth/></a></div>
           </div>
 
           <div className={styles.copyright}>
-            <p>&copy; {new Date().getFullYear()} Dr. Roger Härtl . All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Dr. Roger Hartl. All rights reserved.</p>
           </div>
         </div>
       </div>

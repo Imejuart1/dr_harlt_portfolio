@@ -82,8 +82,8 @@ const HonorsAndAwardsPage: React.FC = () => {
     <section className={styles.honorsSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
-          <h1> News & Podcasts</h1>
-          <p>Explore Dr. Roger Härtl in the news, along with the latest podcasts features.</p>
+          <h1>Roger Hartl, MD News, Podcasts and Media</h1>
+          <p>Explore news, podcast appearances, interviews, and media features about Roger Hartl, MD, spine surgeon in New York.</p>
         </div>
       </div>
 
@@ -332,7 +332,7 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
                     </p>
                     <Link 
                     href="https://www.youtube.com/live/UEizbdwpi7A"
-                    target='__blank'>Watch Video</Link>
+                    target="_blank">Watch Video</Link>
                 </div>
                 <div className={styles.imageContainer2}>
                 <iframe src="https://www.youtube.com/embed/UEizbdwpi7A?si=Krnmkq3zkV0gzbyf"  allowFullScreen className={styles.sectionImage}/>
@@ -612,7 +612,7 @@ Seattle Science Foundation</p>
                     </p>
                     <Link 
                     href="https://www.youtube.com/watch?v=YtYQH1IHVYk"
-                    target='__blank'>Watch Video</Link>
+                    target="_blank">Watch Video</Link>
                 </div>
                 <div className={styles.imageContainer2}>
                 <iframe src="https://www.youtube.com/embed/YtYQH1IHVYk?si=YzyUXtRplFW2o-oa"  allowFullScreen className={styles.sectionImage}/>
@@ -625,7 +625,7 @@ Seattle Science Foundation</p>
                     <p>International training on the brain, spine, and nervous system held in Tanzania </p>
                     <Link 
                     href="https://www.youtube.com/watch?v=ceQxOqsr2uE"
-                    target='__blank'>Watch Video</Link>
+                    target="_blank">Watch Video</Link>
                 </div>
                 <div className={styles.videoWrapper}>
                 <iframe src="https://www.youtube.com/embed/ceQxOqsr2uE?si=BV1-7JrOtsmTXvBc"  allowFullScreen className={styles.sectionImage}/>
@@ -638,7 +638,7 @@ Seattle Science Foundation</p>
                     <p>International training on the brain, spine, and nervous system held in Tanzania </p>
                     <Link 
                     href="https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/view"
-                    target='__blank'>Watch Video</Link>
+                    target="_blank">Watch Video</Link>
                 </div>
                 <div className={styles.imageContainer2}>
                 <iframe src="https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/preview" allowFullScreen className={styles.sectionImage}/>
