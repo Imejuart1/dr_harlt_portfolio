@@ -401,6 +401,48 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
 
       {activeTab === "podcasts" && (
         <div className={styles.contentWrapper} id='#podcasts'>
+          <div className={styles.sectionReverse}>
+            <div className={styles.textContent}>
+              <h2>Enhancing Physician Recovery with Strategies that Focus on Enhancing Physiological Reserve to Enhance the Struggle Phase before Entering into Flow</h2>
+              <p>
+                In this episode, Rahul Shah, MD, interviews Roger Hartl, MD about how physicians can sustain long, demanding careers by building
+                &quot;physiological reserve&quot; and maintaining balance between work, family, personal interests, and physical well-being.
+              </p>
+              <p>
+                They discuss how regularly stepping back to identify what truly matters in life is key to maintaining resilience and continuing to
+                find meaning in patient care.
+              </p>
+              <p>
+                This episode is part of the North American Spine Society Governance Committee burnout podcast series.
+              </p>
+              <a
+                href="https://northamericanspinesociety-my.sharepoint.com/personal/kszymanski_spine_org/_layouts/15/stream.aspx?id=%2Fpersonal%2Fkszymanski%5Fspine%5Forg%2FDocuments%2FAttachments%2FAUDIOO%7E3%2EMP3&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1c0497aa%2D59ae%2D4ba9%2Da2c9%2D8d0715ea21c5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Listen to the Episode
+              </a>
+            </div>
+            <a
+              href="https://northamericanspinesociety-my.sharepoint.com/personal/kszymanski_spine_org/_layouts/15/stream.aspx?id=%2Fpersonal%2Fkszymanski%5Fspine%5Forg%2FDocuments%2FAttachments%2FAUDIOO%7E3%2EMP3&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1c0497aa%2D59ae%2D4ba9%2Da2c9%2D8d0715ea21c5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.sectionImage}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: "#ffffff",
+                padding: "3rem",
+              }}
+            >
+              <img
+                src="/img/NASS.svg"
+                alt="North American Spine Society logo"
+                style={{ maxWidth: "70%", maxHeight: "12rem" }}
+              />
+            </a>
+          </div>
             <div className={styles.sectionReverse}>
     <div className={styles.textContent}>
       <h2>Evening with a Spine Surgeon - Roger Härtl, MD.</h2>
