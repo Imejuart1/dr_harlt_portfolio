@@ -745,8 +745,8 @@ export const materialData = {
         media: [
           {
             type: "pdf",
-            src: "https://drive.google.com/file/d/1pyVglJ4DlbElneAWGzF7tVi8zGolwf9T/preview",
-            title: "Stem Cell Information Sheet-branded",
+            src: "/pdfs/MSC Information Sheet for Website.pdf",
+            title: "MSC Information Sheet for Website",
             previewImage: "/img/surgy1.png",
           },
           {
