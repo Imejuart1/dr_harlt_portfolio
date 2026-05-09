@@ -93,9 +93,12 @@
 
   .content {
     z-index: 2;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     transition: opacity 0.5s ease-in-out;
     width: min(100%, 52rem);
+    height: calc(100% - 5rem);
     margin-left: 7.125rem;
     margin-right: 2rem;
     @media (max-width: 1200px) {
@@ -120,7 +123,7 @@
     h1, h3 {
       font-size: 4rem;
       line-height: 4rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.45rem;
       color: white;
       font-weight: 700;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -162,7 +165,7 @@
     .topicRail {
       width: 100%;
       max-width: 44rem;
-      margin-top: 1.25rem;
+      margin-top: auto;
       position: relative;
     }
 
@@ -335,7 +338,7 @@
       padding: 0;
       justify-content: flex-end;
       flex-direction: column;
-      height: fit-content;
+      height: auto;
       text-align: left !important;
       width: auto !important;
       max-width: 19rem;
@@ -357,7 +360,7 @@
         width: 100% !important;
         font-size: 2rem;
         line-height: 2rem;
-        margin-bottom: 0.9rem;
+        margin-bottom: 1.2rem;
       }
 
       .contactButton {
@@ -367,7 +370,7 @@
       }
 
       .topicRail {
-        margin-top: 0.9rem;
+        margin-top: 1rem;
 
         &::after {
           width: 3rem;
