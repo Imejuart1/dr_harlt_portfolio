@@ -7,7 +7,7 @@ import styles from "./HeroSection.module.scss";
 
 const hero = {
   image: "/img/Herowebb.png",
-  title: "Roger H\u00E4rtl, MD",
+  title: "Dr. Roger H\u00E4rtl",
   buttonText: "Contact Dr. H\u00E4rtl",
   link: "/Contact",
   topicLinks: [
