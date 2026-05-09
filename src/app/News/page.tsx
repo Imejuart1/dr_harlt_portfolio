@@ -315,7 +315,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             </a>
             <div className={styles.textContent}>
               <h2>New York-Presbyterian Augmented Reality Advances Feature</h2>
-              <p>Dr. Härtl's innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
+              <p>Dr. Härtl’s innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
                 For nearly 20 years, Roger Härtl, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicineâ€™s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
                 navigation in spinal surgery to guide instrumentation placement and tumor resection in minimally invasive spine surgery.</p>
               <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">Read more</a>
@@ -363,7 +363,7 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
             <div className={styles.textContent}>
               <h2>Medical Marvel - New York Magazine Feature</h2>
               <p>Dr. Roger Härtl performed a life-saving surgery on firefighter Eugene Stolowski, reconnecting his nearly severed skull to his spine after a devastating fall during the Black Sunday fire. Despite a mere 5% survival chance,
-                Dr. Härtl's expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
+                Dr. Härtl’s expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
               <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>

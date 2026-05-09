@@ -121,7 +121,7 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
 
         {/* YouTube & Patient Education Materials Section */}
         <div className={styles.materialGroup} id="youtube-education">
-          <h2>Dr. Härtl's YouTube Channel & Other Patient Education Materials</h2>
+          <h2>Dr. Härtl’s YouTube Channel & Other Patient Education Materials</h2>
           <ul>
             <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
             <li><Link href="/Materials/spine-time">Spine Time-highlights from our patient education webinar</Link></li>
@@ -161,5 +161,4 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
 };
 
 export default MaterialComponent;
-
 

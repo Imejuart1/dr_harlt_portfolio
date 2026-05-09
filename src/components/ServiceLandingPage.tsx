@@ -128,7 +128,7 @@ export default function ServiceLandingPage({
             <p>
               Patients looking for a spine surgeon in New York want experience,
               modern treatment options, and a clear plan for recovery. These are
-              the core areas emphasized throughout Dr. Härtl's practice.
+              the core areas emphasized throughout Dr. Härtl’s practice.
             </p>
             <ul>
               {summaryPoints.map((point) => (

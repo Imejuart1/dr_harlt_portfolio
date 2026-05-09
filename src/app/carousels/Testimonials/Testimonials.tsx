@@ -62,7 +62,7 @@ const Testimonials: React.FC = () => {
         </h2>
       </Link>
       <p className={styles.description}>
-        Watch personal stories and experiences shared by Dr. Härtl's patients.
+        Watch personal stories and experiences shared by Dr. Härtl’s patients.
       </p>
 
       <div className={styles.mainVideoContainer}>

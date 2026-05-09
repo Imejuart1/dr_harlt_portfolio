@@ -64,7 +64,7 @@ const Bio: React.FC = () => {
               for the New York Giants Football Team, Named one of the best spine surgeons in the U.S. by Newsweek.
             </p>
             <p>
-              Dr. Härtl's clinical interest focuses on simple and complex spine surgery for degenerative conditions, tumors and trauma as well as 
+              Dr. Härtl’s clinical interest focuses on simple and complex spine surgery for degenerative conditions, tumors and trauma as well as 
               biological approaches for disc repair and regeneration. He is a world-renowned pioneer and leader in minimally invasive spinal surgery 
               and computer-assisted spinal navigation surgery. He is actively involved in improving neurosurgical care in developing countries as 
               the leader of Weill Cornell&apos;s Global Health Neurosurgery Initiative in Tanzania.
@@ -77,7 +77,7 @@ const Bio: React.FC = () => {
               <Link href="/best-neurosurgeon-nyc">one of the best neurosurgeons in NYC for spine care</Link>.
             </p>
             <p>
-              In order to achieve the very best in patient outcomes, Dr. Härtl's practice emphasizes an interdisciplinary approach to disease processes 
+              In order to achieve the very best in patient outcomes, Dr. Härtl’s practice emphasizes an interdisciplinary approach to disease processes 
               and he works very closely with other specialists such as neurologists, pain specialists, sports medicine doctors and physical therapists. 
               His patients come from all over the globe and include many physicians, surgeons and even other neurological and spine surgeons. He has been 
               repeatedly named to the lists of New York Super Doctors, America&apos;s Top Surgeons, and America&apos;s Best Doctors, and has been included on the list 
@@ -121,7 +121,7 @@ journals and is the editor of three books on minimally invasive spinal surgery a
           <div className={styles.textSection}>
             <h2>Research</h2>
             <p>
-              Dr. Härtl's scientific interest focuses on clinical and basic science research surrounding
+              Dr. Härtl’s scientific interest focuses on clinical and basic science research surrounding
 innovative and less invasive surgical and biological treatment strategies for
 degenerative diseases of the spine. Together with the Biomedical Engineering
 Department at Cornell he is working on tissue-engineering techniques for the repair and
@@ -192,7 +192,7 @@ patients.
   <div className={styles.textSection}>
     <h2>Publications</h2>
     <p>
-      Dr. Härtl's work in neurosurgery and spine care is highlighted through his numerous
+      Dr. Härtl’s work in neurosurgery and spine care is highlighted through his numerous
       publications. Below is a selection of his latest contributions:
     </p>
     <ul className={styles.publicationList}>
@@ -344,5 +344,4 @@ patients.
 };
 
 export default Bio;
-
 

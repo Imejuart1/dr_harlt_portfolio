@@ -141,12 +141,12 @@ const { executeRecaptcha } = useGoogleReCaptcha();
             <p><strong>Fax:</strong> {officeFax}</p>
           </div>
           <div className={styles.officeContacts}>
-            <h2>Dr. Härtl's Office</h2>
+            <h2>Dr. Härtl’s Office</h2>
             <p><strong>Appointment Scheduling:</strong> (Destiny Boliscar, Heidy Burmudez) - {officePhone}</p>
             <p><strong>Office Nurse Practitioner:</strong> (Ed Butler) - {officePhone}</p>
             <p><strong>Surgical Coordinator:</strong> (Nuribeel Gonzalez) - {officePhone}</p>
             <p><strong>Executive Assistant:</strong> (Erma Bell) - (212) 746-5138</p>
-            <p><strong>Email:</strong> Dr. Härtl's office can always be reached by email at: <b>{officeEmail}</b></p>
+            <p><strong>Email:</strong> Dr. Härtl’s office can always be reached by email at: <b>{officeEmail}</b></p>
              <p><strong>Patient Stories:</strong> <a href="https://neurosurgery.weillcornell.org/patient-stories?faculty_id=703" target="_blank" rel="noopener noreferrer">View Patient Stories</a></p>
           </div>
         </div>
