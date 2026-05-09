@@ -95,6 +95,7 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: left;
     transition: opacity 0.5s ease-in-out;
     width: min(100%, 52rem);
@@ -145,7 +146,7 @@
     }
     .contactButton {
       display: inline-flex;
-      align-self: center;
+      align-self: flex-start;
       width: fit-content;
       max-width: max-content;
       background-color: #0056b3;
@@ -169,7 +170,7 @@
     .topicRail {
       width: 100%;
       max-width: 44rem;
-      margin-top: auto;
+      margin-top: 0;
       position: relative;
     }
 
