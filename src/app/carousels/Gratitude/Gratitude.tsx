@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faBrain, faChevronLeft, faChevronRight, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
@@ -98,3 +98,4 @@ const GratitudeImageCarousel: React.FC = () => {
 };
 
 export default GratitudeImageCarousel;
+

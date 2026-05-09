@@ -1,4 +1,4 @@
-import "./globals.css";
+﻿import "./globals.css";
 import "../lib/fontawesome";
 import { ReactNode } from "react";
 import Header from "../../components/Header";
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default:
-      "Roger Hartl, MD | Spine Surgeon in New York | Weill Cornell Medicine",
+      "Roger Härtl, MD | Spine Surgeon in New York | Weill Cornell Medicine",
     template: `%s | ${doctorName}`,
   },
   description:
-    "Roger Hartl, MD is a spine surgeon and neurosurgeon in New York at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine. Explore patient reviews, contact information, spine surgery resources, research, and news.",
+    "Roger Härtl, MD is a spine surgeon and neurosurgeon in New York at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine. Explore patient reviews, contact information, spine surgery resources, research, and news.",
   keywords: [
-    "Roger Hartl MD",
+    "Roger Härtl MD",
     "spine surgeon in New York",
     "neurosurgeon in NYC",
     "Weill Cornell spine surgeon",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "New York spine surgery",
     "Weill Cornell Medicine",
     "Och Spine",
-    "Dr. Roger Hartl",
+    "Dr. Roger Härtl",
   ],
   formatDetection: { telephone: true, address: false, email: false },
   alternates: {
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: `${siteUrl}/`,
-    title: "Roger Hartl, MD | Spine Surgeon in New York",
+    title: "Roger Härtl, MD | Spine Surgeon in New York",
     description:
       "Spine surgeon and neurosurgeon in New York at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine.",
     siteName: "hartlmd.net",
@@ -67,14 +67,14 @@ export const metadata: Metadata = {
         url: "/img/Aboutme2.jpg",
         width: 1200,
         height: 630,
-        alt: "Roger Hartl, MD - Spine Surgeon in New York",
+        alt: "Roger Härtl, MD - Spine Surgeon in New York",
       },
     ],
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roger Hartl, MD | Spine Surgeon in New York",
+    title: "Roger Härtl, MD | Spine Surgeon in New York",
     description:
       "Spine surgery, neurosurgery, cervical disc replacement, and complex spinal care in New York.",
     images: ["/img/Aboutme2.jpg"],
@@ -114,3 +114,4 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
+

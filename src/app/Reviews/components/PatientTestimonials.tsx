@@ -1,5 +1,4 @@
-// src/app/carousels/PatientTestimonials/PatientTestimonials.tsx
-import React from 'react';
+﻿import React from 'react';
 import styles from './PatientTestimonial.module.scss';
 import Link from 'next/link';
 
@@ -15,7 +14,6 @@ const testimonials: Testimonial[] = [
     title: "Overcoming Spine Challenges",
     link: "https://neurosurgery.weillcornell.org/patient-story/more-precision-less-incision-augmented-reality-spine-tumor-story"
   },
-  
   {
     image: "/img/stories3.png",
     title: "Alicia Ortega: Dr. Härtl Is My Angel!",
@@ -38,26 +36,26 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-
 const PatientTestimonials: React.FC = () => {
   return (
     <section className={styles.vitalsSection}>
-    <p>Read personal stories and experiences shared by Dr. Härtls&apos; patients.</p>
-    
-    <div className={styles.container}>
-      <div className={styles.testimonialsGrid}>
-        {testimonials.map((testimonial, index) => (
-          <Link key={index} href={testimonial.link} passHref target='__blank'>
-            <div className={styles.testimonialCard}>
-              <img src={testimonial.image} alt={testimonial.title} className={styles.testimonialImage} />
-              <div className={styles.testimonialTitle}>{testimonial.title}</div>
-            </div>
-          </Link>
-        ))}
+      <p>Read personal stories and experiences shared by Dr. Härtl's patients.</p>
+
+      <div className={styles.container}>
+        <div className={styles.testimonialsGrid}>
+          {testimonials.map((testimonial, index) => (
+            <Link key={index} href={testimonial.link} passHref target='__blank'>
+              <div className={styles.testimonialCard}>
+                <img src={testimonial.image} alt={testimonial.title} className={styles.testimonialImage} />
+                <div className={styles.testimonialTitle}>{testimonial.title}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };
 
 export default PatientTestimonials;
+

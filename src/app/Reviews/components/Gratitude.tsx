@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import React from 'react';
 import styles from './Gratitude.module.scss';
 
@@ -124,3 +124,4 @@ const Gratitude: React.FC = () => {
 
 
 export default Gratitude;
+

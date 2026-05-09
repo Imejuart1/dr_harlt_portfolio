@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './HonorsAndAwards.module.scss';
 import Link from 'next/link';
@@ -83,7 +83,7 @@ const HonorsAndAwardsPage: React.FC = () => {
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
           <h1>Honors, Awards and Recognition</h1>
-          <p>Explore the honors, awards, and professional recognition received by Roger Hartl, MD, spine surgeon in New York.</p>
+          <p>Explore the honors, awards, and professional recognition received by Roger Härtl, MD, spine surgeon in New York.</p>
         </div>
       </div>
 
@@ -162,3 +162,4 @@ const HonorsAndAwardsPage: React.FC = () => {
 };
 
 export default HonorsAndAwardsPage;
+

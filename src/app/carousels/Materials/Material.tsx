@@ -1,4 +1,4 @@
-// components/HomeSummary.tsx
+﻿// components/HomeSummary.tsx
 
 "use client";
 
@@ -87,3 +87,4 @@ const HomeSummary: React.FC = () => {
 };
 
 export default HomeSummary;
+

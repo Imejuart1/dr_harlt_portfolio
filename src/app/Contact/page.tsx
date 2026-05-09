@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import React, { useState } from 'react';
 import styles from './Contact.module.scss';
 import Popup from '../../../components/Popup'; // Import the Popup component
@@ -96,7 +96,7 @@ const { executeRecaptcha } = useGoogleReCaptcha();
     <section className={styles.contactSection}>
       <div className={styles.heroSection}>
         <div className={styles.contactContent}>
-          <h1>Contact Roger Hartl, MD</h1>
+          <h1>Contact Roger Härtl, MD</h1>
           <p>Spine surgeon in New York at {practiceName}</p>
 
           
@@ -141,17 +141,17 @@ const { executeRecaptcha } = useGoogleReCaptcha();
             <p><strong>Fax:</strong> {officeFax}</p>
           </div>
           <div className={styles.officeContacts}>
-            <h2>Dr. Hartl&apos;s Office</h2>
+            <h2>Dr. Härtl's Office</h2>
             <p><strong>Appointment Scheduling:</strong> (Destiny Boliscar, Heidy Burmudez) - {officePhone}</p>
             <p><strong>Office Nurse Practitioner:</strong> (Ed Butler) - {officePhone}</p>
             <p><strong>Surgical Coordinator:</strong> (Nuribeel Gonzalez) - {officePhone}</p>
             <p><strong>Executive Assistant:</strong> (Erma Bell) - (212) 746-5138</p>
-            <p><strong>Email:</strong> Dr. Hartl&apos;s office can always be reached by email at: <b>{officeEmail}</b></p>
+            <p><strong>Email:</strong> Dr. Härtl's office can always be reached by email at: <b>{officeEmail}</b></p>
              <p><strong>Patient Stories:</strong> <a href="https://neurosurgery.weillcornell.org/patient-stories?faculty_id=703" target="_blank" rel="noopener noreferrer">View Patient Stories</a></p>
           </div>
         </div>
         <div className={styles.formSection}>
-          <h2>Email Dr. Hartl</h2>
+          <h2>Email Dr. Härtl</h2>
           <form onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
               <label htmlFor="name">Name</label>
@@ -202,3 +202,4 @@ const { executeRecaptcha } = useGoogleReCaptcha();
 };
 
 export default Contact;
+

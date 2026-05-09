@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Bio.module.scss';
@@ -7,7 +7,7 @@ const Bio: React.FC = () => {
   return (
     <section className={styles.bioSection}>
       <div className={styles.headerSection}>
-        <h1>Roger Hartl, M.D.</h1>
+        <h1>Roger Härtl, M.D.</h1>
         <p className={styles.title}>
           Spine surgeon and neurosurgeon in New York<br />
           Director of Neurosurgery Spine, Weill Cornell Medicine<br />
@@ -46,7 +46,7 @@ const Bio: React.FC = () => {
           <div className={styles.imageSection}>
             <Image
               src="/img/roger2.jpg"
-              alt="Dr. Roger Hartl - Neurosurgeon and Spine Specialist in New York"
+              alt="Dr. Roger Härtl - Neurosurgeon and Spine Specialist in New York"
               width={480}
               height={600}
               className={styles.profileImage}
@@ -103,3 +103,4 @@ const Bio: React.FC = () => {
 };
 
 export default Bio;
+

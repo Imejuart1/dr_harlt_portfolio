@@ -1,4 +1,4 @@
-// app/reviews/page.tsx
+﻿// app/reviews/page.tsx
 "use client";
 import React, { useEffect, useState } from 'react';
 import HealthgradesReview from './components/HealthgradesReview';
@@ -58,8 +58,8 @@ const ReviewPage: React.FC = () => {
     <section className={styles.reviewSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
-          <h1>Patient Reviews for Roger Hartl, MD</h1>
-          <p>Read what patients say about Roger Hartl, MD, spine surgeon and neurosurgeon in New York.</p>
+          <h1>Patient Reviews for Roger Härtl, MD</h1>
+          <p>Read what patients say about Roger Härtl, MD, spine surgeon and neurosurgeon in New York.</p>
         </div>
       </div>
       <div className={styles.tabNavigation}>
@@ -146,3 +146,4 @@ const ReviewPage: React.FC = () => {
 };
 
 export default ReviewPage;
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState } from 'react';
 import styles from './ContactFormPopup.module.scss';
 import Popup from '../../../components/Popup'; // Import the Popup component
@@ -112,3 +112,4 @@ const ContactFormPopup: React.FC<ContactFormPopupProps> = ({ onClose }) => {
 };
 
 export default ContactFormPopup;
+

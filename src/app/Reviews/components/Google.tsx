@@ -1,4 +1,4 @@
-// components/HealthgradesReview.tsx
+﻿// components/HealthgradesReview.tsx
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { FaStar, FaChevronDown, FaChevronUp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -19,19 +19,19 @@ const healthgradesSlides: Slide[] = [
     rating: 5
   },
   {
-    text: "Dr Härtl was brilliant I had really bad stenosis and I’m ready to dance out of the recovery room. He is the best and the king of minimally invasive spine surgery - 10 Stars!",
+    text: "Dr Härtl was brilliant I had really bad stenosis and Iâ€™m ready to dance out of the recovery room. He is the best and the king of minimally invasive spine surgery - 10 Stars!",
     author: "Mark Ohrstrom",
     date: "Sep 2024",
     rating: 5
   },
   {
-    text: "Dr Härtl was highly recommended by my Urologist. I was diagnosed with severe cervical stenosis but my symptoms were improving over time. There’s an old saying that when all you have is a hammer, everything looks like a nail. It’s clear that Dr Härtl had more than a hammer in his tool belt. I found him to be intelligent, concise, and very patient focused (which are not traits you always find in a surgeon). He advised against surgery, and gave me some thoughtful advice about how I should proceed.",
+    text: "Dr Härtl was highly recommended by my Urologist. I was diagnosed with severe cervical stenosis but my symptoms were improving over time. Thereâ€™s an old saying that when all you have is a hammer, everything looks like a nail. Itâ€™s clear that Dr Härtl had more than a hammer in his tool belt. I found him to be intelligent, concise, and very patient focused (which are not traits you always find in a surgeon). He advised against surgery, and gave me some thoughtful advice about how I should proceed.",
     author: "Axer Toro",
     date: "May 2024",
     rating: 5
   },
   {
-    text: "Dr. Härtl explained all options and answered all of my questions in detail. I greatly appreciated all the time he spent the fact that I never felt rushed. It’s obvious after a single an appointment why he is so highly regarded . I definitely recommend!",
+    text: "Dr. Härtl explained all options and answered all of my questions in detail. I greatly appreciated all the time he spent the fact that I never felt rushed. Itâ€™s obvious after a single an appointment why he is so highly regarded . I definitely recommend!",
     author: "Joe I",
     date: "Jun 23, 2024",
     rating: 5
@@ -43,13 +43,13 @@ const healthgradesSlides: Slide[] = [
     rating: 5
   },
   {
-    text: "Dr. Härtl is a thorough professional who takes time to explain the process he’s about to perform clearly to his patients.He is quite self-assured and I feel comfortable putting my trust in his hands.",
+    text: "Dr. Härtl is a thorough professional who takes time to explain the process heâ€™s about to perform clearly to his patients.He is quite self-assured and I feel comfortable putting my trust in his hands.",
     author: "Roy Markowitz",
     date: "June, 2023",
     rating: 5
   },
   {
-    text: "This is one of the most caring surgeons I’ve been spoken to, in a time of deep confusion. I can’t say enough good things about him. The NY Giants are lucky to have him..",
+    text: "This is one of the most caring surgeons Iâ€™ve been spoken to, in a time of deep confusion. I canâ€™t say enough good things about him. The NY Giants are lucky to have him..",
     author: "CA",
     date: "Mar 18, 2023",
     rating: 5

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 import { createPageMetadata } from "../../../lib/seo";
@@ -13,15 +13,15 @@ export function generateMetadata({
 
   if (!material) {
     return createPageMetadata({
-      title: "Spine Surgery Resources | Roger Hartl, MD",
+      title: "Spine Surgery Resources | Roger Härtl, MD",
       description:
-        "Explore spine surgery educational resources, patient guides, and recovery information from Roger Hartl, MD.",
+        "Explore spine surgery educational resources, patient guides, and recovery information from Roger Härtl, MD.",
       path: `/Materials/${params.slug}`,
     });
   }
 
   return createPageMetadata({
-    title: `${material.title} | Roger Hartl, MD`,
+    title: `${material.title} | Roger Härtl, MD`,
     description: material.content,
     path: `/Materials/${params.slug}`,
   });
@@ -34,3 +34,4 @@ export default function MaterialSlugLayout({
 }) {
   return children;
 }
+

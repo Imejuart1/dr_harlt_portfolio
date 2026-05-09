@@ -1,11 +1,11 @@
-import type { ReactNode } from "react";
+﻿import type { ReactNode } from "react";
 
 import { createPageMetadata } from "../../../lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Biological Spine Research | Roger Hartl, MD",
+  title: "Biological Spine Research | Roger Härtl, MD",
   description:
-    "Learn about biological spine research, disc regeneration, and innovative spinal treatments led by Roger Hartl, MD.",
+    "Learn about biological spine research, disc regeneration, and innovative spinal treatments led by Roger Härtl, MD.",
   path: "/Project/research",
 });
 
@@ -16,3 +16,4 @@ export default function ProjectResearchLayout({
 }) {
   return children;
 }
+

@@ -1,10 +1,10 @@
-import ServiceLandingPage from "../../components/ServiceLandingPage";
+﻿import ServiceLandingPage from "../../components/ServiceLandingPage";
 import { createPageMetadata } from "../../lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Spine Surgeon in New York | Roger Hartl, MD",
+  title: "Spine Surgeon in New York | Roger Härtl, MD",
   description:
-    "Roger Hartl, MD is a spine surgeon in New York at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine. Learn about treatment options, patient care, and how to schedule an appointment.",
+    "Roger Härtl, MD is a spine surgeon in New York at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine. Learn about treatment options, patient care, and how to schedule an appointment.",
   path: "/spine-surgeon-new-york",
 });
 
@@ -31,7 +31,7 @@ export default function SpineSurgeonNewYorkPage() {
           heading: "What Patients Usually Need from a Spine Surgeon",
           paragraphs: [
             "Many people start by searching broad phrases such as spine surgeon in NYC or best spine surgeon in New York because they are still trying to understand which specialist is the right fit. A strong spine practice must be able to evaluate both surgical and non-surgical options, identify the true source of symptoms, and coordinate care with imaging, physical therapy, sports medicine, pain management, and rehabilitation when appropriate.",
-            "Dr. Hartl&apos;s practice is built around that kind of comprehensive approach. The goal is not simply to recommend surgery. The goal is to understand the condition, explain the treatment path, and move patients toward the least invasive and most effective plan for their situation.",
+            "Dr. Härtl's practice is built around that kind of comprehensive approach. The goal is not simply to recommend surgery. The goal is to understand the treatment path and move patients toward the least invasive and most effective plan for their situation.",
           ],
         },
         {
@@ -50,7 +50,7 @@ export default function SpineSurgeonNewYorkPage() {
         {
           heading: "Why Experience and Setting Matter",
           paragraphs: [
-            "Patients searching for the best neurosurgeon or spine surgeon in New York are usually looking for proof, not slogans. Credentials, hospital affiliations, surgical volume, published research, and patient outcomes all matter. Dr. Hartl serves at Weill Cornell Medicine and NewYork-Presbyterian, where patients have access to a high-level multidisciplinary environment for diagnostics, treatment planning, surgery, and recovery.",
+            "Patients searching for the best neurosurgeon or spine surgeon in New York are usually looking for proof, not slogans. Credentials, hospital affiliations, surgical volume, published research, and patient outcomes all matter. Dr. Härtl serves at Weill Cornell Medicine and NewYork-Presbyterian, where patients have access to a high-level multidisciplinary environment for diagnostics, treatment planning, surgery, and recovery.",
             "That environment is especially important for complex cases, second opinions, and patients who want to compare multiple treatment options before moving forward.",
           ],
         },
@@ -80,7 +80,7 @@ export default function SpineSurgeonNewYorkPage() {
         },
       ]}
       relatedLinks={[
-        { href: "/Bio", label: "About Roger Hartl, MD" },
+        { href: "/Bio", label: "About Roger Härtl, MD" },
         { href: "/Reviews", label: "Patient reviews and testimonials" },
         { href: "/Materials", label: "Patient information and recovery guides" },
         { href: "/cervical-laminoplasty-new-york", label: "Cervical laminoplasty in New York" },
@@ -88,3 +88,4 @@ export default function SpineSurgeonNewYorkPage() {
     />
   );
 }
+

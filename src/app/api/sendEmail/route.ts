@@ -1,10 +1,10 @@
-import { NextResponse } from 'next/server';
+﻿import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
   const { name, email, message, captchaToken } = await request.json();
 
-     // ✅ Verify reCAPTCHA v3
+     // âœ… Verify reCAPTCHA v3
   const verifyRes = await fetch(
     "https://www.google.com/recaptcha/api/siteverify",
     {
@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 
   console.log("reCAPTCHA result:", verifyData);
 
-  // ✅ v3 Score Check (IMPORTANT)
+  // âœ… v3 Score Check (IMPORTANT)
   if (!verifyData.success || verifyData.score < 0.5) {
     return NextResponse.json({
       success: false,
@@ -54,17 +54,17 @@ export async function POST(request: Request) {
 
     // Send a confirmation email back to the user
     await transporter.sendMail({
-      from: '"Dr. Roger Härtl’s Office hartlspine@med.cornell.edu" <hartlspine@med.cornell.edu>',
+      from: '"Dr. Roger Härtlâ€™s Office hartlspine@med.cornell.edu" <hartlspine@med.cornell.edu>',
       to: email,   // Dr. Härtl's office email
       replyTo: 'hartlspine@med.cornell.edu',
       subject: 'Thank you for contacting Dr. Roger Härtl',
-      text: `Dear ${name},\n\nThank you for reaching out to the office of Dr. Roger Härtl. Your message has been received, and a member of our team will review your inquiry and respond as soon as possible.\n\nIf this is an urgent matter, please contact our office directly at (212) 746-2152.\n\nBest regards,\nDr. Roger Härtl’s Office\nOch Spine at NewYork-Presbyterian\nWeill Cornell Medicine Center for Comprehensive Spine Care`,
+      text: `Dear ${name},\n\nThank you for reaching out to the office of Dr. Roger Härtl. Your message has been received, and a member of our team will review your inquiry and respond as soon as possible.\n\nIf this is an urgent matter, please contact our office directly at (212) 746-2152.\n\nBest regards,\nDr. Roger Härtlâ€™s Office\nOch Spine at NewYork-Presbyterian\nWeill Cornell Medicine Center for Comprehensive Spine Care`,
       html: `
         <p>Dear ${name},</p>
         <p>Thank you for reaching out to the office of <strong>Dr. Roger Härtl</strong>. Your message has been received, and a member of our team will review your inquiry and respond as soon as possible.</p>
         <p>If this is an urgent matter, please contact our office directly at <strong>(212) 746-2152</strong>.</p>
         <p>Best regards,<br />
-        Dr. Roger Härtl’s Office<br />
+        Dr. Roger Härtlâ€™s Office<br />
         Och Spine at NewYork-Presbyterian<br />
         Weill Cornell Medicine Center for Comprehensive Spine Care</p>
       `,
@@ -76,3 +76,4 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false, message: 'There was an error processing your request. Please try again later.' });
   }
 }
+

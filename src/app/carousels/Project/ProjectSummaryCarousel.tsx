@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect, useRef  } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -110,3 +110,4 @@ const ProjectSummaryCarousel: React.FC = () => {
 };
 
 export default ProjectSummaryCarousel;
+

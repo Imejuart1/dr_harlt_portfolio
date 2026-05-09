@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import React, { useEffect , useState} from 'react';
 import Link from 'next/link';
 import styles from './lecture.module.scss';
@@ -56,11 +56,11 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/NGr9cclDlnI?si=6nQ3sfE2VrjWFj3N",
     },
     {
-      title: "Expanding the Frontiers of Technology Assisted Surgery - Roger Hartl, M.D.",
+      title: "Expanding the Frontiers of Technology Assisted Surgery - Roger Härtl, M.D.",
       src: "https://www.youtube.com/embed/JvoIHZ8fnl0",
     },
     {
-      title: "MIS & Navigation: Pros & Cons - Roger Hartl, M.D.",
+      title: "MIS & Navigation: Pros & Cons - Roger Härtl, M.D.",
       src: "https://www.youtube.com/embed/-Gv0lPB9v2U",
     },
     {
@@ -68,7 +68,7 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/AmpW3aKUytI?si=KXCuYb1X_AYwZ_L0",
     },
     {
-      title: "MIS & Navigation: Pros & Cons - Roger Hartl, M.D.",
+      title: "MIS & Navigation: Pros & Cons - Roger Härtl, M.D.",
       src: "https://www.youtube.com/embed/7jN4fx51lBo",
     },
     {
@@ -76,11 +76,11 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/YtYQH1IHVYk",
     },
     {
-      title: "From Tanzania to the OR – Rad & Norty Show",
+      title: "From Tanzania to the OR â€“ Rad & Norty Show",
       src: "https://www.youtube.com/embed/qspmogrSnos",
     },
     {
-      title: "MOI Tanzania TV 2023 – Neurosurgical Training",
+      title: "MOI Tanzania TV 2023 â€“ Neurosurgical Training",
       src: "https://www.youtube.com/embed/ceQxOqsr2uE",
     },
     {
@@ -88,11 +88,11 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/preview",
     },
     {
-      title: "Degenerative Disc Solutions – Regeneration & Repair",
+      title: "Degenerative Disc Solutions â€“ Regeneration & Repair",
       src: "https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview",
     },
     {
-      title: "The Spiral – Och Spine at Hudson Yards",
+      title: "The Spiral â€“ Och Spine at Hudson Yards",
       src: "https://player.vimeo.com/video/1044763140",
     },
     {
@@ -104,7 +104,7 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/Dc0LNYoouHE?si=M0ajRZ0QFpVuEEBn",
     }, 
      {
-      title: "Dr. Roger Hartl on Exploration, Neurosurgery, and Finding Balance in Life",
+      title: "Dr. Roger Härtl on Exploration, Neurosurgery, and Finding Balance in Life",
       src: "https://www.youtube.com/embed/L968wcWuAxw?si=I1yUenK74V-SIakJ",
     }, 
     {
@@ -140,7 +140,7 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/YtYQH1IHVYk?si=YzyUXtRplFW2o-oa",
     },
     {
-      title: "NYC-MISS 2023 Summer Master Class (Weill Cornell Medicine, featuring Dr. Roger Hartl).",
+      title: "NYC-MISS 2023 Summer Master Class (Weill Cornell Medicine, featuring Dr. Roger Härtl).",
       src: "https://www.youtube.com/embed/o6uRfi36Ciw?si=zGujABhrPCqGnjTY",
     }, 
     {
@@ -152,11 +152,11 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://www.youtube.com/embed/3uUjtwErP5c?si=fEvSVzfevVMzdfZl" ,
     },
      {
-      title: "MISS Target Philosophy Roger Hartl, MD",
+      title: "MISS Target Philosophy Roger Härtl, MD",
       src: "https://www.youtube.com/embed/26EXjg-C00o?si=uZWizKKYzax68sdb"  ,
     },
     {
-      title:"MIS & Navigation: Pros & Cons - Roger Hartl, MD",
+      title:"MIS & Navigation: Pros & Cons - Roger Härtl, MD",
      src:"https://www.youtube.com/embed/7jN4fx51lBo?si=oDdOnXg4Kz4Fmgdf"
     },
     {
@@ -215,7 +215,7 @@ const MaterialLecturesComponent: React.FC = () => {
           className={styles.thumbnail}
         />
         <div className={styles.overlay}>
-          ▶ Watch on VuMedi
+          â–¶ Watch on VuMedi
         </div>
       </a>
     ) : (
@@ -237,7 +237,7 @@ const MaterialLecturesComponent: React.FC = () => {
     <div className={styles.materialGroup} id="youtube-education">
       <h2>Featured Lectures</h2>
       <ul>
-        <li><Link href="/Materials/spine-time">Spine Time – Webinar Highlights</Link></li>
+        <li><Link href="/Materials/spine-time">Spine Time â€“ Webinar Highlights</Link></li>
         <li><Link href="/Materials/finding-balance-neurosurgery">Finding Balance in Neurosurgery</Link></li>
       </ul>
     </div>
@@ -249,3 +249,4 @@ const MaterialLecturesComponent: React.FC = () => {
 };
 
 export default MaterialLecturesComponent;
+

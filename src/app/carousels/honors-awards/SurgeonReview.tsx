@@ -1,4 +1,4 @@
-// src/app/carousels/SurgeonReview/SurgeonReview.tsx
+﻿// src/app/carousels/SurgeonReview/SurgeonReview.tsx
 import React from 'react';
 import styles from './SurgeonReview.module.scss';
 import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
@@ -19,7 +19,7 @@ const surgeonReviews: SurgeonReviewProps[] = [
     name: "Dr. Michele Incerti ",
     title: "Head of the Neurosurgery Unit at the Policlinico di Monza, Specialist in degenerative spinal pathologies, brain and spinal cord tumors.",
     location: "Parma, Emilia-Romagna, Italy",
-    review: `I am an Italian neurosurgeon, and two years ago I visited the Department of Neurosurgery at Weill Cornell Hospital to enhance my skills in minimally invasive tubular neurosurgery. Professor Hartl is an outstanding neurosurgeon and one of the most prominent spine surgeons in the field. My experience there was extremely valuable for my clinical practice, as I had the opportunity to observe numerous surgical procedures and engage in meaningful discussions about surgical indications.`
+    review: `I am an Italian neurosurgeon, and two years ago I visited the Department of Neurosurgery at Weill Cornell Hospital to enhance my skills in minimally invasive tubular neurosurgery. Professor Härtl is an outstanding neurosurgeon and one of the most prominent spine surgeons in the field. My experience there was extremely valuable for my clinical practice, as I had the opportunity to observe numerous surgical procedures and engage in meaningful discussions about surgical indications.`
   },
    {
     image: "/img/review10.jpg",
@@ -33,23 +33,23 @@ const surgeonReviews: SurgeonReviewProps[] = [
     name: "Dr Hardik Darji ",
     title: "Consultant Neurosurgeon",
     location: "Ahmedabad, Gujarat. India",
-    review: `Dr. Roger Hartl is one of the best spine surgeons, a great mentor, and a wonderful human being. It was a great honor for me to learn about minimally invasive spine surgery in detail under his guidance. I feel fortunate to have learned everything from the basics of MISS to advanced concepts, techniques, and technologies from him. I was truly impressed by his diagnostic methods and treatment plans. This fellowship program will definitely help budding spine surgeons like me to grow further in our careers. Dr. Roger Hartl is a dedicated, disciplined, and dynamic spine surgeon. I wish him all the best and am very grateful to him for having me at Weill Cornell Medicine, New York.`
+    review: `Dr. Roger Härtl is one of the best spine surgeons, a great mentor, and a wonderful human being. It was a great honor for me to learn about minimally invasive spine surgery in detail under his guidance. I feel fortunate to have learned everything from the basics of MISS to advanced concepts, techniques, and technologies from him. I was truly impressed by his diagnostic methods and treatment plans. This fellowship program will definitely help budding spine surgeons like me to grow further in our careers. Dr. Roger Härtl is a dedicated, disciplined, and dynamic spine surgeon. I wish him all the best and am very grateful to him for having me at Weill Cornell Medicine, New York.`
   },
   {
     image: "/img/Buenos.jpg",
     name: "Marcelo Valacco MD",
     title: "Orthopaedic Surgeon/Spine Surgeon",
     location: "Buenos Aires. Argentina",
-    review: `I visited and observed Dr Härtl at Weill Cornell. He showed me the “step-by-step” procedures in Minimally Invasive Spinal Surgery in the OR. It was a tremendous experience to observe him and learn about how he uses navigation systems and microsurgery. Also, I attended research meetings about the latest technologies and innovation. In the clinic, it was a very great experience to see him examining patients to find out about their spine pathologies. The motivation for my visit with Dr Roger Härtl was to learn and develop new technologies that I can introduce in my country over the next years. Thanks to Dr Härtl and his team for kindly accepting at the Hospital.`
+    review: `I visited and observed Dr Härtl at Weill Cornell. He showed me the â€œstep-by-stepâ€ procedures in Minimally Invasive Spinal Surgery in the OR. It was a tremendous experience to observe him and learn about how he uses navigation systems and microsurgery. Also, I attended research meetings about the latest technologies and innovation. In the clinic, it was a very great experience to see him examining patients to find out about their spine pathologies. The motivation for my visit with Dr Roger Härtl was to learn and develop new technologies that I can introduce in my country over the next years. Thanks to Dr Härtl and his team for kindly accepting at the Hospital.`
   },
   {
     image: "/img/Anasurgeonjpeg.jpeg",
-    name: "ANABEL EUÁN GUTIÉRREZ",
+    name: "ANABEL EUÃN GUTIÃ‰RREZ",
     title: "Orthopaedic Surgeon/Spine Surgeon",
     location: "Cancun, Mexico",
-    review: `Becoming part of Dr. Roger ́s Härtl Fellows in Minimally Invasive Spine Surgery was such a privilege and an enriching experience; it helped me to understand better and apply all the knowledge of MISS with my patients.
-Dr. Roger Härtl is such a very experienced spine surgeon and such a caring and gentle human being. I appreciate the opportunity I had to learn with him and his amazing team, I will always be thankful for such experience and knowledge and for the fact that I ́m now able to offer my patients different surgery options for their spine conditions.
-Currently, I ́m a Spine Surgeon at the Hospital Galenia Cancun and a Spine Surgeon of the Spine Clinic at the Neurological Center of the “Hospital Galenia Cancun”.`
+    review: `Becoming part of Dr. Roger Ìs Härtl Fellows in Minimally Invasive Spine Surgery was such a privilege and an enriching experience; it helped me to understand better and apply all the knowledge of MISS with my patients.
+Dr. Roger Härtl is such a very experienced spine surgeon and such a caring and gentle human being. I appreciate the opportunity I had to learn with him and his amazing team, I will always be thankful for such experience and knowledge and for the fact that I Ìm now able to offer my patients different surgery options for their spine conditions.
+Currently, I Ìm a Spine Surgeon at the Hospital Galenia Cancun and a Spine Surgeon of the Spine Clinic at the Neurological Center of the â€œHospital Galenia Cancunâ€.`
   },
   {
     image: "/img/sebastin.jpeg",
@@ -100,3 +100,4 @@ const SurgeonReview: React.FC = () => {
 };
 
 export default SurgeonReview;
+

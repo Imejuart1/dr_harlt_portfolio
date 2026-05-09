@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState } from 'react';
 import styles from './styles/Footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
     <div className={styles.memberOrgs}>
-  <h1>Dr. Hartl is a proud member of</h1>
+  <h1>Dr. Härtl is a proud member of</h1>
   <div className={styles.orgLogos}>
   <img src="/img/aospine (2).png" alt="AOSpine" 
   style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(93%) saturate(7487%) hue-rotate(207deg) brightness(89%) contrast(101%)'}}/>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
         <div className={styles.trustcode} >
           <div>
           <div className={styles.logo}>
-            <img src="/img/Dr.Hartls.png" alt="Dr. Roger Hartl Logo" />
+            <img src="/img/Dr.Hartls.png" alt="Dr. Roger Härtl Logo" />
             <div className={styles.logoText}>
               <h1>Dr. {doctorShortName}</h1>
               <span><b>Named one of the best spine surgeons in the U.S. </b></span>
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className={styles.copyright}>
-            <p>&copy; {new Date().getFullYear()} Dr. Roger Hartl. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Dr. Roger Härtl. All rights reserved.</p>
           </div>
         </div>
       </div>
@@ -101,3 +101,4 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+

@@ -1,4 +1,4 @@
-// app/reviews/page.tsx
+﻿// app/reviews/page.tsx
 "use client";
 import React, { useEffect, useState } from 'react';
 import Gratitude from './components/Gratitude';
@@ -55,7 +55,7 @@ const ReviewPage: React.FC = () => {
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
           <h1>Support Global Spine Research and Education</h1>
-          <p>Support Dr. Hartl&apos;s innovative work in spinal surgery, research, and global neurosurgery education.</p>
+          <p>Support Dr. Härtl's innovative work in spinal surgery, research, and global neurosurgery education.</p>
         </div>
       </div>
       {/*<div className={styles.tabNavigation}>
@@ -142,3 +142,4 @@ const ReviewPage: React.FC = () => {
 };
 
 export default ReviewPage;
+

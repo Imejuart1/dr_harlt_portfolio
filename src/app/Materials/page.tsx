@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import styles from './MaterialComponent.module.scss';
@@ -47,7 +47,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/spine-surgeon-new-york">Spine Surgeon in New York</Link></li>
             <li><Link href="/cervical-laminoplasty-new-york">Cervical Laminoplasty in New York</Link></li>
             <li><Link href="/acdf-neurosurgery-nyc">ACDF Neurosurgery in NYC</Link></li>
-            <li><Link href="/best-neurosurgeon-nyc">Best Neurosurgeon in NYC for Spine Care</Link></li>
+            <li><Link href="/best-neurosurgeon-nyc">One of the Best Neurosurgeons in NYC for Spine Care</Link></li>
           </ul>
         </div>
 
@@ -121,7 +121,7 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
 
         {/* YouTube & Patient Education Materials Section */}
         <div className={styles.materialGroup} id="youtube-education">
-          <h2>Dr. Härtl&apos;s YouTube Channel & Other Patient Education Materials</h2>
+          <h2>Dr. Härtl's YouTube Channel & Other Patient Education Materials</h2>
           <ul>
             <li><Link href="/Materials/surgical-videos">Surgical Videos</Link></li>
             <li><Link href="/Materials/spine-time">Spine Time-highlights from our patient education webinar</Link></li>
@@ -151,8 +151,8 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
         <div className={styles.materialGroup} id="publications">
           <h2>Publications</h2>
           <ul>
-            <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Roger+Hartl&sort=date"
-            target="_blank">Dr. Roger Hartl Publications</a></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Roger+Härtl&sort=date"
+            target="_blank">Dr. Roger Härtl Publications</a></li>
           </ul>
         </div>
       </div>
@@ -161,3 +161,5 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
 };
 
 export default MaterialComponent;
+
+

@@ -1,4 +1,4 @@
-// materialData.ts
+﻿// materialData.ts
 export const materialData = {
     "Minimally-Invasive-lumbar-tubular-laminectomy": {
       title: "Minimally Invasive Tubular Surgery Resources",
@@ -242,7 +242,7 @@ export const materialData = {
       type: "link",
       src2: "https://itunes.apple.com/us/app/the-wall-street-journal./id364387007",
       src: "https://www.msn.com/en-us/health/other/ar-AA1FumXM",
-      title: "Stand Up Straight—for All Sorts of Reasons (WSJ article)",
+      title: "Stand Up Straightâ€”for All Sorts of Reasons (WSJ article)",
     previewImage: "/img/standst.png",
     },
           {
@@ -691,7 +691,7 @@ export const materialData = {
           {
             type: "video",
             src: "https://www.youtube.com/embed/gX7_LBE05x4?si=DQUOWEGCvUV3d1QX",
-            title: "The Explorer’s Eye",
+            title: "The Explorerâ€™s Eye",
             previewImage: "/img/hartltalk.jpg",
           },
           {
@@ -797,3 +797,4 @@ export const materialData = {
         ]
       },
 };
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'; // Import Next.js Link component
@@ -162,3 +162,4 @@ const [isMenuVisible, setIsMenuVisible] = useState(false);
 };
 
 export default StickyNavExtras;
+

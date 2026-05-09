@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './HonorsAndAwards.module.scss';
 import Link from 'next/link';
@@ -198,8 +198,8 @@ const HonorsAndAwardsPages: React.FC = () => {
             </a>
             <div className={styles.textContent}>
               <h2>New York-Presbyterian Augmented Reality Advances Feature</h2>
-              <p>Dr. Härtl&apos;s innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
-                For nearly 20 years, Roger Härtl, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicine’s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
+              <p>Dr. Härtl's innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
+                For nearly 20 years, Roger Härtl, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicineâ€™s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
                 navigation in spinal surgery to guide instrumentation placement and tumor resection in minimally invasive spine surgery.</p>
               <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
@@ -229,7 +229,7 @@ const HonorsAndAwardsPages: React.FC = () => {
             <div className={styles.textContent}>
               <h2>Medical Marvel - New York Magazine Feature</h2>
               <p>Dr. Roger Härtl performed a life-saving surgery on firefighter Eugene Stolowski, reconnecting his nearly severed skull to his spine after a devastating fall during the Black Sunday fire. Despite a mere 5% survival chance,
-                Dr. Härtl&apos;s expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
+                Dr. Härtl's expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
               <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
@@ -239,8 +239,8 @@ const HonorsAndAwardsPages: React.FC = () => {
               <p>Kenny Schachter Emerges From Surgery With Dirt on Damien Hirst, Ed Sheeran, and a Lot More
               In part one of his &apos;Busted-Disc Diaries,&apos; he recounts blowing out his back moving his art.
                He&apos;s recovering, and just as indefatigable as ever. Thank his art-loving doctors!<br></br>
-               After a brief examination by Dr. Roger Härtl—who is nothing short of a magician, a brilliant virtuoso, and the director of spinal surgery at Och Spine at NewYork-Presbyterian/Weill 
-               Cornell Medical Center—it was flagrantly clear that I needed surgery, which...</p>
+               After a brief examination by Dr. Roger Härtlâ€”who is nothing short of a magician, a brilliant virtuoso, and the director of spinal surgery at Och Spine at NewYork-Presbyterian/Weill 
+               Cornell Medical Centerâ€”it was flagrantly clear that I needed surgery, which...</p>
               <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
             <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">
@@ -388,7 +388,7 @@ const HonorsAndAwardsPages: React.FC = () => {
           <div className={styles.section}>
             <div className={styles.textContent}>
               <h2>Healthcare Digital Interview in German</h2>
-              <p>Healthcare Digital #10: Robots in the OR, AI in diagnostics, a gateway to TI, In future, access to the TI will be via a gateway. eHex Managing Director Frédéric Naujokat knows why and how. Spinal surgery with the surgical robot, on the other hand, is the domain of Prof. Dr. Roger Härtl. He demonstrated this live at this year&apos;s Brainlab Spine Symposium in Munich
+              <p>Healthcare Digital #10: Robots in the OR, AI in diagnostics, a gateway to TI, In future, access to the TI will be via a gateway. eHex Managing Director FrÃ©dÃ©ric Naujokat knows why and how. Spinal surgery with the surgical robot, on the other hand, is the domain of Prof. Dr. Roger Härtl. He demonstrated this live at this year&apos;s Brainlab Spine Symposium in Munich
                 s. Our colleague Johannes Kapfer was there and spoke to him...</p>
               <a href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
@@ -403,3 +403,5 @@ const HonorsAndAwardsPages: React.FC = () => {
 };
 
 export default HonorsAndAwardsPages;
+
+

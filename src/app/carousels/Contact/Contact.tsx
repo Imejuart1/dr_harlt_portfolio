@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
       <div className={styles.contactContent}>
         <Link href='/Contact'>
         <h2 className={styles.sectionTitle}>
-          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Contact Roger Hartl, MD
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Contact Roger Härtl, MD
         </h2>
         </Link>
         <p className={styles.sectionIntro}>
@@ -28,3 +28,4 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
+

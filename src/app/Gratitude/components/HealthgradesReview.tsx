@@ -1,4 +1,4 @@
-// components/HealthgradesReview.tsx
+﻿// components/HealthgradesReview.tsx
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { FaStar, FaChevronDown, FaChevronUp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -31,7 +31,7 @@ const healthgradesSlides: Slide[] = [
     rating: 5
   },
   {
-    text: "He’s one of the most skilled and knowledgeable surgeons for spine. His attention to his patients is unparalleled and his staff is the best. You know you are good hands with a Dr that really cares.",
+    text: "Heâ€™s one of the most skilled and knowledgeable surgeons for spine. His attention to his patients is unparalleled and his staff is the best. You know you are good hands with a Dr that really cares.",
     author: "Anonymous",
     date: "Jun 23, 2024",
     rating: 5
@@ -61,7 +61,7 @@ const healthgradesSlides: Slide[] = [
     rating: 5
   },
   {
-    text: "I felt completely trusting of Dr Härtls advice and expertise. He was straight forward, competent and did not push for any unnecessary surgical intervention. He suggested alternate treatment such as Physical Therapy and/or a possible steroid injections for my pain. I respect his conservative...",
+    text: "I felt completely trusting of Dr Härtl's advice and expertise. He was straight forward, competent and did not push for any unnecessary surgical intervention. He suggested alternate treatment such as Physical Therapy and/or a possible steroid injections for my pain. I respect his conservative...",
     author: "Nancy K de Groot ",
     date: "Oct 13, 2022",
     rating: 5
@@ -190,7 +190,7 @@ const HealthgradesReview: React.FC = () => {
                />
              </div>
                {subTab === "overview" && (<div className={styles.feedbackOverview}>
-                <h2>Dr. Härtl&apos;s Reviews</h2>
+                <h2>Dr. Härtl's Reviews</h2>
                 <div className={styles.ratingSummary}>
                   <div className={styles.ratingOverall}>
                     <h3>4.8</h3>
@@ -342,3 +342,5 @@ const HealthgradesReview: React.FC = () => {
 };
 
 export default HealthgradesReview;
+
+

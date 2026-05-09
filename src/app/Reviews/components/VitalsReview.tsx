@@ -1,4 +1,4 @@
-// components/VitalsReview.tsx
+﻿// components/VitalsReview.tsx
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { FaStar, FaChevronDown, FaChevronUp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -197,7 +197,7 @@ const VitalsReview: React.FC = () => {
                />
              </div>
                {subTab === "overview" && (<div className={styles.feedbackOverview}>
-                <h2>Dr. Härtl&apos;s Reviews</h2>
+                <h2>Dr. Härtl's Reviews</h2>
                 <div className={styles.ratingSummary}>
                   <div className={styles.ratingOverall}>
                     <h3 className={styles.rateh3}>4</h3>
@@ -373,3 +373,5 @@ const VitalsReview: React.FC = () => {
 };
 
 export default VitalsReview;
+
+

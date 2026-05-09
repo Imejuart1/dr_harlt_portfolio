@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from 'react';
 import Link from 'next/link';
 import styles from './research.module.scss';
@@ -23,7 +23,7 @@ const tanzania = () => {
                     <h2>Homepage</h2>
                     <p>The Tanzania Neurosurgery Project is conducted by Weill Cornell Medicine
                          Neurological Surgery in collaboration 
-                         with the Foundation for International Education in Neurological Surgery (FIENS), Each year we hold a “hands-on” course for doctors and nurses in Tanzania, empowering them 
+                         with the Foundation for International Education in Neurological Surgery (FIENS), Each year we hold a â€œhands-onâ€ course for doctors and nurses in Tanzania, empowering them 
                          with a high level of expertise in the management of neurosurgical disorders and neurosurgical procedures. </p>
                     <Link href="https://tanzanianeurosurgery.org/" target='__blank' style={{marginRight:'0.5rem'}}>Official Website</Link>
                     <Link href="https://host.nxt.blackbaud.com/donor-form/?svcid=tcs&formId=581348a2-d1a3-4cee-bf6f-ea2cc536af03&envid=p-yIslFdtsaU6c1sabC-a0TA&zone=usa" target='__blank'>Donate</Link>
@@ -110,4 +110,5 @@ const tanzania = () => {
 };
 
 export default tanzania;
+
 

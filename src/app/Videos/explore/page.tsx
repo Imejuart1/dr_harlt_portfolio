@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import React, { useEffect , useState} from 'react';
 import Link from 'next/link';
 import styles from './explore.module.scss';
@@ -32,27 +32,27 @@ const MaterialLecturesComponent: React.FC = () => {
 
   const lectureVideos = [
   {
-      title: "Dr. Roger Hartl -14 Years inTanzania (J&J Interview 2022)",
+      title: "Dr. Roger Härtl -14 Years inTanzania (J&J Interview 2022)",
       src: "https://www.youtube.com/embed/n81sJVbMIUw?si=fEmR9pM2tps23x6S",
     },
    {
-      title: "Tanzania Neurosurgery Project 2019: Dr. Roger Hartl in New ICU at MOI",
+      title: "Tanzania Neurosurgery Project 2019: Dr. Roger Härtl in New ICU at MOI",
       src: "https://www.youtube.com/embed/ji83vBbXR7E?si=jtJxt3RF7VIYWT_s",
     },
        {
-      title: "NYC-MISS 2019: Dr. Roger Hartl",
+      title: "NYC-MISS 2019: Dr. Roger Härtl",
       src: "https://www.youtube.com/embed/zV4a9RQppj8?si=EDU9y6D6gv_UNc-o",
     },
      {
-      title: "NYC-MISS 2019: Dr. Roger Hartl in the Lab",
+      title: "NYC-MISS 2019: Dr. Roger Härtl in the Lab",
       src: "https://www.youtube.com/embed/0RyCrtTLkBA?si=oX5vyswHbe_7PX9p",
     },
      {
-      title: "Tanzania Neurosurgery Project 2019: Dr. Roger Hartl and Dr. Jose Corredor",
+      title: "Tanzania Neurosurgery Project 2019: Dr. Roger Härtl and Dr. Jose Corredor",
       src: "https://www.youtube.com/embed/IIsgHCwkW1c?si=9FZ99Kl1OHUgJxd6",
     },
     {
-      title: "Tanzania Neurosurgery Project 2019: Dr. Roger Hartl Update",
+      title: "Tanzania Neurosurgery Project 2019: Dr. Roger Härtl Update",
       src: "https://www.youtube.com/embed/sr8QTPt5N9g?si=VIouyzETyu9tWAr_",
     },
   ];
@@ -103,3 +103,4 @@ const MaterialLecturesComponent: React.FC = () => {
 };
 
 export default MaterialLecturesComponent;
+

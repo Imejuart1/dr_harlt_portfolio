@@ -1,4 +1,4 @@
-import Script from "next/script";
+﻿import Script from "next/script";
 
 import HeroSection from "./Herosection/HeroSection";
 import Bio from "./carousels/Bio/page";
@@ -34,7 +34,7 @@ export default function Home() {
     name: doctorName,
     image: `${siteUrl}/img/Dr.Hartls.png`,
     description:
-      "Roger Hartl, MD is a spine surgeon and neurosurgeon in New York specializing in minimally invasive spine surgery, disc replacement, spinal tumors, and complex deformity care.",
+      "Roger Härtl, MD is a spine surgeon and neurosurgeon in New York specializing in minimally invasive spine surgery, disc replacement, spinal tumors, and complex deformity care.",
     medicalSpecialty: [
       "Spine Surgery",
       "Neurosurgery",
@@ -116,11 +116,11 @@ export default function Home() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Who is Roger Hartl, MD?",
+        name: "Who is Roger Härtl, MD?",
         acceptedAnswer: {
           "@type": "Answer",
           text:
-            "Roger Hartl, MD is a spine surgeon and neurosurgeon in New York at Weill Cornell Medicine and NewYork-Presbyterian.",
+            "Roger Härtl, MD is a spine surgeon and neurosurgeon in New York at Weill Cornell Medicine and NewYork-Presbyterian.",
         },
       },
       {
@@ -134,11 +134,11 @@ export default function Home() {
       },
       {
         "@type": "Question",
-        name: "Where does Roger Hartl, MD practice?",
+        name: "Where does Roger Härtl, MD practice?",
         acceptedAnswer: {
           "@type": "Answer",
           text:
-            "Roger Hartl, MD practices at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine in New York City.",
+            "Roger Härtl, MD practices at Och Spine, NewYork-Presbyterian, and Weill Cornell Medicine in New York City.",
         },
       },
     ],
@@ -147,7 +147,7 @@ export default function Home() {
   const webPageLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Roger Hartl, MD - Spine Surgeon in New York",
+    name: "Roger Härtl, MD - Spine Surgeon in New York",
     url: `${siteUrl}/`,
     breadcrumb: {
       "@type": "BreadcrumbList",
@@ -166,7 +166,7 @@ export default function Home() {
         <section aria-label="Spine Surgeon Frequently Asked Questions">
           <h3>Spine Surgeon Frequently Asked Questions</h3>
           <p>
-            <strong>Who is Roger Hartl, MD?</strong> Roger Hartl, MD is a spine
+            <strong>Who is Roger Härtl, MD?</strong> Roger Härtl, MD is a spine
             surgeon and neurosurgeon in New York at Weill Cornell Medicine and
             NewYork-Presbyterian.
           </p>
@@ -176,7 +176,7 @@ export default function Home() {
             fractures, tumors, neck pain, and back pain.
           </p>
           <p>
-            <strong>Where does Roger Hartl, MD practice?</strong> Roger Hartl,
+            <strong>Where does Roger Härtl, MD practice?</strong> Roger Härtl,
             MD practices at {practiceName} in New York City.
           </p>
         </section>
@@ -220,3 +220,4 @@ export default function Home() {
     </div>
   );
 }
+

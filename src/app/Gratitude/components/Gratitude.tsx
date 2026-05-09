@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import React from 'react';
 import styles from './Gratitude.module.scss';
 
@@ -40,7 +40,7 @@ const Gratitude: React.FC = () => {
             <div className={styles.imageBox}>
               <h3 className={styles.imageTitle}>Humanitarian Work</h3>
               <p>Please consider <strong>donating</strong> to our neurosurgery <strong>humanitarian work in Tanzania</strong></p>
-              <a href="https://tanzanianeurosurgery.org/" target="_blank" rel="noopener noreferrer"><p><b>Find out more about our humanitarian work →</b></p></a>
+              <a href="https://tanzanianeurosurgery.org/" target="_blank" rel="noopener noreferrer"><p><b>Find out more about our humanitarian work â†’</b></p></a>
               <a href="https://neurosurgery.weillcornell.org/donate-now" target="_blank" rel="noopener noreferrer">
                 <img src="/img/humaritian.png" alt="Humanitarian Work" className={styles.bigImage} />
                 <div className={styles.arrowIcon}></div>
@@ -56,7 +56,7 @@ const Gratitude: React.FC = () => {
               <h3 className={styles.imageTitle}>Spine Research Projects</h3>
               <p> We also work on improving spine care by developing new and innovative ways of making spine surgery less invasive through biological disc repair and regeneration. 
               Please consider making a donation to support our spine research projects.<a href='https://neurosurgery.weillcornell.org/donate-now' target="_blank"><strong>Click me to donate.</strong></a></p>
-              <a href="https://neurosurgery.weill.cornell.edu/research/our-laboratories/dr-roger-hartl-biological-spine-tissue" target="_blank" rel="noopener noreferrer"><p><b>Find out more about our spine research →</b></p></a>
+              <a href="https://neurosurgery.weill.cornell.edu/research/our-laboratories/dr-roger-hartl-biological-spine-tissue" target="_blank" rel="noopener noreferrer"><p><b>Find out more about our spine research â†’</b></p></a>
               <a href="https://neurosurgery.weill.cornell.edu/research/our-laboratories/dr-roger-hartl-biological-spine-tissue" target="_blank" rel="noopener noreferrer">
                 <img src="/img/helper.jpg" alt="Humanitarian Work" className={styles.bigImage} style={{height:'10%'}} />
                 <div className={styles.arrowIcon}></div>
@@ -125,3 +125,4 @@ const Gratitude: React.FC = () => {
 
 
 export default Gratitude;
+

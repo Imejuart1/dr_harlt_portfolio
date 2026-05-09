@@ -1,10 +1,10 @@
-import ServiceLandingPage from "../../components/ServiceLandingPage";
+﻿import ServiceLandingPage from "../../components/ServiceLandingPage";
 import { createPageMetadata } from "../../lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Cervical Laminoplasty in New York | Roger Hartl, MD",
+  title: "Cervical Laminoplasty in New York | Roger Härtl, MD",
   description:
-    "Learn about cervical laminoplasty in New York with Roger Hartl, MD, including when it may be recommended, how it differs from fusion, and what recovery may involve.",
+    "Learn about cervical laminoplasty in New York with Roger Härtl, MD, including when it may be recommended, how it differs from fusion, and what recovery may involve.",
   path: "/cervical-laminoplasty-new-york",
 });
 
@@ -75,7 +75,7 @@ export default function CervicalLaminoplastyNewYorkPage() {
         {
           question: "Can every patient with cervical stenosis have laminoplasty?",
           answer:
-            "No. Candidacy depends on anatomy, alignment, level of instability, location of compression, and the patient&apos;s neurological findings and treatment goals.",
+            "No. Candidacy depends on anatomy, alignment, level of instability, location of compression, and the patient's neurological findings and treatment goals.",
         },
       ]}
       relatedLinks={[
@@ -87,3 +87,4 @@ export default function CervicalLaminoplastyNewYorkPage() {
     />
   );
 }
+

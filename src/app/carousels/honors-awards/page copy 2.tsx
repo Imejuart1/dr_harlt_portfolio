@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Script from "next/script";
@@ -107,7 +107,7 @@ const HonorsAndAwardsPages: React.FC = () => {
           content="Explore awards, honors, major news features, and podcasts highlighting Dr. Roger Härtl, world-renowned neurosurgeon and spine specialist."
         />
         <link rel="canonical" href={canonical} />
-        <meta property="og:title" content="Honors & Awards — Roger Härtl, M.D." />
+        <meta property="og:title" content="Honors & Awards â€” Roger Härtl, M.D." />
         <meta
           property="og:description"
           content="Recognitions, media features, and podcasts about Dr. Roger Härtl."
@@ -322,10 +322,10 @@ const HonorsAndAwardsPages: React.FC = () => {
               />
             </a>
             <div className={styles.textContent}>
-              <h2>Medical Marvel — New York Magazine</h2>
+              <h2>Medical Marvel â€” New York Magazine</h2>
               <p>
-                Dr. Härtl reattached a firefighter’s skull to his spine after the Black Sunday fire — a case with only a 5%
-                survival chance — resulting in a remarkable recovery.
+                Dr. Härtl reattached a firefighterâ€™s skull to his spine after the Black Sunday fire â€” a case with only a 5%
+                survival chance â€” resulting in a remarkable recovery.
               </p>
               <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">
                 Read more
@@ -337,8 +337,8 @@ const HonorsAndAwardsPages: React.FC = () => {
             <div className={styles.textContent}>
               <h2>Kenny Schachter Piece</h2>
               <p>
-                After evaluation by Dr. Härtl, surgical intervention led to recovery — detailed in Schachter’s “Busted-Disc
-                Diaries.”
+                After evaluation by Dr. Härtl, surgical intervention led to recovery â€” detailed in Schachterâ€™s â€œBusted-Disc
+                Diaries.â€
               </p>
               <a
                 href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298"
@@ -429,7 +429,7 @@ const HonorsAndAwardsPages: React.FC = () => {
             </div>
             <div className={styles.videoWrapper}>
               <iframe
-                title="Degenerative Disc Disease — Research talk"
+                title="Degenerative Disc Disease â€” Research talk"
                 src="https://www.youtube.com/embed/YVdUAgBZCRQ?si=2OORcbX4udpml67y"
                 width="640"
                 height="480"
@@ -641,3 +641,4 @@ const HonorsAndAwardsPages: React.FC = () => {
 };
 
 export default HonorsAndAwardsPages;
+

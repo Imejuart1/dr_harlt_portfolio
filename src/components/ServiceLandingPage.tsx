@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Script from "next/script";
 
 import styles from "./ServiceLandingPage.module.scss";
@@ -94,7 +94,7 @@ export default function ServiceLandingPage({
     url: pageUrl,
     about: {
       "@type": "Physician",
-      name: "Roger Hartl, MD",
+      name: "Roger Härtl, MD",
       telephone: officePhoneIntl,
       medicalSpecialty: ["Spine Surgery", "Neurosurgery"],
       hospitalAffiliation: practiceName,
@@ -128,7 +128,7 @@ export default function ServiceLandingPage({
             <p>
               Patients looking for a spine surgeon in New York want experience,
               modern treatment options, and a clear plan for recovery. These are
-              the core areas emphasized throughout Dr. Hartl&apos;s practice.
+              the core areas emphasized throughout Dr. Härtl's practice.
             </p>
             <ul>
               {summaryPoints.map((point) => (
@@ -184,7 +184,7 @@ export default function ServiceLandingPage({
             </p>
             <div className={styles.actions}>
               <Link href="/Contact" className={styles.primaryLink}>
-                Contact Dr. Hartl
+                Contact Dr. Härtl
               </Link>
               <a href={`tel:${officePhoneIntl}`} className={styles.secondaryLink}>
                 Call {officePhone}
@@ -236,3 +236,4 @@ export default function ServiceLandingPage({
     </section>
   );
 }
+

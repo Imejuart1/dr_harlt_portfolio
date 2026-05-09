@@ -1,7 +1,7 @@
-export const siteUrl = "https://www.hartlmd.net";
+﻿export const siteUrl = "https://www.hartlmd.net";
 
-export const doctorName = "Roger Hartl, MD";
-export const doctorShortName = "Roger Hartl";
+export const doctorName = "Roger Härtl, MD";
+export const doctorShortName = "Roger Härtl";
 export const practiceName =
   "Och Spine at NewYork-Presbyterian and Weill Cornell Medicine";
 
@@ -30,3 +30,4 @@ export const officePhone = "(212) 746-2152";
 export const officePhoneIntl = "+1-212-746-2152";
 export const officeFax = "(646) 962-0640";
 export const officeEmail = "hartlspine@med.cornell.edu";
+

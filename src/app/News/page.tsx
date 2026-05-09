@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './HonorsAndAwards.module.scss';
 import Link from 'next/link';
@@ -82,8 +82,8 @@ const HonorsAndAwardsPage: React.FC = () => {
     <section className={styles.honorsSection}>
       <div className={styles.heroSection} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className={styles.content}>
-          <h1>Roger Hartl, MD News, Podcasts and Media</h1>
-          <p>Explore news, podcast appearances, interviews, and media features about Roger Hartl, MD, spine surgeon in New York.</p>
+          <h1>Roger Härtl, MD News, Podcasts and Media</h1>
+          <p>Explore news, podcast appearances, interviews, and media features about Roger Härtl, MD, spine surgeon in New York.</p>
         </div>
       </div>
 
@@ -126,7 +126,7 @@ const HonorsAndAwardsPage: React.FC = () => {
     <h2>Dr. Roger Härtl on AI, Biologics & Minimally Invasive Spine Innovation</h2>
 
     <p>
-      Becker’s Healthcare Podcast featured Dr. Roger Härtl, M.D., Director of
+      Beckerâ€™s Healthcare Podcast featured Dr. Roger Härtl, M.D., Director of
       Neurosurgery Spine at Weill Cornell Medicine and Neurosurgical Director of
       Och Spine at NewYork-Presbyterian/Weill Cornell Medical Center, discussing
       the technologies shaping the next era of spine care.
@@ -164,11 +164,11 @@ const HonorsAndAwardsPage: React.FC = () => {
   </a>
 
   <div className={styles.textContent}>
-    <h2>Preventing Reherniation: Addressing Spine Surgery’s Unsolved Problem</h2>
+    <h2>Preventing Reherniation: Addressing Spine Surgeryâ€™s Unsolved Problem</h2>
 
     <p>
-      Becker’s Spine Review featured Dr. Roger Härtl discussing one of the most
-      persistent challenges in spine surgery — recurrent disc reherniation
+      Beckerâ€™s Spine Review featured Dr. Roger Härtl discussing one of the most
+      persistent challenges in spine surgery â€” recurrent disc reherniation
       following discectomy.
     </p>
 
@@ -206,7 +206,7 @@ const HonorsAndAwardsPage: React.FC = () => {
   <h2>Expandable Cages Are Not a One-Size-Fits-All Solution for TLIF</h2>
 
   <p>
-    Becker’s also covered Dr. Härtl’s comparative study analyzing two 
+    Beckerâ€™s also covered Dr. Härtlâ€™s comparative study analyzing two 
     different lumbar expandable cage designs in minimally invasive TLIF.
   </p>
 
@@ -256,7 +256,7 @@ const HonorsAndAwardsPage: React.FC = () => {
   <h2>Study Affirms Safety and Effectiveness of Expandable Cages in ACDF</h2>
 
   <p>
-    Becker’s Spine Review featured Dr. Roger Härtl’s study on the clinical 
+    Beckerâ€™s Spine Review featured Dr. Roger Härtlâ€™s study on the clinical 
     and radiological results of expandable titanium cages used in ACDF.
   </p>
 
@@ -315,8 +315,8 @@ const HonorsAndAwardsPage: React.FC = () => {
             </a>
             <div className={styles.textContent}>
               <h2>New York-Presbyterian Augmented Reality Advances Feature</h2>
-              <p>Dr. Härtl&apos;s innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
-                For nearly 20 years, Roger Härtl, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicine’s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
+              <p>Dr. Härtl's innovative use of augmented reality in spine surgery is transforming patient outcomes and setting new standards in the field.
+                For nearly 20 years, Roger Härtl, Co-Director of Och Spine at NewYork-Presbyterian and Director of Weill Cornell Medicineâ€™s Center for Comprehensive Spine Care, has used intraoperative imaging and stereotactic
                 navigation in spinal surgery to guide instrumentation placement and tumor resection in minimally invasive spine surgery.</p>
               <a href="https://www.nyp.org/augmented-reality" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
@@ -326,7 +326,7 @@ const HonorsAndAwardsPage: React.FC = () => {
             <div className={styles.textContent}>
                     <h2>Vittorio Sella and Wilfred Thesiger: Photographs at the Edge</h2>
                     <p>
-                    As photographer Paolo Pellegrin has written,art allows for the documentation of the alien with truth rather than conquest. The works of mountaineer and photographer Vittorio Sella (1859–1943) and desert traveler and author Wilfred Thesiger (1910–2003) are central to his collection.
+                    As photographer Paolo Pellegrin has written,art allows for the documentation of the alien with truth rather than conquest. The works of mountaineer and photographer Vittorio Sella (1859â€“1943) and desert traveler and author Wilfred Thesiger (1910â€“2003) are central to his collection.
 
 Dr. Härtl continues to push the boundaries of neurological surgery while fostering connections between medical communities worldwide. His multidimensional approach to life reflects a deep-seated curiosity and a commitment to bridging cultural and intellectual divides through exploration and scholarship
                     </p>
@@ -363,7 +363,7 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
             <div className={styles.textContent}>
               <h2>Medical Marvel - New York Magazine Feature</h2>
               <p>Dr. Roger Härtl performed a life-saving surgery on firefighter Eugene Stolowski, reconnecting his nearly severed skull to his spine after a devastating fall during the Black Sunday fire. Despite a mere 5% survival chance,
-                Dr. Härtl&apos;s expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
+                Dr. Härtl's expertise led to a miraculous recovery, showcasing his unparalleled skill in neurosurgery.</p>
               <a href="https://nymag.com/health/bestdoctors/2006/17259/" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
           </div>
@@ -373,8 +373,8 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
               <p>Kenny Schachter Emerges From Surgery With Dirt on Damien Hirst, Ed Sheeran, and a Lot More
               In part one of his &apos;Busted-Disc Diaries,&apos; he recounts blowing out his back moving his art.
                He&apos;s recovering, and just as indefatigable as ever. Thank his art-loving doctors!<br></br>
-               After a brief examination by Dr. Roger Härtl—who is nothing short of a magician, a brilliant virtuoso, and the director of spinal surgery at Och Spine at NewYork-Presbyterian/Weill 
-               Cornell Medical Center—it was flagrantly clear that I needed surgery, which...</p>
+               After a brief examination by Dr. Roger Härtlâ€”who is nothing short of a magician, a brilliant virtuoso, and the director of spinal surgery at Och Spine at NewYork-Presbyterian/Weill 
+               Cornell Medical Centerâ€”it was flagrantly clear that I needed surgery, which...</p>
               <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
             <a href="https://news.artnet.com/market/kenny-schachters-hospital-report-2478298" target="_blank" rel="noopener noreferrer">
@@ -405,7 +405,7 @@ Dr. Härtl continues to push the boundaries of neurological surgery while foster
             <div className={styles.textContent}>
               <h2>Enhancing Physician Recovery with Strategies that Focus on Enhancing Physiological Reserve to Enhance the Struggle Phase before Entering into Flow</h2>
               <p>
-                In this episode, Rahul Shah, MD, interviews Roger Hartl, MD about how physicians can sustain long, demanding careers by building
+                In this episode, Rahul Shah, MD, interviews Roger Härtl, MD about how physicians can sustain long, demanding careers by building
                 &quot;physiological reserve&quot; and maintaining balance between work, family, personal interests, and physical well-being.
               </p>
               <p>
@@ -459,7 +459,7 @@ Seattle Science Foundation</p>
     <h2>Dr. Roger Härtl on AI, Biologics & Minimally Invasive Spine Innovation</h2>
 
     <p>
-      Becker’s Healthcare Podcast featured Dr. Roger Härtl, M.D., Director of
+      Beckerâ€™s Healthcare Podcast featured Dr. Roger Härtl, M.D., Director of
       Neurosurgery Spine at Weill Cornell Medicine and Neurosurgical Director of
       Och Spine at NewYork-Presbyterian/Weill Cornell Medical Center, discussing
       the technologies shaping the next era of spine care.
@@ -497,8 +497,8 @@ Seattle Science Foundation</p>
 
   <div className={styles.sectionReverse}>
     <div className={styles.textContent}>
-      <h2>What&apos;s Brewing Globally? – Featuring Dr. Roger Hartl</h2>
-      <p>Listen to Dr. Roger Hartl discuss global neurosurgery perspectives and initiatives in this Spotify podcast episode.</p>
+      <h2>What&apos;s Brewing Globally? â€“ Featuring Dr. Roger Härtl</h2>
+      <p>Listen to Dr. Roger Härtl discuss global neurosurgery perspectives and initiatives in this Spotify podcast episode.</p>
       <a href="https://open.spotify.com/episode/2EIQp9HAD2DposeUNKrO6S?si=TBKBr7LTRm-SIyPuNXuTxQ" target="_blank" rel="noopener noreferrer">
         Listen on Spotify
       </a>
@@ -698,7 +698,7 @@ Seattle Science Foundation</p>
           <div className={styles.section}>
             <div className={styles.textContent}>
               <h2>Healthcare Digital Interview in German</h2>
-              <p>Healthcare Digital #10: Robots in the OR, AI in diagnostics, a gateway to TI, In future, access to the TI will be via a gateway. eHex Managing Director Frédéric Naujokat knows why and how. Spinal surgery with the surgical robot, on the other hand, is the domain of Prof. Dr. Roger Härtl. He demonstrated this live at this year&apos;s Brainlab Spine Symposium in Munich
+              <p>Healthcare Digital #10: Robots in the OR, AI in diagnostics, a gateway to TI, In future, access to the TI will be via a gateway. eHex Managing Director FrÃ©dÃ©ric Naujokat knows why and how. Spinal surgery with the surgical robot, on the other hand, is the domain of Prof. Dr. Roger Härtl. He demonstrated this live at this year&apos;s Brainlab Spine Symposium in Munich
                 s. Our colleague Johannes Kapfer was there and spoke to him...</p>
               <a href="https://www.healthcare-digital.de/healthcare-digital-10-roboter-im-op-ki-in-der-diagnostik-ein-gateway-zur-ti-a-610cb0edbfae37b59d7d866acbe98349/?cflt=rel" target="_blank" rel="noopener noreferrer">Listen to the Podcast</a>
             </div>
@@ -714,3 +714,5 @@ Seattle Science Foundation</p>
 };
 
 export default HonorsAndAwardsPage;
+
+

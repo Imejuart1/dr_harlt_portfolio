@@ -1,11 +1,11 @@
-'use client';
+﻿'use client';
 import React, { useEffect, useState } from 'react';
 import styles from './surgical.module.scss';
 
 const SurgicalVideosComponent: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // ✅ Full list of videos 
+  // âœ… Full list of videos 
   const surgicalVideos = [
      {
       title: "Spinal Navigation Nuances - Roger Härtl, M.D.",
@@ -85,13 +85,13 @@ const SurgicalVideosComponent: React.FC = () => {
     },
   ];
 
-    // ✅ Helper: extract YouTube video ID
+    // âœ… Helper: extract YouTube video ID
   const getYouTubeId = (url: string) => {
     const match = url.match(/embed\/([^?]+)/);
     return match ? match[1] : '';
   };
   
- // ✅ Search filter
+ // âœ… Search filter
   const filteredVideos = surgicalVideos.filter((video) =>
     video.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -112,7 +112,7 @@ const SurgicalVideosComponent: React.FC = () => {
       </div>
 
       <div className={styles.flexWrapContainer}>
-        {/* ✅ Search Bar */}
+        {/* âœ… Search Bar */}
         <div className={styles.searchContainer}>
           <input
             type="text"
@@ -123,7 +123,7 @@ const SurgicalVideosComponent: React.FC = () => {
           />
         </div>
 
-        {/* ✅ Thumbnail Grid */}
+        {/* âœ… Thumbnail Grid */}
         <div className={styles.videoGrid}>
           {filteredVideos.map((video, index) => {
             const videoId = getYouTubeId(video.src);
@@ -141,7 +141,7 @@ const SurgicalVideosComponent: React.FC = () => {
                     alt={video.title}
                     className={styles.thumbnail}
                   />
-                  <div className={styles.playButton}>▶</div>
+                  <div className={styles.playButton}>â–¶</div>
                 </a>
                 <h3>{video.title}</h3>
               </div>

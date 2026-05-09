@@ -1,18 +1,18 @@
-import ServiceLandingPage from "../../components/ServiceLandingPage";
+﻿import ServiceLandingPage from "../../components/ServiceLandingPage";
 import { createPageMetadata } from "../../lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Best Neurosurgeon in NYC | Roger Hartl, MD",
+  title: "One of the Best Neurosurgeons in NYC | Roger Härtl, MD",
   description:
-    "Looking for one of the best neurosurgeons in NYC for spine care? Learn about Roger Hartl, MD, his practice at Weill Cornell Medicine and NewYork-Presbyterian, and the patient-focused approach behind his care.",
+    "Looking for one of the best neurosurgeons in NYC for spine care? Learn about Roger Härtl, MD, his practice at Weill Cornell Medicine and NewYork-Presbyterian, and the patient-focused approach behind his care.",
   path: "/best-neurosurgeon-nyc",
 });
 
 export default function BestNeurosurgeonNycPage() {
   return (
     <ServiceLandingPage
-      title="Best Neurosurgeon in NYC for Spine Care"
-      breadcrumbLabel="Best Neurosurgeon in NYC"
+      title="One of the Best Neurosurgeons in NYC for Spine Care"
+      breadcrumbLabel="One of the Best Neurosurgeons in NYC"
       path="/best-neurosurgeon-nyc"
       heroImage="/img/newhartl4.jpg"
       intro="Patients who search for the best neurosurgeon in NYC are usually comparing reputation, hospital affiliation, patient trust, and experience with both common and complex spine conditions. The most useful answer is not a slogan. It is evidence."
@@ -28,7 +28,7 @@ export default function BestNeurosurgeonNycPage() {
       ]}
       sections={[
         {
-          heading: "What People Mean by Best Neurosurgeon",
+          heading: "What Patients Mean by One of the Best",
           paragraphs: [
             "When patients search for the best neurosurgeon in NYC, they are usually trying to reduce uncertainty. They want to know whether a doctor has the experience, judgment, communication style, and hospital support needed to handle their condition safely and thoughtfully. Especially in spine care, that often means looking beyond brand names and asking better questions about fit.",
             "The best specialist for one patient is the doctor whose training, procedural expertise, and decision-making match the diagnosis. That is why second opinions, treatment philosophy, and hospital affiliation matter so much.",
@@ -48,9 +48,9 @@ export default function BestNeurosurgeonNycPage() {
           ],
         },
         {
-          heading: "Why Patients Consider Roger Hartl, MD",
+          heading: "Why Patients Consider Roger Härtl, MD",
           paragraphs: [
-            "Dr. Hartl is widely known for work in minimally invasive spinal surgery, spinal tumors, navigation and augmented reality, and biological research related to disc repair and regeneration. He also serves in leadership roles at Weill Cornell Medicine and NewYork-Presbyterian, which gives patients access to a high-level academic spine environment.",
+            "Dr. Härtl is widely known for work in minimally invasive spinal surgery, spinal tumors, navigation and augmented reality, and biological research related to disc repair and regeneration. He also serves in leadership roles at Weill Cornell Medicine and NewYork-Presbyterian, which gives patients access to a high-level academic spine environment.",
             "That combination of clinical practice, research, education, and multidisciplinary support is often what patients are really looking for when they search for a top or best neurosurgeon in New York.",
           ],
         },
@@ -88,3 +88,4 @@ export default function BestNeurosurgeonNycPage() {
     />
   );
 }
+

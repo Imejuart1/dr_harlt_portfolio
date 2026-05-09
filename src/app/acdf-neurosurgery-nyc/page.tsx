@@ -1,10 +1,10 @@
-import ServiceLandingPage from "../../components/ServiceLandingPage";
+﻿import ServiceLandingPage from "../../components/ServiceLandingPage";
 import { createPageMetadata } from "../../lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "ACDF Neurosurgery in NYC | Roger Hartl, MD",
+  title: "ACDF Neurosurgery in NYC | Roger Härtl, MD",
   description:
-    "Learn about ACDF neurosurgery in NYC with Roger Hartl, MD, including who may benefit, what symptoms are treated, and how surgery compares with other cervical options.",
+    "Learn about ACDF neurosurgery in NYC with Roger Härtl, MD, including who may benefit, what symptoms are treated, and how surgery compares with other cervical options.",
   path: "/acdf-neurosurgery-nyc",
 });
 
@@ -49,7 +49,7 @@ export default function AcdfNeurosurgeryNycPage() {
         {
           heading: "How ACDF Is Weighed Against Other Options",
           paragraphs: [
-            "Patients often ask whether ACDF is better than disc replacement, posterior decompression, or laminoplasty. The answer depends on the exact diagnosis, number of levels involved, spinal alignment, instability, bone quality, and the patient&apos;s symptoms. The most important step is not choosing a procedure by name. It is matching the procedure to the pathology.",
+            "Patients often ask whether ACDF is better than disc replacement, posterior decompression, or laminoplasty. The answer depends on the exact diagnosis, number of levels involved, spinal alignment, instability, bone quality, and the patient's symptoms. The most important step is not choosing a procedure by name. It is matching the procedure to the pathology.",
             "A thoughtful evaluation helps patients understand why fusion may be appropriate in one situation and why a motion-preserving procedure may be preferable in another.",
           ],
         },
@@ -87,3 +87,4 @@ export default function AcdfNeurosurgeryNycPage() {
     />
   );
 }
+
