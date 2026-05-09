@@ -7,10 +7,8 @@ import styles from "./HeroSection.module.scss";
 
 const hero = {
   image: "/img/Herowebb.png",
-  title: "Roger Härtl, MD",
-  subtitle:
-    "Spine Surgeon at Och Spine, NewYork-Presbyterian/Weill Cornell Medicine",
-  buttonText: "Contact Dr. Härtl",
+  title: "Roger H\u00E4rtl, MD",
+  buttonText: "Contact Dr. H\u00E4rtl",
   link: "/Contact",
   topicLinks: [
     { href: "/spine-surgeon-new-york", label: "Spine Surgeon in New York" },
@@ -30,10 +28,16 @@ const HeroSection = () => {
   const topicLinksRef = useRef<HTMLDivElement>(null);
 
   const scrollTopics = (direction: "left" | "right") => {
-    const offset = direction === "left" ? -220 : 220;
+    const container = topicLinksRef.current;
 
-    topicLinksRef.current?.scrollBy({
-      left: offset,
+    if (!container) {
+      return;
+    }
+
+    const offset = Math.max(container.clientWidth * 0.75, 180);
+
+    container.scrollBy({
+      left: direction === "left" ? -offset : offset,
       behavior: "smooth",
     });
   };
@@ -45,31 +49,27 @@ const HeroSection = () => {
     >
       <div className={styles.content}>
         <h1>{hero.title}</h1>
-        <h2>{hero.subtitle}</h2>
         <Link href={hero.link} className={styles.contactButton}>
           {hero.buttonText}
         </Link>
         <div className={styles.topicRail}>
-          <div className={styles.topicHintRow}>
-            <div className={styles.topicHint}>Swipe or tap the arrows</div>
-            <div className={styles.topicControls}>
-              <button
-                type="button"
-                className={styles.topicScrollButton}
-                onClick={() => scrollTopics("left")}
-                aria-label="Scroll topic links left"
-              >
-                ←
-              </button>
-              <button
-                type="button"
-                className={styles.topicScrollButton}
-                onClick={() => scrollTopics("right")}
-                aria-label="Scroll topic links right"
-              >
-                →
-              </button>
-            </div>
+          <div className={styles.topicControls}>
+            <button
+              type="button"
+              className={styles.topicScrollButton}
+              onClick={() => scrollTopics("left")}
+              aria-label="Scroll topic links left"
+            >
+              {"<"}
+            </button>
+            <button
+              type="button"
+              className={styles.topicScrollButton}
+              onClick={() => scrollTopics("right")}
+              aria-label="Scroll topic links right"
+            >
+              {">"}
+            </button>
           </div>
           <div className={styles.topicLinks} ref={topicLinksRef}>
             {hero.topicLinks.map((topic) => (

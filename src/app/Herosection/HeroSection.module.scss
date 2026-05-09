@@ -140,44 +140,6 @@
     h3{
       color: #dddfe8 !important;
     }
-    h2 {
-      width: 100%;
-      max-width: 44rem;
-      font-size: 1.8rem;
-      line-height:2.5rem;
-      margin-bottom: 0.5rem;
-      color: #dddfe8;
-      font-weight: 500;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-      @media (max-width: 1024px) {
-        font-size:1.6rem;
-        line-height:1.8rem;
-        max-width: 36rem;
-      }
-      @media (max-width: 900px) {
-        font-size: 1.3rem;
-        line-height:1.5rem;
-        max-width: 29rem;
-      }
-    }
-
-    p {
-      width: 100%;
-      max-width: 44rem;
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      color: #dddfe8;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-      line-height: 1.5;
-      @media (max-width: 1024px) {
-        max-width: 34rem;
-      }
-      @media (max-width: 900px) {
-        font-size: 1rem;
-        max-width: 28rem;
-      }
-    }
-
     .contactButton {
       background-color: #0056b3;
       color: #fff;
@@ -204,27 +166,14 @@
       position: relative;
     }
 
-    .topicHintRow {
+    .topicControls {
       display: none;
       align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-      margin-bottom: 0.55rem;
-    }
-
-    .topicHint {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.82);
-    }
-
-    .topicControls {
-      display: flex;
-      align-items: center;
+      justify-content: flex-end;
       gap: 0.45rem;
-      flex: 0 0 auto;
+      margin-bottom: 0.55rem;
+      position: relative;
+      z-index: 2;
     }
 
     .topicScrollButton {
@@ -307,7 +256,7 @@
         }
       }
 
-      .topicHintRow {
+      .topicControls {
         display: flex;
       }
 
@@ -367,11 +316,11 @@
   }
 
   @media (max-width: 600px) {
-    justify-content: flex-end;
-    align-items: stretch;
-    min-height: 34rem;
-    height: auto;
-    padding: 1.5rem 1rem;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50vh;
+    min-height: 26rem;
+    padding: 1.25rem 1rem;
     &::before {
       background: linear-gradient(to top, rgba(3, 112, 255, 0.96), rgba(3, 112, 255, 0.8) 38%, rgba(3, 112, 255, 0.35) 72%, rgba(3, 112, 255, 0.08));
     }
@@ -381,16 +330,19 @@
 
     .content {
       display: flex;
-      position: relative;
+      position: absolute;
       background: none;
       padding: 0;
       justify-content: flex-end;
       flex-direction: column;
       height: fit-content;
       text-align: left !important;
-      width: 100% !important;
-      max-width: none;
+      width: auto !important;
+      max-width: 19rem;
       margin: 0 !important;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
       top: auto;
 
       h1, h2, p, h3 {
@@ -403,59 +355,36 @@
 
       h1,h3 {
         width: 100% !important;
-        font-size: 2.35rem;
-        line-height: 2.35rem;
-        margin-bottom: 0.8rem;
-      }
-
-      h2 {
-        width: 100% !important;
-        text-align: left !important;
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        margin-bottom: 0.75rem;
-      }
-
-      p {
-        width: 100% !important;
-        text-align: left !important;
-        font-size: 1rem;
-        line-height: 1.45rem;
-        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 0.9rem;
       }
 
       .contactButton {
         width: fit-content;
-        padding: 0.8rem 1.25rem;
-        font-size: 0.95rem;
+        padding: 0.75rem 1.1rem;
+        font-size: 0.9rem;
       }
 
       .topicRail {
-        margin-top: 1rem;
+        margin-top: 0.9rem;
 
         &::after {
           width: 3rem;
-          top: 1.7rem;
+          top: 0.2rem;
         }
       }
 
-      .topicHintRow {
-        display: flex;
-        align-items: center;
-        gap: 0.65rem;
-      }
-
-      .topicHint {
-        font-size: 0.72rem;
-      }
-
       .topicControls {
+        display: flex;
         gap: 0.35rem;
+        margin-bottom: 0.45rem;
       }
 
       .topicScrollButton {
         width: 1.9rem;
         height: 1.9rem;
+        font-size: 0.95rem;
       }
 
       .topicLinks {
