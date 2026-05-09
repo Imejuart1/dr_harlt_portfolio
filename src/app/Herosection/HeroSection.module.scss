@@ -204,11 +204,15 @@
       position: relative;
     }
 
-    .topicHint {
+    .topicHintRow {
       display: none;
       align-items: center;
-      gap: 0.35rem;
+      justify-content: space-between;
+      gap: 0.75rem;
       margin-bottom: 0.55rem;
+    }
+
+    .topicHint {
       font-size: 0.78rem;
       font-weight: 600;
       letter-spacing: 0.04em;
@@ -216,9 +220,35 @@
       color: rgba(255, 255, 255, 0.82);
     }
 
-    .topicHintArrow {
+    .topicControls {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex: 0 0 auto;
+    }
+
+    .topicScrollButton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      color: #fff;
+      cursor: pointer;
       font-size: 1rem;
       line-height: 1;
+      backdrop-filter: blur(6px);
+      transition: background-color 0.3s ease, border-color 0.3s ease,
+        transform 0.3s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.22);
+        border-color: rgba(255, 255, 255, 0.9);
+        transform: translateY(-1px);
+      }
     }
 
     .topicLinks {
@@ -277,14 +307,15 @@
         }
       }
 
-      .topicHint {
-        display: inline-flex;
+      .topicHintRow {
+        display: flex;
       }
 
       .topicLinks {
         flex-wrap: nowrap;
         overflow-x: auto;
         padding-bottom: 0.45rem;
+        padding-right: 0.5rem;
         scroll-snap-type: x proximity;
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -408,9 +439,23 @@
         }
       }
 
+      .topicHintRow {
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+      }
+
       .topicHint {
-        display: inline-flex;
         font-size: 0.72rem;
+      }
+
+      .topicControls {
+        gap: 0.35rem;
+      }
+
+      .topicScrollButton {
+        width: 1.9rem;
+        height: 1.9rem;
       }
 
       .topicLinks {
