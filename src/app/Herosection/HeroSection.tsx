@@ -38,12 +38,21 @@ const HeroSection = () => {
         <Link href={hero.link} className={styles.contactButton}>
           {hero.buttonText}
         </Link>
-        <div className={styles.topicLinks}>
-          {hero.topicLinks.map((topic) => (
-            <Link key={topic.href} href={topic.href} className={styles.topicLink}>
-              {topic.label}
-            </Link>
-          ))}
+        <div className={styles.topicRail}>
+          <div className={styles.topicHint} aria-hidden="true">
+            Swipe for more <span className={styles.topicHintArrow}>→</span>
+          </div>
+          <div className={styles.topicLinks}>
+            {hero.topicLinks.map((topic) => (
+              <Link
+                key={topic.href}
+                href={topic.href}
+                className={styles.topicLink}
+              >
+                {topic.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
