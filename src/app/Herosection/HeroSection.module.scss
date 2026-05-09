@@ -144,6 +144,8 @@
       color: #dddfe8 !important;
     }
     .contactButton {
+      display: inline-flex;
+      align-self: flex-start;
       background-color: #0056b3;
       color: #fff;
       border: none;
