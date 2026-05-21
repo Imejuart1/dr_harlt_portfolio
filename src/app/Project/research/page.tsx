@@ -63,9 +63,22 @@ const ResearchComponent = () => {
           <Link href="https://vimeo.com/792032374/d361c1d124">Watch Lecture</Link>
         </div>
       </div>
+
+      <div className={styles.contentSection}>
+        <div className={styles.imageContainer2}>
+          <iframe
+            src="https://www.youtube.com/embed/IpJ24o9q6qc?si=Enm1r0lV5KJ8v0hp"
+            allowFullScreen
+          />
+        </div>
+        <div className={styles.textContainer}>
+          <h2>Grand Rounds PainCast: Intradiscal BMAC for Disc Regeneration</h2>
+          <p>This newly uploaded YouTube lecture features Dr. Härtl discussing intradiscal BMAC for disc regeneration and the role of biologic strategies in advancing spine care.</p>
+          <Link href="https://www.youtube.com/watch?v=IpJ24o9q6qc" target="_blank" rel="noopener noreferrer">Watch Lecture</Link>
+        </div>
+      </div>
     </section>
   );
 };
 
 export default ResearchComponent;
-

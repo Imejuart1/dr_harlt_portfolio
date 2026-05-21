@@ -88,7 +88,11 @@ const MaterialLecturesComponent: React.FC = () => {
       src: "https://drive.google.com/file/d/1zy6W0SSJBaY2R508r-mBnbMfjh1b_loe/preview",
     },
     {
-      title: "Degenerative Disc Solutions â€“ Regeneration & Repair",
+      title: "Grand Rounds PainCast: Intradiscal BMAC for Disc Regeneration (2025)",
+      src: "https://www.youtube.com/embed/IpJ24o9q6qc?si=Enm1r0lV5KJ8v0hp",
+    },
+    {
+      title: "Degenerative Disc Solutions – Regeneration & Repair",
       src: "https://drive.google.com/file/d/1wBzGVvVQgyW24eFPGPJmLp_4Gyigmpvb/preview",
     },
     {
@@ -249,4 +253,3 @@ const MaterialLecturesComponent: React.FC = () => {
 };
 
 export default MaterialLecturesComponent;
-
