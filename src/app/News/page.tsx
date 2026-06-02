@@ -111,9 +111,9 @@ const HonorsAndAwardsPage: React.FC = () => {
           {/* NEW: Becker's Spine Ellis Island Medal of Honor Feature */}
     <div className={styles.section}>
       <div className={styles.textContent}>
-        <h2>Becker's Spine: Dr. Roger Härtl Earns Ellis Island Medal of Honor</h2>
+        <h2>Becker&apos;s Spine: Dr. Roger Härtl Earns Ellis Island Medal of Honor</h2>
         <p>
-          Featured in Becker's Spine Review, Dr. Roger Härtl was highlighted for receiving the prestigious Ellis Island Medal of Honor. The award recognizes immigrants who have shown an outstanding commitment to serving the nation professionally, culturally, or civically. 
+          Featured in Becker&apos;s Spine Review, Dr. Roger Härtl was highlighted for receiving the prestigious Ellis Island Medal of Honor. The award recognizes immigrants who have shown an outstanding commitment to serving the nation professionally, culturally, or civically. 
         </p>
         <p>
           Dr. Härtl, originally from Germany, expressed his deep gratitude to Weill Cornell Medicine, NewYork-Presbyterian, Och Spine, and his patients, stating that their encouragement has carried him through every step of his journey.
@@ -133,14 +133,13 @@ const HonorsAndAwardsPage: React.FC = () => {
         rel="noopener noreferrer"
       >
         <img
-          src="/img/medals_honor.jpg"
-          alt="Becker's Spine Review feature on Dr. Härtl"
+          src="/img/becker.png"
+          alt="Becker&apos;s Spine Review feature on Dr. Härtl"
           className={styles.sectionImage}
           style={{ objectFit: "contain" }}
         />
       </a>
     </div>
-
           <div className={styles.sectionReverse}>
   <a
     href="https://podcasts.apple.com/us/podcast/roger-hartl-md-director-of-neurosurgery-spine-at/id1512530263?i=1000745315784"
