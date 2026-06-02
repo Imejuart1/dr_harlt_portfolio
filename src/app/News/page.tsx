@@ -133,7 +133,7 @@ const HonorsAndAwardsPage: React.FC = () => {
         rel="noopener noreferrer"
       >
         <img
-          src="/img/becker.png"
+          src="/img/medals_honor.png"
           alt="Becker&apos;s Spine Review feature on Dr. Härtl"
           className={styles.sectionImage}
           style={{ objectFit: "contain" }}
