@@ -73,6 +73,15 @@ const HonorsAndAwardsPages: React.FC = () => {
         position: 1,
         item: {
           "@type": "CreativeWork",
+          name: "Ellis Island Medal of Honor",
+          url: "https://eihonors.org/",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 1,
+        item: {
+          "@type": "CreativeWork",
           name: "America's Best Spine Surgeons 2024",
           url: "https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024",
         },
@@ -133,6 +142,7 @@ const HonorsAndAwardsPages: React.FC = () => {
         </div>
 
         {/* HONORS */}
+        
         <div
           id="honors"
           className={styles.contentWrapper}
@@ -140,6 +150,34 @@ const HonorsAndAwardsPages: React.FC = () => {
           data-active={activeTab === "honors"}
           aria-hidden={activeTab !== "honors"}
         >
+
+          {/* NEW: Ellis Island Medal of Honor */}
+          <div className={styles.section}>
+            <div style={{ width: "100%" }}>
+              <Image
+                src="/img/medals_honor.jpg"
+                alt="Dr. Roger Härtl receiving the Ellis Island Medal of Honor"
+                className={styles.sectionImage}
+                width={1600}
+                height={900}
+                sizes="(max-width: 800px) 100vw, 800px"
+                priority={true}
+              />
+            </div>
+            <div className={styles.textContent}>
+              <h2>Ellis Island Medal of Honor</h2>
+              <p>
+                Dr. Roger Härtl, The Hansen-MacDonald Endowed Professor of Neurological Surgery and Director of Spinal Surgery at Weill Cornell Medicine, was deeply honored to receive the prestigious <strong>Ellis Island Medal of Honor</strong>. This award recognizes his profound contributions to the American dream while remaining deeply rooted in his European heritage. Dr. Härtl extends his gratitude to his partners at Weill Cornell Medicine, NewYork-Presbyterian, and Och Spine, as well as the patients who place their trust in him every day.
+              </p>
+              <a
+                href="https://eihonors.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
           <div className={styles.section}>
             <a
               href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024"

@@ -90,6 +90,18 @@ const HonorsAndAwardsPage: React.FC = () => {
 
       {activeTab === "honors" && (
         <div className={styles.contentWrapper} id='#honors'>
+          <div className={styles.section}>
+            <div style={{ width: '100%' }}>
+              <img src="/img/medals_honor.jpg" alt="Dr. Roger Härtl receiving the Ellis Island Medal of Honor" className={styles.sectionImage} />
+            </div>
+            <div className={styles.textContent}>
+              <h2>Ellis Island Medal of Honor</h2>
+              <p>
+                Dr. Roger Härtl, The Hansen-MacDonald Endowed Professor of Neurological Surgery and Director of Spinal Surgery at Weill Cornell Medicine, was deeply honored to receive the prestigious <strong>Ellis Island Medal of Honor</strong>. This award recognizes his profound contributions to the American dream while remaining deeply rooted in his European heritage. Dr. Härtl extends his gratitude to his partners at Weill Cornell Medicine, NewYork-Presbyterian, and Och Spine, as well as the patients who place their trust in him every day.
+              </p>
+              <a href="https://eihonors.org/" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+          </div>
             <div className={styles.section}>
             <a href="https://www.newsweek.com/rankings/americas-best-spine-surgeons-2024" target="_blank" rel="noopener noreferrer">
               <div style={{ width: '100%' }}>
