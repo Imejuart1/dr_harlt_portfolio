@@ -32,6 +32,24 @@ const MaterialLecturesComponent: React.FC = () => {
 
   const lectureVideos = [
      {
+    title: "How to Examine Spine Patients and Make Surgical Decisions",
+    src: "https://mhb.openmedicalinstitute.org/media/2025/940SWCS25/data/lectures/14/index.html",
+    external: true,
+    thumbnail: "/img/MISS 1.jpg"
+  },
+  {
+    title: "6 Ts of Minimally Invasive Spinal Surgery",
+    src: "https://mhb.openmedicalinstitute.org/media/2025/940SWCS25/data/lectures/08/index.html",
+    external: true,
+    thumbnail: "/img/6T.jpg"
+  },
+  {
+    title: "How to Build a Multidisciplinary Spine Center and Optimize Surgical Outcomes",
+    src: "https://mhb.openmedicalinstitute.org/media/2025/940SWCS25/data/lectures/13/index.html",
+    external: true,
+    thumbnail: "/img/13T.jpg"
+  },
+     {
   title: "Through Endurance We Conquer Building an Academic Spine Center",
   src: "https://www.youtube.com/embed/UKPczenDaD4?si=0EI5pPtsAO3gA4XW",
  //external: true,
@@ -219,7 +237,7 @@ const MaterialLecturesComponent: React.FC = () => {
           className={styles.thumbnail}
         />
         <div className={styles.overlay}>
-          ▶ Watch on VuMedi
+          ▶ Watch
         </div>
       </a>
     ) : (
