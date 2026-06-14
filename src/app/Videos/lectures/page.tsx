@@ -49,6 +49,10 @@ const MaterialLecturesComponent: React.FC = () => {
     external: true,
     thumbnail: "/img/13T.jpg"
   },
+    {
+    title: "Mastering Minimally Invasive Spine Surgery with Dr Roger Hartl",
+    src: "https://www.youtube.com/embed/aRTS_oDiI-A?si=0DBXQd5gae_nioUn"  
+  },
      {
   title: "Through Endurance We Conquer Building an Academic Spine Center",
   src: "https://www.youtube.com/embed/UKPczenDaD4?si=0EI5pPtsAO3gA4XW",

@@ -548,6 +548,46 @@ Seattle Science Foundation</p>
     </div>
   </div>
 
+<div className={styles.section}>
+
+  <div className={styles.textContent}>
+    <h2>
+The Visionary: Seeing the Future of Spine Surgery
+</h2>
+
+    <p>
+      eurosurgeon Dr Roger Härtl discusses his work using navigation and augmented reality technologies to improve minimally invasive spine surgery.
+    </p>
+
+    <p>
+      In the episode, Dr. Härtl highlights the growing impact of "total navigation" 
+      to improve surgical safety and workflow, the integration of augmented reality for 
+      precise surgical planning, and pioneering pilot studies using biologics to 
+      regenerate disc tissue.
+    </p>
+
+    <a
+      href="https://www.youtube.com/watch?v=gl4TKJTxkHU"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Watch now
+    </a>
+  </div>
+    <a
+    href="https://www.youtube.com/watch?v=gl4TKJTxkHU"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="/img/advances.jpg"
+      alt="Dr. Roger Härtl on AI, Biologics & Minimally Invasive Spine Surgery"
+      className={styles.sectionImage}
+      style={{ objectFit: "contain" }}
+    />
+  </a>
+
+</div>
 
   <div className={styles.sectionReverse}>
     <div className={styles.textContent}>
