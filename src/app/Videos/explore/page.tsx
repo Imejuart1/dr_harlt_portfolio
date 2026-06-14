@@ -31,6 +31,18 @@ const MaterialLecturesComponent: React.FC = () => {
   }, []);
 
   const lectureVideos = [
+          {
+      title: "AO Spine MISS Spectrum Series with Roger Härtl",
+      src: "https://www.youtube.com/embed/hDqtdtsLpTo?si=Bk5vbARs9jlOd_P1",
+    },
+          {
+      title: "NYC MISS 2024 Summer Master Class with Dr. Roger Hartl",
+      src: "https://www.youtube.com/embed/wUgMGoOyQPw?si=9sMzCuegUjllsCs7",
+    },
+      {
+      title: "Och Spine at NewYork-Presbyterian: A Comprehensive Approach to Spine Care",
+      src: "https://www.youtube.com/embed/pxNnwYUokjE?si=oBbeXlj_LUmW9Yjq",
+    },
   {
       title: "Dr. Roger Hartl -14 Years inTanzania (J&J Interview 2022)",
       src: "https://www.youtube.com/embed/n81sJVbMIUw?si=fEmR9pM2tps23x6S",

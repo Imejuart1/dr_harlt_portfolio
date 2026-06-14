@@ -31,9 +31,16 @@ const MaterialLecturesComponent: React.FC = () => {
   }, []);
 
   const lectureVideos = [
+
      {
     title: "How to Examine Spine Patients and Make Surgical Decisions",
     src: "https://mhb.openmedicalinstitute.org/media/2025/940SWCS25/data/lectures/14/index.html",
+    external: true,
+    thumbnail: "/img/MISS 1.jpg"
+  },
+           {
+    title: "Global Neurosurgery Roundtable: Dr. Roger Hartl Introduces the Tanzania Neurosurgery Project",
+    src: "https://www.youtube.com/embed/OKOD47pjI6A?si=o0Yz8NnMgvc0RLhr",
     external: true,
     thumbnail: "/img/MISS 1.jpg"
   },
