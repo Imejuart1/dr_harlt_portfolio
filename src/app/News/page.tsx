@@ -560,7 +560,7 @@ The Visionary: Seeing the Future of Spine Surgery
     </p>
 
     <p>
-      In the episode, Dr. Härtl highlights the growing impact of "total navigation" 
+      In the episode, Dr. Härtl highlights the growing impact of total navigation
       to improve surgical safety and workflow, the integration of augmented reality for 
       precise surgical planning, and pioneering pilot studies using biologics to 
       regenerate disc tissue.
