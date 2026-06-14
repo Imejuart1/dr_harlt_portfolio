@@ -50,6 +50,10 @@ const MaterialLecturesComponent: React.FC = () => {
     thumbnail: "/img/13T.jpg"
   },
     {
+    title: "SMISS 2025 : 6 Ts of Minimally Invasive Spine Surgery",
+    src: "https://www.youtube.com/embed/DTgbVNu91vM?si=VEvwdRCHT4XQ2CTQ"  
+  },
+      {
     title: "Mastering Minimally Invasive Spine Surgery with Dr Roger Hartl",
     src: "https://www.youtube.com/embed/aRTS_oDiI-A?si=0DBXQd5gae_nioUn"  
   },
