@@ -160,7 +160,7 @@ const HonorsAndAwardsPage: React.FC = () => {
         <h2>Becker&apos;s Spine: Weill Cornell Study Finds No Complications from Spine Biologic</h2>
 
         <p>
-          A recent Weill Cornell Medicine study featured in Becker&apos;s Spine Review demonstrates the safety and efficacy of an innovative spine biologic. Led by Dr. Roger Härtl, the research found zero complications associated with the biologic's use, marking a significant milestone for advanced regenerative therapeutics.
+          A recent Weill Cornell Medicine study featured in Becker&apos;s Spine Review demonstrates the safety and efficacy of an innovative spine biologic. Led by Dr. Roger Härtl, the research found zero complications associated with the biologics use, marking a significant milestone for advanced regenerative therapeutics.
         </p>
 
         <p>
