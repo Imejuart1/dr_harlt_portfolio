@@ -108,6 +108,74 @@ const HonorsAndAwardsPage: React.FC = () => {
  
       {activeTab === "news" && (
         <div className={styles.contentWrapper} id='#news'>
+          {/* Article 1: Multilevel Fusion Approach */}
+    <div className={styles.section}>
+      <div className={styles.textContent}>
+        <h2>Becker&apos;s Spine: Researchers Challenge Multilevel Fusion Approach</h2>
+        <p>
+          Featured in Becker&apos;s Spine Review, a new study co-authored by Dr. Roger Härtl challenges traditional multi-level fusion approaches for specific spinal conditions. The research highlights the potential for less invasive options, aiming to preserve patient mobility and improve long-term outcomes.
+        </p>
+        <p>
+          As a leader in minimally invasive spine surgery, Dr. Härtl and his team continue to investigate data-driven approaches that optimize patient recovery and redefine standard surgical protocols.
+        </p>
+        <a
+          href="https://www.beckersspine.com/spine/researchers-challenge-multilevel-fusion-approach/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read more
+        </a>
+      </div>
+
+      <a
+        href="https://www.beckersspine.com/spine/researchers-challenge-multilevel-fusion-approach/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/img/multilevel_fusion.jpg"
+          alt="Becker&apos;s Spine Review feature on multilevel fusion study"
+          className={styles.sectionImage}
+          style={{ objectFit: "contain" }}
+        />
+      </a>
+    </div>
+
+    {/* Article 2: Spine Biologic Study */}
+    <div className={styles.sectionReverse}>
+      <a
+        href="https://www.beckersspine.com/spine/weill-cornell-study-finds-no-complications-from-spine-biologic/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/img/spine_biologic.jpg"
+          alt="Becker&apos;s Spine Review feature on Weill Cornell spine biologic study"
+          className={styles.sectionImage}
+          style={{ objectFit: "contain" }}
+        />
+      </a>
+
+      <div className={styles.textContent}>
+        <h2>Becker&apos;s Spine: Weill Cornell Study Finds No Complications from Spine Biologic</h2>
+
+        <p>
+          A recent Weill Cornell Medicine study featured in Becker&apos;s Spine Review demonstrates the safety and efficacy of an innovative spine biologic. Led by Dr. Roger Härtl, the research found zero complications associated with the biologic's use, marking a significant milestone for advanced regenerative therapeutics.
+        </p>
+
+        <p>
+          This study reinforces the commitment of Dr. Härtl and Och Spine at NewYork-Presbyterian to pioneering safe, next-generation solutions for disc repair and spinal reconstruction.
+        </p>
+
+        <a
+          href="https://www.beckersspine.com/spine/weill-cornell-study-finds-no-complications-from-spine-biologic/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read more
+        </a>
+      </div>
+    </div>
           {/* NEW: Becker's Spine Ellis Island Medal of Honor Feature */}
     <div className={styles.section}>
       <div className={styles.textContent}>
