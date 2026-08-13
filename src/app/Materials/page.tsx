@@ -61,6 +61,7 @@ const MaterialComponent: React.FC = () => {
             Private Rooms,
 Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Link></li>
             <li><Link href="https://smiss.org/patient-education-videos/" target='_blank'>Patient Education SMISS Videos</Link></li>
+            <li><Link href="/pdfs/nociscan-information.pdf" target='_blank'>NOCISCAN Information</Link></li>
           </ul>
         </div>
         
