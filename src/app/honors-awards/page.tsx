@@ -91,6 +91,35 @@ const HonorsAndAwardsPage: React.FC = () => {
       {activeTab === "honors" && (
         <div className={styles.contentWrapper} id='#honors'>
           <div className={styles.section}>
+            <a
+              href="https://www.beckersasc.com/outpatient-spine/20-spine-surgeons-to-know/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div style={{ width: '100%' }}>
+                <img
+                  src="/img/roger.jpg"
+                  alt="Dr. Roger Härtl, one of Becker's 20 spine surgeons to know in 2026"
+                  className={styles.sectionImage}
+                />
+              </div>
+            </a>
+            <div className={styles.textContent}>
+              <h2>Dr. Roger Härtl Named One of Becker&apos;s 20 Spine Surgeons to Know</h2>
+              <p>
+                Becker&apos;s ASC Review recognized Dr. Roger Härtl among its 20 spine surgeons to know in 2026, highlighting his leadership in minimally invasive spine surgery, computer-assisted navigation, research, and global neurosurgery.
+              </p>
+              <a
+                href="https://www.beckersasc.com/outpatient-spine/20-spine-surgeons-to-know/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read more
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.section}>
             <div style={{ width: '100%' }}>
               <img src="/img/medals_honor.jpg" alt="Dr. Roger Härtl receiving the Ellis Island Medal of Honor" className={styles.sectionImage} />
             </div>
