@@ -108,6 +108,38 @@ const HonorsAndAwardsPage: React.FC = () => {
  
       {activeTab === "news" && (
         <div className={styles.contentWrapper} id='#news'>
+          <div className={styles.sectionReverse}>
+            <a
+              href="https://www.beckersspine.com/spine/spine-surgeons-develop-1st-scale-to-measure-surgical-invasiveness/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/img/miss.png"
+                alt="Minimally invasive spine surgery"
+                className={styles.sectionImage}
+                style={{ objectFit: "contain" }}
+              />
+            </a>
+
+            <div className={styles.textContent}>
+              <h2>Spine Surgeons Develop First Scale to Measure Surgical Invasiveness</h2>
+              <p>
+                Becker&apos;s Spine Review highlighted the Minimally Invasive Spine Surgery Invasiveness Classification, or MISS-INC (L), developed by Dr. Roger Härtl and an international panel of spine surgeons. The first consensus-based scale provides a standardized way to quantify the invasiveness of degenerative lumbar spine procedures.
+              </p>
+              <p>
+                Designed primarily as a research tool, the classification scores nine surgical factors and will help researchers compare procedures and study how invasiveness relates to outcomes such as complication rates and patient satisfaction.
+              </p>
+              <a
+                href="https://www.beckersspine.com/spine/spine-surgeons-develop-1st-scale-to-measure-surgical-invasiveness/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read more
+              </a>
+            </div>
+          </div>
+
           {/* Article 1: Multilevel Fusion Approach */}
     <div className={styles.section}>
       <div className={styles.textContent}>
