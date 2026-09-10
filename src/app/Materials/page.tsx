@@ -69,6 +69,8 @@ Dedicated Team of nurses, physical therapy, pain management,Highest ratings </Li
         <div className={styles.materialGroup} id="post-operative-information">
           <h2>Post-Operative Information</h2>
           <ul>
+            <li><Link href="https://drive.google.com/file/d/1AWfB4i6EdCs2xh7g_NAF2jYauXxegeIH/view?usp=drive_link" target='_blank'>Watch this video after your lumbar spine surgery</Link></li>
+            <li><Link href="https://drive.google.com/file/d/1I9TBIEprH3by_a0ol_IYWES066d0EfE2/view?usp=drive_link" target='_blank'>Watch this video after your cervical spine surgery</Link></li>
             <li><Link href="/Materials/post-op-instructions">Post-Op Instructions</Link></li>
             <li><Link href="/Materials/post-op-posture">Post-Op Posture</Link></li>
             <li><Link href="/Materials/hans-kraus-post-op-exercises">Hans-Kraus Post-Op Exercises</Link></li>
