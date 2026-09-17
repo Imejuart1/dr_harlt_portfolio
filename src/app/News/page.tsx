@@ -140,6 +140,64 @@ const HonorsAndAwardsPage: React.FC = () => {
             </div>
           </div>
 
+          <div className={styles.section}>
+            <div className={styles.textContent}>
+              <h2>Dr. Roger Härtl Named One of Becker&apos;s 20 Spine Surgeons to Know</h2>
+              <p>
+                Becker&apos;s Spine Review recognized Dr. Roger Härtl among 20 spine surgeons making an impact through clinical innovation, research, and leadership. The feature highlights his work in complex and minimally invasive spine surgery, computer-assisted navigation, biological disc repair, and global neurosurgery.
+              </p>
+              <a
+                href="https://www.beckersspine.com/spine/20-spine-surgeons-to-know/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read more
+              </a>
+            </div>
+
+            <a
+              href="https://www.beckersspine.com/spine/20-spine-surgeons-to-know/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/img/Dr.Hartls.png"
+                alt="Dr. Roger Härtl"
+                className={styles.sectionImage}
+                style={{ objectFit: "contain" }}
+              />
+            </a>
+          </div>
+
+          <div className={styles.sectionReverse}>
+            <a
+              href="https://spinelinemag.spine.org/julaug26/360-spine-east-africa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/img/tanzaniaroger.jpg"
+                alt="Dr. Roger Härtl supporting spine care and surgical education in East Africa"
+                className={styles.sectionImage}
+                style={{ objectFit: "contain" }}
+              />
+            </a>
+
+            <div className={styles.textContent}>
+              <h2>SpineLine: 360 Spine - East Africa</h2>
+              <p>
+                SpineLine magazine features 360 Spine in East Africa, highlighting international collaboration in spine care, surgical education, and efforts to expand access to specialized treatment in the region.
+              </p>
+              <a
+                href="https://spinelinemag.spine.org/julaug26/360-spine-east-africa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read more
+              </a>
+            </div>
+          </div>
+
           {/* Article 1: Multilevel Fusion Approach */}
     <div className={styles.section}>
       <div className={styles.textContent}>

@@ -110,12 +110,12 @@ export const materialData = {
             src: "https://www.youtube.com/embed/KDQmEC7qvuc?si=N1gz1wUOlpF-ta9y",
             title: "Transforaminal Interbody Fusion of the Lumbar Spine (MIS TLIF)",
           },
-          {
+          /*{
             type: "pdf",
             src: "https://drive.google.com/file/d/1544f5kcGrq1I5uKMVrbKLmUiGFjrSzIs/preview",
             title: "Surgical Guide for Minimally Invasive Tubular Surgery",
             previewImage: "/img/surgy1.png",
-          },
+          },*/
           {
             type: "pdf",
             src: "/pdfs/Kartal.pdf",
