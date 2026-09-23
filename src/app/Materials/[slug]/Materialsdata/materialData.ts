@@ -95,6 +95,27 @@ export const materialData = {
       ],
 
     },
+    "minimally-invasive-tubular-resection-spinal-tumors": {
+      title: "Minimally Invasive Tubular Resection of Spinal Tumors",
+      content:
+        "Explore published research on step-by-step microsurgical tubular resection and augmented-reality-assisted localization for spinal tumors.",
+      media: [
+        {
+          type: "pdf",
+          src: "/pdfs/microsurgical-tubular-resection-spinal-tumors.pdf",
+          title:
+            "Microsurgical Tubular Resection of Intradural Extramedullary Spinal Tumors With 3-Dimensional-Navigated Localization",
+          previewImage: "/img/surgy1.png",
+        },
+        {
+          type: "pdf",
+          src: "/pdfs/augmented-reality-spinal-tumor-resection.pdf",
+          title:
+            "Safety and Feasibility of Augmented Reality Assistance in Minimally Invasive and Open Resection of Benign Intradural Extramedullary Tumors",
+          previewImage: "/img/surgy1.png",
+        },
+      ],
+    },
     "surgical-guide-minimally-invasive-tlif": {
         title: "Minimally Invasive TLIF",
         content:

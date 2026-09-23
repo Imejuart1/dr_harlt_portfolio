@@ -54,6 +54,7 @@ const MaterialComponent: React.FC = () => {
             <li><Link href="/Materials/Minimally-Invasive-lumbar-tubular-laminectomy">Minimally Invasive lumbar tubular laminectomy or discectomy</Link></li>
             <li><Link href="/Materials/minimally-invasive-cervical-tubular-discectomy">Minimally invasive cervical tubular discectomy / foraminotomy / laminectomy</Link></li>
             <li><Link href="/Materials/minimally-invasive-lateral-lumbar-tubular-foraminotomy-discectomy">Minimally invasive far lateral lumbar tubular foraminotomy / discectomy</Link></li>
+            <li><Link href="/Materials/minimally-invasive-tubular-resection-spinal-tumors">Minimally Invasive Tubular Resection of Spinal Tumors</Link></li>
             <li><Link href="/Materials/surgical-guide-minimally-invasive-tlif">Surgical Guide for Minimally Invasive TLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-elif-xlif-llif-dlif">Surgical Guide for ELIF, XLIF, LLIF, DLIF</Link></li>
             <li><Link href="/Materials/surgical-guide-laminoplasty">Surgical Guide for Laminoplasty</Link></li>
