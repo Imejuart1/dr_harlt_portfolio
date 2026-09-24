@@ -108,6 +108,35 @@ const HonorsAndAwardsPage: React.FC = () => {
  
       {activeTab === "news" && (
         <div className={styles.contentWrapper} id='#news'>
+          <div className={styles.section}>
+            <div className={styles.textContent}>
+              <h2>Seattle Science Foundation: Bullet Video with Dr. Roger Härtl</h2>
+              <p>
+                Watch Dr. Roger Härtl&apos;s latest video from the Seattle Science Foundation.
+              </p>
+              <a
+                href="https://www.instagram.com/reel/DdhQ_y8hGHk/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Watch on Instagram
+              </a>
+            </div>
+
+            <a
+              href="https://www.instagram.com/reel/DdhQ_y8hGHk/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/img/evening.jpg"
+                alt="Dr. Roger Härtl at the Seattle Science Foundation"
+                className={styles.sectionImage}
+                style={{ objectFit: "contain" }}
+              />
+            </a>
+          </div>
+
           <div className={styles.sectionReverse}>
             <a
               href="https://www.beckersspine.com/spine/spine-surgeons-develop-1st-scale-to-measure-surgical-invasiveness/"

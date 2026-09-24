@@ -32,6 +32,10 @@ const MaterialLecturesComponent: React.FC = () => {
 
   const lectureVideos = [
 
+  {
+    title: "Seattle Science Foundation: Bullet Video with Dr. Roger Härtl",
+    src: "https://drive.google.com/file/d/1Yr6BswdwVcUT6Sbi5WuwifOxmAwXfvI8/preview"
+  },
      {
     title: "How to Examine Spine Patients and Make Surgical Decisions",
     src: "https://mhb.openmedicalinstitute.org/media/2025/940SWCS25/data/lectures/14/index.html",
@@ -286,4 +290,3 @@ const MaterialLecturesComponent: React.FC = () => {
 };
 
 export default MaterialLecturesComponent;
-
